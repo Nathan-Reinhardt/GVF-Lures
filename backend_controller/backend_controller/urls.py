@@ -14,6 +14,10 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+
+#NOTICE --- WHEN TRYING TO MIGRATE THE DATABASE MAKE SURE TO COMMENT OUT LINE 25
+#AFTER YOU ARE DONE UNCOMMENT LINE 25
+
 from django.contrib import admin
 from django.urls import path, include
 

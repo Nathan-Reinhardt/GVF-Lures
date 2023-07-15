@@ -32,17 +32,25 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
+
+    #NOTICE --- WHEN TRYING TO MIGRATE THE DATABASE MAKE SURE TO COMMENT OUT LINE 40
+    #AFTER YOU ARE DONE UNCOMMENT LINE 40
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # Custom
     'backend.apps.BackendConfig',
+    'frontend.apps.FrontendConfig',
+
+    # Third Party
     'rest_framework',
     'rest_framework_simplejwt.token_blacklist',
-    'corsheaders',
-    'frontend.apps.FrontendConfig'
 ]
 
 MIDDLEWARE = [
@@ -53,7 +61,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'backend_controller.urls'
@@ -128,6 +135,8 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+AUTH_USER_MODEL = 'backend.User'
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
