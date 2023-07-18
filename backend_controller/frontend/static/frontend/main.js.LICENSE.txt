@@ -1,26 +1,12 @@
-/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 13:227-247 */
-
-/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 14:20-40 */
-
-/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 14:449-469 */
-
-/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 14:85-105 */
-
-/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 18:56-76 */
-
 /*! default exports */
 
 /*! dynamic exports */
 
-/*! export AbortedDeferredError [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export AsyncMode [provided] [no usage info] [missing usage info prevents renaming] */
 
-/*! export AbortedDeferredError [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/@remix-run/router/dist/router.js .AbortedDeferredError */
+/*! export AsyncMode [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react-is/cjs/react-is.production.min.js .AsyncMode */
 
-/*! export Action [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export Await [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export Await [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/dist/index.js .Await */
+/*! export AuthProvider [provided] [no usage info] [missing usage info prevents renaming] */
 
 /*! export BrowserRouter [provided] [no usage info] [missing usage info prevents renaming] */
 
@@ -32,115 +18,105 @@
 
 /*! export Component [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react/cjs/react.production.min.js .Component */
 
-/*! export ErrorResponse [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export ConcurrentMode [provided] [no usage info] [missing usage info prevents renaming] */
 
-/*! export Form [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export ConcurrentMode [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react-is/cjs/react-is.production.min.js .ConcurrentMode */
+
+/*! export ContextConsumer [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export ContextConsumer [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react-is/cjs/react-is.production.min.js .ContextConsumer */
+
+/*! export ContextProvider [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export ContextProvider [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react-is/cjs/react-is.production.min.js .ContextProvider */
+
+/*! export Element [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export Element [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react-is/cjs/react-is.production.min.js .Element */
+
+/*! export ForwardRef [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export ForwardRef [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react-is/cjs/react-is.production.min.js .ForwardRef */
 
 /*! export Fragment [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export Fragment [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react-is/cjs/react-is.production.min.js .Fragment */
 
 /*! export Fragment [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react/cjs/react.production.min.js .Fragment */
 
 /*! export HashRouter [provided] [no usage info] [missing usage info prevents renaming] */
 
-/*! export IDLE_BLOCKER [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export InvalidTokenError [provided] [no usage info] [missing usage info prevents renaming] */
 
-/*! export IDLE_FETCHER [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export Lazy [provided] [no usage info] [missing usage info prevents renaming] */
 
-/*! export IDLE_NAVIGATION [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export Lazy [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react-is/cjs/react-is.production.min.js .Lazy */
 
 /*! export Link [provided] [no usage info] [missing usage info prevents renaming] */
 
+/*! export Memo [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export Memo [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react-is/cjs/react-is.production.min.js .Memo */
+
 /*! export MemoryRouter [provided] [no usage info] [missing usage info prevents renaming] */
 
-/*! export MemoryRouter [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/dist/index.js .MemoryRouter */
+/*! export MemoryRouter [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/esm/react-router.js .MemoryRouter */
 
 /*! export NavLink [provided] [no usage info] [missing usage info prevents renaming] */
 
-/*! export Navigate [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export Portal [provided] [no usage info] [missing usage info prevents renaming] */
 
-/*! export Navigate [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/dist/index.js .Navigate */
-
-/*! export NavigationType [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/@remix-run/router/dist/router.js .Action */
-
-/*! export Outlet [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export Outlet [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/dist/index.js .Outlet */
+/*! export Portal [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react-is/cjs/react-is.production.min.js .Portal */
 
 /*! export Profiler [provided] [no usage info] [missing usage info prevents renaming] */
 
+/*! export Profiler [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react-is/cjs/react-is.production.min.js .Profiler */
+
 /*! export Profiler [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react/cjs/react.production.min.js .Profiler */
+
+/*! export Prompt [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export Prompt [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/esm/react-router.js .Prompt */
 
 /*! export PureComponent [provided] [no usage info] [missing usage info prevents renaming] */
 
 /*! export PureComponent [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react/cjs/react.production.min.js .PureComponent */
 
+/*! export Redirect [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export Redirect [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/esm/react-router.js .Redirect */
+
 /*! export Route [provided] [no usage info] [missing usage info prevents renaming] */
 
-/*! export Route [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/dist/index.js .Route */
+/*! export Route [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/esm/react-router.js .Route */
 
 /*! export Router [provided] [no usage info] [missing usage info prevents renaming] */
 
-/*! export Router [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/dist/index.js .Router */
+/*! export Router [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/esm/react-router.js .Router */
 
-/*! export RouterProvider [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export StaticRouter [provided] [no usage info] [missing usage info prevents renaming] */
 
-/*! export RouterProvider [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/dist/index.js .RouterProvider */
-
-/*! export Routes [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export Routes [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/dist/index.js .Routes */
-
-/*! export ScrollRestoration [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export StaticRouter [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/esm/react-router.js .StaticRouter */
 
 /*! export StrictMode [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export StrictMode [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react-is/cjs/react-is.production.min.js .StrictMode */
 
 /*! export StrictMode [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react/cjs/react.production.min.js .StrictMode */
 
 /*! export Suspense [provided] [no usage info] [missing usage info prevents renaming] */
 
+/*! export Suspense [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react-is/cjs/react-is.production.min.js .Suspense */
+
 /*! export Suspense [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react/cjs/react.production.min.js .Suspense */
 
-/*! export UNSAFE_DEFERRED_SYMBOL [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export Switch [provided] [no usage info] [missing usage info prevents renaming] */
 
-/*! export UNSAFE_DataRouterContext [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export Switch [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/esm/react-router.js .Switch */
 
-/*! export UNSAFE_DataRouterContext [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/dist/index.js .UNSAFE_DataRouterContext */
+/*! export __HistoryContext [provided] [no usage info] [missing usage info prevents renaming] */
 
-/*! export UNSAFE_DataRouterStateContext [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export UNSAFE_DataRouterStateContext [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/dist/index.js .UNSAFE_DataRouterStateContext */
-
-/*! export UNSAFE_DeferredData [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export UNSAFE_LocationContext [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export UNSAFE_LocationContext [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/dist/index.js .UNSAFE_LocationContext */
-
-/*! export UNSAFE_NavigationContext [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export UNSAFE_NavigationContext [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/dist/index.js .UNSAFE_NavigationContext */
-
-/*! export UNSAFE_RouteContext [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export UNSAFE_RouteContext [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/dist/index.js .UNSAFE_RouteContext */
-
-/*! export UNSAFE_convertRoutesToDataRoutes [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export UNSAFE_getPathContributingMatches [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export UNSAFE_invariant [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export UNSAFE_mapRouteProperties [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export UNSAFE_useRouteId [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export UNSAFE_useRouteId [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/dist/index.js .UNSAFE_useRouteId */
-
-/*! export UNSAFE_useRoutesImpl [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export UNSAFE_useScrollRestoration [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export UNSAFE_warning [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export __RouterContext [provided] [no usage info] [missing usage info prevents renaming] */
 
 /*! export __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED [provided] [no usage info] [missing usage info prevents renaming] */
 
@@ -156,8 +132,6 @@
 
 /*! export createBrowserHistory [provided] [no usage info] [missing usage info prevents renaming] */
 
-/*! export createBrowserRouter [provided] [no usage info] [missing usage info prevents renaming] */
-
 /*! export createContext [provided] [no usage info] [missing usage info prevents renaming] */
 
 /*! export createContext [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react/cjs/react.production.min.js .createContext */
@@ -172,17 +146,11 @@
 
 /*! export createHashHistory [provided] [no usage info] [missing usage info prevents renaming] */
 
-/*! export createHashRouter [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export createLocation [provided] [no usage info] [missing usage info prevents renaming] */
 
 /*! export createMemoryHistory [provided] [no usage info] [missing usage info prevents renaming] */
 
-/*! export createMemoryRouter [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export createMemoryRouter [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/dist/index.js .createMemoryRouter */
-
 /*! export createPath [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export createPath [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/@remix-run/router/dist/router.js .createPath */
 
 /*! export createPortal [provided] [no usage info] [missing usage info prevents renaming] */
 
@@ -196,25 +164,7 @@
 
 /*! export createRoot [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react-dom/cjs/react-dom.production.min.js .createRoot */
 
-/*! export createRouter [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export createRoutesFromChildren [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export createRoutesFromChildren [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/dist/index.js .createRoutesFromChildren */
-
-/*! export createRoutesFromElements [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export createRoutesFromElements [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/dist/index.js .createRoutesFromElements */
-
-/*! export createSearchParams [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export createStaticHandler [provided] [no usage info] [missing usage info prevents renaming] */
-
 /*! export default [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export defer [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export defer [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/@remix-run/router/dist/router.js .defer */
 
 /*! export findDOMNode [provided] [no usage info] [missing usage info prevents renaming] */
 
@@ -230,11 +180,7 @@
 
 /*! export generatePath [provided] [no usage info] [missing usage info prevents renaming] */
 
-/*! export generatePath [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/@remix-run/router/dist/router.js .generatePath */
-
-/*! export getStaticContextFromError [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export getToPathname [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export generatePath [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/esm/react-router.js .generatePath */
 
 /*! export hydrate [provided] [no usage info] [missing usage info prevents renaming] */
 
@@ -244,73 +190,97 @@
 
 /*! export hydrateRoot [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react-dom/cjs/react-dom.production.min.js .hydrateRoot */
 
-/*! export isDeferredData [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export isAsyncMode [provided] [no usage info] [missing usage info prevents renaming] */
 
-/*! export isRouteErrorResponse [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export isAsyncMode [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react-is/cjs/react-is.production.min.js .isAsyncMode */
 
-/*! export isRouteErrorResponse [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/@remix-run/router/dist/router.js .isRouteErrorResponse */
+/*! export isConcurrentMode [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export isConcurrentMode [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react-is/cjs/react-is.production.min.js .isConcurrentMode */
+
+/*! export isContextConsumer [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export isContextConsumer [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react-is/cjs/react-is.production.min.js .isContextConsumer */
+
+/*! export isContextProvider [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export isContextProvider [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react-is/cjs/react-is.production.min.js .isContextProvider */
+
+/*! export isElement [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export isElement [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react-is/cjs/react-is.production.min.js .isElement */
+
+/*! export isForwardRef [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export isForwardRef [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react-is/cjs/react-is.production.min.js .isForwardRef */
+
+/*! export isFragment [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export isFragment [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react-is/cjs/react-is.production.min.js .isFragment */
+
+/*! export isLazy [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export isLazy [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react-is/cjs/react-is.production.min.js .isLazy */
+
+/*! export isMemo [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export isMemo [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react-is/cjs/react-is.production.min.js .isMemo */
+
+/*! export isPortal [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export isPortal [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react-is/cjs/react-is.production.min.js .isPortal */
+
+/*! export isProfiler [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export isProfiler [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react-is/cjs/react-is.production.min.js .isProfiler */
+
+/*! export isStrictMode [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export isStrictMode [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react-is/cjs/react-is.production.min.js .isStrictMode */
+
+/*! export isSuspense [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export isSuspense [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react-is/cjs/react-is.production.min.js .isSuspense */
 
 /*! export isValidElement [provided] [no usage info] [missing usage info prevents renaming] */
 
 /*! export isValidElement [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react/cjs/react.production.min.js .isValidElement */
 
-/*! export joinPaths [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export isValidElementType [provided] [no usage info] [missing usage info prevents renaming] */
 
-/*! export json [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export json [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/@remix-run/router/dist/router.js .json */
+/*! export isValidElementType [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react-is/cjs/react-is.production.min.js .isValidElementType */
 
 /*! export lazy [provided] [no usage info] [missing usage info prevents renaming] */
 
 /*! export lazy [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react/cjs/react.production.min.js .lazy */
 
+/*! export locationsAreEqual [provided] [no usage info] [missing usage info prevents renaming] */
+
 /*! export matchPath [provided] [no usage info] [missing usage info prevents renaming] */
 
-/*! export matchPath [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/@remix-run/router/dist/router.js .matchPath */
-
-/*! export matchRoutes [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export matchRoutes [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/@remix-run/router/dist/router.js .matchRoutes */
+/*! export matchPath [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/esm/react-router.js .matchPath */
 
 /*! export memo [provided] [no usage info] [missing usage info prevents renaming] */
 
 /*! export memo [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react/cjs/react.production.min.js .memo */
 
-/*! export normalizePathname [provided] [no usage info] [missing usage info prevents renaming] */
-
 /*! export parsePath [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export parsePath [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/@remix-run/router/dist/router.js .parsePath */
-
-/*! export redirect [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export redirect [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/@remix-run/router/dist/router.js .redirect */
 
 /*! export render [provided] [no usage info] [missing usage info prevents renaming] */
 
 /*! export render [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react-dom/cjs/react-dom.production.min.js .render */
 
-/*! export renderMatches [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export renderMatches [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/dist/index.js .renderMatches */
-
-/*! export resolvePath [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export resolvePath [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/@remix-run/router/dist/router.js .resolvePath */
-
-/*! export resolveTo [provided] [no usage info] [missing usage info prevents renaming] */
-
 /*! export startTransition [provided] [no usage info] [missing usage info prevents renaming] */
 
 /*! export startTransition [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react/cjs/react.production.min.js .startTransition */
 
-/*! export stripBasename [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export typeOf [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export typeOf [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react-is/cjs/react-is.production.min.js .typeOf */
 
 /*! export unmountComponentAtNode [provided] [no usage info] [missing usage info prevents renaming] */
 
 /*! export unmountComponentAtNode [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react-dom/cjs/react-dom.production.min.js .unmountComponentAtNode */
-
-/*! export unstable_HistoryRouter [provided] [no usage info] [missing usage info prevents renaming] */
 
 /*! export unstable_IdlePriority [provided] [no usage info] [missing usage info prevents renaming] */
 
@@ -396,29 +366,9 @@
 
 /*! export unstable_shouldYield [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/scheduler/cjs/scheduler.production.min.js .unstable_shouldYield */
 
-/*! export unstable_useBlocker [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export unstable_useBlocker [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/dist/index.js .unstable_useBlocker */
-
-/*! export unstable_usePrompt [provided] [no usage info] [missing usage info prevents renaming] */
-
 /*! export unstable_wrapCallback [provided] [no usage info] [missing usage info prevents renaming] */
 
 /*! export unstable_wrapCallback [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/scheduler/cjs/scheduler.production.min.js .unstable_wrapCallback */
-
-/*! export useActionData [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export useActionData [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/dist/index.js .useActionData */
-
-/*! export useAsyncError [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export useAsyncError [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/dist/index.js .useAsyncError */
-
-/*! export useAsyncValue [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export useAsyncValue [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/dist/index.js .useAsyncValue */
-
-/*! export useBeforeUnload [provided] [no usage info] [missing usage info prevents renaming] */
 
 /*! export useCallback [provided] [no usage info] [missing usage info prevents renaming] */
 
@@ -440,15 +390,9 @@
 
 /*! export useEffect [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react/cjs/react.production.min.js .useEffect */
 
-/*! export useFetcher [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export useHistory [provided] [no usage info] [missing usage info prevents renaming] */
 
-/*! export useFetchers [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export useFormAction [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export useHref [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export useHref [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/dist/index.js .useHref */
+/*! export useHistory [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/esm/react-router.js .useHistory */
 
 /*! export useId [provided] [no usage info] [missing usage info prevents renaming] */
 
@@ -458,10 +402,6 @@
 
 /*! export useImperativeHandle [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react/cjs/react.production.min.js .useImperativeHandle */
 
-/*! export useInRouterContext [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export useInRouterContext [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/dist/index.js .useInRouterContext */
-
 /*! export useInsertionEffect [provided] [no usage info] [missing usage info prevents renaming] */
 
 /*! export useInsertionEffect [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react/cjs/react.production.min.js .useInsertionEffect */
@@ -470,51 +410,17 @@
 
 /*! export useLayoutEffect [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react/cjs/react.production.min.js .useLayoutEffect */
 
-/*! export useLinkClickHandler [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export useLoaderData [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export useLoaderData [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/dist/index.js .useLoaderData */
-
 /*! export useLocation [provided] [no usage info] [missing usage info prevents renaming] */
 
-/*! export useLocation [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/dist/index.js .useLocation */
-
-/*! export useMatch [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export useMatch [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/dist/index.js .useMatch */
-
-/*! export useMatches [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export useMatches [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/dist/index.js .useMatches */
+/*! export useLocation [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/esm/react-router.js .useLocation */
 
 /*! export useMemo [provided] [no usage info] [missing usage info prevents renaming] */
 
 /*! export useMemo [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react/cjs/react.production.min.js .useMemo */
 
-/*! export useNavigate [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export useNavigate [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/dist/index.js .useNavigate */
-
-/*! export useNavigation [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export useNavigation [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/dist/index.js .useNavigation */
-
-/*! export useNavigationType [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export useNavigationType [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/dist/index.js .useNavigationType */
-
-/*! export useOutlet [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export useOutlet [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/dist/index.js .useOutlet */
-
-/*! export useOutletContext [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export useOutletContext [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/dist/index.js .useOutletContext */
-
 /*! export useParams [provided] [no usage info] [missing usage info prevents renaming] */
 
-/*! export useParams [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/dist/index.js .useParams */
+/*! export useParams [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/esm/react-router.js .useParams */
 
 /*! export useReducer [provided] [no usage info] [missing usage info prevents renaming] */
 
@@ -524,33 +430,13 @@
 
 /*! export useRef [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react/cjs/react.production.min.js .useRef */
 
-/*! export useResolvedPath [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export useRouteMatch [provided] [no usage info] [missing usage info prevents renaming] */
 
-/*! export useResolvedPath [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/dist/index.js .useResolvedPath */
-
-/*! export useRevalidator [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export useRevalidator [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/dist/index.js .useRevalidator */
-
-/*! export useRouteError [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export useRouteError [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/dist/index.js .useRouteError */
-
-/*! export useRouteLoaderData [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export useRouteLoaderData [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/dist/index.js .useRouteLoaderData */
-
-/*! export useRoutes [provided] [no usage info] [missing usage info prevents renaming] */
-
-/*! export useRoutes [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/dist/index.js .useRoutes */
-
-/*! export useSearchParams [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export useRouteMatch [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/esm/react-router.js .useRouteMatch */
 
 /*! export useState [provided] [no usage info] [missing usage info prevents renaming] */
 
 /*! export useState [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react/cjs/react.production.min.js .useState */
-
-/*! export useSubmit [provided] [no usage info] [missing usage info prevents renaming] */
 
 /*! export useSyncExternalStore [provided] [no usage info] [missing usage info prevents renaming] */
 
@@ -566,6 +452,10 @@
 
 /*! export version [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/react/cjs/react.production.min.js .version */
 
+/*! export withRouter [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export withRouter [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/react-router/esm/react-router.js .withRouter */
+
 /*! exports [not provided] [no usage info] */
 
 /*! namespace exports */
@@ -576,7 +466,15 @@
 
 /*! runtime requirements: __webpack_exports__, __webpack_require__ */
 
-/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.d, __webpack_require__.t, __webpack_require__.r, __webpack_require__.* */
+/*! runtime requirements: __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+
+/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.d, __webpack_require__.r, __webpack_require__.* */
+
+/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+
+/*! runtime requirements: __webpack_require__, __webpack_require__.n, __webpack_exports__, __webpack_require__.r, __webpack_require__.g, __webpack_require__.d, __webpack_require__.* */
+
+/*! runtime requirements: __webpack_require__, __webpack_require__.n, __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
 
 /*! runtime requirements: __webpack_require__, __webpack_require__.r, __webpack_exports__, __webpack_require__.* */
 
@@ -584,7 +482,11 @@
 
 /*! runtime requirements: __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
 
+/*! runtime requirements: module */
+
 /*! runtime requirements: module, __webpack_require__ */
+
+/*! unknown exports (runtime-defined) */
 
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -594,12 +496,24 @@
   !*** ./src/components/App.js ***!
   \*******************************/
 
+/*!***********************************!*\
+  !*** ./src/utils/PrivateRoute.js ***!
+  \***********************************/
+
 /*!************************************!*\
   !*** ./src/components/HomePage.js ***!
   \************************************/
 
+/*!************************************!*\
+  !*** ./src/context/AuthContext.js ***!
+  \************************************/
+
 /*!*************************************!*\
   !*** ./node_modules/react/index.js ***!
+  \*************************************/
+
+/*!*************************************!*\
+  !*** ./src/components/Dashboard.js ***!
   \*************************************/
 
 /*!*************************************!*\
@@ -610,6 +524,14 @@
   !*** ./src/components/SignUpPage.js ***!
   \**************************************/
 
+/*!***************************************!*\
+  !*** ./node_modules/isarray/index.js ***!
+  \***************************************/
+
+/*!****************************************!*\
+  !*** ./node_modules/react-is/index.js ***!
+  \****************************************/
+
 /*!*****************************************!*\
   !*** ./node_modules/react-dom/index.js ***!
   \*****************************************/
@@ -618,21 +540,57 @@
   !*** ./node_modules/scheduler/index.js ***!
   \*****************************************/
 
-/*!*************************************************!*\
-  !*** ./node_modules/react-router/dist/index.js ***!
-  \*************************************************/
+/*!******************************************!*\
+  !*** ./node_modules/prop-types/index.js ***!
+  \******************************************/
+
+/*!*********************************************!*\
+  !*** ./node_modules/history/esm/history.js ***!
+  \*********************************************/
+
+/*!**********************************************!*\
+  !*** ./node_modules/path-to-regexp/index.js ***!
+  \**********************************************/
 
 /*!*****************************************************!*\
-  !*** ./node_modules/react-router-dom/dist/index.js ***!
+  !*** ./node_modules/value-equal/esm/value-equal.js ***!
   \*****************************************************/
 
 /*!*******************************************************!*\
-  !*** ./node_modules/@remix-run/router/dist/router.js ***!
+  !*** ./node_modules/react-router/esm/react-router.js ***!
   \*******************************************************/
 
 /*!********************************************************!*\
   !*** ./node_modules/react/cjs/react.production.min.js ***!
   \********************************************************/
+
+/*!*********************************************************!*\
+  !*** ./node_modules/jwt-decode/build/jwt-decode.esm.js ***!
+  \*********************************************************/
+
+/*!************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/extends.js ***!
+  \************************************************************/
+
+/*!*************************************************************!*\
+  !*** ./node_modules/prop-types/factoryWithThrowingShims.js ***!
+  \*************************************************************/
+
+/*!*************************************************************!*\
+  !*** ./node_modules/prop-types/lib/ReactPropTypesSecret.js ***!
+  \*************************************************************/
+
+/*!**************************************************************!*\
+  !*** ./node_modules/react-is/cjs/react-is.production.min.js ***!
+  \**************************************************************/
+
+/*!***************************************************************!*\
+  !*** ./node_modules/react-router-dom/esm/react-router-dom.js ***!
+  \***************************************************************/
+
+/*!***************************************************************!*\
+  !*** ./node_modules/resolve-pathname/esm/resolve-pathname.js ***!
+  \***************************************************************/
 
 /*!****************************************************************!*\
   !*** ./node_modules/react-dom/cjs/react-dom.production.min.js ***!
@@ -641,3 +599,27 @@
 /*!****************************************************************!*\
   !*** ./node_modules/scheduler/cjs/scheduler.production.min.js ***!
   \****************************************************************/
+
+/*!****************************************************************!*\
+  !*** ./node_modules/tiny-invariant/dist/esm/tiny-invariant.js ***!
+  \****************************************************************/
+
+/*!******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js ***!
+  \******************************************************************/
+
+/*!******************************************************************!*\
+  !*** ./node_modules/mini-create-react-context/dist/esm/index.js ***!
+  \******************************************************************/
+
+/*!*******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js ***!
+  \*******************************************************************/
+
+/*!*********************************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js ***!
+  \*********************************************************************************/
+
+/*!**********************************************************************************!*\
+  !*** ./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js ***!
+  \**********************************************************************************/
