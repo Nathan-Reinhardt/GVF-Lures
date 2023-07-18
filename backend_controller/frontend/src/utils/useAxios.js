@@ -4,9 +4,37 @@ import dayjs from "dayjs";
 import { useContext } from "react";
 import AuthContext from "../context/AuthContext";
 
+// if needed adjust the baseurl
 const baseURL = "http://127.0.0.1:8000/backend";
 
 const useAxios = () => {
     const {authTokens, setUser, setAuthTokens} = useContext(AuthContext);
-    // go to 7 mins into the video for part 2 for this file --- DELETE ME LATER
+    
+    const axiosInstance = axios.create({
+        baseURL,
+        headers: {Authorization: `Bearer ${authTokens?.access}`}
+    });
+
+    axiosInstance.interceptors.request.use(async req => {
+        const user = jwt_decode(authTokens.access);
+        const isExpired = daysjs.unix(user.exp).diff(dayjs()) < 1;
+
+        if (isExpired) return req;
+
+        const response = await axios.post(`${baseURL}/token/refresh/`, {
+            refresh: authTokens.refresh
+        });
+
+        localStorage.setItem("authTokens", JSON.stringify(response.data));
+
+        setAuthTokens(response.data);
+        setUser(jwt_decode(response.data.access));
+
+        req.headers.Authorization = `Bearer ${response.data.access}`;
+        return req;
+    });
+
+    return axiosInstance;
 }
+
+export default useAxios;
