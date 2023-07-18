@@ -1,0 +1,134 @@
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    height: 90px;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.left-nav {
+    margin-top: 15px;
+    margin-left: 25px;
+    width: 50%;
+}
+
+.site-title {
+    color: white;
+    font-size: 28px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.site-title:hover {
+    cursor: pointer;
+}
+
+.search-box-container,
+.logged-search-box-container {
+    display: flex;
+    height: 33px;
+}
+
+.search-box-container {
+    width: 100%;
+    margin-left: 100px;
+}
+
+.logged-search-box-container {
+    width: 51.4%;
+}
+
+.search-text-box,
+.logged-search-text-box {
+    background-color: white;
+    opacity: 0.7;
+    height: 33px;
+    border: none;
+}
+
+.search-text-box {
+    margin-top: 16px;
+    width: 91.7%;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    font-size: 13.62px;
+    transition: 0.5s;
+}
+
+.logged-search-text-box {
+    width: 100%;
+    opacity: 0.8;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    font-size: 13.4px;
+    transition: 0.5s;
+}
+
+.logged-search-text-box::placeholder {
+    color: rgb(165, 165, 165);
+}
+
+.search-text-box:focus {
+    opacity: 1;
+    outline: none;
+}
+
+.logged-search-text-box:focus {
+    opacity: 1;
+    outline: none;
+}
+
+.greeting-container {
+    width: 275px;
+    height: 33px;
+}
+
+.redirect-userlog {
+    display: flex;
+    justify-content: space-between;
+    width: 275px;
+    height: 33px;
+}
+
+.relog {
+    height: 20px;
+    width: 100px;
+    margin-top: -2px;
+    margin-left: 31px;
+    text-align: right;
+}
+
+.logbtn {
+    color: white;
+    text-decoration: none;
+    font-size: 15.3px;
+    font-weight: 500;
+}
+
+.resign {
+    height: 33px;
+    width: 100px;
+    margin-right: 21px;
+    margin-top: -2px;
+}
+
+.signbtn,
+.all-photos,
+.hide-photos {
+    padding-top: 7.5px;
+    padding-bottom: 7.8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 3px;
+}
+
+.signbtn:hover {
+    cursor: pointer;
+    color: lightgrey;
+}
