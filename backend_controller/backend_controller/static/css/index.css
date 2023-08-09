@@ -1,0 +1,26 @@
+html, body {
+    background-color: blue;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    display: flex;
+}
+
+#app {
+    display: flex;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    background-color: rgba(238, 238, 33, 0);
+}
+
+.site-title {
+    text-decoration: none;
+    font-size: 80px;
+}

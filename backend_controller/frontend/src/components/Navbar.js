@@ -7,9 +7,6 @@ const Navbar = () => {
             <nav className="left-nav">
                 <Link className="site-title" to="/">GVF Lures</Link>
             </nav>
-            <div className="search-box-container">
-                <input className="search-text-box" type="text" placeholder="Photos, people, or groups"/>
-            </div>
         </header>
     );
 };

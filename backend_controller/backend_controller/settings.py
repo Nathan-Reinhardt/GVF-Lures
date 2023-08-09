@@ -16,6 +16,8 @@ from datetime import timedelta
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+# This is to help django load static files in the html file.
+STATIC_DIR = Path(__file__).resolve().parent
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
@@ -28,14 +30,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
 
 INSTALLED_APPS = [
-    'jazzmin',
-
     #NOTICE --- WHEN TRYING TO MIGRATE THE DATABASE MAKE SURE TO COMMENT OUT LINE 40
-    #AFTER YOU ARE DONE UNCOMMENT LINE 40
+    #AFTER YOU ARE DONE UNCOMMENT LINE 38
 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -135,6 +134,8 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+STATICFILES_DIRS = [STATIC_DIR / "static"]
 
 AUTH_USER_MODEL = 'backend.User'
 

@@ -7,7 +7,7 @@ import Navbar from './Navbar';
 import LoginPage from './LoginPage';
 import SignUpPage from './SignUpPage';
 
-export default class HomePage extends Component {
+export default class HomeApp extends Component {
     constructor(props) {
         super(props);
     }
@@ -17,10 +17,9 @@ export default class HomePage extends Component {
             <Router>
                 <AuthProvider>
                     <Switch>
-                        <Navbar path='/'></Navbar>
-                        <Route exact path='/'><p>This is the homepage</p></Route>
-                        <Route path='/login' component={LoginPage} />
-                        <Route path='/signup' component={SignUpPage} />
+                        <Route exact={true} path="/" component={Navbar} />
+                        <Route path="/login" component={LoginPage} />
+                        <Route path="/signup" component={SignUpPage} />
                         <PrivateRoute exact path="/dashboard" component={Dashboard} />
                     </Switch>
                 </AuthProvider>
