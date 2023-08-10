@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Switch, Route, Link, Redirect } from "react-ro
 import PrivateRoute from "../utils/PrivateRoute";
 import { AuthProvider } from '../context/AuthContext';
 import Dashboard from './Dashboard';    // this component is to test private routes
-import Navbar from './Navbar';
-import LoginPage from './LoginPage';
-import SignUpPage from './SignUpPage';
+import SplashPage from './SplashPage';  // main home page
+import LoginPage from './LoginPage';    // login page
+import SignUpPage from './SignUpPage';  // sign up page
 
 export default class HomeApp extends Component {
     constructor(props) {
@@ -17,7 +17,7 @@ export default class HomeApp extends Component {
             <Router>
                 <AuthProvider>
                     <Switch>
-                        <Route exact={true} path="/" component={Navbar} />
+                        <Route exact={true} path="/" component={SplashPage} />
                         <Route path="/login" component={LoginPage} />
                         <Route path="/signup" component={SignUpPage} />
                         <PrivateRoute exact path="/dashboard" component={Dashboard} />

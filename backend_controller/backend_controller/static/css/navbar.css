@@ -1,0 +1,41 @@
+/* Navbar CSS */
+
+.master-header {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: center;
+    width: auto;
+    height: 40px;
+    background-color: lightslategray;
+    z-index: 2;
+}
+
+.left-nav {
+    height: 25px;
+    margin-right: 20px;
+}
+
+.right-nav {
+    width: 300px;
+}
+
+.left-nav-menu-list, .right-nav-menu-list {
+    display: flex;
+}
+
+.home-li, .about-li, .login-li, .signup-li {
+    list-style-type: none;
+    padding: 0 10px;
+}
+
+.home-link, .about-link, .login-link, .signup-link {
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+}
+
+.site-title {
+    text-decoration: none;
+    font-size: 40px;
+    color: darkblue;
+}
