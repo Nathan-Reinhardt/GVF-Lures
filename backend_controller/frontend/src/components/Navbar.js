@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
-        <header className="master-header">
+        <div className="master-header">
             <div className="left-nav">
                 <ul className="left-nav-menu-list">
                     <li className="home-li">
@@ -13,6 +13,9 @@ const Navbar = () => {
                         <Link className="about-link" to="/dashboard">About Us</Link>
                     </li>
                 </ul>
+            </div>
+            <div className="splash-slash-cont">
+                <h3 className="splash-vertical-line">|</h3>
             </div>
             <div className="right-nav">
                 <ul className="right-nav-menu-list">
@@ -24,7 +27,7 @@ const Navbar = () => {
                     </li>
                 </ul>
             </div>
-        </header>
+        </div>
     );
 };
 

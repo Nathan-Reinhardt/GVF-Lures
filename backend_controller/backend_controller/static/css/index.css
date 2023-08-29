@@ -1,6 +1,7 @@
 /* The main css file where all new css files are imported into */
 /* Imports */
 @import url("navbar.css");
+@import url("splash.css");
 
 /* This is the main css for main html, body, and divs */
 html, body {
@@ -16,3 +17,12 @@ html, body {
     height: 100%
 }
 /* end of css */
+
+/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/* NOTE FOR TESTING PURPOSES */
+/* Make sure once you have webpack running and also myrunserver for django
+   working properly, make sure to press " ALT + F5 ". This allows the local
+   server to let the css code update the cache everytime a css change has
+   been made by the developer on browser refresh. This helps live test and
+   change the css design and looks in real time on browser refresh. */
+/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */

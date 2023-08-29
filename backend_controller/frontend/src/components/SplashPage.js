@@ -9,9 +9,11 @@ export default class SplashPage extends Component {
 
     render() {
         return(
-            <div>
+            <div className="splash-container">
                 <Navbar />
-                <Link className="site-title" to="/">GVF Lures</Link>
+                <div className="gvf-logo-container">
+                    <Link className="site-title" to="/">GVF Lures</Link>
+                </div>
             </div>
         );
     }
