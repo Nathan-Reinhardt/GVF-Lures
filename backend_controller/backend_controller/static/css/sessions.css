@@ -1,0 +1,103 @@
+/* Login & Signup Pages CSS */
+
+/* Containers */
+.login-page-container, .form-bottom-container,
+.email-cont, .password-cont, .submit-cont {
+    display: flex;
+    justify-content: center;
+}
+
+.login-page-container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    vertical-align: center;
+}
+
+.login-form, .signup-form, .email-cont, .password-cont, .submit-cont {
+    width: 400px;
+}
+
+.email-cont, .password-cont, .submit-cont {
+    height: 34px;
+}
+
+.submit-cont {
+    margin-bottom: 14px;
+}
+
+/* Forms */
+.login-form, .signup-form {
+    height: 350px;
+    background-color: white;
+    margin-top: 22.6vh;
+    padding: 24px;
+    border-radius: 5px;
+}
+
+.session-input, .session-input-password {
+    width: 300px;
+    border: 1px solid rgb(137, 137, 137);
+    margin-bottom: 14px;
+    border-radius: 4px;
+    font-size: 18px;
+    padding-left: 15px;
+    padding-top: 2px;
+}
+
+.session-input:focus, .session-input-password:focus {
+    border: 1px solid rgb(49, 144, 220);    /* border not changing color */
+}
+
+/* Buttons */
+.login-submit-btn {
+    width: 272px;
+    height: 40px;
+    background-color: rgb(49, 144, 220);
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+.login-submit-btn:hover, .forgot-password {
+    cursor: pointer;
+}
+
+.login-submit-btn:hover {
+    background-color: rgb(45, 148, 233);
+}
+
+.forgot-password:hover, .to-sign-up:hover {
+    color: red;
+}
+
+/* Text, Links, and Decorations */
+.to-sign-up {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+}
+
+.login-label, .forgot-password, .not-member {
+    text-align: center;
+}
+
+.login-label {
+    margin-top: 32px;
+    margin-bottom: 20px;
+    font-size: 38px;
+}
+
+.forgot-password, .not-member {
+    font-size: 17px;
+    margin: 0px;
+    margin: 10px;
+}
+
+.form-line {
+    height: 1px;
+    width: 400px;
+    background-color: rgb(38, 38, 38);
+}

@@ -6,6 +6,6 @@ export default class SignUpPage extends Component {
     }
 
     render() {
-        return <p>This is the signup page</p>
+        return <h1>This is the Sign Up Page!</h1>
     }
 }
