@@ -1,5 +1,6 @@
 /* The main css file where all new css files are imported into */
 /* Imports */
+@import url("dashboard.css");
 @import url("navbar.css");
 @import url("splash.css");
 @import url("sessions.css");

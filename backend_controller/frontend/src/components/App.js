@@ -13,8 +13,8 @@ export default class App extends Component {
                 <HomeApp />
             </div>
         );
-    }
-}
+    };
+};
 
 const appDiv = document.getElementById("app");
 render(<App />, appDiv);

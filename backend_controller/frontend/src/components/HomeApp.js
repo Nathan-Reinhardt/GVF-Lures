@@ -29,6 +29,6 @@ export default class HomeApp extends Component {
                     </Switch>
                 </AuthProvider>
             </Router>
-        )
-    }
-}
+        );
+    };
+};

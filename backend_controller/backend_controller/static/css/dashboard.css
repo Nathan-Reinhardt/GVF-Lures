@@ -1,0 +1,48 @@
+/* Dashboard CSS */
+
+.dashboard-page-container, .dashboard-text-cont, .admin-link-cont, .reload-cont {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    vertical-align: center;
+}
+
+.dashboard-page-container {
+    width: 100%;
+    height: 100%;
+}
+
+.dashboard-text-cont, .admin-link-cont, .reload-cont {
+    width: 400px;
+}
+
+.dashboard-text-cont {
+    height: 350px;
+    background-color: white;
+    margin-top: 22.6vh;
+    padding: 24px;
+    border-radius: 5px;
+}
+
+.dash-title, .reload-text {
+    text-align: center;
+    font-size: 38px;
+    margin: 0px;
+}
+
+.reload-text {
+    margin-top: 300px;
+}
+
+.to-admin {
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+    margin-top: 148px;
+    font-weight: 600;
+    z-index: 2;
+}
+
+.to-admin:hover {
+    color: darkorchid;
+}

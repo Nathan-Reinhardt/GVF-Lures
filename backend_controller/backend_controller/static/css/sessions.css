@@ -15,7 +15,7 @@
 }
 
 .login-form, .signup-form, .email-cont, .password-cont, 
-.submit-cont, .username-cont, .password-check-cont {
+.submit-cont, .username-cont, .password-check-cont, .form-line {
     width: 400px;
 }
 
@@ -92,7 +92,7 @@
 .login-label, .signup-label {
     margin-top: 32px;
     margin-bottom: 20px;
-    font-size: 38px;
+    font-size: 30px;
 }
 
 .forgot-password, .not-member, .member {
@@ -103,6 +103,5 @@
 
 .form-line {
     height: 1px;
-    width: 400px;
     background-color: rgb(38, 38, 38);
 }
