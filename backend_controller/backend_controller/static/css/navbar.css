@@ -27,18 +27,19 @@
     margin-top: -3px;
 }
 
-.home-li, .about-li, .login-li, .signup-li {
+.home-li, .about-li, .login-li, .signup-li, .logout-li {
     list-style-type: none;
     padding: 0 8px;
 }
 
-.home-link, .about-link, .login-link, .signup-link {
+.home-link, .about-link, .login-link, .signup-link, .logout-link {
     text-decoration: none;
     font-size: 15px;
     color: black;
 }
 
-.home-link:hover, .about-link:hover, .login-link:hover, .signup-link:hover {
+.home-link:hover, .about-link:hover, .login-link:hover, 
+.signup-link:hover, .logout-link:hover {
     color: red;
 }
 

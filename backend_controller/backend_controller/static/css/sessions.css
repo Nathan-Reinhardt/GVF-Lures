@@ -55,7 +55,7 @@
 }
 
 /* Buttons and Hover Details */
-.login-submit-btn {
+.login-submit-btn, .signin-submit-btn {
     width: 272px;
     height: 40px;
     background-color: rgb(49, 144, 220);
@@ -66,11 +66,11 @@
     border-radius: 3px;
 }
 
-.login-submit-btn:hover, .forgot-password {
+.login-submit-btn:hover, .signin-submit-btn, .forgot-password {
     cursor: pointer;
 }
 
-.login-submit-btn:hover {
+.login-submit-btn:hover, .signin-submit-btn:hover {
     background-color: rgb(45, 148, 233);
 }
 
@@ -92,7 +92,7 @@
 .login-label, .signup-label {
     margin-top: 32px;
     margin-bottom: 20px;
-    font-size: 30px;
+    font-size: 38px;
 }
 
 .forgot-password, .not-member, .member {

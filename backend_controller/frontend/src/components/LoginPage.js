@@ -14,7 +14,7 @@ const LoginPage = () => {
 
         console.log(email);
         console.log(password);
-    }
+    };
 
     return(
         <div className="login-page-container">
@@ -22,7 +22,7 @@ const LoginPage = () => {
                 <h1 className="login-label">Log In</h1>
                 <div className="email-cont">
                     <input className="session-input" 
-                        type="text"
+                        type="email"
                         placeholder="Email address"
                         name="email"
                     />

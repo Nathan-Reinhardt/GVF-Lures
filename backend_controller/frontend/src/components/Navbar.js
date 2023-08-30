@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import AuthContext from '../context/AuthContext';
 
 const Navbar = () => {
-    
+
     let {user} = useContext(AuthContext);   // used to check if a user is logged in or not
 
     if (!user) {
@@ -53,8 +53,8 @@ const Navbar = () => {
                 </div>
                 <div className="right-nav">
                     <ul className="right-nav-menu-list">
-                        <li className="signup-li">
-                            <Link className="signup-link" to="/signup">Log Out!</Link>
+                        <li className="logout-li">
+                            <Link className="logout-link" to="/signup">Log Out!</Link>
                         </li>
                     </ul>
                 </div>

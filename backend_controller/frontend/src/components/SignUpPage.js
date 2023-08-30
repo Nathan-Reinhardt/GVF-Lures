@@ -1,20 +1,20 @@
-import React, { useContext } from 'react';
+import React, { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import AuthContext from '../context/AuthContext';
 
 const SignUpPage = () => {
 
-    const {loginUser} = useContext(AuthContext);
-    const handleSubmit = (e) => {
+    const [email, setEmail] = useState("");
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
+    const [password2, setPassword2] = useState("");
+
+    const {signUpUser} = useContext(AuthContext);
+
+    const handleSubmit = async e => {
         e.preventDefault();
-        const email = e.target.email.value;  // request.POST.get("email") > name="email"
-        const password = e.target.password.value;
-
-        email.length > 0 && loginUser(email, password);
-
-        console.log(email);
-        console.log(password);
-    }
+        signUpUser(email, username, password, password2);
+    };
 
     return (
         <div className="signup-page-container">
@@ -22,34 +22,34 @@ const SignUpPage = () => {
                 <h1 className="signup-label">Sign Up</h1>
                 <div className="email-cont">
                     <input className="session-input" 
-                        type="text"
+                        type="email"
                         placeholder="Email address"
-                        name="email"
+                        onChange={e => setEmail(e.target.value)}
                     />
                 </div>
                 <div className="username-cont">
                     <input className="session-input" 
                         type="text"
                         placeholder="Username"
-                        name="username"
+                        onChange={e => setUsername(e.target.value)}
                     />
                 </div>
                 <div className="password-cont">
                     <input className="session-input" 
                         type="password"
                         placeholder="Password"
-                        name="password"
+                        onChange={e => setPassword(e.target.value)}
                     />
                 </div>
                 <div className="password-check-cont">
                     <input className="session-input" 
                         type="password"
                         placeholder="Comfirm Password"
-                        name="password2"
+                        onChange={e => setPassword2(e.target.value)}
                     />
                 </div>
                 <div className="submit-cont">
-                    <button className="login-submit-btn" type="submit">Register</button>
+                    <button className="signin-submit-btn" type="submit">Register</button>
                 </div>
                 <div className="form-line"></div>
                 <h3 className="member">Already a GVF Lure member?</h3>
