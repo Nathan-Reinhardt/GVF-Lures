@@ -1,4 +1,4 @@
-import React, { Component, useContext } from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import AuthContext from '../context/AuthContext';
 
@@ -28,14 +28,14 @@ const LoginPage = () => {
                     />
                 </div>
                 <div className="password-cont">
-                    <input className="session-input-password" 
+                    <input className="session-input" 
                         type="password"
                         placeholder="Password"
                         name="password"
                     />
                 </div>
                 <div className="submit-cont">
-                    <button className="login-submit-btn" type="submit">Submit</button>
+                    <button className="login-submit-btn" type="submit">Sign In</button>
                 </div>
                 <h3 className="forgot-password">Forgot password?</h3>
                 <div className="form-line"></div>

@@ -1,24 +1,25 @@
 /* Login & Signup Pages CSS */
 
 /* Containers */
-.login-page-container, .form-bottom-container,
-.email-cont, .password-cont, .submit-cont {
+.login-page-container, .signup-page-container, .form-bottom-container, .submit-cont,
+.email-cont, .username-cont, .password-cont, .password-check-cont {
     display: flex;
     justify-content: center;
 }
 
-.login-page-container {
+.login-page-container, .signup-page-container {
     height: 100%;
     width: 100%;
     position: absolute;
     vertical-align: center;
 }
 
-.login-form, .signup-form, .email-cont, .password-cont, .submit-cont {
+.login-form, .signup-form, .email-cont, .password-cont, 
+.submit-cont, .username-cont, .password-check-cont {
     width: 400px;
 }
 
-.email-cont, .password-cont, .submit-cont {
+.email-cont, .password-cont, .submit-cont, .username-cont, .password-check-cont {
     height: 34px;
 }
 
@@ -35,7 +36,11 @@
     border-radius: 5px;
 }
 
-.session-input, .session-input-password {
+.signup-form {
+    height: 385px;
+}
+
+.session-input {
     width: 300px;
     border: 1px solid rgb(137, 137, 137);
     margin-bottom: 14px;
@@ -45,11 +50,11 @@
     padding-top: 2px;
 }
 
-.session-input:focus, .session-input-password:focus {
+.session-input:focus {
     border: 1px solid rgb(49, 144, 220);    /* border not changing color */
 }
 
-/* Buttons */
+/* Buttons and Hover Details */
 .login-submit-btn {
     width: 272px;
     height: 40px;
@@ -69,28 +74,28 @@
     background-color: rgb(45, 148, 233);
 }
 
-.forgot-password:hover, .to-sign-up:hover {
+.forgot-password:hover, .to-sign-up:hover, .to-log-in:hover {
     color: red;
 }
 
 /* Text, Links, and Decorations */
-.to-sign-up {
+.to-sign-up, .to-log-in {
     text-decoration: none;
     color: black;
     font-size: 17px;
 }
 
-.login-label, .forgot-password, .not-member {
+.login-label, .signup-label, .forgot-password, .not-member, .member {
     text-align: center;
 }
 
-.login-label {
+.login-label, .signup-label {
     margin-top: 32px;
     margin-bottom: 20px;
     font-size: 38px;
 }
 
-.forgot-password, .not-member {
+.forgot-password, .not-member, .member {
     font-size: 17px;
     margin: 0px;
     margin: 10px;
