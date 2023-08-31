@@ -1,6 +1,7 @@
 import React, { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import AuthContext from '../context/AuthContext';
+import Navbar from './Navbar';
 
 const SignUpPage = () => {
 
@@ -18,6 +19,7 @@ const SignUpPage = () => {
 
     return (
         <div className="signup-page-container">
+            <Navbar />
             <form className="signup-form" onSubmit={handleSubmit}>
                 <h1 className="signup-label">Sign Up</h1>
                 <div className="email-cont">

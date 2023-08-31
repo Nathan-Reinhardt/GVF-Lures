@@ -1,13 +1,16 @@
 /* Splash Page CSS */
 
 .splash-container, .gvf-logo-container {
-    display: flex;
-    height: auto;
     width: auto;
+    height: auto;
+}
+
+.splash-container {
+    display: flex;
 }
 
 .gvf-logo-container {
-    margin-top: 7vh;
+    margin-top: 5vh;
     margin-left: 30px;
 }
 
@@ -15,4 +18,8 @@
     text-decoration: none;
     font-size: 35px;
     color: blue;
+}
+
+.site-title:hover {
+    color: rgb(150, 150, 255);
 }
