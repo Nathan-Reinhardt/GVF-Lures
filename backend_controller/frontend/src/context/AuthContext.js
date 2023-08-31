@@ -36,7 +36,9 @@ export const AuthProvider = ({ children }) => {
             })
         })
         const data = await response.json();
-        console.log(data);
+
+        // log the data for testing purposes
+        //console.log(data);
 
         // history.push change it in the future if you want the user to be on a specific page when they log in
         if (response.status === 200) {
@@ -48,7 +50,7 @@ export const AuthProvider = ({ children }) => {
         }
         else {
             console.log(response.status);
-            console.log("there was a server issue");
+            console.log("there was a server issue...");
             alert("Something went wrong " + response.status);
         }
     }

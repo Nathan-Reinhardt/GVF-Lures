@@ -12,8 +12,9 @@ const LoginPage = () => {
 
         email.length > 0 && loginUser(email, password);
 
-        console.log(email);
-        console.log(password);
+        // When you want to log the email and password for dev purposes
+        //console.log(email);
+        //console.log(password);
     };
 
     return(
