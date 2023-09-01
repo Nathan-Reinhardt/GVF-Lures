@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Navbar from './Navbar';
+import TopNavbar from './TopNavbar';
+import HeaderDetail from './HeaderDetail';
+import MiddleNavbar from './MiddleNavbar';
 
 export default class SplashPage extends Component {
     constructor(props) {
@@ -9,16 +11,11 @@ export default class SplashPage extends Component {
 
     render() {
         return(
-            <div className="splash-container">
-                <Navbar />
-                <div className="gvf-logo-container">
-                    <Link className="site-title" to="/">GVF Lures</Link>
-                    <div className="phone-num-cont">
-                        <h3 className="red-phone-icon">&#128222;</h3>
-                        <h3 className="contact-number">(916) 531-6011</h3>
-                    </div>
-                </div>
-                <div className="">
+            <div>
+                <TopNavbar />
+                <HeaderDetail />
+                <MiddleNavbar />
+                <div className="splash-container">
 
                 </div>
             </div>

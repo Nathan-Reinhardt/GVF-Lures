@@ -10,8 +10,6 @@
 .login-page-container, .signup-page-container {
     height: 100%;
     width: 100%;
-    position: absolute;
-    vertical-align: center;
 }
 
 .login-form, .signup-form, .email-cont, .password-cont, 

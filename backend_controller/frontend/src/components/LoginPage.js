@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import AuthContext from '../context/AuthContext';
-import Navbar from './Navbar';
+import TopNavbar from './TopNavbar';
 
 const LoginPage = () => {
 
@@ -19,34 +19,36 @@ const LoginPage = () => {
     };
 
     return(
-        <div className="login-page-container">
-            <Navbar />
-            <form className="login-form" onSubmit={handleSubmit}>
-                <h1 className="login-label">Log In</h1>
-                <div className="email-cont">
-                    <input className="session-input" 
-                        type="email"
-                        placeholder="Email address"
-                        name="email"
-                    />
-                </div>
-                <div className="password-cont">
-                    <input className="session-input" 
-                        type="password"
-                        placeholder="Password"
-                        name="password"
-                    />
-                </div>
-                <div className="submit-cont">
-                    <button className="login-submit-btn" type="submit">Sign In</button>
-                </div>
-                <h3 className="forgot-password">Forgot password?</h3>
-                <div className="form-line"></div>
-                <h3 className="not-member">Not a GVF Lure member?</h3>
-                <div className="form-bottom-container">
-                    <Link className="to-sign-up" to="/signup">Sign up here.</Link>
-                </div>
-            </form>
+        <div>
+            <TopNavbar />
+            <div className="login-page-container">
+                <form className="login-form" onSubmit={handleSubmit}>
+                    <h1 className="login-label">Log In</h1>
+                    <div className="email-cont">
+                        <input className="session-input" 
+                            type="email"
+                            placeholder="Email address"
+                            name="email"
+                        />
+                    </div>
+                    <div className="password-cont">
+                        <input className="session-input" 
+                            type="password"
+                            placeholder="Password"
+                            name="password"
+                        />
+                    </div>
+                    <div className="submit-cont">
+                        <button className="login-submit-btn" type="submit">Sign In</button>
+                    </div>
+                    <h3 className="forgot-password">Forgot password?</h3>
+                    <div className="form-line"></div>
+                    <h3 className="not-member">Not a GVF Lure member?</h3>
+                    <div className="form-bottom-container">
+                        <Link className="to-sign-up" to="/signup">Sign up here.</Link>
+                    </div>
+                </form>
+            </div>
         </div>
     );
 };

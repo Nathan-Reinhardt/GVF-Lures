@@ -1,8 +1,8 @@
 /* The main css file where all new css files are imported into */
 /* Imports */
 @import url("dashboard.css");
+@import url("headerdetail.css");
 @import url("navbar.css");
-@import url("splash.css");
 @import url("sessions.css");
 
 /* This is the main css for main html, body, and divs */

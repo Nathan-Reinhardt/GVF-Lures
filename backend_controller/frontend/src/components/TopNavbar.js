@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import jwt_decode from "jwt-decode";
 import AuthContext from '../context/AuthContext';
 
-const Navbar = () => {
+const TopNavbar = () => {
 
     const {user, logoutUser} = useContext(AuthContext);   // used to check if a user is logged in or not
     const token = localStorage.getItem("authTokens");
@@ -25,8 +25,8 @@ const Navbar = () => {
                     </li>
                 </ul>
             </div>
-            <div className="splash-slash-cont">
-                <h3 className="splash-vertical-line">|</h3>
+            <div className="slash-cont">
+                <h3 className="slash-vertical-line">|</h3>
             </div>
             <div className="right-nav">
                 <ul className="right-nav-menu-list">
@@ -53,4 +53,4 @@ const Navbar = () => {
     );
 };
 
-export default Navbar;
+export default TopNavbar;

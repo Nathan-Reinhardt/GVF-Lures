@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import TopNavbar from './TopNavbar';
 
 export default class Dashboard extends Component {
     constructor(props) {
@@ -9,6 +10,7 @@ export default class Dashboard extends Component {
     render() {
         return (
             <div className="dashboard-page-container">
+                <TopNavbar />
                 <div className="dashboard-text-cont">
                     <h1 className="dash-title">DASHBOARD PAGE!</h1>
                     <div className="admin-link-cont">
