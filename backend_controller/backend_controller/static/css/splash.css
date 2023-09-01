@@ -1,23 +1,38 @@
 /* Splash Page CSS */
 
-.splash-container, .gvf-logo-container {
-    width: auto;
+/* Containers */
+.splash-container, .gvf-logo-container, .phone-num-cont {
+    display: flex;
     height: auto;
 }
 
-.splash-container {
-    display: flex;
+.splash-container, .gvf-logo-container {
+    width: 100%;
 }
 
 .gvf-logo-container {
+    justify-content: space-between;
     margin-top: 5vh;
-    margin-left: 30px;
+    margin-left: 2vw;
+    margin-right: 4vw;
 }
+
+/* List and List Items */
+
+
+
+/* Text, Links, and Decorations */
 
 .site-title {
     text-decoration: none;
     font-size: 35px;
     color: blue;
+}
+
+.red-phone-icon {
+    font-size: 17px;
+    margin-top: 1.8vh;
+    padding-right: 2px;
 }
 
 .site-title:hover {
