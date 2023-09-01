@@ -28,10 +28,7 @@
 
 .middle-nav-cont {
     justify-content: center;
-}
-
-.middle-li {
-    background-image: linear-gradient(180deg, rgb(170, 177, 181), rgb(255, 255, 255));
+    margin-top: 3vh;
 }
 
 /* List, List Items, and Links */
@@ -39,9 +36,21 @@
     padding-left: 5px;
 }
 
-.home-li, .about-li, .login-li, .signup-li, .logout-li {
+.middle-nav-list {
+    padding: 0px;
+}
+
+.home-li, .about-li, .login-li, .signup-li, .logout-li, .middle-li {
     list-style-type: none;
+}
+
+.home-li, .about-li, .login-li, .signup-li, .logout-li {
     padding: 0 8px;
+}
+
+.middle-li {    /* padding is top, right, bottom, and left */
+    padding: 15px 25px 15px 25px;
+    background-image: linear-gradient(180deg, rgb(170, 177, 181), rgb(255, 255, 255));
 }
 
 .home-link, .about-link, .login-link, .signup-link, .logout-link {

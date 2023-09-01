@@ -10,7 +10,10 @@ export default class MiddleNavbar extends Component {
         return (
             <div className="middle-nav-cont">
                 <ul className="middle-nav-list">
+                    <li className="middle-li">Shop</li>
                     <li className="middle-li">Home</li>
+                    <li className="middle-li">About Us</li>
+                    <li className="middle-li">Gallery</li>
                 </ul>
             </div>
         );
