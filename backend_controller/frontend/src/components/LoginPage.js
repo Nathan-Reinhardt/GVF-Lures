@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import AuthContext from '../context/AuthContext';
-import TopNavbar from './TopNavbar';
+import TopNavbar from './InfoNavPanel/TopNavbar';
 
 const LoginPage = () => {
 

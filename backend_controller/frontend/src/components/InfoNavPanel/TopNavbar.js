@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import jwt_decode from "jwt-decode";
-import AuthContext from '../context/AuthContext';
+import AuthContext from '../../context/AuthContext';
 
 const TopNavbar = () => {
 
@@ -21,7 +21,7 @@ const TopNavbar = () => {
                         <Link className="home-link" to="/">Home</Link>
                     </li>
                     <li className="about-li">
-                        <Link className="about-link" to="/dashboard">About Us</Link>
+                        <Link className="about-link" to="/about">About Us</Link>
                     </li>
                 </ul>
             </div>

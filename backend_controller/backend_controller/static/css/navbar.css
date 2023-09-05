@@ -40,7 +40,8 @@
     padding: 0px;
 }
 
-.home-li, .about-li, .login-li, .signup-li, .logout-li, .middle-li {
+.home-li, .about-li, .login-li, .signup-li, .logout-li,
+.shop-middle-li, .home-middle-li, .about-middle-li, .gallery-middle-li {
     list-style-type: none;
 }
 
@@ -48,19 +49,30 @@
     padding: 0 8px;
 }
 
-.middle-li {    /* padding is top, right, bottom, and left */
-    padding: 15px 25px 15px 25px;
-    background-image: linear-gradient(180deg, rgb(170, 177, 181), rgb(255, 255, 255));
+.shop-middle-li, .home-middle-li, .about-middle-li, .gallery-middle-li {    /* padding is top, right, bottom, and left */
+    padding: 15px 0px 15px 0px;
+    background-image: linear-gradient(0deg, rgb(170, 177, 181), rgb(255, 255, 255));
+    border: 1px solid rgb(137, 137, 137);
 }
 
-.home-link, .about-link, .login-link, .signup-link, .logout-link {
+.home-middle-li, .about-middle-li, .gallery-middle-li {
+    border-left: hidden;
+}
+
+.home-link, .about-link, .login-link, .signup-link, .logout-link,
+.to-shop, .to-home, .to-about-us, .to-gallery {
     text-decoration: none;
     font-size: 15px;
     color: black;
 }
 
-.home-link:hover, .about-link:hover, .login-link:hover, 
-.signup-link:hover, .logout-link:hover {
+.to-shop, .to-home, .to-about-us, .to-gallery {
+    padding: 12px 24px 12px 24px;
+}
+
+.home-link:hover, .about-link:hover, .login-link:hover, .signup-link:hover,
+.logout-link:hover, .to-shop:hover, .to-home:hover , .to-about-us:hover,
+.to-gallery:hover {
     color: red;
 }
 

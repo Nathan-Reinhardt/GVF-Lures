@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import InfoNavPanel from './InfoNavPanel/InfoNavPanel';
 
-export default class SplashPage extends Component {
+export default class AboutPage extends Component {
     constructor(props) {
         super(props);
     }
@@ -11,10 +11,10 @@ export default class SplashPage extends Component {
         return(
             <div>
                 <InfoNavPanel />
-                <div className="splash-container">
-                    <p>HOME PAGE!!!</p>
+                <div className="about-container">
+                    <o>ABOUT PAGE IS HERE!!!</o>
                 </div>
             </div>
         );
-    };
-};
+    }
+}

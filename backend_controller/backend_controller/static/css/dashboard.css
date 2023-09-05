@@ -9,7 +9,7 @@
 
 .dashboard-page-container {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .dashboard-text-cont, .admin-link-cont, .reload-cont {
@@ -19,7 +19,7 @@
 .dashboard-text-cont {
     height: 350px;
     background-color: white;
-    margin-top: 22.6vh;
+    margin-top: 7vh;
     padding: 24px;
     border-radius: 5px;
 }
