@@ -18,9 +18,15 @@
     padding-right: 4vw;
 }
 
-/* Text, Links, and Decorations */
+/* Text, Links, Images, and Decorations */
 
-.site-title {
+.gvf-lures-logo-image { /* if image is not showing make sure dimensions are set */
+    width: 183px;
+    height: 220px;
+    background: url('../frontend/GVFLuresLogo.jpg');
+}
+
+.site-title {   /* NEXT MAKE SURE TO MAKE THE LINK INVISIBLE Z-INDEX ABOVE IMAGE OR JUST MAKE THE IMAGE CLICKABLE DO RESEARCH */
     text-decoration: none;
     font-size: 35px;
     padding-left: 2vw;
