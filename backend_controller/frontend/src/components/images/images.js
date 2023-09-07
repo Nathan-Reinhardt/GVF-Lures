@@ -1,4 +1,5 @@
-// Putting images in key value pairs to grab. Makes it easier for importing into multiple files this way.
+// This file is used for webpack to recognize images and 
+// make the browser also recognize images in the bundle file.
 
 const IMAGES = {
     GFVLuresLogo: require("./GVFLuresLogo.jpg").default

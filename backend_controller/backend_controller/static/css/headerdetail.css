@@ -1,10 +1,13 @@
 /* Splash Page CSS */
 
-/* Merge with another page if CSS takes too long to load in future */
+/* Merge with another CSS file if the CSS takes too long to load in future */
 
 /* Containers */
-.gvf-logo-container, .phone-num-cont {
+.gvf-logo-container, .phone-num-cont, .gvf-lures-logo-image {
     display: flex;
+}
+
+.gvf-logo-container, .phone-num-cont {
     height: auto;
 }
 
@@ -20,25 +23,24 @@
 
 /* Text, Links, Images, and Decorations */
 
-.gvf-lures-logo-image { /* if image is not showing make sure dimensions are set */
-    width: 183px;
-    height: 220px;
-    background: url('../frontend/GVFLuresLogo.jpg');
+.gvf-lures-logo-image { /* if images are not showing make sure dimensions are set */
+    width: 160px;
+    height: 160px;
+    justify-content: center;
+    background: url('../frontend/images/GVFLuresLogo.jpg') no-repeat;  /* background url for a div tag */
+    background-size: contain;
+    background-position: center;
+    margin-left: 6vw;
 }
 
-.site-title {   /* NEXT MAKE SURE TO MAKE THE LINK INVISIBLE Z-INDEX ABOVE IMAGE OR JUST MAKE THE IMAGE CLICKABLE DO RESEARCH */
-    text-decoration: none;
-    font-size: 35px;
-    padding-left: 2vw;
-    color: blue;
+.site-logo-link {
+    z-index: 2;
+    width: 136px;   /* helps center the link within the div image */
+    height: 100%;
 }
 
 .red-phone-icon {
     font-size: 17px;
     margin-top: 1.8vh;
     padding-right: 2px;
-}
-
-.site-title:hover {
-    color: rgb(150, 150, 255);
 }
