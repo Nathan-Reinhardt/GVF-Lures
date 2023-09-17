@@ -4,6 +4,7 @@
 @import url("headerdetail.css");
 @import url("navbar.css");
 @import url("sessions.css");
+@import url("home.css");
 
 /* This is the main css for main html, body, and divs */
 html, body {
