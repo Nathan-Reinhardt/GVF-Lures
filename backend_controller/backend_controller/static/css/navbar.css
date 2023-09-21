@@ -31,7 +31,7 @@
     margin-top: 3vh;
 }
 
-/* List, List Items, and Links */
+/* List and List Items */
 .left-nav-menu-list, .right-nav-menu-list, .slash-cont {
     padding-left: 5px;
 }
@@ -40,39 +40,50 @@
     padding: 0px;
 }
 
-.home-li, .about-li, .login-li, .signup-li, .logout-li,
-.shop-middle-li, .home-middle-li, .about-middle-li, .gallery-middle-li {
+.home-li, .contact-li, .login-li, .signup-li, .logout-li,
+.shop-middle-li, .home-middle-li, .contact-middle-li, 
+.lakes-middle-li, .gallery-middle-li {
     list-style-type: none;
 }
 
-.home-li, .about-li, .login-li, .signup-li, .logout-li {
+.home-li, .contact-li, .login-li, .signup-li, .logout-li {
     padding: 0 8px;
 }
 
-.shop-middle-li, .home-middle-li, .about-middle-li, .gallery-middle-li {    /* padding is top, right, bottom, and left */
+.shop-middle-li, .home-middle-li, .contact-middle-li, 
+.lakes-middle-li, .gallery-middle-li {    /* padding is top, right, bottom, and left */
     padding: 15px 0px 15px 0px;
-    background-image: linear-gradient(0deg, rgb(170, 177, 181), rgb(255, 255, 255));
+    background-image: linear-gradient(180deg, rgb(200, 209, 214), rgb(255, 255, 255));
     border: 1px solid rgb(137, 137, 137);
 }
 
-.home-middle-li, .about-middle-li, .gallery-middle-li {
+.home-middle-li, .contact-middle-li, .lakes-middle-li, .gallery-middle-li {
     border-left: hidden;
 }
 
-.home-link, .about-link, .login-link, .signup-link, .logout-link,
-.to-shop, .to-home, .to-about-us, .to-gallery {
+/* Links */
+
+.home-link, .contact-link, .login-link, .signup-link, .logout-link,
+.to-shop, .to-home, .to-contact-us, .to-lakes, .to-gallery {
     text-decoration: none;
     font-size: 15px;
     color: black;
 }
 
-.to-shop, .to-home, .to-about-us, .to-gallery {
-    padding: 12px 24px 12px 24px;
+.to-shop, .to-home, .to-contact-us, .to-lakes, .to-gallery {     /* extra padding used to make the whole li clickable */
+    padding: 17px 24px 16px 24px;
 }
 
-.home-link:hover, .about-link:hover, .login-link:hover, .signup-link:hover,
-.logout-link:hover, .to-shop:hover, .to-home:hover , .to-about-us:hover,
-.to-gallery:hover {
+/* Hover Effects */
+
+.shop-middle-li:hover, .home-middle-li:hover, .contact-middle-li:hover,
+.lakes-middle-li:hover, .gallery-middle-li:hover {
+    background-image: linear-gradient(180deg, rgb(210, 220, 225), rgb(255, 255, 255));
+}
+
+.home-link:hover, .contact-link:hover, .login-link:hover, .signup-link:hover,
+.logout-link:hover, .to-shop:hover, .to-home:hover , .to-contact-us:hover,
+.to-lakes:hover, .to-gallery:hover {
     color: red;
 }
 

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
-import HomeApp from "./HomeApp";
+import HomeApp from "./_HomeApp";
 
 export default class App extends Component {
     constructor(props) {

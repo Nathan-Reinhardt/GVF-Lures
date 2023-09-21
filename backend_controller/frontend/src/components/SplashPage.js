@@ -12,7 +12,7 @@ export default class SplashPage extends Component {
             <div>
                 <InfoNavPanel />
                 <div className="splash-container">
-                    <h1 className="home-page-text">Sanjay OMG!!!</h1>
+                    
                 </div>
             </div>
         );

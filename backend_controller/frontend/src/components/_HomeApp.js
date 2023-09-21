@@ -7,7 +7,7 @@ import Dashboard from './Dashboard';    // this component is to test private rou
 import SplashPage from './SplashPage';  // main home page
 import LoginPage from './LoginPage';    // login page
 import SignUpPage from './SignUpPage';  // sign up page
-import AboutPage from './AboutPage';    // about us page
+import ContactUsPage from './ContactUsPage';    // about us page
 
 export default class HomeApp extends Component {
     constructor(props) {
@@ -20,7 +20,7 @@ export default class HomeApp extends Component {
                 <AuthProvider>
                     <Switch>
                         <Route exact={true} path="/" component={SplashPage} />
-                        <Route exact={true} path="/about" component={AboutPage} />
+                        <Route exact={true} path="/contact" component={ContactUsPage} />
                         <ProtectedRoute path="/login" component={LoginPage} />
                         <ProtectedRoute path="/signup" component={SignUpPage} />
                         <PrivateRoute exact path="/dashboard" component={Dashboard} />

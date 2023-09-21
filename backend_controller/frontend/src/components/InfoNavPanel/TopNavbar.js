@@ -20,8 +20,8 @@ const TopNavbar = () => {
                     <li className="home-li">
                         <Link className="home-link" to="/">Home</Link>
                     </li>
-                    <li className="about-li">
-                        <Link className="about-link" to="/about">About Us</Link>
+                    <li className="contact-li">
+                        <Link className="contact-link" to="/contact">Contact Us</Link>
                     </li>
                 </ul>
             </div>

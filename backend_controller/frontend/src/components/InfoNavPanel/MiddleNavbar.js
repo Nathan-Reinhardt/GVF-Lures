@@ -16,8 +16,11 @@ export default class MiddleNavbar extends Component {
                     <li className="home-middle-li">
                         <Link className="to-home" to="/">Home</Link>
                     </li>
-                    <li className="about-middle-li">
-                        <Link className="to-about-us" to="/about">About Us</Link>
+                    <li className="contact-middle-li">
+                        <Link className="to-contact-us" to="/contact">Contact Us</Link>
+                    </li>
+                    <li className="lakes-middle-li">
+                        <Link className="to-lakes" to="/">Lakes</Link>
                     </li>
                     <li className="gallery-middle-li">
                         <Link className="to-gallery" to="/">Gallery</Link>
