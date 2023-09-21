@@ -1,6 +1,6 @@
 import React, { Component } from 'react';   // NOTE: IMAGES Import is never used, but it is actually
 import { Link } from 'react-router-dom';    // being used by webpack to make it readable to the browser
-import IMAGES from '../images/images';
+import IMAGES from '../images/_images';
 
 export default class HeaderDetail extends Component {
     constructor(props) {

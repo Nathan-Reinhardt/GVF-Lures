@@ -12,7 +12,9 @@ export default class SplashPage extends Component {
             <div>
                 <InfoNavPanel />
                 <div className="splash-container">
-                    
+                    <div className="home-content-cont">
+                        <div className="SLIDE-HOME"></div>
+                    </div>
                 </div>
             </div>
         );
