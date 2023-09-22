@@ -1,28 +1,29 @@
 /* Containers */
 
-.splash-container {
+.splash-container, .home-content-cont {
     display: flex;
     justify-content: center;
+}
+
+.splash-container {
     width: 100%;
     height: 100%;
 }
 
 .home-content-cont {
-    display: flex;
-    justify-content: center;
-    background-color: white;
     width: 60%;
     height: 60%;
     border-radius: 10px;
 }
 
 /* Slideshow */
-.SLIDE-HOME {   /* come back and fix here */
+.SLIDE-HOME {   /* come back and fix here */ /* Also make sure to move _images.js
+                to the component directory so it doesn't get .gitignored */
     margin-top: 1vh;
     width: 800px;
     height: 600px;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     backface-visibility: hidden;
     animation: slideHome 30s linear infinite 0s;
     animation-timing-function: cubic-bezier(1,0,0,1);
