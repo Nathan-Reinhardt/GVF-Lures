@@ -1,3 +1,5 @@
+/* CSS for the Splash Page */
+
 /* Containers */
 
 .splash-container, .home-content-cont {
@@ -20,6 +22,7 @@
 }
 
 /* Slideshow */
+/* Maybe in the future add a different transition */
 .SLIDE-HOME {
     margin-top: 2vh;
     margin-bottom: 2vh;

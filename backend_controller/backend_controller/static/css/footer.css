@@ -1,2 +1,31 @@
-/* Start on footer next work session
-   this will be on for every page */
+/* Footer CSS */
+
+/* Link styling is all in Infonavpanel.css */
+
+/* Containers */
+.main-footer, .sub-footer, .f-shop-cont {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.sub-footer {
+   border-top: 1px solid rgba(128, 128, 128, 0.5);
+   width: 46.7%;
+   height: 100%;
+   margin-top: 4vh;
+}
+
+.f-slash-cont {
+   margin-top: -2px;
+   height: 30px;
+   padding: 0px 5px 0px 5px;
+}
+
+/* Other */
+
+.f-slash-vertical-line {
+   margin: 0px;
+   font-size: 17px;
+   margin-top: 5px;
+}

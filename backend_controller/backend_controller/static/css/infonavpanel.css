@@ -1,4 +1,4 @@
-/* All Navbar CSS */
+/* All Navbar and some Footer CSS*/
 
 /* Containers */
 
@@ -28,7 +28,7 @@
 
 .middle-nav-cont {
     justify-content: center;
-    margin-top: 2vh;
+    margin-top: 1vh;
 }
 
 /* List and List Items */
@@ -64,7 +64,8 @@
 /* Links */
 
 .home-link, .contact-link, .login-link, .signup-link, .logout-link,
-.to-shop, .to-home, .to-contact-us, .to-lakes, .to-gallery {
+.to-shop, .to-home, .to-contact-us, .to-lakes, .to-gallery,
+.f-to-shop, .f-to-home, .f-to-contact-us, .f-to-lakes, .f-to-gallery {
     text-decoration: none;
     font-size: 15px;
     color: black;
@@ -83,7 +84,8 @@
 
 .home-link:hover, .contact-link:hover, .login-link:hover, .signup-link:hover,
 .logout-link:hover, .to-shop:hover, .to-home:hover , .to-contact-us:hover,
-.to-lakes:hover, .to-gallery:hover {
+.to-lakes:hover, .to-gallery:hover, .f-to-shop:hover, .f-to-home:hover,
+.f-to-contact-us:hover, .f-to-lakes:hover, .f-to-gallery:hover {
     color: red;
 }
 

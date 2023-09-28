@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import InfoNavPanel from './InfoNavPanel/InfoNavPanel';
-import IMAGES from './_images';
-
+import Footer from './InfoNavPanel/Footer';
+import IMAGES from './_images';     // NOTE: IMAGES Import is never used, but it is actually
+                                    // being used by webpack to make it readable to the browser
 export default class SplashPage extends Component {
     constructor(props) {
         super(props);
@@ -17,6 +17,7 @@ export default class SplashPage extends Component {
                         <div className="SLIDE-HOME"></div>
                     </div>
                 </div>
+                <Footer />
             </div>
         );
     };

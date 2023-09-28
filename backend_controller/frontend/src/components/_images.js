@@ -4,6 +4,7 @@
 const IMAGES = {
     // Important Images
     GFVLuresLogo: require("./images/GVFLuresLogo.jpg").default,
+    GFVLuresLogo2: require("./images/GVFLuresLogo2.jpg").default,
     Rich1: require("./images/Rich1.jpg").default,
     Rich2: require("./images/Rich2.jpg").default,
     RichnMe: require("./images/RichnMe.jpg").default,
