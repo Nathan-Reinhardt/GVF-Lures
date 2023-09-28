@@ -17,29 +17,30 @@
 }
 
 /* Slideshow */
-.SLIDE-HOME {   /* come back and fix here */ /* Also make sure to move _images.js
-                to the component directory so it doesn't get .gitignored */
-    margin-top: 1vh;
+.SLIDE-HOME {
     width: 800px;
     height: 600px;
+    justify-content: center;
+    background: url('../frontend/images/Slide1.jpg') no-repeat;
+    object-fit: contain;
     background-position: center;
-    background-size: contain;
     backface-visibility: hidden;
     animation: slideHome 30s linear infinite 0s;
     animation-timing-function: cubic-bezier(1,0,0,1);
-    background: url('../frontend/images/Fish_Lures2.jpg') no-repeat;
+    margin-top: 1vh;
 }
 
 @keyframes slideHome {
     0% {
-        background: url('../frontend/images/Fish_Lures6.jpg') no-repeat;
+        background: url('../frontend/images/Slide2.jpg') no-repeat;
     }
-    
-    50% {
-        background: url('../frontend/images/FishingP4.jpg') no-repeat;
+    20% {
+        background: url('../frontend/images/GoofyImageOfMe.jpg') no-repeat;
     }
-
+    60% {
+        background: url('../frontend/images/FishingP9.jpg') no-repeat;
+    }
     100% {
-        background: url('../frontend/images/FishingP7.jpg') no-repeat;
+        background: url('../frontend/images/Slide2.jpg') no-repeat;
     }
 }

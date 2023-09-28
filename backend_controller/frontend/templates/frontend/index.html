@@ -5,13 +5,18 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!--Title of Webpage-->
         <title>GVF Lures</title>
+        <!--Favicon of Webpage-->
+        <link rel="icon" type="image/jpg" href="{% static "frontend/images/GVFLuresLogo.jpg" %}" />
+        <!--CSS for Webpage-->
         <link rel="stylesheet", href="{% static "css/_root.css" %}?{% now "U" %}"/>
     </head>
     <body>
         <div id="main">
             <div id="app"></div>
         </div>
+        <!--Bundle file for Webpage-->
         <script src="{% static "frontend/main.js" %}?{% now "U" %}"></script>
     </body>
 </html>
