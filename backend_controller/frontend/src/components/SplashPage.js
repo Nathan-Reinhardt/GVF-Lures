@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import InfoNavPanel from './InfoNavPanel/InfoNavPanel';
+import IMAGES from './_images';
 
 export default class SplashPage extends Component {
     constructor(props) {
