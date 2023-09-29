@@ -3,7 +3,7 @@
 /* Link styling is all in Infonavpanel.css */
 
 /* Containers */
-.main-footer, .sub-footer, .f-shop-cont {
+.main-footer, .sub-footer, .copyright-cont {
    display: flex;
    justify-content: center;
    align-items: center;
@@ -11,7 +11,7 @@
 
 .sub-footer {
    border-top: 1px solid rgba(128, 128, 128, 0.5);
-   width: 46.7%;
+   width: 886px;
    height: 100%;
    margin-top: 4vh;
 }
@@ -22,10 +22,24 @@
    padding: 0px 5px 0px 5px;
 }
 
+.copyright-cont {
+   height: 38px;
+}
+
+/* Text */
+.copyright-2023-text {
+   font-size: 14px;
+   padding-right: 3.5px;
+}
+
 /* Other */
+
+.f-to-new-tab {
+   font-size: 14px;
+}
 
 .f-slash-vertical-line {
    margin: 0px;
    font-size: 17px;
-   margin-top: 5px;
+   margin-top: 4px;
 }

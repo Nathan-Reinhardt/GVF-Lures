@@ -7,7 +7,7 @@ export default class SplashPage extends Component {
     constructor(props) {
         super(props);
     }
-
+    
     render() {
         return(
             <div>

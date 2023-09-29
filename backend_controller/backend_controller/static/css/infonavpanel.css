@@ -61,11 +61,14 @@
     border-left: hidden;
 }
 
-/* Links */
+/* Links */     
+/* Some links will overlap from other pages here since each link wants  */
+/* these properties. On other css pages, slight adjustments might be    */
+/* made to links based on their specific css needed for that page.      */
 
 .home-link, .contact-link, .login-link, .signup-link, .logout-link,
-.to-shop, .to-home, .to-contact-us, .to-lakes, .to-gallery,
-.f-to-shop, .f-to-home, .f-to-contact-us, .f-to-lakes, .f-to-gallery {
+.to-shop, .to-home, .to-contact-us, .to-lakes, .to-gallery, .f-to-shop,
+.f-to-home, .f-to-contact-us, .f-to-lakes, .f-to-gallery, .f-to-new-tab {
     text-decoration: none;
     font-size: 15px;
     color: black;
@@ -76,6 +79,7 @@
 }
 
 /* Hover Effects */
+/* Same thing as links, but for hover effects as stated above */
 
 .shop-middle-li:hover, .home-middle-li:hover, .contact-middle-li:hover,
 .lakes-middle-li:hover, .gallery-middle-li:hover {
@@ -85,8 +89,13 @@
 .home-link:hover, .contact-link:hover, .login-link:hover, .signup-link:hover,
 .logout-link:hover, .to-shop:hover, .to-home:hover , .to-contact-us:hover,
 .to-lakes:hover, .to-gallery:hover, .f-to-shop:hover, .f-to-home:hover,
-.f-to-contact-us:hover, .f-to-lakes:hover, .f-to-gallery:hover {
+.f-to-contact-us:hover, .f-to-lakes:hover, .f-to-gallery:hover, .f-to-new-tab:hover {
     color: red;
+}
+
+.f-to-shop:hover, .f-to-home:hover, .f-to-contact-us:hover,
+.f-to-lakes:hover, .f-to-gallery:hover, .f-to-new-tab:hover {
+    text-decoration: underline;
 }
 
 /* Other */
