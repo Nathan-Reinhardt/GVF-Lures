@@ -1,7 +1,8 @@
 import React, { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import AuthContext from '../context/AuthContext';
-import TopNavbar from './InfoNavPanel/TopNavbar';
+import InfoNavPanel from './InfoNavPanel/InfoNavPanel';
+import Footer from './InfoNavPanel/Footer';
 
 const SignUpPage = () => {
 
@@ -19,7 +20,7 @@ const SignUpPage = () => {
 
     return (
         <div>
-            <TopNavbar />
+            <InfoNavPanel />
             <div className="signup-page-container">
                 <form className="signup-form" onSubmit={handleSubmit}>
                     <h1 className="signup-label">Sign Up</h1>
@@ -61,6 +62,7 @@ const SignUpPage = () => {
                     </div>
                 </form>
             </div>
+            <Footer />
         </div>
     );
 };

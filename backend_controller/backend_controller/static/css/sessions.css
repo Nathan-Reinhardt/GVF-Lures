@@ -27,15 +27,20 @@
 
 /* Forms */
 .login-form, .signup-form {
-    height: 350px;
-    background-color: rgb(183, 225, 255);
-    margin-top: 22.6vh;
+    height: 330px;
+    background-color: rgb(190, 228, 255);
+    margin-top: 3vh;
     padding: 24px;
     border-radius: 7px;
 }
 
+.login-form {
+    margin-bottom: 25vh;
+}
+
 .signup-form {
-    height: 385px;
+    height: 365px;
+    margin-bottom: 21.4vh;
 }
 
 .session-input {

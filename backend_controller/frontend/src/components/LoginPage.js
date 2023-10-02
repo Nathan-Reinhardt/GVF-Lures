@@ -1,7 +1,8 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import AuthContext from '../context/AuthContext';
-import TopNavbar from './InfoNavPanel/TopNavbar';
+import InfoNavPanel from './InfoNavPanel/InfoNavPanel';
+import Footer from './InfoNavPanel/Footer';
 
 const LoginPage = () => {
 
@@ -20,7 +21,7 @@ const LoginPage = () => {
 
     return(
         <div>
-            <TopNavbar />
+            <InfoNavPanel />
             <div className="login-page-container">
                 <form className="login-form" onSubmit={handleSubmit}>
                     <h1 className="login-label">Log In</h1>
@@ -49,6 +50,7 @@ const LoginPage = () => {
                     </div>
                 </form>
             </div>
+            <Footer />
         </div>
     );
 };

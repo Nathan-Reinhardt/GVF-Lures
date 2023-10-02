@@ -11,10 +11,6 @@ export default class Footer extends Component {
             <div>
                 <div className="main-footer">
                     <div className="sub-footer">
-                        <Link className="f-to-shop" to="/">Shop</Link>
-                        <div className="f-slash-cont">
-                            <h3 className="f-slash-vertical-line">|</h3>
-                        </div>
                         <Link className="f-to-home" to="/">Home</Link>
                         <div className="f-slash-cont">
                             <h3 className="f-slash-vertical-line">|</h3>
