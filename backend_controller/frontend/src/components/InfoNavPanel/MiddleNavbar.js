@@ -17,10 +17,10 @@ export default class MiddleNavbar extends Component {
                         <Link className="to-contact-us" to="/contact">Contact Us</Link>
                     </li>
                     <li className="lakes-middle-li">
-                        <Link className="to-lakes" to="/">Lakes</Link>
+                        <Link className="to-lakes" to="/lakes">Lakes</Link>
                     </li>
                     <li className="gallery-middle-li">
-                        <Link className="to-gallery" to="/">Gallery</Link>
+                        <Link className="to-gallery" to="/gallery">Gallery</Link>
                     </li>
                 </ul>
             </div>

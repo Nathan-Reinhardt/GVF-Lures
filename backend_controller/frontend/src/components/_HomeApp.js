@@ -8,6 +8,8 @@ import SplashPage from './SplashPage';  // main home page
 import LoginPage from './LoginPage';    // login page
 import SignUpPage from './SignUpPage';  // sign up page
 import ContactUsPage from './ContactUsPage';    // about us page
+import LakesPage from './LakesPage';    // lakes page
+import GalleryPage from './GalleryPage';    // gallery page
 
 export default class HomeApp extends Component {
     constructor(props) {
@@ -21,6 +23,8 @@ export default class HomeApp extends Component {
                     <Switch>
                         <Route exact={true} path="/" component={SplashPage} />
                         <Route exact={true} path="/contact" component={ContactUsPage} />
+                        <Route exact={true} path="/lakes" component={LakesPage} />
+                        <Route exact={true} path="/gallery" component={GalleryPage} />
                         <ProtectedRoute path="/login" component={LoginPage} />
                         <ProtectedRoute path="/signup" component={SignUpPage} />
                         <PrivateRoute exact path="/dashboard" component={Dashboard} />
