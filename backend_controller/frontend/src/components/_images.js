@@ -5,10 +5,22 @@ const IMAGES = {
     // Important Images
     GFVLuresLogo: require("./images/GVFLuresLogo.jpg").default,
     GFVLuresLogo2: require("./images/GVFLuresLogo2.jpg").default,
+    Ourboat: require("./images/ourboat.jpg").default,
     Rich1: require("./images/Rich1.jpg").default,
     Rich2: require("./images/Rich2.jpg").default,
     RichnMe: require("./images/RichnMe.jpg").default,
+    RichnMe2: require("./images/RichnMe2.jpg").default,
     TigerLures: require("./images/TigerLures.jpg").default,
+
+    // Lakes
+    Berryessa: require("./images/berryessa.jpg").default,
+    Bluemesa: require("./images/bluemesa.jpg").default,
+    Bullardsbar: require("./images/bullardsbar.jpg").default,
+    Hellhole: require("./images/hellhole.jpg").default,
+    Newmelones: require("./images/newmelones.jpg").default,
+    Pardee: require("./images/pardee.jpeg").default,
+    Pyramid: require("./images/pyramid.jpg").default,
+    Stampede: require("./images/stampede.jpeg").default,
 
     // Fishing and People
     FishingP1: require("./images/FishingP1.jpg").default,

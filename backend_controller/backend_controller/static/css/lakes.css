@@ -1,0 +1,12 @@
+/* Lakes Page CSS */
+
+/* Containers */
+.title-cont {
+    display: flex;
+    justify-content: center;
+}
+
+/* Text */
+.lakes-title {
+    font-size: 34px;
+}

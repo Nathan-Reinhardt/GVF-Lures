@@ -12,7 +12,9 @@ export default class LakesPage extends Component {
             <div>
                 <InfoNavPanel />
                 <div className="lakes-container">
-                    <h1 className="lakes-text">Lakes Page</h1>
+                    <div className="title-cont">
+                        <h1 className="lakes-title">Lakes</h1>
+                    </div>
                 </div>
             </div>
         );

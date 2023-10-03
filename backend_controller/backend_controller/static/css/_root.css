@@ -6,6 +6,7 @@
 @import url("sessions.css");
 @import url("home.css");
 @import url("footer.css");
+@import url("lakes.css");
 
 /* This is the main css for main html, body, img, and divs */
 html, body {
@@ -13,10 +14,6 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-}
-
-img {
-    width: 100%;
 }
 
 #main, #app {
@@ -27,10 +24,22 @@ img {
 /* end of css */
 
 /* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
-/* NOTE FOR TESTING PURPOSES */
+/* NOTE FOR DEV TESTING PURPOSES FOR CSS CHANGES */
 /* Make sure once you have webpack running and also myrunserver for django
-   working properly, make sure to press " ALT + F5 ". This allows the local
-   server to let the css code update the cache everytime a css change has
-   been made by the developer on browser refresh. This helps live test and
-   change the css design and looks in real time on browser refresh. */
+   working properly, make sure while in css development to press " ALT + F5 ",
+   whenever making changes to the css. This allows the local server to let the
+   css code update the cache everytime a css change has been made by the developer
+   on browser refresh. This helps live test and change the css design and looks
+   in real time on browser refresh.
+   
+   *** Example Use Case ***
+   This key press combination only needs to occur once per instance for each
+   .css file being changed. For example if I am changing the css on the splash
+   page for the first time during this work instance, I will need to press
+   " ALT + F5 " and after doing it once, any changes on the splash.css that are
+   saved, it will update to the local server on reload. Even in the same work
+   instance, if you decide to work on another css file, you will need to do the
+   same key combination again since you are working with a different file. Once
+   you do " ALT + F5 " for one css page you won't need to do it anymore until the
+   next work instance. Work instance meaning if you closed every terminal and reset.*/
 /* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
