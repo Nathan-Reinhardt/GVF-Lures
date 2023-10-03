@@ -19,11 +19,7 @@
 }
 
 .right-nav {
-    width: 35%;
-}
-
-.slash-cont {
-    margin-top: -3px;
+    width: 32%;
 }
 
 .middle-nav-cont {
@@ -32,11 +28,11 @@
 }
 
 /* List and List Items */
-.left-nav-menu-list, .right-nav-menu-list, .slash-cont {
+.left-nav-menu-list {
     padding-left: 5px;
 }
 
-.middle-nav-list {
+.right-nav-menu-list, .middle-nav-list {
     padding: 0px;
 }
 
@@ -100,6 +96,15 @@
 
 /* Other */
 
-.slash-vertical-line {
+.slash-vertical-line, .middle-slash-vertical-line {
     font-size: 17px;
+}
+
+.slash-vertical-line {
+    margin: 0px;
+    margin-top: -1px;
+}
+
+.middle-slash-vertical-line {
+    margin-top: 15px;
 }

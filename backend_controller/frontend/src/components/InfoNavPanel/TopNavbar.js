@@ -20,13 +20,16 @@ const TopNavbar = () => {
                     <li className="home-li">
                         <Link className="home-link" to="/">Home</Link>
                     </li>
+                    <div className="slash-cont">
+                        <h3 className="slash-vertical-line">|</h3>
+                    </div>
                     <li className="contact-li">
                         <Link className="contact-link" to="/contact">Contact Us</Link>
                     </li>
                 </ul>
             </div>
             <div className="slash-cont">
-                <h3 className="slash-vertical-line">|</h3>
+                <h3 className="middle-slash-vertical-line">|</h3>
             </div>
             <div className="right-nav">
                 <ul className="right-nav-menu-list">
@@ -35,8 +38,11 @@ const TopNavbar = () => {
                         <li className="login-li">
                             <Link className="login-link" to="/login">Login</Link>
                         </li>
+                        <div className="slash-cont">
+                            <h3 className="slash-vertical-line">|</h3>
+                        </div>
                         <li className="signup-li">
-                            <Link className="signup-link" to="/signup">Signup</Link>
+                            <Link className="signup-link" to="/signup">Sign Up</Link>
                         </li>
                     </>
                     }
