@@ -19,7 +19,7 @@ export default class Footer extends Component {
                         <div className="f-slash-cont">
                             <h3 className="f-slash-vertical-line">|</h3>
                         </div>
-                        <Link className="f-to-lakes" to="/lakes">Lakes</Link>
+                        <Link className="f-to-lakes" to="/lakes">Lakes & Reservoirs</Link>
                         <div className="f-slash-cont">
                             <h3 className="f-slash-vertical-line">|</h3>
                         </div>

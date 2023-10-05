@@ -1,12 +1,78 @@
 /* Lakes Page CSS */
 
 /* Containers */
-.title-cont {
+.page-title-cont, .lake-cont, .lake-info-cont, .picture-cont-left, 
+.picture-cont-right, .berryessa-pic {
     display: flex;
     justify-content: center;
 }
 
+.page-title-cont {
+    height: 30px;
+}
+
+.lake-cont {
+    margin-top: 15vh;
+}
+
+.lake-info-cont {
+    display: flex;
+    align-items: center;
+}
+
+.picture-cont-left, .picture-cont-right {
+    width: 600px;
+    height: 100%;
+}
+
+.picture-cont-left {
+    margin-right: 8vw;
+}
+
+.picture-cont-right {
+    margin-left: 8vw;
+}
+
+.lake-title-cont {
+    margin-left: -1vw;
+    height: 33px;
+}
+
+.text-wrapper {
+    margin-top: -9px;
+}
+
+/* Picture Containers */
+.berryessa-pic, .bluemesa-pic {
+    width: 600px;
+    background-position: center;
+    background-size: contain;
+    backface-visibility: hidden;
+    border-radius: 7px;
+}
+
+/* Before going on find a way to use react state props to
+   optimize the javascript code to have less repeition */
+
+.berryessa-pic {
+    height: 450px;
+    background: url('../frontend/images/berryessa.jpg') no-repeat;
+}
+
+.bluemesa-pic {
+    height: 400px;
+    background: url('../frontend/images/bluemesa.jpg') no-repeat;
+}
+
 /* Text */
 .lakes-title {
-    font-size: 34px;
+    font-size: 38px;
+}
+
+.lake-title {
+    font-size: 32px;
+}
+
+.lake-temp, .lake-shoreline, .lake-above-sea, .lake-lure {
+    font-size: 18px;
 }
