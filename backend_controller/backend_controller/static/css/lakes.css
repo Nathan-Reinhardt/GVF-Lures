@@ -8,6 +8,7 @@
 }
 
 .page-title-cont {
+    margin-top: 5vh;
     height: 30px;
 }
 
@@ -66,7 +67,7 @@
 
 /* Text */
 .lakes-title {
-    font-size: 38px;
+    font-size: 56px;
 }
 
 .lake-title {

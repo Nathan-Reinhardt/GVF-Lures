@@ -3,14 +3,17 @@
 /* Merge with another CSS file if the CSS takes too long to load in future */
 
 /* Containers */
-.header-detail-container, .gvf-logo-container, .gvf-lures-logo-image {
+.header-detail-container, .gvf-logo-container, .gvf-lures-logo-image, .gvf-lures-text-cont {
     display: flex;
+}
+
+.header-detail-container, .gvf-lures-logo-image, .gvf-lures-text-cont {
+    justify-content: center;
 }
 
 .header-detail-container {
     height: auto;
     width: 100%;
-    justify-content: center;
     margin-top: 1vh;
 }
 
@@ -20,6 +23,11 @@
     height: auto;
 }
 
+.gvf-lures-text-cont {
+    align-items: center;
+    width: 465px;
+}
+
 /* Text, Links, Images, and Decorations */
 
 /* Brown Logo Image width and height will be commented out */
@@ -27,9 +35,9 @@
 .gvf-lures-logo-image { /* if images are not showing make sure dimensions are set */
     width: 110px;
     height: 110px;
+    margin-right: 107px;
     /* width: 160px;
        height: 160px; */
-    justify-content: center;
     background: url('../frontend/images/GVFLuresLogo2.jpg') no-repeat;  /* background url for a div tag */
     background-size: contain;
     background-position: center;
@@ -40,4 +48,12 @@
     width: 118px;   /* helps center the link within the div image */
     /* width: 136px */
     height: 100%;
+}
+
+/* Can be replaced with an actual gvf lures logo title later */
+.main-gvf-lures-text {
+    font-size: 50px;
+    text-align: center;
+    height: 60px;
+    margin: 0px;
 }

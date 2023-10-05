@@ -13,6 +13,9 @@ export default class HeaderDetail extends Component {
                     <div className="gvf-lures-logo-image">
                         <Link className="site-logo-link" to="/"></Link>
                     </div>
+                    <div className="gvf-lures-text-cont">
+                        <p className="main-gvf-lures-text"><strong>GVF Lures</strong></p>
+                    </div>
                 </div>
             </div>
         );
