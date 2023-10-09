@@ -43,6 +43,19 @@
     margin-top: -9px;
 }
 
+/* Text */
+.lakes-title {
+    font-size: 56px;
+}
+
+.lake-title {
+    font-size: 32px;
+}
+
+.lake-temp, .lake-shoreline, .lake-above-sea, .lake-lure {
+    font-size: 18px;
+}
+
 /* Picture Containers */
 .berryessa-pic, .bluemesa-pic {
     width: 600px;
@@ -60,17 +73,4 @@
 .bluemesa-pic {
     height: 400px;
     background: url('../frontend/images/bluemesa.jpg') no-repeat;
-}
-
-/* Text */
-.lakes-title {
-    font-size: 56px;
-}
-
-.lake-title {
-    font-size: 32px;
-}
-
-.lake-temp, .lake-shoreline, .lake-above-sea, .lake-lure {
-    font-size: 18px;
 }
