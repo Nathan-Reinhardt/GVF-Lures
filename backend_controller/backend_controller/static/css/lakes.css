@@ -1,13 +1,13 @@
 /* Lakes Page CSS */
 
 /* Containers */
-.page-title-cont, .left-lake-cont, .right-lake-cont, .lake-info-cont, 
+.lakes-page-title-cont, .left-lake-cont, .right-lake-cont, .lake-info-cont, 
 .picture-cont-left, .picture-cont-right, .berryessa-pic {
     display: flex;
     justify-content: center;
 }
 
-.page-title-cont {
+.lakes-page-title-cont {
     margin-top: 5vh;
     height: 30px;
 }

@@ -8,7 +8,7 @@ export default class Footer extends Component {
 
     render() {
         return(
-            <div>
+            <div className="whole-footer-cont">
                 <div className="main-footer">
                     <div className="sub-footer">
                         <Link className="f-to-home" to="/">Home</Link>

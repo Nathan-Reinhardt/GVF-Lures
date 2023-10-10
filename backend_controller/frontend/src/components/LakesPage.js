@@ -37,7 +37,7 @@ export default class LakesPage extends Component {
             <div>
                 <InfoNavPanel />
                 <div className="lake-panels-cont">
-                    <div className="page-title-cont">
+                    <div className="lakes-page-title-cont">
                         <h1 className="lakes-title">Lakes & Reservoirs</h1>
                     </div>
                     <LakesPanel

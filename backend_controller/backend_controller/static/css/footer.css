@@ -24,6 +24,11 @@
 
 .copyright-cont {
    height: 38px;
+   padding-bottom: 40px;
+}
+
+.whole-footer-cont {
+   margin-top: 5vh;
 }
 
 /* Text */

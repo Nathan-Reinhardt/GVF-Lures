@@ -1,0 +1,99 @@
+/* Gallery Page CSS */
+
+/* Containers */
+.gallery-page-title-cont {
+    display: flex;
+    justify-content: center;
+}
+
+.gallery-page-title-cont {
+    margin-top: 4vh;
+    height: 30px;
+}
+
+/* Gallery Grid */
+.gallery-container {
+    width: 70%;
+    min-height: 100vh;
+    position: relative;
+    margin: 0 auto;
+}
+
+.gallery-container h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 15px;
+    font-size: 56px;
+    font-weight: bold;
+}
+
+.gallery-container .media-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    margin: 20px auto;
+}
+
+.gallery-container .media-container .media {
+    height: 220px;
+    width: 100%;
+    border: 5px solid rgb(0, 0, 0);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.gallery-container .media-container .media :is(img) {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.3s linear;
+}
+
+.gallery-container .media-container .media:hover :is(img) {
+    transform: scale(1.1);
+    
+}
+
+.gallery-container .popup-media {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-container .popup-media :is(img) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    max-width: 95%;
+    max-height: 95%;
+    object-fit: contain;
+    border: 3px solid rgb(0, 0, 0);
+}
+
+.gallery-container .popup-media span {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    font-size: 50px;
+    font-weight: bolder;
+    z-index: 100;
+    cursor: pointer;
+    color: #fff;
+    user-select: none;
+}
+
+/* Text */
+.gallery-container h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 15px 15px 35px 15px;
+    font-size: 56px;
+    font-weight: bold;
+}
