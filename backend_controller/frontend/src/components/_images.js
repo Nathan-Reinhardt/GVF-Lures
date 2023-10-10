@@ -15,12 +15,13 @@ const IMAGES = {
     // Lakes
     Berryessa: require("./images/berryessa.jpg").default,
     Bluemesa: require("./images/bluemesa.jpg").default,
-    Bullardsbar: require("./images/bullardsbar.jpg").default,
+    Flaming: require("./images/flaminggorge.jpg").default,
     Hellhole: require("./images/hellhole.jpg").default,
+    Newbullardsbar: require("./images/newbullardsbar.jpg").default,
     Newmelones: require("./images/newmelones.jpg").default,
-    Pardee: require("./images/pardee.jpeg").default,
+    Pardee: require("./images/pardee.jpg").default,
     Pyramid: require("./images/pyramid.jpg").default,
-    Stampede: require("./images/stampede.jpeg").default,
+    Stampede: require("./images/stampede.jpg").default,
 
     // Fishing and People
     FishingP1: require("./images/FishingP1.jpg").default,

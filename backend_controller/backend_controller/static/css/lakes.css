@@ -1,8 +1,8 @@
 /* Lakes Page CSS */
 
 /* Containers */
-.page-title-cont, .lake-cont, .lake-info-cont, .picture-cont-left, 
-.picture-cont-right, .berryessa-pic {
+.page-title-cont, .left-lake-cont, .right-lake-cont, .lake-info-cont, 
+.picture-cont-left, .picture-cont-right, .berryessa-pic {
     display: flex;
     justify-content: center;
 }
@@ -12,8 +12,16 @@
     height: 30px;
 }
 
-.lake-cont {
+.left-lake-cont, .right-lake-cont {
     margin-top: 15vh;
+}
+
+.left-lake-cont {
+    margin-right: 3vw;
+}
+
+.right-lake-cont {
+    margin-left: 3vw;
 }
 
 .lake-info-cont {
@@ -27,11 +35,11 @@
 }
 
 .picture-cont-left {
-    margin-right: 8vw;
+    margin-right: 5vw;
 }
 
 .picture-cont-right {
-    margin-left: 8vw;
+    margin-left: 5vw;
 }
 
 .lake-title-cont {
@@ -43,6 +51,10 @@
     margin-top: -9px;
 }
 
+.lake-panels-cont {
+    margin-bottom: 8vh;
+}
+
 /* Text */
 .lakes-title {
     font-size: 56px;
@@ -52,12 +64,14 @@
     font-size: 32px;
 }
 
-.lake-temp, .lake-shoreline, .lake-above-sea, .lake-lure {
+.lake-temp, .lake-shoreline, .lake-above-sea, .max-depth, .lake-lure {
     font-size: 18px;
 }
 
 /* Picture Containers */
-.berryessa-pic, .bluemesa-pic {
+.berryessa-pic, .bluemesa-pic, .flaming-gorge-pic, .hell-hole-pic,
+.new-bullards-bar-pic, .new-melones-pic, .pardee-pic,
+.pyramid-pic, .stampede-pic {
     width: 600px;
     background-position: center;
     background-size: contain;
@@ -65,12 +79,48 @@
     border-radius: 7px;
 }
 
-.berryessa-pic {
+.bluemesa-pic, .bullards-bar-pic, .flaming-gorge-pic, .hell-hole-pic,
+.new-bullards-bar-pic, .pyramid-pic {
+    height: 400px;
+}
+
+.berryessa-pic, .pardee-pic, .stampede-pic {
     height: 450px;
+}
+
+.berryessa-pic {
     background: url('../frontend/images/berryessa.jpg') no-repeat;
 }
 
 .bluemesa-pic {
-    height: 400px;
     background: url('../frontend/images/bluemesa.jpg') no-repeat;
+}
+
+.flaming-gorge-pic {
+    background: url('../frontend/images/flaminggorge.jpg') no-repeat;
+}
+
+.hell-hole-pic {
+    background: url('../frontend/images/hellhole.jpg') no-repeat;
+}
+
+.new-bullards-bar-pic {
+    background: url('../frontend/images/newbullardsbar.jpg') no-repeat;
+}
+
+.new-melones-pic {
+    height: 480px;
+    background: url('../frontend/images/newmelones.jpg') no-repeat;
+}
+
+.pardee-pic {
+    background: url('../frontend/images/pardee.jpg') no-repeat;
+}
+
+.pyramid-pic {
+    background: url('../frontend/images/pyramid.jpg') no-repeat;
+}
+
+.stampede-pic {
+    background: url('../frontend/images/stampede.jpg') no-repeat;
 }
