@@ -17,7 +17,7 @@ export default class LakesPanel extends Component {
                         </div>
                         <div className="lake-info-cont">
                             <LakesInfo 
-                                lakeName={this.props.lakeName} shoreLength={this.props.shoreLength}
+                                lakeName={this.props.lakeName} surfaceArea={this.props.surfaceArea}
                                 seaLevel={this.props.seaLevel} maxDepth={this.props.maxDepth}
                                 hotLure={this.props.hotLure}
                             />
@@ -30,7 +30,7 @@ export default class LakesPanel extends Component {
                     <div className="right-lake-cont">
                         <div className="lake-info-cont">
                             <LakesInfo 
-                                lakeName={this.props.lakeName} shoreLength={this.props.shoreLength}
+                                lakeName={this.props.lakeName} surfaceArea={this.props.surfaceArea}
                                 seaLevel={this.props.seaLevel} maxDepth={this.props.maxDepth}
                                 hotLure={this.props.hotLure}
                             />

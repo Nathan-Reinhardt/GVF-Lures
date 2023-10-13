@@ -13,7 +13,7 @@ export default class LakesInfo extends Component {
                 </div>
                 <p className="lake-temp">Current Temperature: </p>
                 <div className="text-wrapper">
-                    <p className="lake-shoreline">Shoreline Length: {this.props.shoreLength} miles</p>
+                    <p className="lake-shoreline">Surface Area: {this.props.surfaceArea} acres</p>
                 </div>
                 <div className="text-wrapper">
                     <p className="lake-above-sea">Above Sea Level: {this.props.seaLevel} feet</p>

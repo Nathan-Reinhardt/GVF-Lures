@@ -3,8 +3,9 @@ import InfoNavPanel from './InfoNavPanel/InfoNavPanel';
 import Footer from './InfoNavPanel/Footer';
 import { Media } from './_media';
 
-// component class constructor breaks code so I used this function method
-// to create the page similar to how top navbar was created. Since this
+// component class constructor breaks code when useState from react is
+// being used, therfore I used this function method to create
+// the page similar to how top navbar was created. Since this
 // page doesn't use props, this method is usuable.
 
 const GalleryPage = () => {
