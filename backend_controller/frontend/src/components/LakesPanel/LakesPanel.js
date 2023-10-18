@@ -19,7 +19,7 @@ export default class LakesPanel extends Component {
                             <LakesInfo 
                                 lakeName={this.props.lakeName} surfaceArea={this.props.surfaceArea}
                                 seaLevel={this.props.seaLevel} maxDepth={this.props.maxDepth}
-                                hotLure={this.props.hotLure}
+                                hotLure={this.props.hotLure} LurePic={this.props.LurePic}
                             />
                         </div>
                     </div>
@@ -32,7 +32,7 @@ export default class LakesPanel extends Component {
                             <LakesInfo 
                                 lakeName={this.props.lakeName} surfaceArea={this.props.surfaceArea}
                                 seaLevel={this.props.seaLevel} maxDepth={this.props.maxDepth}
-                                hotLure={this.props.hotLure}
+                                hotLure={this.props.hotLure} LurePic={this.props.LurePic}
                             />
                         </div>
                         <div className="picture-cont-right">

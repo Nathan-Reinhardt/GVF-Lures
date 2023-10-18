@@ -2,7 +2,7 @@
 
 /* Containers */
 .lakes-page-title-cont, .left-lake-cont, .right-lake-cont, .lake-info-cont, 
-.picture-cont-left, .picture-cont-right, .berryessa-pic {
+.picture-cont-left, .picture-cont-right, .lakes-lure-cont {
     display: flex;
     justify-content: center;
 }
@@ -47,12 +47,12 @@
     height: 33px;
 }
 
-.text-wrapper {
-    margin-top: -9px;
-}
-
 .lake-panels-cont {
     margin-bottom: 8vh;
+}
+
+.text-wrapper, .lakes-lure-cont {
+    margin-top: -9px;
 }
 
 /* Text */
@@ -71,11 +71,16 @@
 /* Picture Containers */
 .berryessa-pic, .bluemesa-pic, .flaming-gorge-pic, .hell-hole-pic,
 .new-bullards-bar-pic, .new-melones-pic, .pardee-pic, 
-.pyramid-pic, .stampede-pic {
-    width: 600px;
+.pyramid-pic, .stampede-pic, .white-ladder-back-pic {
     background-position: center;
     background-size: contain;
     backface-visibility: hidden;
+}
+
+.berryessa-pic, .bluemesa-pic, .flaming-gorge-pic, .hell-hole-pic,
+.new-bullards-bar-pic, .new-melones-pic, .pardee-pic,
+.pyramid-pic, .stampede-pic {
+    width: 600px;
     border-radius: 7px;
 }
 
@@ -123,4 +128,14 @@
 
 .stampede-pic {
     background: url('../frontend/images/stampede.jpg') no-repeat;
+}
+
+.white-ladder-back-pic {
+    width: 215px;
+    height: 88px;
+    border-radius: 5px;
+}
+
+.white-ladder-back-pic {
+    background: url('../frontend/images/LPLure1.jpg') no-repeat;
 }

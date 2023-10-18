@@ -24,6 +24,9 @@ export default class LakesInfo extends Component {
                 <div className="text-wrapper">
                     <p className="lake-lure"><strong>Hot Lure: {this.props.hotLure}</strong></p>
                 </div>
+                <div className="lakes-lure-cont">
+                    {this.props.LurePic}
+                </div>
             </div>
         );
     }

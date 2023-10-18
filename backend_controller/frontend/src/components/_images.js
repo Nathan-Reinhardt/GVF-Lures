@@ -23,6 +23,9 @@ const IMAGES = {
     Pyramid: require("./images/pyramid.jpg").default,
     Stampede: require("./images/stampede.jpg").default,
 
+    // Lures on Lake Page
+    LPLure1: require("./images/LPLure1.jpg").default,
+
     // Fishing and People
     FishingP1: require("./images/FishingP1.jpg").default,
     FishingP2: require("./images/FishingP2.jpg").default,
