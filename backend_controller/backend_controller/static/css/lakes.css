@@ -64,7 +64,8 @@
     font-size: 32px;
 }
 
-.lake-temp, .lake-shoreline, .lake-above-sea, .max-depth, .lake-lure {
+.state-name, .lake-temp, .lake-shoreline,
+.lake-above-sea, .max-depth, .lake-lure {
     font-size: 18px;
 }
 

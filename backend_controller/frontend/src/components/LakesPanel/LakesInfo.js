@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import apiKey from '../../utils/APIKeys/_weatherapikey';
 
 const LakesInfo = (props) => {
     // units = imperial | to set units to Fahrenheit from Kelvin
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${props.cityLocation}&units=imperial&appid=731bd4f142727552264706d6ea9920d9`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${props.cityLocation}&units=imperial&appid=${apiKey}`;
     const [data, setData] = useState({});
 
     if (data.name == null) {
         axios.get(url).then((response) => {
             setData(response.data);
-            console.log(response.data);
+            // console.log(response.data);
         });
     }
 
@@ -18,11 +19,16 @@ const LakesInfo = (props) => {
             <div className="lake-title-cont">
                 <p className="lake-title"><strong>{props.lakeName}</strong></p>
             </div>
+            <p className="state-name">State: {props.state}</p>
             {
             data.main ? 
-                <p className="lake-temp">Current Temperature: {data.main.temp.toFixed()}°F</p>
+                <div className="text-wrapper">
+                    <p className="lake-temp">Current Temperature: {data.main.temp.toFixed()}°F</p>
+                </div>
                 :
-                <p className="lake-temp">Current Temperature: 00°F</p>
+                <div className="text-wrapper">
+                    <p className="lake-temp">Current Temperature: 00°F</p>
+                </div>
             }
             <div className="text-wrapper">
                 <p className="lake-shoreline">Surface Area: {props.surfaceArea} acres</p>

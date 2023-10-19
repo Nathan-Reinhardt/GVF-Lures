@@ -1,6 +1,7 @@
 # Ignore important dependencies and files
 **node_modules
 db.sqlite3
+APIKeys/
 main.js
 main.js.LICENSE.txt
 undefined
