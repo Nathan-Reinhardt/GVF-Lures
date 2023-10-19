@@ -2,6 +2,7 @@
 // make the browser also recognize images in the bundle file.
 
 const IMAGES = {
+
     // Important Images
     GFVLuresLogo: require("./images/GVFLuresLogo.jpg").default,
     GFVLuresLogo2: require("./images/GVFLuresLogo2.jpg").default,
@@ -25,6 +26,13 @@ const IMAGES = {
 
     // Lures on Lake Page
     LPLure1: require("./images/LPLure1.jpg").default,
+    LPLure2: require("./images/LPLure2.jpg").default,
+    LPLure3: require("./images/LPLure3.jpg").default,
+    LPLure4: require("./images/LPLure4.jpg").default,
+    LPLure5: require("./images/LPLure5.jpg").default,
+    LPLure6: require("./images/LPLure6.jpg").default,
+    LPLure7: require("./images/LPLure7.jpg").default,
+    LPLure8: require("./images/LPLure8.jpg").default,
 
     // Fishing and People
     FishingP1: require("./images/FishingP1.jpg").default,

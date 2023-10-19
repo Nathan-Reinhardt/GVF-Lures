@@ -25,8 +25,8 @@
 }
 
 .lake-info-cont {
-    display: flex;
     align-items: center;
+    margin-top: -3vh;
 }
 
 .picture-cont-left, .picture-cont-right {
@@ -51,8 +51,12 @@
     margin-bottom: 8vh;
 }
 
-.text-wrapper, .lakes-lure-cont {
+.text-wrapper {
     margin-top: -9px;
+}
+
+.lakes-lure-cont {
+    margin-top: -4px;
 }
 
 /* Text */
@@ -70,6 +74,8 @@
 }
 
 /* Picture Containers */
+
+/* Lake Picture Containers */
 .berryessa-pic, .bluemesa-pic, .flaming-gorge-pic, .hell-hole-pic,
 .new-bullards-bar-pic, .new-melones-pic, .pardee-pic, 
 .pyramid-pic, .stampede-pic, .white-ladder-back-pic {
@@ -131,10 +137,92 @@
     background: url('../frontend/images/stampede.jpg') no-repeat;
 }
 
+/* Hot Lure Picture Containers */
+.appletini-pic, .cantaloupe-pic, .cherry-fizz-pic, .hollys-ruby-slipper-pic,
+.mai-tai-pic, .pinkanator-pic-1, .pinkanator-pic-2, .pina-colada-pic,
 .white-ladder-back-pic {
-    width: 215px;
-    height: 88px;
     border-radius: 5px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.cherry-fizz-pic, .mai-tai-pic, .pinkanator-pic-2 {
+    margin-left: -2vw;
+}
+
+.appletini-pic, .cantaloupe-pic {
+    margin-left: -4vw;
+}
+
+.cantaloupe-pic, .white-ladder-back-pic {
+    width: 215px;
+}
+
+.appletini-pic {
+    width: 146px;
+    height: 59px;
+}
+
+.cantaloupe-pic {
+    height: 97px;
+}
+
+.cherry-fizz-pic {
+    width: 184px;
+    height: 82px;
+}
+
+.hollys-ruby-slipper-pic {
+    margin-left: -1vw;
+    width: 117px;
+    height: 43px;
+}
+
+.mai-tai-pic {
+    width: 150px;
+    height: 60px;
+}
+
+.pinkanator-pic-1, .pinkanator-pic-2 {
+    width: 130px;
+    height: 62px;
+}
+
+.pina-colada-pic {
+    margin-left: -6vw;
+    width: 139px;
+    height: 49px;
+}
+
+.white-ladder-back-pic {
+    height: 88px;
+}
+
+.appletini-pic {
+    background: url('../frontend/images/LPLure3.jpg') no-repeat;
+}
+
+.cantaloupe-pic {
+    background: url('../frontend/images/LPLure6.jpg') no-repeat;
+}
+
+.cherry-fizz-pic {
+    background: url('../frontend/images/LPLure8.jpg') no-repeat;
+}
+
+.hollys-ruby-slipper-pic {
+    background: url('../frontend/images/LPLure5.jpg') no-repeat;
+}
+
+.mai-tai-pic {
+    background: url('../frontend/images/LPLure7.jpg') no-repeat;
+}
+
+.pinkanator-pic-1, .pinkanator-pic-2 {
+    background: url('../frontend/images/LPLure2.jpg') no-repeat;
+}
+
+.pina-colada-pic {
+    background: url('../frontend/images/LPLure4.jpg') no-repeat;
 }
 
 .white-ladder-back-pic {

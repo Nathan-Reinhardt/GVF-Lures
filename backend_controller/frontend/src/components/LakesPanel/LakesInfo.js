@@ -7,6 +7,7 @@ const LakesInfo = (props) => {
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${props.cityLocation}&units=imperial&appid=${apiKey}`;
     const [data, setData] = useState({});
 
+    // checks if the api call has already been made
     if (data.name == null) {
         axios.get(url).then((response) => {
             setData(response.data);
