@@ -6,7 +6,7 @@ export default class LakesPanel extends Component {
         super(props);
     }
 
-    render() {
+    render() { 
         return(
             <div>
                 {this.props.LOR == 0 &&     // Picture on the left
@@ -17,7 +17,8 @@ export default class LakesPanel extends Component {
                         </div>
                         <div className="lake-info-cont">
                             <LakesInfo 
-                                lakeName={this.props.lakeName} surfaceArea={this.props.surfaceArea}
+                                lakeName={this.props.lakeName} cityLocation={this.props.cityLocation}
+                                surfaceArea={this.props.surfaceArea}
                                 seaLevel={this.props.seaLevel} maxDepth={this.props.maxDepth}
                                 hotLure={this.props.hotLure} LurePic={this.props.LurePic}
                             />
@@ -30,7 +31,8 @@ export default class LakesPanel extends Component {
                     <div className="right-lake-cont">
                         <div className="lake-info-cont">
                             <LakesInfo 
-                                lakeName={this.props.lakeName} surfaceArea={this.props.surfaceArea}
+                                lakeName={this.props.lakeName} cityLocation={this.props.cityLocation}
+                                surfaceArea={this.props.surfaceArea}
                                 seaLevel={this.props.seaLevel} maxDepth={this.props.maxDepth}
                                 hotLure={this.props.hotLure} LurePic={this.props.LurePic}
                             />
