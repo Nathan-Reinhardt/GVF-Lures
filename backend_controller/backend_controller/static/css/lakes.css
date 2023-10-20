@@ -149,20 +149,18 @@
     margin-left: -2vw;
 }
 
-.appletini-pic, .cantaloupe-pic {
-    margin-left: -4vw;
-}
-
 .cantaloupe-pic, .white-ladder-back-pic {
     width: 215px;
 }
 
 .appletini-pic {
+    margin-left: -3vw;
     width: 146px;
     height: 59px;
 }
 
 .cantaloupe-pic {
+    margin-left: -4vw;
     height: 97px;
 }
 

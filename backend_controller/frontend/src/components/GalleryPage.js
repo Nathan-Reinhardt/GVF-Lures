@@ -11,6 +11,18 @@ import { Media } from './_media';
 const GalleryPage = () => {
     const [file, setFile] = useState(null);
 
+    // variables used to help set the blow up image while knowing
+    // what the current ID is of the element clicked
+    var fileList = [];
+    var currentId = null;
+
+    // grabbing current id and then setting the source of the div element
+    const grabId = () => {
+        currentId = event.target.id;
+        console.log(currentId);
+        setFile(fileList[currentId]);
+    }
+
     return(
         <div>
             <InfoNavPanel />
@@ -19,19 +31,23 @@ const GalleryPage = () => {
                 <div className="media-container">
                     {
                         Media.map((file, index) => (
-                            <div className="media" key={index} onClick={() => setFile(file)}>
+                            <div id={index} className="media" key={index} onClick={() => grabId()}>
                                 {
-                                    <img src={file.url} alt="" />
+                                    <img id={index} src={file.url} alt="" />
                                 }
+                                {fileList.push(file)}
                             </div>
                         ))
                     }
+                    {console.log(fileList)}
                 </div>
                 
                 <div className="popup-media" style={{ display: file ? 'block' : 'none'}}>
-                    <span onClick={() => setFile(null)}>&times;</span>
+                    <span className="x-out" onClick={() => setFile(null)}>&times;</span>
+                    <span className="prev-arrow">{"<"}</span>
+                    <span className="next-arrow">{">"}</span>
                     {
-                        <img src={file?.url} />
+                        <img id={currentId} src={file?.url} />
                     }
                 </div>
             </div>
