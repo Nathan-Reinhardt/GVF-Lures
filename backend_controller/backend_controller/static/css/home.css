@@ -7,9 +7,12 @@
     justify-content: center;
 }
 
-.splash-container {
+.splash-container {     /* change margin-top and margin-bottom depending
+                           on how big you make the welcome message */
     width: 100%;
     height: 100%;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
 }
 
 .home-content-cont {

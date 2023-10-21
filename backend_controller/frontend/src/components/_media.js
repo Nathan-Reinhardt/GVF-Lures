@@ -23,6 +23,5 @@ export const Media = [
     {type: 'image', url: require('./images/FishingP11.jpg')},
     {type: 'image', url: require('./images/Rich1.jpg')},
     {type: 'image', url: require('./images/Rich2.jpg')},
-    {type: 'image', url: require('./images/RichnMe.jpg')},
     {type: 'image', url: require('./images/RichnMe2.jpg')}
 ]
