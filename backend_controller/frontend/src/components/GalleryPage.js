@@ -19,9 +19,20 @@ const GalleryPage = () => {
     // grabbing current id and then setting the source of the div element
     const grabId = () => {
         currentId = event.target.id;
-        console.log(currentId);
         setFile(fileList[currentId]);
     }
+
+    // previous and next state on click handlers
+
+    // WORK ON THIS WHEN YOU GET BACK
+    // const prevImage = () => {
+        // NEED TO FIGURE OUT A WAY HOW TO SAVE THE STATE OF THE CURRENT ID
+        // MAYBE TRY TO TURN THE SPAN TAGS INTO BUTTON TAGS TO ADD EVENT LISTENERS EASIER
+    // }
+
+    // const nextImage = () => {
+        
+    // }
 
     return(
         <div>
@@ -39,13 +50,12 @@ const GalleryPage = () => {
                             </div>
                         ))
                     }
-                    {console.log(fileList)}
                 </div>
                 
                 <div className="popup-media" style={{ display: file ? 'block' : 'none'}}>
                     <span className="x-out" onClick={() => setFile(null)}>&times;</span>
-                    <span className="prev-arrow">{"<"}</span>
-                    <span className="next-arrow">{">"}</span>
+                    <span className="prev-arrow" onClick={() => prevImage()}>{"<"}</span>
+                    <span className="next-arrow" onClick={() => nextImage()}>{">"}</span>
                     {
                         <img id={currentId} src={file?.url} />
                     }

@@ -44,7 +44,6 @@
 
 .gallery-container .media-container .media:hover :is(img) {
     transform: scale(1.1);
-    
 }
 
 .gallery-container .popup-media {
@@ -86,6 +85,7 @@
 }
 
 .prev-arrow, .next-arrow {
+    display: none;    /* hide for now until you work on it again */
     top: 50%;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 5px;
