@@ -5,10 +5,10 @@ import AuthContext from '../../context/AuthContext';
 
 const TopNavbar = () => {
 
-    const {user, logoutUser} = useContext(AuthContext);   // used to check if a user is logged in or not
+    const {logoutUser} = useContext(AuthContext);   // used to check if a user is logged in or not
     const token = localStorage.getItem("authTokens");
 
-    if (token) {
+    if (token) {    // when you need the user_id
         const decoded = jwt_decode(token);
         var user_id = decoded.user_id;
     }

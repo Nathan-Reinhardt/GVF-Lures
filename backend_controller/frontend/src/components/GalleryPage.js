@@ -28,6 +28,7 @@ const GalleryPage = () => {
     // const prevImage = () => {
         // NEED TO FIGURE OUT A WAY HOW TO SAVE THE STATE OF THE CURRENT ID
         // MAYBE TRY TO TURN THE SPAN TAGS INTO BUTTON TAGS TO ADD EVENT LISTENERS EASIER
+        // OR TRY TO USE LOCAL STORAGE TO KEEP MACHINE STATE
     // }
 
     // const nextImage = () => {

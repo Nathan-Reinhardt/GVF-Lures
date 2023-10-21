@@ -7,12 +7,11 @@
     justify-content: center;
 }
 
-.splash-container {     /* change margin-top and margin-bottom depending
-                           on how big you make the welcome message */
+.splash-container {
     width: 100%;
     height: 100%;
-    margin-top: 6vh;
-    margin-bottom: 6vh;
+    margin-top: 5vh;
+    margin-bottom: 7vh;
 }
 
 .home-content-cont {
@@ -22,6 +21,14 @@
     box-sizing: border-box;
     box-shadow: 20px 25px 15px rgba(183, 191, 196, 0.7);
     background-image: linear-gradient(180deg, rgb(183, 191, 196), rgb(214, 223, 228), rgb(183, 191, 196));
+}
+
+/* Text */
+.welcome-message {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 3vh;
+    margin-bottom: 15px;
 }
 
 /* Slideshow */
