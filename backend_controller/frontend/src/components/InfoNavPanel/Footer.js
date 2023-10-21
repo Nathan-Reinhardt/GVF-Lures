@@ -7,28 +7,39 @@ export default class Footer extends Component {
     }
 
     render() {
+        const token = localStorage.getItem("authTokens");
+
         return(
             <div className="whole-footer-cont">
                 <div className="main-footer">
                     <div className="sub-footer">
-                        <Link className="f-to-home" to="/">Home</Link>
+                        <Link className="f-to-page" to="/">Home</Link>
                         <div className="f-slash-cont">
                             <h3 className="f-slash-vertical-line">|</h3>
                         </div>
-                        <Link className="f-to-contact-us" to="/contact">Contact Us</Link>
+                        <Link className="f-to-page" to="/contact">Contact Us</Link>
                         <div className="f-slash-cont">
                             <h3 className="f-slash-vertical-line">|</h3>
                         </div>
-                        <Link className="f-to-lakes" to="/lakes">Lakes & Reservoirs</Link>
+                        <Link className="f-to-page" to="/lakes">Lakes & Reservoirs</Link>
                         <div className="f-slash-cont">
                             <h3 className="f-slash-vertical-line">|</h3>
                         </div>
-                        <Link className="f-to-gallery" to="/gallery">Gallery</Link>
+                        <Link className="f-to-page" to="/gallery">Gallery</Link>
+                        {token === null && <></>}
+                        {token !== null &&
+                        <>
+                            <div className="f-slash-cont">
+                                <h3 className="f-slash-vertical-line">|</h3>
+                            </div>
+                            <Link className="f-to-page" to="/profile">Profile</Link>
+                        </>
+                        }
                     </div>
                 </div>
                 <div className="copyright-cont">
                     <p className="copyright-2023-text">© 2023</p>
-                    <Link className="f-to-new-tab" target={"_blank"} to="/">GVF Lures</Link>
+                    <Link className="f-to-page" target={"_blank"} to="/">GVF Lures</Link>
                 </div>
             </div>        
         );

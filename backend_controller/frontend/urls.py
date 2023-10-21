@@ -8,5 +8,6 @@ urlpatterns = [
     path('signup', index),
     path('contact', index),
     path('gallery', index) ,
-    path('lakes', index)
+    path('lakes', index),
+    path('profile', index),
 ]

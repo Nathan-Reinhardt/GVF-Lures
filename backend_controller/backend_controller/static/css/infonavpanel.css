@@ -38,7 +38,7 @@
 
 .home-li, .contact-li, .login-li, .signup-li,
 .logout-li, .home-middle-li, .contact-middle-li,
-.lakes-middle-li, .gallery-middle-li {
+.lakes-middle-li, .gallery-middle-li, .profile-middle-li {
     list-style-type: none;
 }
 
@@ -46,14 +46,14 @@
     padding: 0 8px;
 }
 
-.home-middle-li, .contact-middle-li,
-.lakes-middle-li, .gallery-middle-li {    /* padding is top, right, bottom, and left */
+.home-middle-li, .contact-middle-li, .lakes-middle-li,
+.gallery-middle-li, .profile-middle-li {    /* padding is top, right, bottom, and left */
     padding: 15px 0px 15px 0px;
     background-image: linear-gradient(180deg, rgb(200, 209, 214), rgb(255, 255, 255));
     border: 1px solid rgb(137, 137, 137);
 }
 
-.contact-middle-li, .lakes-middle-li, .gallery-middle-li {
+.contact-middle-li, .lakes-middle-li, .gallery-middle-li, .profile-middle-li {
     border-left: hidden;
 }
 
@@ -63,34 +63,30 @@
 /* made to links based on their specific css needed for that page.      */
 
 .home-link, .contact-link, .login-link, .signup-link, .logout-link,
-.to-home, .to-contact-us, .to-lakes, .to-gallery, .f-to-home,
-.f-to-contact-us, .f-to-lakes, .f-to-gallery, .f-to-new-tab {
+.to-page, .f-to-page {
     text-decoration: none;
     font-size: 15px;
     color: black;
 }
 
-.to-home, .to-contact-us, .to-lakes, .to-gallery {     /* extra padding used to make the whole li clickable */
+.to-page {     /* extra padding used to make the whole li clickable */
     padding: 17px 24px 16px 24px;
 }
 
 /* Hover Effects */
 /* Same thing as links, but for hover effects as stated above */
 
-.home-middle-li:hover, .contact-middle-li:hover,
-.lakes-middle-li:hover, .gallery-middle-li:hover {
+.home-middle-li:hover, .contact-middle-li:hover, .lakes-middle-li:hover,
+.gallery-middle-li:hover, .profile-middle-li:hover {
     background-image: linear-gradient(180deg, rgb(210, 220, 225), rgb(255, 255, 255));
 }
 
 .home-link:hover, .contact-link:hover, .login-link:hover, .signup-link:hover,
-.logout-link:hover, .to-home:hover , .to-contact-us:hover, .to-lakes:hover,
-.to-gallery:hover, .f-to-home:hover, .f-to-contact-us:hover, .f-to-lakes:hover,
-.f-to-gallery:hover, .f-to-new-tab:hover {
+.logout-link:hover, .to-page:hover, .f-to-page:hover {
     color: red;
 }
 
-.f-to-home:hover, .f-to-contact-us:hover, .f-to-lakes:hover,
-.f-to-gallery:hover, .f-to-new-tab:hover {
+.f-to-page:hover {
     text-decoration: underline;
 }
 

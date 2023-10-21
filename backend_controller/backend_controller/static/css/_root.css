@@ -9,6 +9,7 @@
 @import url("lakes.css");
 @import url("gallery.css");
 @import url("contact.css");
+@import url("profile.css");
 
 /* This is the main css for main html, body, img, and divs */
 html, body {

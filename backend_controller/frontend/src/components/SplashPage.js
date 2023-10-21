@@ -4,8 +4,7 @@ import InfoNavPanel from './InfoNavPanel/InfoNavPanel';
 import Footer from './InfoNavPanel/Footer';
 import IMAGES from './_images';     // NOTE: IMAGES Import is never used, but it is actually
                                     // being used by webpack to make it readable to the browser
-const SplashPage = () => {
-    
+const SplashPage = () => { 
     const {user} = useContext(AuthContext);
     const token = localStorage.getItem("authTokens");   // if token is null don't add an element
 
