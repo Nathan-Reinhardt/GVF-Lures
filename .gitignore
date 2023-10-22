@@ -1,5 +1,6 @@
 # Ignore important dependencies and files
 **node_modules
+__pycache__/
 db.sqlite3
 APIKeys/
 main.js
