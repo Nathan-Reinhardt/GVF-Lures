@@ -10,8 +10,8 @@
 .splash-container {
     width: 100%;
     height: 100%;
-    margin-top: 5vh;
-    margin-bottom: 7vh;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
 }
 
 .home-content-cont {
@@ -27,14 +27,14 @@
 .welcome-message {
     text-align: center;
     font-size: 40px;
-    margin-top: 3vh;
+    margin-top: 5vh;
 }
 
 /* Slideshow */
 /* Maybe in the future add a different transition */
 .SLIDE-HOME {
-    margin-top: 2vh;
-    margin-bottom: 2vh;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
     width: 800px;
     height: 600px;
     background-position: center;

@@ -10,8 +10,15 @@ const ProfilePage = () => {
     return(
         <div>
             <InfoNavPanel />
-            <div className="profile-container">
-                <h1>PROFILE PAGE</h1>
+            <h1 className="profile-page-title">Profile</h1>
+            <div className="profile-page-cont">
+                <div className="background-profile-cont">
+                    <div className="white-profile-cont">
+                        <h1 className="profile-welcome-text">Welcome To Your Profile!</h1>
+                        <h1 className="profile-username-text">Username: {user.username}</h1>
+                        <h1 className="profile-email-text">Email: {user.email}</h1>
+                    </div>
+                </div>
             </div>
             <Footer />
         </div>

@@ -1,16 +1,5 @@
 /* Gallery Page CSS */
 
-/* Containers */
-.gallery-page-title-cont {
-    display: flex;
-    justify-content: center;
-}
-
-.gallery-page-title-cont {
-    margin-top: 4vh;
-    height: 30px;
-}
-
 /* Gallery Grid */
 .gallery-container {
     width: 70%;
