@@ -26,14 +26,14 @@ const LoginPage = () => {
                 <form className="login-form" onSubmit={handleSubmit}>
                     <h1 className="login-label">Log In</h1>
                     <div className="email-cont">
-                        <input className="session-input" 
+                        <input className="session-input"
                             type="email"
                             placeholder="Email address"
                             name="email"
                         />
                     </div>
                     <div className="password-cont">
-                        <input className="session-input" 
+                        <input className="session-input"
                             type="password"
                             placeholder="Password"
                             name="password"

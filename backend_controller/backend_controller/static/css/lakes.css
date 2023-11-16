@@ -221,3 +221,11 @@
 .white-ladder-back-pic {
     background: url('../frontend/images/LPLure1.jpg') no-repeat;
 }
+
+/* adjustments for mobile */
+
+@media only screen and (max-width: 902px ) {
+    .lakes-title {
+        font-size: 30px;
+    }
+}

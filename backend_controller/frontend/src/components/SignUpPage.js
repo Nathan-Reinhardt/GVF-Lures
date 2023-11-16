@@ -25,28 +25,32 @@ const SignUpPage = () => {
                 <form className="signup-form" onSubmit={handleSubmit}>
                     <h1 className="signup-label">Sign Up</h1>
                     <div className="email-cont">
-                        <input className="session-input" 
+                        <input className="session-input"
+                            autocomplete="off"
                             type="email"
                             placeholder="Email address"
                             onChange={e => setEmail(e.target.value)}
                         />
                     </div>
                     <div className="username-cont">
-                        <input className="session-input" 
+                        <input className="session-input"
+                            autocomplete="off"
                             type="text"
                             placeholder="Username"
                             onChange={e => setUsername(e.target.value)}
                         />
                     </div>
                     <div className="password-cont">
-                        <input className="session-input" 
+                        <input className="session-input"
+                            autocomplete="off"
                             type="password"
                             placeholder="Password"
                             onChange={e => setPassword(e.target.value)}
                         />
                     </div>
                     <div className="password-check-cont">
-                        <input className="session-input" 
+                        <input className="session-input"
+                            autocomplete="off"
                             type="password"
                             placeholder="Comfirm Password"
                             onChange={e => setPassword2(e.target.value)}
