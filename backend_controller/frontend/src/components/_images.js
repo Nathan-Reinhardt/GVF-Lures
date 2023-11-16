@@ -13,7 +13,7 @@ const IMAGES = {
     RichnMe2: require("./images/RichnMe2.jpg").default,
     TigerLures: require("./images/TigerLures.jpg").default,
 
-    // Lakes
+    // Lakes on Computer
     Berryessa: require("./images/berryessa.jpg").default,
     Bluemesa: require("./images/bluemesa.jpg").default,
     Flaming: require("./images/flaminggorge.jpg").default,
@@ -24,6 +24,9 @@ const IMAGES = {
     Pyramid: require("./images/pyramid.jpg").default,
     Stampede: require("./images/stampede.jpg").default,
 
+    // Lakes on Mobile
+    MobileBerryessa: require("./images/mobile-berryessa.jpg").default,
+    
     // Lures on Lake Page
     LPLure1: require("./images/LPLure1.jpg").default,
     LPLure2: require("./images/LPLure2.jpg").default,

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import LakesMobileWrapper from './LakesMobileWrapper';
 import LakesInfo from './LakesInfo';
 
 export default class LakesPanel extends Component {
@@ -24,6 +25,13 @@ export default class LakesPanel extends Component {
                             />
                         </div>
                     </div>
+                    <LakesMobileWrapper
+                        lakeName={this.props.lakeName} cityLocation={this.props.cityLocation}
+                        state={this.props.state} surfaceArea={this.props.surfaceArea}
+                        seaLevel={this.props.seaLevel} maxDepth={this.props.maxDepth}
+                        hotLure={this.props.hotLure} LakePic={this.props.LakePic}
+                        LurePic={this.props.LurePic}
+                    />
                 </>
                 }
                 {this.props.LOR == 1 &&     // Picture on the right
@@ -41,6 +49,13 @@ export default class LakesPanel extends Component {
                             {this.props.LakePic}
                         </div>
                     </div>
+                    <LakesMobileWrapper
+                        lakeName={this.props.lakeName} cityLocation={this.props.cityLocation}
+                        state={this.props.state} surfaceArea={this.props.surfaceArea}
+                        seaLevel={this.props.seaLevel} maxDepth={this.props.maxDepth}
+                        hotLure={this.props.hotLure} LakePic={this.props.LakePic}
+                        LurePic={this.props.LurePic}
+                    />
                 </>
                 }
             </div>

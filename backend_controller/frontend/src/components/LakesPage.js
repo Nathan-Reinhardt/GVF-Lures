@@ -52,6 +52,7 @@ export default class LakesPage extends Component {
             "275", "310", "436", "350", "635", "565", "300", "350", "228"
         ];
 
+        // might replace these pictures in the future
         const hotLures = [
             "PINKANATOR", "APPLETINI", "PINA COLADA", "HOLLY'S RUBY SLIPPER",
             "CANTALOUPE", "PINKANATOR", "MAI TAI", "DRAGONS", "CHERRY FIZZ"
