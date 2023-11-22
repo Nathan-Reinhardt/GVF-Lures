@@ -77,69 +77,21 @@
 /* Picture Containers */
 
 /* Lake Picture Containers */
-.bluemesa-pic, .flaming-gorge-pic, .hell-hole-pic,
-.new-bullards-bar-pic, .new-melones-pic, .pardee-pic, 
-.pyramid-pic, .stampede-pic, .white-ladder-back-pic {
+.berryessa-pic, .bluemesa-pic, .flaming-gorge-pic,
+.hell-hole-pic, .new-bullards-bar-pic, .new-melones-pic,
+.pardee-pic, .pyramid-pic, .stampede-pic {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 5px;
+}
+
+/* Hot Lure Picture Containers */
+.white-ladder-back-pic {
     background-position: center;
     background-size: contain;
     backface-visibility: hidden;
 }
 
-.bluemesa-pic, .flaming-gorge-pic, .hell-hole-pic,
-.new-bullards-bar-pic, .new-melones-pic, .pardee-pic,
-.pyramid-pic, .stampede-pic {
-    width: 600px;
-    border-radius: 7px;
-}
-
-.bluemesa-pic, .bullards-bar-pic, .flaming-gorge-pic, .hell-hole-pic,
-.new-bullards-bar-pic, .pyramid-pic {
-    height: 400px;
-}
-
-.pardee-pic, .stampede-pic {
-    height: 450px;
-}
-
-.berryessa-pic {
-    max-width: 90%;
-    max-height: 90%;
-}
-
-.bluemesa-pic {
-    background: url('../frontend/images/bluemesa.jpg') no-repeat;
-}
-
-.flaming-gorge-pic {
-    background: url('../frontend/images/flaminggorge.jpg') no-repeat;
-}
-
-.hell-hole-pic {
-    background: url('../frontend/images/hellhole.jpg') no-repeat;
-}
-
-.new-bullards-bar-pic {
-    background: url('../frontend/images/newbullardsbar.jpg') no-repeat;
-}
-
-.new-melones-pic {
-    height: 480px;
-    background: url('../frontend/images/newmelones.jpg') no-repeat;
-}
-
-.pardee-pic {
-    background: url('../frontend/images/pardee.jpg') no-repeat;
-}
-
-.pyramid-pic {
-    background: url('../frontend/images/pyramid.jpg') no-repeat;
-}
-
-.stampede-pic {
-    background: url('../frontend/images/stampede.jpg') no-repeat;
-}
-
-/* Hot Lure Picture Containers */
 .appletini-pic, .cantaloupe-pic, .cherry-fizz-pic, .hollys-ruby-slipper-pic,
 .mai-tai-pic, .pinkanator-pic-1, .pinkanator-pic-2, .pina-colada-pic,
 .white-ladder-back-pic {
@@ -231,7 +183,8 @@
 
 /* adjustments for mobile */
 
-@media only screen and (max-width: 920px ) {
+/* main adjustments */
+@media only screen and (max-width: 1092px ) {
     /* Containers */
     .left-lake-cont, .right-lake-cont {
         display: none;
@@ -252,7 +205,8 @@
 
     /* Text */
     .lake-title {
-        font-size: 28px;
+        text-align: center;
+        font-size: 30px;
         margin-bottom: 15px;
     }
 
@@ -263,8 +217,6 @@
     }
 }
 
-
-/* Adjustments based on multiple sizes */
 @media only screen and (max-width: 600px) {
     .lakes-title {
         font-size: 48px;
@@ -298,5 +250,15 @@
 
     .lakes-title {
         font-size: 28px;
+    }
+
+    .lake-title {
+        font-size: 26px;
+    }
+}
+
+@media only screen and (max-width: 310px) {
+    .lake-title {
+        font-size: 24px;
     }
 }

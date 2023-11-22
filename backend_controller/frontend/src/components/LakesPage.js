@@ -75,49 +75,49 @@ export default class LakesPage extends Component {
                     <LakesPanel
                         LOR={1} lakeName={lakeNames[1]} state={states[1]} cityLocation={cityLocations[1]}
                         surfaceArea={surfaceAreas[1]} seaLevel={seaLevels[1]} maxDepth={maxDepths[1]}
-                        hotLure={hotLures[1]} LakePic={<div className="bluemesa-pic"></div>}
+                        hotLure={hotLures[1]} LakePic={<img className="bluemesa-pic" src={LakesMedia[1].url} />}
                         LurePic={<div className="appletini-pic"></div>}
                     />
                     <LakesPanel
                         LOR={0} lakeName={lakeNames[2]} state={states[2]} cityLocation={cityLocations[2]}
                         surfaceArea={surfaceAreas[2]} seaLevel={seaLevels[2]} maxDepth={maxDepths[2]}
-                        hotLure={hotLures[2]} LakePic={<div className="flaming-gorge-pic"></div>}
+                        hotLure={hotLures[2]} LakePic={<img className="flaming-gorge-pic" src={LakesMedia[2].url} />}
                         LurePic={<div className="pina-colada-pic"></div>}
                     />
                     <LakesPanel
                         LOR={1} lakeName={lakeNames[3]} state={states[3]} cityLocation={cityLocations[3]}
                         surfaceArea={surfaceAreas[3]} seaLevel={seaLevels[3]} maxDepth={maxDepths[3]}
-                        hotLure={hotLures[3]} LakePic={<div className="hell-hole-pic"></div>}
+                        hotLure={hotLures[3]} LakePic={<img className="hell-hole-pic" src={LakesMedia[3].url} />}
                         LurePic={<div className="hollys-ruby-slipper-pic"></div>}
                     />
                     <LakesPanel
                         LOR={0} lakeName={lakeNames[4]} state={states[4]} cityLocation={cityLocations[4]}
                         surfaceArea={surfaceAreas[4]} seaLevel={seaLevels[4]} maxDepth={maxDepths[4]}
-                        hotLure={hotLures[4]} LakePic={<div className="new-bullards-bar-pic"></div>}
+                        hotLure={hotLures[4]} LakePic={<img className="new-bullards-bar-pic" src={LakesMedia[4].url} />}
                         LurePic={<div className="cantaloupe-pic"></div>}
                     />
                     <LakesPanel
                         LOR={1} lakeName={lakeNames[5]} state={states[5]} cityLocation={cityLocations[5]}
                         surfaceArea={surfaceAreas[5]} seaLevel={seaLevels[5]} maxDepth={maxDepths[5]}
-                        hotLure={hotLures[5]} LakePic={<div className="new-melones-pic"></div>}
+                        hotLure={hotLures[5]} LakePic={<img className="new-melones-pic" src={LakesMedia[5].url} />}
                         LurePic={<div className="pinkanator-pic-2"></div>}
                     />
                     <LakesPanel
                         LOR={0} lakeName={lakeNames[6]} state={states[6]} cityLocation={cityLocations[6]}
                         surfaceArea={surfaceAreas[6]} seaLevel={seaLevels[6]} maxDepth={maxDepths[6]}
-                        hotLure={hotLures[6]} LakePic={<div className="pardee-pic"></div>}
+                        hotLure={hotLures[6]} LakePic={<img className="pardee-pic" src={LakesMedia[6].url} />}
                         LurePic={<div className="mai-tai-pic"></div>}
                     />
                     <LakesPanel
                         LOR={1} lakeName={lakeNames[7]} state={states[7]} cityLocation={cityLocations[7]}
                         surfaceArea={surfaceAreas[7]} seaLevel={seaLevels[7]} maxDepth={maxDepths[7]}
-                        hotLure={hotLures[7]} LakePic={<div className="pyramid-pic"></div>}
+                        hotLure={hotLures[7]} LakePic={<img className="pyramid-pic" src={LakesMedia[7].url} />}
                         LurePic={<div className="white-ladder-back-pic"></div>}
                     />
                     <LakesPanel
                         LOR={0} lakeName={lakeNames[8]} state={states[8]} cityLocation={cityLocations[8]}
                         surfaceArea={surfaceAreas[8]} seaLevel={seaLevels[8]} maxDepth={maxDepths[8]}
-                        hotLure={hotLures[8]} LakePic={<div className="stampede-pic"></div>}
+                        hotLure={hotLures[8]} LakePic={<img className="stampede-pic" src={LakesMedia[8].url} />}
                         LurePic={<div className="cherry-fizz-pic"></div>}
                     />
                 </div>
