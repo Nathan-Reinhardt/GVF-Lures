@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import InfoNavPanel from './InfoNavPanel/InfoNavPanel';
 import Footer from './InfoNavPanel/Footer';
-import { Media } from './_media';
+import { GalleryMedia } from './_media';
 
 // component class constructor breaks code when useState from react is
 // being used, therfore I used this function method to create
@@ -42,7 +42,7 @@ const GalleryPage = () => {
                 <h1>Gallery</h1>
                 <div className="media-container">
                     {
-                        Media.map((file, index) => (
+                        GalleryMedia.map((file, index) => (
                             <div id={index} className="media" key={index} onClick={() => grabId()}>
                                 {
                                     <img id={index} src={file.url} alt="" />

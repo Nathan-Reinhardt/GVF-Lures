@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import InfoNavPanel from './InfoNavPanel/InfoNavPanel';
 import LakesPanel from './LakesPanel/LakesPanel';
 import Footer from './InfoNavPanel/Footer';
+import { LakesMedia } from './_lakeimages';
 
 export default class LakesPage extends Component {
     constructor(props) {
@@ -68,7 +69,7 @@ export default class LakesPage extends Component {
                     <LakesPanel
                         LOR={0} lakeName={lakeNames[0]} state={states[0]} cityLocation={cityLocations[0]}
                         surfaceArea={surfaceAreas[0]} seaLevel={seaLevels[0]} maxDepth={maxDepths[0]}
-                        hotLure={hotLures[0]} LakePic={<div className="berryessa-pic"></div>}
+                        hotLure={hotLures[0]} LakePic={<img className="berryessa-pic" src={LakesMedia[0].url} />}
                         LurePic={<div className="pinkanator-pic-1"></div>}
                     />
                     <LakesPanel
