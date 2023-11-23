@@ -67,6 +67,7 @@
 
 .lake-title {
     font-size: 32px;
+    margin-bottom: 10px;
 }
 
 .state-name, .lake-temp, .lake-shoreline,
@@ -78,28 +79,59 @@
 /* 90% helps add margins to the images */
 .berryessa-pic, .bluemesa-pic, .flaming-gorge-pic, .hell-hole-pic,
 .new-bullards-bar-pic, .new-melones-pic, .pardee-pic, .pyramid-pic,
-.stampede-pic, .appletini-pic, .cantaloupe-pic, .cherry-fizz-pic,
-.hollys-ruby-slipper-pic, .mai-tai-pic, .pinkanator-pic, .pina-colada-pic,
-.white-ladder-back-pic {
+.stampede-pic {
     max-width: 90%;
     max-height: 90%;
     border-radius: 5px;
 }
 
 .appletini-pic, .cantaloupe-pic, .cherry-fizz-pic, .hollys-ruby-slipper-pic,
-.mai-tai-pic, .pinkanator-pic, .pina-colada-pic, .white-ladder-back-pic {
+.mai-tai-pic, .pinkanator-pic-1, .pinkanator-pic-2, .pina-colada-pic, 
+.white-ladder-back-pic {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
     border: 2px solid rgb(0, 0, 0);
+}
+
+.hollys-ruby-slipper-pic {
+    margin-left: -1vw;
+}
+
+.cherry-fizz-pic, .pinkanator-pic-2 {
+    margin-left: -3vw;
+}
+
+.mai-tai-pic {
+    margin-left: -4vw;
+}
+
+.appletini-pic {
+    margin-left: -5vw;
+}
+
+.pina-colada-pic {
+    margin-left: -7vw;
+}
+
+.cantaloupe-pic {
+    margin-left: -9vw;
 }
 
 /* Mobile Adjustments */
 @media only screen and (max-width: 1092px ) {
-    /* Containers */
+    /* Hide the computer sized content */
     .left-lake-cont, .right-lake-cont {
         display: none;
     }
 
+    /* Containers */
+    .lakes-mobile-cont {
+        margin-top: 10vh;
+    }
+
     .lake-info-cont {
-        margin-top: -8vh;
+        margin-top: -10vh;
     }
 
     .lakes-page-title-cont {
@@ -111,11 +143,16 @@
         display: flex;
     }
 
+    /* Image Margin Adjustment */
+    .appletini-pic, .cantaloupe-pic, .cherry-fizz-pic, .hollys-ruby-slipper-pic,
+    .mai-tai-pic, .pina-colada-pic, .pinkanator-pic-2 {
+        margin: 0px;
+    }
+
     /* Text */
     .lake-title {
         text-align: center;
         font-size: 30px;
-        margin-bottom: 15px;
     }
 
     .state-name, .lake-temp, .lake-shoreline,
@@ -133,7 +170,11 @@
 
 @media only screen and (max-width: 525px) {
     .lakes-mobile-cont {
-        margin-top: 10vh;
+        margin-top: 8vh;
+    }
+
+    .lake-info-cont {
+        margin-top: -8vh;
     }
 
     .lakes-title {
@@ -143,7 +184,11 @@
 
 @media only screen and (max-width: 435px) {
     .lakes-mobile-cont {
-        margin-top: 8vh;
+        margin-top: 6vh;
+    }
+
+    .lake-info-cont {
+        margin-top: -6vh;
     }
 
     .lakes-title {
@@ -153,7 +198,11 @@
 
 @media only screen and (max-width: 350px) {
     .lakes-mobile-cont {
-        margin-top: 6vh;
+        margin-top: 4vh;
+    }
+
+    .lake-info-cont {
+        margin-top: -4vh;
     }
 
     .lakes-title {

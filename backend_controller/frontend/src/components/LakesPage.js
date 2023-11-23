@@ -72,7 +72,7 @@ export default class LakesPage extends Component {
                         LOR={0} lakeName={lakeNames[0]} state={states[0]} cityLocation={cityLocations[0]}
                         surfaceArea={surfaceAreas[0]} seaLevel={seaLevels[0]} maxDepth={maxDepths[0]}
                         hotLure={hotLures[0]} LakePic={<img className="berryessa-pic" src={LakesMedia[0].url} />}
-                        LurePic={<img className="pinkanator-pic" src={LakesMedia[9].url} />}
+                        LurePic={<img className="pinkanator-pic-1" src={LakesMedia[9].url} />}
                     />
                     <LakesPanel
                         LOR={1} lakeName={lakeNames[1]} state={states[1]} cityLocation={cityLocations[1]}
@@ -102,7 +102,7 @@ export default class LakesPage extends Component {
                         LOR={1} lakeName={lakeNames[5]} state={states[5]} cityLocation={cityLocations[5]}
                         surfaceArea={surfaceAreas[5]} seaLevel={seaLevels[5]} maxDepth={maxDepths[5]}
                         hotLure={hotLures[5]} LakePic={<img className="new-melones-pic" src={LakesMedia[5].url} />}
-                        LurePic={<img className="pinkanator-pic" src={LakesMedia[9].url} />}
+                        LurePic={<img className="pinkanator-pic-2" src={LakesMedia[9].url} />}
                     />
                     <LakesPanel
                         LOR={0} lakeName={lakeNames[6]} state={states[6]} cityLocation={cityLocations[6]}
