@@ -47,12 +47,13 @@
 
 .gallery-container .popup-media :is(img) {
     position: absolute;
+    display: block;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: block;
-    max-width: 95%;
-    max-height: 95%;
+    /* change max-width and max-height later */
+    max-width: 80%;
+    max-height: 80%;
     object-fit: contain;
     border: 3px solid rgb(0, 0, 0);
 }
@@ -74,7 +75,6 @@
 }
 
 .prev-arrow, .next-arrow {
-    display: none;    /* hide for now until you work on it again */
     top: 50%;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 5px;

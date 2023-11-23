@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import InfoNavPanel from './InfoNavPanel/InfoNavPanel';
 import Footer from './InfoNavPanel/Footer';
-import { GalleryMedia } from '../utils/_media';
+import { GalleryMedia } from '../utils/_gallerymedia';
 
 // component class constructor breaks code when useState from react is
 // being used, therfore I used this function method to create
@@ -9,31 +9,53 @@ import { GalleryMedia } from '../utils/_media';
 // page doesn't use props, this method is usuable.
 
 const GalleryPage = () => {
-    const [file, setFile] = useState(null);
-
-    // variables used to help set the blow up image while knowing
-    // what the current ID is of the element clicked
-    var fileList = [];
-    var currentId = null;
-
-    // grabbing current id and then setting the source of the div element
-    const grabId = () => {
-        currentId = event.target.id;
-        setFile(fileList[currentId]);
+    
+    // if currentId in localStorage doesn't exist, set the currentId in localStorage
+    if (!("currentId" in localStorage)) {
+        localStorage.setItem("currentId", -1);
     }
 
-    // previous and next state on click handlers
+    // every image has an event listener to set the currentId to their index position when created
+    const imageEventListener = (index) => {
+        useEffect(() => {
+            const currentImage = document.getElementById(index);
+            currentImage.addEventListener("mousedown", () => {
+                localStorage.setItem("currentId", index);
+                setTimeout(function(){ location.reload() }, 15);
+            })
+        })
+    }
 
-    // WORK ON THIS WHEN YOU GET BACK
-    // const prevImage = () => {
-        // NEED TO FIGURE OUT A WAY HOW TO SAVE THE STATE OF THE CURRENT ID
-        // MAYBE TRY TO TURN THE SPAN TAGS INTO BUTTON TAGS TO ADD EVENT LISTENERS EASIER
-        // OR TRY TO USE LOCAL STORAGE TO KEEP MACHINE STATE
-    // }
+    // checking for when the currentId exists
+    const grabSourceImage = () => {
+        if (localStorage.getItem("currentId") == -1) {
+            return GalleryMedia[0].url;
+        }
+        else {
+            return GalleryMedia[localStorage.getItem("currentId")].url;
+        }
+    }
 
-    // const nextImage = () => {
-        
-    // }
+    // when the user presses on the X button it reloads the page to exit the photo
+    const xOut= () => {
+        localStorage.setItem("currentId", -1);
+        setTimeout(function(){ location.reload() }, 35);
+    }
+
+    // previous and next image buttons
+    const prevImage = () => {
+        if (localStorage.getItem("currentId") != 0) {
+            localStorage.setItem("currentId", parseInt(localStorage.getItem("currentId")) - 1);
+            setTimeout(function(){ location.reload() }, 50);
+        }
+    }
+
+    const nextImage = () => {
+        if (localStorage.getItem("currentId") != 23) {
+            localStorage.setItem("currentId", parseInt(localStorage.getItem("currentId")) + 1);
+            setTimeout(function(){ location.reload() }, 50);
+        }
+    }
 
     return(
         <div>
@@ -42,23 +64,24 @@ const GalleryPage = () => {
                 <h1>Gallery</h1>
                 <div className="media-container">
                     {
-                        GalleryMedia.map((file, index) => (
-                            <div id={index} className="media" key={index} onClick={() => grabId()}>
+                        GalleryMedia.map((image, index) => (
+                            <div id={index} className="media">
                                 {
-                                    <img id={index} src={file.url} alt="" />
+                                    <img id={index} src={image.url} alt="" />
                                 }
-                                {fileList.push(file)}
+                                {imageEventListener(index)}
                             </div>
                         ))
                     }
                 </div>
                 
-                <div className="popup-media" style={{ display: file ? 'block' : 'none'}}>
-                    <span className="x-out" onClick={() => setFile(null)}>&times;</span>
-                    <span className="prev-arrow" onClick={() => prevImage()}>{"<"}</span>
-                    <span className="next-arrow" onClick={() => nextImage()}>{">"}</span>
+                <div className="popup-media"
+                style={{ display: localStorage.getItem("currentId") != -1 ? "block" : "none"}}>
+                    <span className="x-out" onClick={() => xOut()}>&times;</span>
+                    <span id="previous" className="prev-arrow" onClick={() => prevImage()}>{"<"}</span>
+                    <span id="next" className="next-arrow" onClick={() => nextImage()}>{">"}</span>
                     {
-                        <img id={currentId} src={file?.url} />
+                        <img src={grabSourceImage()} />
                     }
                 </div>
             </div>
