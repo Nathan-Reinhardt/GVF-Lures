@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import AuthContext from '../context/AuthContext';
 import InfoNavPanel from './InfoNavPanel/InfoNavPanel';
 import Footer from './InfoNavPanel/Footer';
-import IMAGES from './_images';     // NOTE: IMAGES Import is never used, but it is actually
+import IMAGES from '../utils/_images';     // NOTE: IMAGES Import is never used, but it is actually
                                     // being used by webpack to make it readable to the browser
 const SplashPage = () => { 
     const {user} = useContext(AuthContext);

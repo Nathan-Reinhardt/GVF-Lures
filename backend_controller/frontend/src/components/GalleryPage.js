@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import InfoNavPanel from './InfoNavPanel/InfoNavPanel';
 import Footer from './InfoNavPanel/Footer';
-import { GalleryMedia } from './_media';
+import { GalleryMedia } from '../utils/_media';
 
 // component class constructor breaks code when useState from react is
 // being used, therfore I used this function method to create
