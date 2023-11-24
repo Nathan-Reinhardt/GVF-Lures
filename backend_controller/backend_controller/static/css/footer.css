@@ -38,7 +38,6 @@
 }
 
 /* Other */
-
 .f-to-new-tab {
    font-size: 14px;
 }
@@ -47,4 +46,11 @@
    margin: 0px;
    font-size: 17px;
    margin-top: 4px;
+}
+
+/* Mobile Adjustments */
+@media only screen and (max-width: 360px) {
+   .copyright-2023-text {
+      font-size: 12px;
+   }
 }

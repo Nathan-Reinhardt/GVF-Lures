@@ -104,3 +104,10 @@
 .middle-slash-vertical-line {
     margin-top: 15px;
 }
+
+/* Mobile Adjustments */
+@media only screen and (max-width: 360px) {
+    .f-to-page {
+        font-size: 12px;
+    }
+}

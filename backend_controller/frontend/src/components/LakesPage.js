@@ -59,8 +59,6 @@ export default class LakesPage extends Component {
             "CANTALOUPE", "PINKANATOR", "MAI TAI", "DRAGONS", "CHERRY FIZZ"
         ];
 
-        console.log(LakesMedia);
-
         return(
             <div>
                 <InfoNavPanel />

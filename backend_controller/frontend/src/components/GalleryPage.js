@@ -9,6 +9,10 @@ import { GalleryMedia } from '../utils/_gallerymedia';
 // page doesn't use props, this method is usuable.
 
 const GalleryPage = () => {
+
+    // constant variables to secure values used for functions
+    const firstPosition = 0;
+    const lastPosition = 23;
     
     // if currentId in localStorage doesn't exist, set the currentId in localStorage
     if (!("currentId" in localStorage)) {
@@ -42,47 +46,49 @@ const GalleryPage = () => {
         setTimeout(function(){ location.reload() }, 35);
     }
 
-    // previous and next image buttons
+    // previous button
     const prevImage = () => {
-        if (localStorage.getItem("currentId") != 0) {
+        if (localStorage.getItem("currentId") != firstPosition) {
             localStorage.setItem("currentId", parseInt(localStorage.getItem("currentId")) - 1);
-            setTimeout(function(){ location.reload() }, 50);
+            setTimeout(function(){ location.reload() }, 60);
         }
     }
 
+    // next button
     const nextImage = () => {
-        if (localStorage.getItem("currentId") != 23) {
+        if (localStorage.getItem("currentId") != lastPosition) {
             localStorage.setItem("currentId", parseInt(localStorage.getItem("currentId")) + 1);
-            setTimeout(function(){ location.reload() }, 50);
+            setTimeout(function(){ location.reload() }, 60);
         }
     }
 
     return(
         <div>
             <InfoNavPanel />
-            <div className="gallery-container">
-                <h1>Gallery</h1>
-                <div className="media-container">
-                    {
-                        GalleryMedia.map((image, index) => (
-                            <div id={index} className="media">
-                                {
-                                    <img id={index} src={image.url} alt="" />
-                                }
-                                {imageEventListener(index)}
-                            </div>
-                        ))
-                    }
-                </div>
-                
-                <div className="popup-media"
-                style={{ display: localStorage.getItem("currentId") != -1 ? "block" : "none"}}>
-                    <span className="x-out" onClick={() => xOut()}>&times;</span>
-                    <span id="previous" className="prev-arrow" onClick={() => prevImage()}>{"<"}</span>
-                    <span id="next" className="next-arrow" onClick={() => nextImage()}>{">"}</span>
-                    {
-                        <img src={grabSourceImage()} />
-                    }
+            <div className="media-wrapper">
+                <div className="gallery-container">
+                    <h1>Gallery</h1>
+                    <div className="media-container">
+                        {
+                            GalleryMedia.map((image, index) => (
+                                <div id={index} className="media">
+                                    {
+                                        <img id={index} src={image.url} alt="" />
+                                    }
+                                    {imageEventListener(index)}
+                                </div>
+                            ))
+                        }
+                    </div>
+                    <div className="popup-media"
+                    style={{ display: localStorage.getItem("currentId") != -1 ? "block" : "none"}}>
+                        <span className="x-out" onClick={() => xOut()}>&times;</span>
+                        <span id="previous" className="prev-arrow" onClick={() => prevImage()}>{"<"}</span>
+                        <span id="next" className="next-arrow" onClick={() => nextImage()}>{">"}</span>
+                        {
+                            <img src={grabSourceImage()} />
+                        }
+                    </div>
                 </div>
             </div>
             <Footer />
