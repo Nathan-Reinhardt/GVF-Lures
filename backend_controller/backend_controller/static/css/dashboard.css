@@ -1,5 +1,6 @@
 /* Dashboard CSS */
 
+/* Admin Portal */
 .dashboard-page-container, .dashboard-text-cont, .admin-link-cont, .reload-cont {
     display: flex;
     justify-content: center;
@@ -21,7 +22,8 @@
     background-color: white;
     margin-top: 7vh;
     padding: 24px;
-    border-radius: 5px;
+    border: 10px solid rgb(0, 0, 0);
+    border-radius: 10px;
 }
 
 .dash-title, .reload-text {
@@ -45,4 +47,25 @@
 
 .to-admin:hover {
     color: darkorchid;
+}
+
+/* Mobile Adjustments */
+@media only screen and (max-width: 440px) {
+    .dash-title, .reload-text {
+        font-size: 30px;
+    }
+
+    .to-admin {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .dash-title, .reload-text {
+        font-size: 24px;
+    }
+
+    .to-admin {
+        font-size: 26px;
+    }
 }

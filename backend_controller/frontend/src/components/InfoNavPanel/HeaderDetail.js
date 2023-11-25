@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { EssentialMedia } from '../../utils/_essentialmedia';
 
 export default class HeaderDetail extends Component {
     constructor(props) {
@@ -8,14 +9,14 @@ export default class HeaderDetail extends Component {
 
     render() {
         return (
-            <div className="header-detail-container">
+            <div>
                 <div className="gvf-logo-container">
-                    <div className="gvf-lures-logo-image">
-                        <Link className="site-logo-link" to="/"></Link>
-                    </div>
-                    <div className="gvf-lures-text-cont">
-                        <p className="main-gvf-lures-text"><strong>GVF Lures</strong></p>
-                    </div>
+                    <Link className="site-logo-link" to="/">
+                        <img className="gvf-lures-logo-image" src={EssentialMedia[0].url} />
+                    </Link>
+                </div>
+                <div className="gvf-lures-text-cont">
+                    <p className="main-gvf-lures-text"><strong>GVF Lures</strong></p>
                 </div>
             </div>
         );

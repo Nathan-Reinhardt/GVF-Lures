@@ -34,11 +34,11 @@
 }
 
 .picture-cont-left {
-    margin-right: 5vw;
+    margin-right: 4vw;
 }
 
 .picture-cont-right {
-    margin-left: 5vw;
+    margin-left: 4vw;
 }
 
 .lake-panels-cont {
@@ -119,6 +119,57 @@
 }
 
 /* Mobile Adjustments */
+
+/* Height Adjustments */
+@media only screen and (max-height: 1150px) {
+    .lakes-page-title-cont {
+        margin-top: -1vh;
+    }
+}
+
+@media only screen and (max-height: 970px) {
+    .lakes-page-title-cont {
+        margin-top: -2vh;
+    }
+}
+
+@media only screen and (max-height: 880px) {
+    .lakes-page-title-cont {
+        margin-top: -3vh;
+    }
+}
+
+@media only screen and (max-height: 810px) {
+    .lakes-page-title-cont {
+        margin-top: -4vh;
+    }
+}
+
+@media only screen and (max-height: 760px) {
+    .lakes-page-title-cont {
+        margin-top: -5vh;
+    }
+}
+
+@media only screen and (max-height: 720px) {
+    .lakes-page-title-cont {
+        margin-top: -6vh;
+    }
+}
+
+@media only screen and (max-height: 660px) {
+    .lakes-page-title-cont {
+        margin-top: -7vh;
+    }
+}
+
+@media only screen and (max-height: 620px) {
+    .lakes-page-title-cont {
+        margin-top: -8vh;
+    }
+}
+
+/* Width Adjustments */
 @media only screen and (max-width: 1092px ) {
     /* Hide the computer sized content */
     .left-lake-cont, .right-lake-cont {
@@ -126,21 +177,14 @@
     }
 
     /* Containers */
-    .lakes-mobile-cont {
-        margin-top: 10vh;
-    }
-
     .lake-info-cont {
         margin-top: -10vh;
-    }
-
-    .lakes-page-title-cont {
-        margin: 0px;
     }
 
     /* Mobile Containers */
     .lakes-mobile-cont {
         display: flex;
+        margin-top: 13vh;
     }
 
     /* Image Margin Adjustment */
@@ -163,6 +207,10 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .lakes-mobile-cont {
+        margin-top: 10vh;
+    }
+    
     .lakes-title {
         font-size: 48px;
     }
