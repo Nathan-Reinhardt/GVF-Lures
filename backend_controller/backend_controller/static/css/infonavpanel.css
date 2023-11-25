@@ -9,8 +9,6 @@
 
 .master-header {
     justify-content: right;
-    vertical-align: middle;
-    margin: auto 0;
     margin-top: -9px;
     height: 38px;
     width: 100%;
@@ -107,9 +105,20 @@
 
 /* Mobile Adjustments */
 
+/* TopNavbar */
+/* Width */
+@media only screen and (max-width: 1000px) {
+    .master-header {
+        justify-content: center;
+    }
 
+    .right-nav {
+        width: auto;
+    }
+}
 
 /* Links */
+/* Width */
 @media only screen and (max-width: 360px) {
     .f-to-page {
         font-size: 12px;

@@ -9,11 +9,11 @@
 .gvf-logo-cont, .site-logo-link {
     position: absolute;
     z-index: 1;
+    height: 106px;
 }
 
 .gvf-logo-cont {
-    top: 5%;
-    left: 10%;
+    width: 100%;
 }
 
 .gvf-lures-text-cont {
@@ -29,8 +29,6 @@
     display: block;
     max-width: 100%;
     max-height: 100%;
-    top: 3%;
-    left: 8%;
 }
 
 .gvf-lures-logo-image {
@@ -39,7 +37,8 @@
 
 .site-logo-link {
     width: 87px;
-    height: 106px;
+    top: 1%;
+    left: 30%;
 }
 
 /* Can be replaced with an actual gvf lures logo title later */
@@ -54,15 +53,89 @@
 
 /* Height */
 @media only screen and (max-height: 850px) {
-    .gvf-lures-logo-image, .site-logo-link {
-        top: 4%;
+    .site-logo-link {
+        top: 2%;
     }
 }
 
 @media only screen and (max-height: 650px) {
-    .gvf-lures-logo-image, .site-logo-link {
-        top: 5%;
+    .site-logo-link {
+        top: 3%;
     }
 }
 
 /* Width */
+
+/* Site Logo */
+/* Big Monitors/TV's */
+@media only screen and (max-width: 4500px) {
+    .site-logo-link {
+        left: 39.3%;
+    }
+}
+
+@media only screen and (max-width: 3800px) {
+    .site-logo-link {
+        left: 37.8%;
+    }
+}
+
+@media only screen and (max-width: 3300px) {
+    .site-logo-link {
+        left: 35.8%;
+    }
+}
+
+@media only screen and (max-width: 2800px) {
+    .site-logo-link {
+        left: 33.3%;
+    }
+}
+
+/* Test Monitor */
+@media only screen and (max-width: 2560px) {
+    .site-logo-link {
+        left: 32%;
+    }
+}
+
+/* Computers */
+@media only screen and (max-width: 2560px) {
+    .site-logo-link {
+        left: 32%;
+    }
+}
+
+@media only screen and (max-width: 2100px) {
+    .site-logo-link {
+        left: 28.2%;
+    }
+}
+
+/* Average Computer Monitor */
+@media only screen and (max-width: 1920px) {
+    .site-logo-link {
+        left: 26.3%;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .site-logo-link {
+        left: 19.9%;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .site-logo-link {
+        left: 14.85%;
+    }
+}
+
+/* Continue below once you have completed the middle navbar adjustments and */
+/* once the home page css and structure is up to date */
+
+@media only screen and (max-width: 1024px) {
+    .site-logo-link {
+        left: 6%;
+    }
+}

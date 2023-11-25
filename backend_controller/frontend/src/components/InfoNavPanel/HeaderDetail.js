@@ -10,7 +10,7 @@ export default class HeaderDetail extends Component {
     render() {
         return (
             <div>
-                <div className="gvf-logo-container">
+                <div className="gvf-logo-cont">
                     <Link className="site-logo-link" to="/">
                         <img className="gvf-lures-logo-image" src={EssentialMedia[0].url} />
                     </Link>
