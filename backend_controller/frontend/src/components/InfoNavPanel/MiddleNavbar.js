@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { EssentialMedia } from '../../utils/_essentialmedia';
 
 const MiddleNavbar = () => {
 
+    // to check if the user is logged in
     const token = localStorage.getItem("authTokens");
+    
+    // useState to keep track of state changes
     const [isActive, setIsActive] = useState(false);
 
     // when the user clicks the menu button it dropsdown or closes the menu dropdown
@@ -16,6 +18,18 @@ const MiddleNavbar = () => {
             setIsActive(true);
         }
     }
+
+    // if the screen is adjusted too much when the menu disappears hide the children of the menu
+    const handleResize = () => {
+        if (window.innerWidth > 850) {
+            setIsActive(false);
+        }
+    }
+
+    // to check the current screen size
+    useEffect(() => {
+        window.addEventListener("resize", handleResize)
+    })
 
     return (
         <div>
@@ -46,30 +60,33 @@ const MiddleNavbar = () => {
             <div className="menu-nav-cont">
                 <div id="menu" className="menu-nav-closed" onClick={menuDropdown}>
                     <li className="menu-text">Menu</li>
+                    <div className="menu-icon-img"></div>
                 </div>
             </div>
-            <ul className="menu-nav-list" style={{ display: isActive ? "block" : "none"}}>
-                <li className="home-menu-li">
-                    <Link className="to-page" to="/">Home</Link>
-                </li>
-                <li className="contact-menu-li">
-                    <Link className="to-page" to="/contact">Contact Us</Link>
-                </li>
-                <li className="lakes-menu-li">
-                    <Link className="to-page" to="/lakes">Lakes & Reservoirs</Link>
-                </li>
-                <li className="gallery-menu-li">
-                    <Link className="to-page" to="/gallery">Gallery</Link>
-                </li>
-                {token === null && <></>}
-                {token !== null &&
-                <>
-                    <li className="profile-menu-li">
-                        <Link className="to-page" to="/profile">Profile</Link>
+            <div className="menu-nav-list-cont" style={{ display: isActive ? "flex" : "none"}}>
+                <ul className="menu-nav-list">
+                    <li className="home-menu-li">
+                        <Link className="to-page" to="/">Home</Link>
                     </li>
-                </>
-                }
-            </ul>
+                    <li className="contact-menu-li">
+                        <Link className="to-page" to="/contact">Contact Us</Link>
+                    </li>
+                    <li className="lakes-menu-li">
+                        <Link className="to-page" to="/lakes">Lakes & Reservoirs</Link>
+                    </li>
+                    <li className="gallery-menu-li">
+                        <Link className="to-page" to="/gallery">Gallery</Link>
+                    </li>
+                    {token === null && <></>}
+                    {token !== null &&
+                    <>
+                        <li className="profile-menu-li">
+                            <Link className="to-page" to="/profile">Profile</Link>
+                        </li>
+                    </>
+                    }
+                </ul>
+            </div>
         </div>
     );
 };

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import InfoNavPanel from './InfoNavPanel/InfoNavPanel';
 import Footer from './InfoNavPanel/Footer';
 import { GalleryMedia } from '../utils/_gallerymedia';
@@ -14,51 +14,45 @@ const GalleryPage = () => {
     const firstPosition = 0;
     const lastPosition = 23;
     
-    // if currentId in localStorage doesn't exist, set the currentId in localStorage
-    if (!("currentId" in localStorage)) {
-        localStorage.setItem("currentId", -1);
-    }
+    // useState to keep track of current picture
+    const [pictureIndex, setPictureIndex] = useState(-1);
 
     // every image has an event listener to set the currentId to their index position when created
     const imageEventListener = (index) => {
         useEffect(() => {
             const currentImage = document.getElementById(index);
             currentImage.addEventListener("mousedown", () => {
-                localStorage.setItem("currentId", index);
-                setTimeout(function(){ location.reload() }, 15);
+                setPictureIndex(index);
             })
         })
     }
 
-    // checking for when the currentId exists
+    // checking for when the current Picture exists
     const grabSourceImage = () => {
-        if (localStorage.getItem("currentId") == -1) {
+        if (pictureIndex == -1) {
             return GalleryMedia[0].url;
         }
         else {
-            return GalleryMedia[localStorage.getItem("currentId")].url;
+            return GalleryMedia[pictureIndex].url;
         }
     }
 
-    // when the user presses on the X button it reloads the page to exit the photo
+    // when the user presses on the X button it sets the pictureIndex to -1
     const xOut= () => {
-        localStorage.setItem("currentId", -1);
-        setTimeout(function(){ location.reload() }, 35);
+        setPictureIndex(-1);
     }
 
     // previous button
     const prevImage = () => {
-        if (localStorage.getItem("currentId") != firstPosition) {
-            localStorage.setItem("currentId", parseInt(localStorage.getItem("currentId")) - 1);
-            setTimeout(function(){ location.reload() }, 60);
+        if (pictureIndex != firstPosition) {
+            setPictureIndex(pictureIndex - 1);
         }
     }
 
     // next button
     const nextImage = () => {
-        if (localStorage.getItem("currentId") != lastPosition) {
-            localStorage.setItem("currentId", parseInt(localStorage.getItem("currentId")) + 1);
-            setTimeout(function(){ location.reload() }, 60);
+        if (pictureIndex != lastPosition) {
+            setPictureIndex(pictureIndex + 1);
         }
     }
 
@@ -81,7 +75,7 @@ const GalleryPage = () => {
                         }
                     </div>
                     <div className="popup-media"
-                    style={{ display: localStorage.getItem("currentId") != -1 ? "block" : "none"}}>
+                    style={{ display: pictureIndex != -1 ? "block" : "none"}}>
                         <span className="x-out" onClick={() => xOut()}>&times;</span>
                         <span id="previous" className="prev-arrow" onClick={() => prevImage()}>{"<"}</span>
                         <span id="next" className="next-arrow" onClick={() => nextImage()}>{">"}</span>
