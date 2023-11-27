@@ -1,28 +1,50 @@
 /* All Navbar and some Footer CSS*/
 
 /* Containers */
-
 .master-header, .left-nav-menu-list, .right-nav-menu-list, .slash-cont,
-.middle-nav-cont, .middle-nav-list {
+.middle-nav-cont, .middle-nav-list, .menu-nav-closed {
     display: flex;
+}
+
+.master-header, .menu-nav-cont {
+    width: 100%;
 }
 
 .master-header {
     justify-content: right;
     margin-top: -9px;
     height: 38px;
-    width: 100%;
     background-image: linear-gradient(180deg, rgb(170, 177, 181), rgb(255, 255, 255));
     z-index: 2;
 }
 
 .right-nav {
-    width: 32%;
+    width: 30%;
 }
 
-.middle-nav-cont {
+.middle-nav-cont, .menu-nav-cont {
     justify-content: center;
     margin-top: 1vh;
+}
+
+.menu-nav-cont, .menu-nav-list {
+    display: none;
+}
+
+.menu-nav-closed {
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    max-width: 50.5%;
+    background-image: linear-gradient(180deg, rgb(200, 209, 214), rgb(255, 255, 255));
+    border: 1px solid rgb(137, 137, 137);
+    margin: 16px 0px 16px 0px;
+    padding: 0px 20px 0px 20px;
+    z-index: 2;
+}
+
+.menu-nav-list {
+    z-index: 3;
 }
 
 /* List and List Items */
@@ -34,9 +56,9 @@
     padding: 0px;
 }
 
-.home-li, .contact-li, .login-li, .signup-li,
-.logout-li, .home-middle-li, .contact-middle-li,
-.lakes-middle-li, .gallery-middle-li, .profile-middle-li {
+.home-li, .contact-li, .login-li, .signup-li, .logout-li,
+.home-middle-li, .contact-middle-li, .lakes-middle-li,
+.gallery-middle-li, .profile-middle-li, .menu-text {
     list-style-type: none;
 }
 
@@ -49,10 +71,16 @@
     padding: 15px 0px 15px 0px;
     background-image: linear-gradient(180deg, rgb(200, 209, 214), rgb(255, 255, 255));
     border: 1px solid rgb(137, 137, 137);
+    z-index: 2;
 }
 
 .contact-middle-li, .lakes-middle-li, .gallery-middle-li, .profile-middle-li {
     border-left: hidden;
+}
+
+.menu-text {
+    padding: 12.5px 0px 12.5px 0px;
+    font-size: 20px;
 }
 
 /* Links */     
@@ -75,7 +103,7 @@
 /* Same thing as links, but for hover effects as stated above */
 
 .home-middle-li:hover, .contact-middle-li:hover, .lakes-middle-li:hover,
-.gallery-middle-li:hover, .profile-middle-li:hover {
+.gallery-middle-li:hover, .profile-middle-li:hover, .menu-nav-closed:hover {
     background-image: linear-gradient(180deg, rgb(210, 220, 225), rgb(255, 255, 255));
 }
 
@@ -84,12 +112,15 @@
     color: red;
 }
 
+.menu-nav-closed:hover {
+    cursor: pointer;
+}
+
 .f-to-page:hover {
     text-decoration: underline;
 }
 
 /* Other */
-
 .slash-vertical-line, .middle-slash-vertical-line {
     font-size: 17px;
 }
@@ -117,9 +148,26 @@
     }
 }
 
-/* Links */
+/* MiddleNavbar */
+/* Width */
+@media only screen and (max-width: 850px) {
+    /* Hide the middle nav */
+    .middle-nav-cont {
+        display: none;
+    }
+
+    .menu-nav-cont {
+        display: flex;
+    }
+}
+
+/* Other */
 /* Width */
 @media only screen and (max-width: 360px) {
+    .home-li, .contact-li, .login-li, .signup-li {
+        padding: 0 5px;
+    }
+
     .f-to-page {
         font-size: 12px;
     }

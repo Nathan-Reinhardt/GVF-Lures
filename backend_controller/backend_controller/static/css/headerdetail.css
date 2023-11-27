@@ -14,6 +14,7 @@
 
 .gvf-logo-cont {
     width: 100%;
+    z-index: 1;
 }
 
 .gvf-lures-text-cont {

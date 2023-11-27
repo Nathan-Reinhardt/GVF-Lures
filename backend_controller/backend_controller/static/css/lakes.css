@@ -171,6 +171,7 @@
 
 /* Width Adjustments */
 @media only screen and (max-width: 1092px ) {
+    
     /* Hide the computer sized content */
     .left-lake-cont, .right-lake-cont {
         display: none;
