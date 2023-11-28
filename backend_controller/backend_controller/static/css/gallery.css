@@ -11,7 +11,6 @@
 .gallery-container {
     width: 70%;
     min-height: 100vh;
-    position: relative;
 }
 
 .gallery-container .media-container {
@@ -38,7 +37,9 @@
 }
 
 .gallery-container .media-container .media:hover :is(img) {
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
+    
+    /* for some reason transform: scale defies all z-index logic look into */
 }
 
 .gallery-container .popup-media {

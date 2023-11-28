@@ -9,10 +9,11 @@
 
 .lakes-page-title-cont {
     height: 30px;
+    margin-top: 4vh;
 }
 
-.left-lake-cont, .right-lake-cont, .lakes-mobile-cont {
-    margin-top: 13vh;
+.left-lake-cont, .right-lake-cont, .lakes-mobile-cont-2 {
+    margin-top: 9vh;
 }
 
 .left-lake-cont {
@@ -54,15 +55,24 @@
 }
 
 /* Mobile Containers */
-.lakes-mobile-cont {
+.lakes-mobile-cont-1, .lakes-mobile-cont-2 {
     display: none;
     justify-content: center;
     width: 100%;
 }
 
+.lakes-mobile-cont-1 {
+    margin-top: 10vh;
+}
+
+.lakes-mobile-cont-2 {
+    margin-top: 13vh;
+}
+
 /* Text */
 .lakes-title {
     font-size: 56px;
+    margin: 0;
 }
 
 .lake-title {
@@ -121,51 +131,21 @@
 /* Mobile Adjustments */
 
 /* Height Adjustments */
-@media only screen and (max-height: 1150px) {
-    .lakes-page-title-cont {
-        margin-top: -1vh;
-    }
-}
-
 @media only screen and (max-height: 970px) {
     .lakes-page-title-cont {
-        margin-top: -2vh;
-    }
-}
-
-@media only screen and (max-height: 880px) {
-    .lakes-page-title-cont {
-        margin-top: -3vh;
-    }
-}
-
-@media only screen and (max-height: 810px) {
-    .lakes-page-title-cont {
-        margin-top: -4vh;
+        margin-top: 3vh;
     }
 }
 
 @media only screen and (max-height: 760px) {
     .lakes-page-title-cont {
-        margin-top: -5vh;
-    }
-}
-
-@media only screen and (max-height: 720px) {
-    .lakes-page-title-cont {
-        margin-top: -6vh;
-    }
-}
-
-@media only screen and (max-height: 660px) {
-    .lakes-page-title-cont {
-        margin-top: -7vh;
+        margin-top: 2vh;
     }
 }
 
 @media only screen and (max-height: 620px) {
     .lakes-page-title-cont {
-        margin-top: -8vh;
+        margin-top: 1vh;
     }
 }
 
@@ -183,9 +163,16 @@
     }
 
     /* Mobile Containers */
-    .lakes-mobile-cont {
+    .lakes-mobile-cont-1, .lakes-mobile-cont-2 {
         display: flex;
-        margin-top: 13vh;
+    }
+
+    .lakes-mobile-cont-1 {
+        margin-top: 8vh;
+    }
+
+    .lakes-mobile-cont-2 {
+        margin-top: 10vh;
     }
 
     /* Image Margin Adjustment */
@@ -208,8 +195,8 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .lakes-mobile-cont {
-        margin-top: 10vh;
+    .lakes-mobile-cont-1, .lakes-mobile-cont-2 {
+        margin-top: 8vh;
     }
     
     .lakes-title {
@@ -218,21 +205,7 @@
 }
 
 @media only screen and (max-width: 525px) {
-    .lakes-mobile-cont {
-        margin-top: 8vh;
-    }
-
-    .lake-info-cont {
-        margin-top: -8vh;
-    }
-
-    .lakes-title {
-        font-size: 40px;
-    }
-}
-
-@media only screen and (max-width: 435px) {
-    .lakes-mobile-cont {
+    .lakes-mobile-cont-1, .lakes-mobile-cont-2 {
         margin-top: 6vh;
     }
 
@@ -241,17 +214,35 @@
     }
 
     .lakes-title {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 435px) {
+    .lakes-mobile-cont-1, .lakes-mobile-cont-2 {
+        margin-top: 4vh;
+    }
+
+    .lakes-page-title-cont {
+        margin-top: 3vh;
+    }
+
+    .lake-info-cont {
+        margin-top: -4vh;
+    }
+
+    .lakes-title {
         font-size: 34px;
     }
 }
 
 @media only screen and (max-width: 350px) {
-    .lakes-mobile-cont {
-        margin-top: 4vh;
+    .lakes-mobile-cont-1, .lakes-mobile-cont-2, .lakes-page-title-cont {
+        margin-top: 2vh;
     }
 
     .lake-info-cont {
-        margin-top: -4vh;
+        margin-top: -2vh;
     }
 
     .lakes-title {

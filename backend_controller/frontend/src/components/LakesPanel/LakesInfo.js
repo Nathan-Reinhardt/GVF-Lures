@@ -48,6 +48,6 @@ const LakesInfo = (props) => {
             </div>
         </div>
     );
-}
+};
 
 export default LakesInfo;

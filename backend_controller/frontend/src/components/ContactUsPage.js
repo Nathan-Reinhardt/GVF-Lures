@@ -28,5 +28,5 @@ export default class ContactUsPage extends Component {
                 <Footer />
             </div>
         );
-    }
-}
+    };
+};

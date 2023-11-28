@@ -124,5 +124,5 @@ export default class LakesPage extends Component {
                 <Footer />
             </div>
         );
-    }
-}
+    };
+};

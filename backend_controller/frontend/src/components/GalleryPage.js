@@ -88,6 +88,6 @@ const GalleryPage = () => {
             <Footer />
         </div>
     );
-}
+};
 
 export default GalleryPage;

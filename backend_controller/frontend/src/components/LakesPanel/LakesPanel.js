@@ -7,7 +7,7 @@ export default class LakesPanel extends Component {
         super(props);
     }
 
-    render() { 
+    render() {
         return(
             <div>
                 {this.props.LOR == 0 &&     // Picture on the left
@@ -60,5 +60,5 @@ export default class LakesPanel extends Component {
                 }
             </div>
         );
-    }
-}
+    };
+};

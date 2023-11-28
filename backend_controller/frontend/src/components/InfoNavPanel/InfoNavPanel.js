@@ -16,5 +16,5 @@ export default class InfoNavPanel extends Component {
                 <MiddleNavbar />
             </div>
         );
-    }
-}
+    };
+};

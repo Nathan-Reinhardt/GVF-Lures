@@ -9,10 +9,10 @@ export default class LakesMobileWrapper extends Component {
     render() { 
         return(
             <div>
-                <div className="lakes-mobile-cont">
+                <div className="lakes-mobile-cont-1">
                     {this.props.LakePic}
                 </div>
-                <div className="lakes-mobile-cont">
+                <div className="lakes-mobile-cont-2">
                     <div className="lake-info-cont">
                         <LakesInfo 
                             lakeName={this.props.lakeName} cityLocation={this.props.cityLocation}
@@ -24,5 +24,5 @@ export default class LakesMobileWrapper extends Component {
                 </div>
             </div>
         );
-    }
-}
+    };
+};
