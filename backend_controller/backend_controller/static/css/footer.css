@@ -49,8 +49,20 @@
 }
 
 /* Mobile Adjustments */
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 365px) {
    .copyright-2023-text {
       font-size: 12px;
+   }
+}
+
+@media only screen and (max-width: 320px) {
+   .copyright-2023-text {
+      font-size: 11px;
+   }
+}
+
+@media only screen and (max-width: 290px) {
+   .copyright-2023-text {
+      font-size: 10px;
    }
 }

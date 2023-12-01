@@ -30,16 +30,16 @@
 }
 
 .gallery-container .media-container .media :is(img) {
+    position: relative;
     height: 100%;
     width: 100%;
+    z-index: 1;
     object-fit: cover;
     transition: all 0.3s linear;
 }
 
 .gallery-container .media-container .media:hover :is(img) {
-    /* transform: scale(1.1); */
-    
-    /* for some reason transform: scale defies all z-index logic look into */
+    transform: scale(1.1);
 }
 
 .gallery-container .popup-media {

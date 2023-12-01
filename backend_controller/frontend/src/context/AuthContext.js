@@ -73,7 +73,7 @@ export const AuthProvider = ({ children }) => {
 
         if (response.status === 201) {
             // change this based on where you want the user to go after they signup
-            history.push("/");
+            history.push("/login");
         }
         else {
             console.log(response.status);

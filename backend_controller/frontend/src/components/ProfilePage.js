@@ -16,7 +16,9 @@ const ProfilePage = () => {
                     <div className="white-profile-cont">
                         <h1 className="profile-welcome-text">Welcome To Your Profile!</h1>
                         <h1 className="profile-username-text">Username: {user.username}</h1>
-                        <h1 className="profile-email-text">Email: {user.email}</h1>
+                        {user.email.length <= 31 &&
+                            <><h1 className="profile-email-text">Email: {user.email}</h1></>
+                        }
                     </div>
                 </div>
             </div>

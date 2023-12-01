@@ -54,6 +54,7 @@
 }
 
 .menu-nav-list-cont {
+    position: relative;
     z-index: 100;
 }
 
@@ -221,13 +222,13 @@
 
 @media only screen and (max-width: 400px) {
     .menu-nav-list {
-        max-width: 60.9%;
+        max-width: 60.7%;
     }
 }
 
 @media only screen and (max-width: 375px) {
     .menu-nav-list {
-        max-width: 61.5%;
+        max-width: 61.1%;
     }
 }
 
@@ -263,12 +264,24 @@
 
 /* Other */
 /* Width */
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 365px) {
     .home-li, .contact-li, .login-li, .signup-li {
         padding: 0 5px;
     }
 
     .f-to-page {
         font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .f-to-page {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 290px) {
+    .f-to-page {
+        font-size: 10px;
     }
 }

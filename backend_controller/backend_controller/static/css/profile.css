@@ -10,20 +10,14 @@
     margin: 3vh 0px 8vh 0px;
 }
 
-.main-profile-container {
-    width: 100%;
-    height: 100%;
-}
-
 .background-profile-cont, .white-profile-cont {
     border-radius: 10px;
-    height: 100%;
 }
 
 .background-profile-cont {
-    width: 900px;
-    height: 100%;
-    padding: 40px 15px 40px 15px;
+    max-width: 92%;
+    max-height: 97%;
+    padding: 40px 40px 40px 40px;
     border-radius: 10px;
     box-sizing: border-box;
     box-shadow: 20px 25px 15px rgba(183, 191, 196, 0.7);
@@ -43,8 +37,8 @@
 }
 
 .profile-page-title {
-    padding: 15px 15px 30px 15px;
     font-size: 56px;
+    margin: 4vh 0px 4vh 0px;
 }
 
 .profile-welcome-text {
@@ -55,4 +49,98 @@
 
 .profile-username-text, .profile-email-text {
     font-size: 26px;
+}
+
+/* Mobile Adjustments */
+
+/* Width */
+/* Containers */
+@media only screen and (max-width: 800px) {
+    /* Changing look of the profile container */
+    .background-profile-cont {
+        padding: 25px 25px 25px 25px;
+        box-shadow: 15px 15px 13px rgba(183, 191, 196, 0.7);
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .background-profile-cont {
+        padding: 20px 20px 20px 20px;
+    }
+}
+
+/* Text */
+@media only screen and (max-width: 620px) {
+    .profile-page-title {
+        margin: 3vh 0px 3vh 0px;
+        font-size: 48px;
+    }
+
+    .profile-welcome-text {
+        font-size: 28px;
+    }
+
+    .profile-username-text, .profile-email-text {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .profile-page-title {
+        font-size: 44px;
+    }
+
+    .profile-welcome-text {
+        font-size: 24px;
+    }
+    
+    .profile-username-text, .profile-email-text {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .profile-page-cont {
+        margin-top: 2vh;
+    }
+    .profile-page-title {
+        margin: 2vh 0px 2vh 0px;
+        font-size: 40px;
+    }
+
+    .profile-welcome-text {
+        font-size: 22px;
+    }
+
+    .profile-username-text, .profile-email-text {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .profile-page-title {
+        font-size: 38px;
+    }
+
+    .profile-welcome-text {
+        font-size: 20px;
+    }
+
+    .profile-username-text,
+    .profile-email-text {
+        font-size: 14px;
+    }
+}
+
+/* Height */
+/* Text */
+@media only screen and (max-height: 700px) {
+    .profile-page-title {
+        margin: 3vh 0px 3vh 0px;
+    }
+
+    .background-profile-cont {
+        padding: 25px 25px 25px 25px;
+        box-shadow: 15px 15px 13px rgba(183, 191, 196, 0.7);
+    }
 }
