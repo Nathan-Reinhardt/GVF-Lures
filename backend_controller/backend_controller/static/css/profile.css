@@ -78,6 +78,7 @@
 
     .profile-welcome-text {
         font-size: 28px;
+        padding-bottom: 25px;
     }
 
     .profile-username-text, .profile-email-text {
@@ -92,6 +93,7 @@
 
     .profile-welcome-text {
         font-size: 24px;
+        padding-bottom: 20px;
     }
     
     .profile-username-text, .profile-email-text {
@@ -110,6 +112,7 @@
 
     .profile-welcome-text {
         font-size: 22px;
+        padding-bottom: 15px;
     }
 
     .profile-username-text, .profile-email-text {
@@ -124,6 +127,7 @@
 
     .profile-welcome-text {
         font-size: 20px;
+        padding-bottom: 10px;
     }
 
     .profile-username-text,

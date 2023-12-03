@@ -61,7 +61,7 @@ const GalleryPage = () => {
             <InfoNavPanel />
             <div className="media-wrapper">
                 <div className="gallery-container">
-                    <h1>Gallery</h1>
+                    <h1 className="gallery-title">Gallery</h1>
                     <div className="media-container">
                         {
                             GalleryMedia.map((image, index) => (
