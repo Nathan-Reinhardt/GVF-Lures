@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import InfoNavPanel from './InfoNavPanel/InfoNavPanel';
 import Footer from './InfoNavPanel/Footer';
+import { EssentialMedia } from '../utils/_essentialmedia';
 
 export default class ContactUsPage extends Component {
     constructor(props) {
@@ -20,7 +21,7 @@ export default class ContactUsPage extends Component {
                             <h1 className="contact-phone-num">Phone Number: 650-218-5784</h1>
                             <h1 className="contact-email">Email: nreinhardt1234@gmail.com</h1>
                             <div className="contact-pic-cont">
-                                <div className="rich-n-me-pic"></div>
+                                <img className="rich-n-me-pic" src={EssentialMedia[1].url} />
                             </div>
                         </div>
                     </div>
