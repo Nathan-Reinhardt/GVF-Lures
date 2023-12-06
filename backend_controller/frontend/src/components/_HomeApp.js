@@ -8,8 +8,7 @@ import { AuthProvider } from '../context/AuthContext';
 // Pages
 import Dashboard from './Dashboard';    // this component is to test private routes
 import SplashPage from './SplashPage';  // main home page
-import LoginPage from './LoginPage';    // login page
-import SignUpPage from './SignUpPage';  // sign up page
+import SessionPage from './SessionPage';    // login and sign up pages
 import ContactUsPage from './ContactUsPage';    // about us page
 import LakesPage from './LakesPage';    // lakes page
 import GalleryPage from './GalleryPage';    // gallery page
@@ -30,8 +29,8 @@ export default class HomeApp extends Component {
                         <Route exact={true} path="/lakes" component={LakesPage} />
                         <Route exact={true} path="/gallery" component={GalleryPage} />
                         <PrivateRoute exact={true} path="/profile" component={ProfilePage} />
-                        <ProtectedRoute path="/login" component={LoginPage} />
-                        <ProtectedRoute path="/signup" component={SignUpPage} />
+                        <ProtectedRoute path="/login"><SessionPage isLogin={true}/></ProtectedRoute>
+                        <ProtectedRoute path="/signup"><SessionPage isLogin={false}/></ProtectedRoute>
                         <PrivateRoute exact path="/dashboard" component={Dashboard} />
                     </Switch>
                 </AuthProvider>

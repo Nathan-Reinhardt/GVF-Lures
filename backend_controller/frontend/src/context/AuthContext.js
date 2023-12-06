@@ -51,7 +51,7 @@ export const AuthProvider = ({ children }) => {
         else {
             console.log(response.status);
             console.log("there was a server issue...");
-            alert("Something went wrong " + response.status);
+            alert("Email or Password is incorrect please try again.");
         }
     }
 

@@ -11,6 +11,9 @@
 @import url("contact.css");
 @import url("profile.css");
 
+/* Responsive CSS Import */
+@import url("_responsiveness.css");
+
 /* This is the main css for main html, body, img, and divs */
 html, body {
     background-color:white;
