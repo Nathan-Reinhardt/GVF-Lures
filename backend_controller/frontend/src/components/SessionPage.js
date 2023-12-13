@@ -16,6 +16,7 @@ const SessionPage = (props) => {
     const {loginUser} = useContext(AuthContext);
     const {signUpUser} = useContext(AuthContext);
 
+    // login user
     const loginHandleSubmit = (e) => {
         e.preventDefault();
         const email = e.target.email.value;  // request.POST.get("email") > name="email"
@@ -24,12 +25,11 @@ const SessionPage = (props) => {
         email.length > 0 && loginUser(email, password);
     };
 
+    // sign up user
     const signUpHandleSubmit = async e => {
         e.preventDefault();
         signUpUser(email, username, password, password2);
     };
-
-    console.log(props.isLogin);
 
     return (
         <div>
@@ -58,7 +58,7 @@ const SessionPage = (props) => {
                         </div>
                         <h3 className="forgot-password">Forgot password?</h3>
                         <div className="form-line"></div>
-                        <h3 className="not-member">Not a GVF Lure member?</h3>
+                        <h3 className="not-member">Not a GVF Lure's member?</h3>
                         <div className="form-bottom-container">
                             <Link className="to-sign-up" to="/signup">Sign up here.</Link>
                         </div>
@@ -103,7 +103,7 @@ const SessionPage = (props) => {
                             <button className="signin-submit-btn" type="submit">Register</button>
                         </div>
                         <div className="form-line"></div>
-                        <h3 className="member">Already a GVF Lure member?</h3>
+                        <h3 className="member">Already a GVF Lure's member?</h3>
                         <div className="form-bottom-container">
                             <Link className="to-log-in" to="/login">Log In here.</Link>
                         </div>

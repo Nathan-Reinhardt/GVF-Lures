@@ -12,9 +12,9 @@
     width: 100%;
 }
 
-.login-form, .signup-form, .email-cont, .password-cont, 
-.submit-cont, .username-cont, .password-check-cont, .form-line {
-    width: 400px;
+.email-cont, .password-cont, .submit-cont,
+.username-cont, .password-check-cont, .form-line {
+    max-width: 100%;
 }
 
 .email-cont, .password-cont, .submit-cont, .username-cont, .password-check-cont {
@@ -22,30 +22,30 @@
 }
 
 .submit-cont {
-    margin-bottom: 14px;
+    margin: 6px 0px 20px 0px;
 }
 
 /* Forms */
 .login-form, .signup-form {
-    height: 330px;
-    background-color: rgb(190, 228, 255);
-    margin-top: 3vh;
-    padding: 24px;
+    max-width: 70%;
+    background-color: rgb(201, 232, 255);
+    margin: 5vh 0px 5vh 0px;
+    padding: 24px 29px 24px 29px;
     border-radius: 7px;
-    box-shadow: 20px 23px 15px rgba(183, 191, 196, 0.6);
+    box-shadow: 15px 15px 13px rgba(183, 191, 196, 0.7);
 }
 
 .login-form {
-    margin-bottom: 25vh;
+    height: 315px;
 }
 
 .signup-form {
-    height: 365px;
-    margin-bottom: 22.35vh;
+    height: 350px;
 }
 
+/* Form Inputs */
 .session-input {
-    width: 300px;
+    width: 290px;
     height: 20px;
     border: 1px solid rgba(137, 137, 137, 0.6);
     margin-bottom: 14px;
@@ -103,8 +103,7 @@
 }
 
 .login-label, .signup-label {
-    margin-top: 32px;
-    margin-bottom: 20px;
+    margin: 10px 0px 25px 0px;
     font-size: 38px;
 }
 
@@ -117,4 +116,75 @@
 .form-line {
     height: 1px;
     background-color: rgb(38, 38, 38);
+}
+
+/* Mobile Adjustments */
+
+/* Width */
+@media only screen and (max-width: 400px) {
+    .login-label, .signup-label {
+        margin-top: 0px;
+    }
+
+    .member {
+        font-size: 15.4px;
+    }
+
+    .login-form, .signup-form {
+        margin-top: 3vh;
+        padding-top: 20px;
+    }
+
+    .login-form {
+        height: 300px;
+    }
+
+    .signup-form {
+        height: 325px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .session-input {
+        max-width: 100%;
+    }
+
+    .not-member {
+        font-size: 14.8px;
+    }
+
+    .member {
+        font-size: 12.8px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .not-member {
+        font-size: 13.7px;
+    }
+
+    .member {
+        font-size: 11.8px;
+    }
+}
+
+/* Height */
+@media only screen and (max-height: 700px) {
+    .login-form, .signup-form {
+        margin-top: 3vh;
+    }
+
+    .login-form {
+        height: 300px;
+        padding-top: 20px;
+    }
+
+    .signup-form {
+        height: 325px;
+        padding-top: 15px;
+    }
+
+    .login-label, .signup-label {
+        margin-top: 5px;
+    }
 }
