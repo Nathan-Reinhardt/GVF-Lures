@@ -100,7 +100,6 @@
     padding: 15px 0px 15px 0px;
     background-image: linear-gradient(180deg, rgb(200, 209, 214), rgb(255, 255, 255));
     border: 1px solid rgb(137, 137, 137);
-    z-index: 2;
 }
 
 .contact-middle-li, .lakes-middle-li, .gallery-middle-li, .profile-middle-li {
@@ -115,7 +114,9 @@
 .home-menu-li, .contact-menu-li, .lakes-menu-li,
 .gallery-menu-li, .profile-menu-li {
     padding: 20px 0px 20px 0px;
-    font-weight: 600;
+    text-align: left;
+    width: 100%;
+    height: 18px;
 }
 
 /* Links */     
@@ -124,26 +125,48 @@
 /* made to links based on their specific css needed for that page.      */
 
 .home-link, .contact-link, .login-link, .signup-link, .logout-link,
-.to-page, .f-to-page {
+.to-page, .f-to-page, .menu-home-to-page, .menu-contact-to-page,
+.menu-lakes-to-page, .menu-gallery-to-page, .menu-profile-to-page {
     text-decoration: none;
     font-size: 15px;
     color: black;
 }
 
-.to-page {     /* extra padding used to make the whole li clickable */
+/* extra padding used to make the whole li clickable */
+.to-page {
     padding: 17px 24px 16px 24px;
+}
+
+.menu-home-to-page, .menu-contact-to-page, .menu-lakes-to-page,
+.menu-gallery-to-page, .menu-profile-to-page {
+    padding: 21px 24px 21px 24px;
+    height: 16px;
 }
 
 /* Hover Effects */
 /* Same thing as links, but for hover effects as stated above */
 
 .home-middle-li:hover, .contact-middle-li:hover, .lakes-middle-li:hover,
-.gallery-middle-li:hover, .profile-middle-li:hover, .menu-nav-closed:hover {
+.gallery-middle-li:hover, .profile-middle-li:hover, .menu-nav-closed:hover,
+.home-menu-li:hover, .contact-menu-li:hover, .lakes-menu-li:hover,
+.gallery-menu-li:hover, .profile-menu-li:hover {
     background-image: linear-gradient(180deg, rgb(210, 220, 225), rgb(255, 255, 255));
 }
 
+.contact-menu-li:hover, .lakes-menu-li:hover, .gallery-menu-li:hover,
+.profile-menu-li:hover {
+    border-top: 1px solid rgb(137, 137, 137);
+}
+
+.home-menu-li:hover, .contact-menu-li:hover, .lakes-menu-li:hover,
+.gallery-menu-li:hover, .profile-menu-li:hover {
+    border-bottom: 1px solid rgb(137, 137, 137);
+}
+
 .home-link:hover, .contact-link:hover, .login-link:hover, .signup-link:hover,
-.logout-link:hover, .to-page:hover, .f-to-page:hover {
+.logout-link:hover, .to-page:hover, .f-to-page:hover, .menu-home-to-page:hover,
+.menu-contact-to-page:hover, .menu-lakes-to-page:hover, .menu-gallery-to-page:hover,
+.menu-profile-to-page:hover {
     color: red;
 }
 
@@ -184,6 +207,12 @@
 }
 
 /* MiddleNavbar */
+
+/*
+The Padding-Right adjustments are to make sure the links in the
+dropdown menu are clickable by the user and also highlight the text
+/*
+
 /* Width */
 @media only screen and (max-width: 850px) {
     /* Hide the middle nav */
@@ -195,11 +224,97 @@
     .menu-nav-cont {
         display: flex;
     }
+
+    /* Menu drop down links */
+    .menu-home-to-page {
+        padding-right: 86.6%;
+    }
+
+    .menu-contact-to-page {
+        padding-right: 79.6%;
+    }
+
+    .menu-lakes-to-page {
+        padding-right: 67.7%;
+    }
+
+    .menu-gallery-to-page {
+        padding-right: 84.4%;
+    }
+
+    .menu-profile-to-page {
+        padding-right: 85.6%;
+    }
+}
+
+@media only screen and (max-width: 790px) {
+    .menu-home-to-page {
+        padding-right: 85.5%;
+    }
+
+    .menu-contact-to-page {
+        padding-right: 78.2%;
+    }
+
+    .menu-lakes-to-page {
+        padding-right: 65.2%;
+    }
+
+    .menu-gallery-to-page {
+        padding-right: 83.4%;
+    }
+
+    .menu-profile-to-page {
+        padding-right: 84.4%;
+    }
 }
 
 @media only screen and (max-width: 730px) {
     .menu-nav-list {
         max-width: 56.3%;
+    }
+
+    /* Menu drop down links */
+    .menu-home-to-page {
+        padding-right: 84.6%;
+    }
+
+    .menu-contact-to-page {
+        padding-right: 76.5%;
+    }
+
+    .menu-lakes-to-page {
+        padding-right: 62.8%;
+    }
+
+    .menu-gallery-to-page {
+        padding-right: 82.1%;
+    }
+
+    .menu-profile-to-page {
+        padding-right: 83.4%;
+    }
+}
+
+@media only screen and (max-width: 665px) {
+    .menu-home-to-page {
+        padding-right: 83%;
+    }
+
+    .menu-contact-to-page {
+        padding-right: 74.2%;
+    }
+
+    .menu-lakes-to-page {
+        padding-right: 59%;
+    }
+
+    .menu-gallery-to-page {
+        padding-right: 80.2%;
+    }
+
+    .menu-profile-to-page {
+        padding-right: 81.7%;
     }
 }
 
@@ -207,17 +322,146 @@
     .menu-nav-list {
         max-width: 57.4%;
     }
+
+    /* Menu drop down links */
+    .menu-home-to-page {
+        padding-right: 81.6%;
+    }
+
+    .menu-contact-to-page {
+        padding-right: 72.2%;
+    }
+
+    .menu-lakes-to-page {
+        padding-right: 55.5%;
+    }
+
+    .menu-gallery-to-page {
+        padding-right: 78.6%;
+    }
+
+    .menu-profile-to-page {
+        padding-right: 80%;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .menu-home-to-page {
+        padding-right: 79.8%;
+    }
+
+    .menu-contact-to-page {
+        padding-right: 68.5%;
+    }
+
+    .menu-lakes-to-page {
+        padding-right: 50.5%;
+    }
+
+    .menu-gallery-to-page {
+        padding-right: 76.3%;
+    }
+
+    .menu-profile-to-page {
+        padding-right: 78%;
+    }
 }
 
 @media only screen and (max-width: 500px) {
     .menu-nav-list {
         max-width: 58.4%;
     }
+
+    /* Menu drop down links */
+    .menu-home-to-page {
+        padding-right: 78.4%;
+    }
+
+    .menu-contact-to-page {
+        padding-right: 66.8%;
+    }
+
+    .menu-lakes-to-page {
+        padding-right: 46.9%;
+    }
+
+    .menu-gallery-to-page {
+        padding-right: 74.4%;
+    }
+
+    .menu-profile-to-page {
+        padding-right: 76.3%;
+    }
 }
 
 @media only screen and (max-width: 450px) {
     .menu-nav-list {
         max-width: 59.7%;
+    }
+
+    /* Menu drop down links */
+    .menu-home-to-page {
+        padding-right: 76.3%;
+    }
+
+    .menu-contact-to-page {
+        padding-right: 64%;
+    }
+
+    .menu-lakes-to-page {
+        padding-right: 42%;
+    }
+
+    .menu-gallery-to-page {
+        padding-right: 72.4%;
+    }
+
+    .menu-profile-to-page {
+        padding-right: 74.4%;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .menu-home-to-page {
+        padding-right: 74.7%;
+    }
+
+    .menu-contact-to-page {
+        padding-right: 62%;
+    }
+
+    .menu-lakes-to-page {
+        padding-right: 39.6%;
+    }
+
+    .menu-gallery-to-page {
+        padding-right: 70.6%;
+    }
+
+    .menu-profile-to-page {
+        padding-right: 72.7%;
+    }
+}
+
+@media only screen and (max-width: 412px) {
+    .menu-home-to-page {
+        padding-right: 73.9%;
+    }
+
+    .menu-contact-to-page {
+        padding-right: 60.2%;
+    }
+
+    .menu-lakes-to-page {
+        padding-right: 36.8%;
+    }
+
+    .menu-gallery-to-page {
+        padding-right: 69.4%;
+    }
+
+    .menu-profile-to-page {
+        padding-right: 71.7%;
     }
 }
 
@@ -227,9 +471,96 @@
     }
 }
 
+@media only screen and (max-width: 393px) {
+    .menu-home-to-page {
+        padding-right: 73%;
+    }
+
+    .menu-contact-to-page {
+        padding-right: 59%;
+    }
+
+    .menu-lakes-to-page {
+        padding-right: 34.6%;
+    }
+
+    .menu-gallery-to-page {
+        padding-right: 68.6%;
+    }
+
+    .menu-profile-to-page {
+        padding-right: 70.8%;
+    }
+}
+
 @media only screen and (max-width: 375px) {
     .menu-nav-list {
         max-width: 61.1%;
+    }
+
+    /* Menu drop down links */
+    .menu-home-to-page {
+        padding-right: 72%;
+    }
+
+    .menu-contact-to-page {
+        padding-right: 57%;
+    }
+
+    .menu-lakes-to-page {
+        padding-right: 32%;
+    }
+
+    .menu-gallery-to-page {
+        padding-right: 67.2%;
+    }
+
+    .menu-profile-to-page {
+        padding-right: 69.7%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .menu-home-to-page {
+        padding-right: 70.5%;
+    }
+
+    .menu-contact-to-page {
+        padding-right: 55.4%;
+    }
+
+    .menu-lakes-to-page {
+        padding-right: 29.2%;
+    }
+
+    .menu-gallery-to-page {
+        padding-right: 66%;
+    }
+
+    .menu-profile-to-page {
+        padding-right: 68.5%;
+    }
+}
+
+@media only screen and (max-width: 353px) {
+    .menu-home-to-page {
+        padding-right: 70.2%;
+    }
+
+    .menu-contact-to-page {
+        padding-right: 54.7%;
+    }
+
+    .menu-lakes-to-page {
+        padding-right: 27.2%;
+    }
+
+    .menu-gallery-to-page {
+        padding-right: 65.6%;
+    }
+
+    .menu-profile-to-page {
+        padding-right: 68.1%;
     }
 }
 
@@ -242,6 +573,27 @@
 @media only screen and (max-width: 330px) {
     .menu-nav-list {
         max-width: 63.5%;
+    }
+
+    /* Menu drop down links */
+    .menu-home-to-page {
+        padding-right: 69.3%;
+    }
+
+    .menu-contact-to-page {
+        padding-right: 53.1%;
+    }
+
+    .menu-lakes-to-page {
+        padding-right: 25%;
+    }
+
+    .menu-gallery-to-page {
+        padding-right: 64.4%;
+    }
+
+    .menu-profile-to-page {
+        padding-right: 67%;
     }
 }
 
@@ -260,6 +612,29 @@
 @media only screen and (max-width: 283px) {
     .menu-nav-list {
         max-width: 66.5%;
+    }
+}
+
+/* Galaxy Fold */
+@media only screen and (max-width: 280px) {
+    .menu-home-to-page {
+        padding-right: 64.8%;
+    }
+
+    .menu-contact-to-page {
+        padding-right: 46.4%;
+    }
+
+    .menu-lakes-to-page {
+        padding-right: 15.2%;
+    }
+
+    .menu-gallery-to-page {
+        padding-right: 59.4%;
+    }
+
+    .menu-profile-to-page {
+        padding-right: 63%;
     }
 }
 

@@ -123,7 +123,7 @@
 /* Width */
 @media only screen and (max-width: 400px) {
     .login-label, .signup-label {
-        margin-top: 0px;
+        margin-top: 3px;
     }
 
     .member {

@@ -11,6 +11,9 @@ export default class Footer extends Component {
 
         return(
             <div className="whole-footer-cont">
+                <div className="footer-line-cont">
+                    <div className="footer-line"></div>
+                </div>
                 <div className="main-footer">
                     <div className="sub-footer">
                         <Link className="f-to-page" to="/">Home</Link>

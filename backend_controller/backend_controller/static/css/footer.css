@@ -3,17 +3,15 @@
 /* Link styling is all in Infonavpanel.css */
 
 /* Containers */
-.main-footer, .sub-footer, .copyright-cont {
+.main-footer, .sub-footer, .copyright-cont, .footer-line-cont {
    display: flex;
    justify-content: center;
    align-items: center;
 }
 
 .sub-footer {
-   border-top: 1px solid rgba(128, 128, 128, 0.5);
    width: 886px;
    height: 100%;
-   margin-top: 4vh;
 }
 
 .f-slash-cont {
@@ -31,6 +29,10 @@
    margin-top: 5vh;
 }
 
+.footer-line-cont {
+   width: 100%;
+}
+
 /* Text */
 .copyright-2023-text {
    font-size: 14px;
@@ -46,6 +48,12 @@
    margin: 0px;
    font-size: 17px;
    margin-top: 4px;
+}
+
+.footer-line {
+   width: 90%;
+   height: 1px;
+   background-color: rgba(49, 49, 49, 0.7);
 }
 
 /* Mobile Adjustments */

@@ -66,22 +66,22 @@ const MiddleNavbar = () => {
             <div className="menu-nav-list-cont" style={{ display: isActive ? "flex" : "none"}}>
                 <ul className="menu-nav-list">
                     <li className="home-menu-li">
-                        <Link className="to-page" to="/">Home</Link>
+                        <Link className="menu-home-to-page" to="/"><strong>Home</strong></Link>
                     </li>
                     <li className="contact-menu-li">
-                        <Link className="to-page" to="/contact">Contact Us</Link>
+                        <Link className="menu-contact-to-page" to="/contact"><strong>Contact|Us</strong></Link>
                     </li>
                     <li className="lakes-menu-li">
-                        <Link className="to-page" to="/lakes">Lakes & Reservoirs</Link>
+                        <Link className="menu-lakes-to-page" to="/lakes"><strong>Lakes|&|Reservoirs</strong></Link>
                     </li>
                     <li className="gallery-menu-li">
-                        <Link className="to-page" to="/gallery">Gallery</Link>
+                        <Link className="menu-gallery-to-page" to="/gallery"><strong>Gallery</strong></Link>
                     </li>
                     {token === null && <></>}
                     {token !== null &&
                     <>
                         <li className="profile-menu-li">
-                            <Link className="to-page" to="/profile">Profile</Link>
+                            <Link className="menu-profile-to-page" to="/profile"><strong>Profile</strong></Link>
                         </li>
                     </>
                     }
