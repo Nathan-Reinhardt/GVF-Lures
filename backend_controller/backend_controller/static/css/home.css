@@ -1,10 +1,13 @@
 /* CSS for the Splash Page */
 
 /* Containers */
-
-.splash-container, .home-content-cont {
+.splash-container, .home-content-cont, .slideshow-container {
     display: flex;
     justify-content: center;
+}
+
+.slideshow-container {
+    align-items: center;
 }
 
 .splash-container {
@@ -14,9 +17,11 @@
     margin-bottom: 6vh;
 }
 
-.home-content-cont {
-    width: 890px;
-    height: 100%;
+.slideshow-container {
+    position: relative;
+    max-width: 85%;
+    overflow: hidden;
+    padding: 20px 20px 20px 20px;
     border-radius: 10px;
     box-sizing: border-box;
     box-shadow: 20px 25px 15px rgba(183, 191, 196, 0.7);
@@ -31,44 +36,28 @@
 }
 
 /* Slideshow */
-/* Maybe in the future add a different transition */
-.SLIDE-HOME {
-    margin-top: 3vh;
-    margin-bottom: 3vh;
-    width: 800px;
-    height: 600px;
-    background-position: center;
-    background-size: contain;
-    backface-visibility: hidden;
-    animation: slideHome 30s linear infinite;
+.slide {
+    display: none;
+    width: 92%;
+    height: 92%;
+    opacity: 0.1;
+    animation: slide 15s ease-in-out;
 }
 
-@keyframes slideHome {
-    0% {
-        background: url('../frontend/images/Slide1.jpg') no-repeat;
+.slide.active {
+    display: block;
+}
+
+@keyframes slide {
+    15% {
+        opacity: 1;
     }
 
-    33% {
-        background: url('../frontend/images/Slide1.jpg') no-repeat;
-    }
-
-    34% {
-        background: url('../frontend/images/Slide2.jpg') no-repeat;
-    }
-
-    66% {
-        background: url('../frontend/images/Slide2.jpg') no-repeat;
-    }
-
-    67% {
-        background: url('../frontend/images/Slide3.jpg') no-repeat;
-    }
-
-    99% {
-        background: url('../frontend/images/Slide3.jpg') no-repeat;
+    85% {
+        opacity: 1;
     }
 
     100% {
-        background: url('../frontend/images/Slide1.jpg') no-repeat;
+        opacity: 0.1;
     }
 }
