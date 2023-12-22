@@ -15,7 +15,7 @@ const SplashPage = () => {
     const token = localStorage.getItem("authTokens");   // if token is null don't add an element
 
     // image url list
-    const imageUrls = [EssentialMedia[2].url, EssentialMedia[3].url, EssentialMedia[4].url]
+    const imageUrls = [EssentialMedia[2].url, EssentialMedia[3].url, EssentialMedia[4].url];
 
     return(
         <div>

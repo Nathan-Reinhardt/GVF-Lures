@@ -6,11 +6,12 @@ const ImageSlideshow = ({ images }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     useEffect(() => {
+        // to switch to the next image
         const nextImage = () => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
         };
 
-        console.log(currentIndex);
+        // change the number for how many miliseconds between images
         const intervalId = setInterval(nextImage, 15000);
 
         return () => clearInterval(intervalId);

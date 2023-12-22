@@ -3,13 +3,8 @@
 
 // Also this file is used for Div Background Images only
 const IMAGES = {
-    // Menu Icon
+    // Dropdown Menu Icon
     MenuIcon: require("./images/menuicon.png").default,
-
-    // Slide Images
-    Slide1: require("./images/Slide1.jpg").default,
-    Slide2: require("./images/Slide2.jpg").default,
-    Slide3: require("./images/Slide3.jpg").default,
 }
 
 export default IMAGES;
