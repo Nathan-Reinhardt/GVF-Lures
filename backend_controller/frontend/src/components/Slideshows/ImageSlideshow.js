@@ -1,9 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
+import AuthContext from '../../context/AuthContext';
+import TextSlideshowOverlays from './TextSlideshowOverlays';
 
 const ImageSlideshow = ({ images }) => {
+    const {user} = useContext(AuthContext);     // grab the user and token
+    const token = localStorage.getItem("authTokens");   // if token is null don't add an element
 
     // to keep track of current index
     const [currentIndex, setCurrentIndex] = useState(0);
+
+    // change the number for how many miliseconds between images
+    const intervalNum = 15000;
 
     useEffect(() => {
         // to switch to the next image
@@ -11,8 +18,7 @@ const ImageSlideshow = ({ images }) => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
         };
 
-        // change the number for how many miliseconds between images
-        const intervalId = setInterval(nextImage, 15000);
+        const intervalId = setInterval(nextImage, intervalNum);
 
         return () => clearInterval(intervalId);
     }, [images]);
@@ -24,6 +30,11 @@ const ImageSlideshow = ({ images }) => {
                     className={`slide ${index === currentIndex ? 'active' : ''}`}
                 />
             ))}
+            {token === null ? (
+                <TextSlideshowOverlays username={user.username} />
+            ) : (
+                <TextSlideshowOverlays username="none" />
+            )}
         </div>
     );
 };
