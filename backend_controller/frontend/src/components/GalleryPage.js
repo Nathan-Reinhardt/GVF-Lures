@@ -65,7 +65,7 @@ const GalleryPage = () => {
                     <div className="media-container">
                         {
                             GalleryMedia.map((image, index) => (
-                                <div id={index} className="media">
+                                <div key={index} id={index} className="media">
                                     {
                                         <img id={index} src={image.url} alt="" />
                                     }

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
+import { createRoot } from "react-dom/client";
 import HomeApp from "./_HomeApp";
 
 export default class App extends Component {
@@ -16,5 +17,6 @@ export default class App extends Component {
     };
 };
 
-const appDiv = document.getElementById("app");
-render(<App />, appDiv);
+const rootDiv = document.getElementById("root");
+const rootInstance = createRoot(rootDiv);
+rootInstance.render(<App />);

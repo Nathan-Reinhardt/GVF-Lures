@@ -1,19 +1,32 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import apiKey from '../../utils/APIKeys/_weatherapikey';
+import weatherApiKey from '../../utils/APIKeys/_weatherapikey';
 
 const LakesInfo = (props) => {
     // units = imperial | to set units to Fahrenheit from Kelvin
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${props.cityLocation}&units=imperial&appid=${apiKey}`;
     const [data, setData] = useState({});
 
-    // checks if the api call has already been made
-    if (data.name == null) {
-        axios.get(url).then((response) => {
-            setData(response.data);
-            // console.log(response.data);
-        });
-    }
+    useEffect(() => {
+        const fetchData = async () => {
+            let url;
+            if (process.env.NODE_ENV === 'development') {
+                url = `https://api.openweathermap.org/data/2.5/weather?q=${props.cityLocation}&units=imperial&appid=${weatherApiKey}`;
+            }
+            else {
+                url = `https://api.openweathermap.org/data/2.5/weather?q=${props.cityLocation}&units=imperial&appid=${process.env.WEATHER_API_KEY}`;
+            }
+
+            try {
+                const response = await axios.get(url);
+                setData(response.data);
+            } catch (error) {
+                console.error('Error fetching weather data: ', error);
+            }
+        };
+
+        // Fetch data when the component mounts
+        fetchData();
+    }, [props.cityLocation]);
 
     return(
         <div>

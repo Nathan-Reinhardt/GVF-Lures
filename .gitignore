@@ -1,14 +1,12 @@
 # Ignore important dependencies and files
 **node_modules
 **/__pycache__/
+undefined
 db.sqlite3
 APIKeys/
-main.js
-main.js.LICENSE.txt
-undefined
+bundle.js
+bundle.js.LICENSE.txt
 
-# Ignore Images
-images/
-*.jpg
-*.jpeg
-*.png
+# Webpack Testing files
+stats.json
+statshowtouse.txt

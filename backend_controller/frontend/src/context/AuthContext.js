@@ -7,6 +7,17 @@ const AuthContext = createContext();
 export default AuthContext;
 
 export const AuthProvider = ({ children }) => {
+    
+    // Ensures that the URL is changed from local to live enviornments
+    let BASE_URL;
+    if (process.env.NODE_ENV === 'development') {
+        // Development enviornment
+        BASE_URL = "http://127.0.0.1:8000/";
+    } else {
+        // Production environment
+        BASE_URL = "https://gvf-lures-41a1e6a943ff.herokuapp.com/";
+    }
+
     // setting the state in react
     const [authTokens, setAuthTokens] = useState(() => 
         localStorage.getItem("authTokens")
@@ -26,7 +37,7 @@ export const AuthProvider = ({ children }) => {
 
     // log in user function
     const loginUser = async (email, password) => {
-        const response = await fetch("http://127.0.0.1:8000/backend/token/", {
+        const response = await fetch(`${BASE_URL}backend/token/`, {
             method: "POST",
             headers:{
                 "Content-Type":"application/json"
@@ -61,7 +72,7 @@ export const AuthProvider = ({ children }) => {
 
     // sign up a user function
     const signUpUser = async (email, username, password, password2) => {
-        const response = await fetch("http://127.0.0.1:8000/backend/register/", {
+        const response = await fetch(`${BASE_URL}backend/register/`, {
             method: "POST",
             headers: {
                 "Content-Type":"application/json"

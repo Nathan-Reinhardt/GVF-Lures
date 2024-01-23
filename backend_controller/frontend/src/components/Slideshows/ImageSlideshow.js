@@ -4,7 +4,15 @@ import TextSlideshowOverlays from './TextSlideshowOverlays';
 
 const ImageSlideshow = ({ images }) => {
     const {user} = useContext(AuthContext);     // grab the user and token
-    const token = localStorage.getItem("authTokens");   // if token is null don't add an element
+    let username = "";
+    
+    // used to make sure React doesn't break when user doesn't exist
+    if (user === null) {
+        username = "none";
+    }
+    else {
+        username = user.username;
+    }
 
     // to keep track of current index
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -30,11 +38,7 @@ const ImageSlideshow = ({ images }) => {
                     className={`slide ${index === currentIndex ? 'active' : ''}`}
                 />
             ))}
-            {token === null ? (
-                <TextSlideshowOverlays username={user.username} />
-            ) : (
-                <TextSlideshowOverlays username="none" />
-            )}
+            <TextSlideshowOverlays username={username} />
         </div>
     );
 };

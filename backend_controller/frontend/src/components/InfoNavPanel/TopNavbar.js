@@ -49,7 +49,7 @@ const TopNavbar = () => {
                     {token !== null &&
                     <>
                         <li className="logout-li">
-                            <Link className="logout-link" onClick={logoutUser}>Log Out</Link>
+                            <Link className="logout-link" onClick={logoutUser} to="/login">Log Out</Link>
                         </li>
                     </>
                     }

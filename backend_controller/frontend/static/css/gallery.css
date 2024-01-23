@@ -1,0 +1,225 @@
+/* Gallery Page CSS */
+
+/* Gallery Grid */
+.media-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-container {
+    width: 70%;
+    min-height: 100vh;
+}
+
+.gallery-container .media-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    margin: 20px auto;
+}
+
+.gallery-container .media-container .media {
+    height: 220px;
+    width: 100%;
+    border: 5px solid rgb(0, 0, 0);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.gallery-container .media-container .media :is(img) {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    object-fit: cover;
+    transition: all 0.3s linear;
+}
+
+.gallery-container .media-container .media:hover :is(img) {
+    transform: scale(1.1);
+}
+
+.gallery-container .popup-media {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-container .popup-media :is(img) {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 85%;
+    max-height: 85%;
+    object-fit: contain;
+    border: 3px solid rgb(0, 0, 0);
+}
+
+/* Spans or Buttons */
+.x-out, .prev-arrow, .next-arrow {
+    position: absolute;
+    font-size: 50px;
+    font-weight: bolder;
+    z-index: 100;
+    cursor: pointer;
+    color: #fff;
+    user-select: none;
+}
+
+.x-out {
+    top: 5px;
+    right: 20px;
+}
+
+.prev-arrow, .next-arrow {
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+}
+
+.prev-arrow {
+    left: 50px;
+    padding: 5px 26px 5px 23px;
+}
+
+.next-arrow {
+    right: 50px;
+    padding: 5px 23px 5px 26px;
+}
+
+/* Hover Effects */
+.x-out:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.prev-arrow:hover, .next-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Text */
+.gallery-title {
+    text-align: center;
+    padding: 0;
+    font-size: 56px;
+    margin: 4vh 0px 5vh 0px;
+}
+
+/* Mobile Adjustments */
+
+/* Grid Adjustments */
+@media only screen and (max-width: 1345px) {
+    .gallery-container .media-container {
+        grid-template-columns: repeat(auto-fill, minmax(222px, 1fr));
+    }
+}
+
+@media only screen and (max-width: 1011px) {
+    .gallery-container .media-container {
+        grid-template-columns: repeat(auto-fill, minmax(189px, 1fr));
+    }
+
+    .gallery-container {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 804px) {
+    .gallery-container {
+        width: 92%;
+    }
+}
+
+@media only screen and (max-width: 701px) {
+    .gallery-container .media-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+
+@media only screen and (max-width: 538px) {
+    .gallery-container .media-container {
+        grid-template-columns: repeat(auto-fill, minmax(109px, 1fr));
+    }
+}
+
+@media only screen and (max-width: 405px) {
+    .gallery-container .media-container {
+        grid-template-columns: repeat(auto-fill, minmax(78px, 1fr));
+    }
+}
+
+@media only screen and (max-width: 405px) {
+    .gallery-container .media-container {
+        grid-template-columns: repeat(auto-fill, minmax(78px, 1fr));
+    }
+}
+
+@media only screen and (max-width: 303px) {
+    .gallery-container .media-container {
+        grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+    }
+}
+
+/* Popup Media Adjustments */
+
+/* Computer Widths */
+@media only screen and (min-width: 1840px) {
+    .prev-arrow, .next-arrow {
+        top: 50%;
+    }
+}
+
+@media only screen and (max-width: 1840px) {
+    .prev-arrow, .next-arrow {
+        top: 92%;
+    }
+}
+
+/* Height Adjustments */
+@media only screen and (max-height: 1100px) {
+    .prev-arrow, .next-arrow {
+        top: 90%;
+    }
+}
+
+@media only screen and (max-height: 802px) {
+    .prev-arrow, .next-arrow {
+        top: 88%;
+    }
+}
+
+@media only screen and (max-height: 650px) {
+    .prev-arrow, .next-arrow {
+        top: 86%;
+    }
+}
+
+/* Width Adjustments */
+@media only screen and (max-width: 390px) {
+    .prev-arrow, .next-arrow {
+        top: 86%;
+    }
+
+    .prev-arrow {
+        left: 30px;
+    }
+
+    .next-arrow {
+        right: 30px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .prev-arrow, .next-arrow {
+        top: 80%;
+    }
+}
