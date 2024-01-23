@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import weatherApiKey from '../../utils/APIKeys/_weatherapikey';
+
+// Uncomment when working in dev mode
+// import weatherApiKey from '../../utils/APIKeys/_weatherapikey';
 
 const LakesInfo = (props) => {
     // units = imperial | to set units to Fahrenheit from Kelvin
@@ -10,7 +12,8 @@ const LakesInfo = (props) => {
         const fetchData = async () => {
             let url;
             if (process.env.NODE_ENV === 'development') {
-                url = `https://api.openweathermap.org/data/2.5/weather?q=${props.cityLocation}&units=imperial&appid=${weatherApiKey}`;
+                // Uncomment when working in dev mode
+                // url = `https://api.openweathermap.org/data/2.5/weather?q=${props.cityLocation}&units=imperial&appid=${weatherApiKey}`;
             }
             else {
                 url = `https://api.openweathermap.org/data/2.5/weather?q=${props.cityLocation}&units=imperial&appid=${process.env.WEATHER_API_KEY}`;
