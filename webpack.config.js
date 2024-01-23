@@ -5,10 +5,10 @@ module.exports = (_, argv) => {
   const isProduction = argv.mode === 'production';
 
   return {
-    entry: "./src/index.js",
+    entry: "./index.js",
     output: {
       filename: "bundle.js",
-      path: path.resolve(__dirname, "static"),
+      path: path.resolve(__dirname, "backend_controller/frontend/static"),
     },
     module: {
       rules: [
