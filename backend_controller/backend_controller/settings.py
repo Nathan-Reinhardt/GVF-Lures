@@ -76,14 +76,16 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    # Custom
+    # Custom Backend
     'backend.apps.BackendConfig',
-    'frontend.apps.FrontendConfig',
 
     # Third Party
     'rest_framework',
     'rest_framework_simplejwt.token_blacklist',
     'corsheaders',
+
+    # Custom Frontend
+    'frontend.apps.FrontendConfig',
 ]
 
 MIDDLEWARE = [
