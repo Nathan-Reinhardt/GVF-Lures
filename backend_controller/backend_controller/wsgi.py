@@ -11,6 +11,7 @@ import os
 import sys
 
 from django.core.wsgi import get_wsgi_application
+from backend_controller import urls
 
 # Get the directory containing the wsgi.py file (two levels up)
 project_directory = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
