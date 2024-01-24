@@ -10,6 +10,8 @@ https://docs.djangoproject.com/en/4.2/howto/deployment/wsgi/
 import os
 from django.core.wsgi import get_wsgi_application
 from whitenoise import WhiteNoise
+import sys
+print(sys.path)
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'backend_controller.backend_controller.settings')
 
