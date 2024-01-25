@@ -58,7 +58,8 @@ IS_HEROKU_APP = "DYNO" in os.environ and not "CI" in os.environ
 # SECURITY WARNING: don't run with debug turned on in production!
 if not IS_HEROKU_APP:
     DEBUG = True
-
+else:
+    DEBUG = False
 
 # Application definition
 
@@ -115,7 +116,7 @@ CORS_ALLOW_ALL_ORIGINS = False
 # to list the expected hostnames explicitly to prevent HTTP Host header attacks. See:
 # https://docs.djangoproject.com/en/5.0/ref/settings/#std-setting-ALLOWED_HOSTS
 if IS_HEROKU_APP:
-    ALLOWED_HOSTS = ["https://gvf-lures-41a1e6a943ff.herokuapp.com"]
+    ALLOWED_HOSTS = ["gvf-lures-41a1e6a943ff.herokuapp.com", "*"]
 else:
     ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
