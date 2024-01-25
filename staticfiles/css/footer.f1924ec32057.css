@@ -1,0 +1,76 @@
+/* Footer CSS */
+
+/* Link styling is all in Infonavpanel.css */
+
+/* Containers */
+.main-footer, .sub-footer, .copyright-cont, .footer-line-cont {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.sub-footer {
+   width: 886px;
+   height: 100%;
+}
+
+.f-slash-cont {
+   margin-top: -2px;
+   height: 30px;
+   padding: 0px 5px 0px 5px;
+}
+
+.copyright-cont {
+   height: 38px;
+   padding-bottom: 40px;
+}
+
+.whole-footer-cont {
+   margin-top: 5vh;
+}
+
+.footer-line-cont {
+   width: 100%;
+}
+
+/* Text */
+.copyright-2023-text {
+   font-size: 14px;
+   padding-right: 3.5px;
+}
+
+/* Other */
+.f-to-new-tab {
+   font-size: 14px;
+}
+
+.f-slash-vertical-line {
+   margin: 0px;
+   font-size: 17px;
+   margin-top: 4px;
+}
+
+.footer-line {
+   width: 90%;
+   height: 1px;
+   background-color: rgba(49, 49, 49, 0.7);
+}
+
+/* Mobile Adjustments */
+@media only screen and (max-width: 365px) {
+   .copyright-2023-text {
+      font-size: 12px;
+   }
+}
+
+@media only screen and (max-width: 320px) {
+   .copyright-2023-text {
+      font-size: 11px;
+   }
+}
+
+@media only screen and (max-width: 290px) {
+   .copyright-2023-text {
+      font-size: 10px;
+   }
+}
