@@ -1,0 +1,51 @@
+/* The main css file where all new css files are imported into */
+/* Imports */
+@import url("dashboard.ad3d032d2203.css");
+@import url("headerdetail.964c3370a8d8.css");
+@import url("infonavpanel.ed5be52b7870.css");
+@import url("sessions.fe5d3df76501.css");
+@import url("home.996c32b6476a.css");
+@import url("footer.f1924ec32057.css");
+@import url("lakes.8fd52c9079f7.css");
+@import url("gallery.d49d5865f920.css");
+@import url("contact.0b15177fd446.css");
+@import url("profile.f596a57415fb.css");
+
+/* Responsive CSS Import */
+@import url("_responsiveness.2159d64db0cc.css");
+
+/* This is the main css for main html, body, img, and divs */
+html, body {
+    background-color:white;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#main, #app {
+    width: 100%;
+    height: 100%
+}
+
+/* end of css */
+
+/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/* NOTE FOR DEV TESTING PURPOSES FOR CSS CHANGES */
+/* Make sure once you have webpack running and also myrunserver for django
+   working properly, make sure while in css development to press " ALT + F5 ",
+   whenever making changes to the css. This allows the local server to let the
+   css code update the cache everytime a css change has been made by the developer
+   on browser refresh. This helps live test and change the css design and looks
+   in real time on browser refresh.
+   
+   *** Example Use Case ***
+   This key press combination only needs to occur once per instance for each
+   .css file being changed. For example if I am changing the css on the splash
+   page for the first time during this work instance, I will need to press
+   " ALT + F5 " and after doing it once, any changes on the splash.css that are
+   saved, it will update to the local server on reload. Even in the same work
+   instance, if you decide to work on another css file, you will need to do the
+   same key combination again since you are working with a different file. Once
+   you do " ALT + F5 " for one css page you won't need to do it anymore until the
+   next work instance. Work instance meaning if you closed every terminal and reset.*/
+/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
