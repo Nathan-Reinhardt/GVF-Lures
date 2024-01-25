@@ -1,1 +1,1 @@
-import App from './backend_controller/frontend/src/components/App';
+import App from './frontend/src/components/App';
