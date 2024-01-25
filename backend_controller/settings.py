@@ -211,13 +211,13 @@ STATIC_URL = "static/"
 
 
 STORAGES = {
-    # Enable WhiteNoise's GZip and Brotli compression of static assets:
-    # https://whitenoise.readthedocs.io/en/latest/django.html#add-compression-and-caching-support
+    # Compression before ManifestStaticFilesStorage will break when you run:
+    # | python manage.py collectstatic --noinput |
+    # It breaks when it tries to grab restframework static files.
     "staticfiles": {
-        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+        "BACKEND": "whitenoise.storage.ManifestStaticFilesStorage",
     },
 }
-
 
 # Gunicorn configuration
 if IS_HEROKU_APP:
