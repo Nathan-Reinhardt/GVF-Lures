@@ -1,0 +1,333 @@
+/* Header Detail CSS */
+
+/* Containers */
+.gvf-lures-text-cont {
+    display: flex;
+    justify-content: center;
+}
+
+.gvf-logo-cont {
+    display: flex;
+    justify-content: right;
+    position: absolute;
+    width: 40.6%;
+    top: 5.45%;
+}
+
+.gvf-lures-text-cont {
+    width: 100%;
+}
+
+/* Text, Links, Images, and Decorations */
+
+.gvf-lures-logo-image, .site-logo-link {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.gvf-lures-logo-image {
+    object-fit: contain;
+}
+
+.site-logo-link {
+    width: 87px;
+    height: 106px;
+}
+
+/* Can be replaced with an actual gvf lures logo title later */
+.main-gvf-lures-text {
+    font-size: 50px;
+    text-align: center;
+    height: 60px;
+    margin: 0px;
+}
+
+/* Mobile Adjustments */
+
+/* Width */
+
+/* Site Logo */
+/* Computers */
+@media only screen and (max-width: 2600px) {
+    .gvf-logo-cont {
+        width: 35.6%;
+    }
+}
+
+@media only screen and (max-width: 2500px) {
+    .gvf-logo-cont {
+        width: 35.3%;
+    }
+}
+
+@media only screen and (max-width: 2400px) {
+    .gvf-logo-cont {
+        width: 34.8%;
+    }
+}
+
+@media only screen and (max-width: 2300px) {
+    .gvf-logo-cont {
+        width: 34.1%;
+    }
+}
+
+@media only screen and (max-width: 2200px) {
+    .gvf-logo-cont {
+        width: 33.35%;
+    }
+}
+
+@media only screen and (max-width: 2100px) {
+    .gvf-logo-cont {
+        width: 32.4%;
+    }
+}
+
+@media only screen and (max-width: 2000px) {
+    .gvf-logo-cont {
+        width: 31.6%;
+    }
+}
+
+/* Average Computer Monitor */
+@media only screen and (max-width: 1920px) {
+    .gvf-logo-cont {
+        width: 31.1%;
+    }
+}
+
+@media only screen and (max-width: 1820px) {
+    .gvf-logo-cont {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 1720px) {
+    .gvf-logo-cont {
+        width: 28.7%;
+    }
+}
+
+@media only screen and (max-width: 1620px) {
+    .gvf-logo-cont {
+        width: 27.2%;
+    }
+}
+
+@media only screen and (max-width: 1520px) {
+    .gvf-logo-cont {
+        width: 25.85%;
+    }
+}
+
+@media only screen and (max-width: 1420px) {
+    .gvf-logo-cont {
+        width: 24.2%;
+    }
+}
+
+@media only screen and (max-width: 1320px) {
+    .gvf-logo-cont {
+        width: 22%;
+    }
+}
+
+/* Average Tablet */
+@media only screen and (max-width: 1280px) {
+    .gvf-logo-cont {
+        width: 21.4%;
+    }
+}
+
+@media only screen and (max-width: 1180px) {
+    .gvf-logo-cont {
+        width: 18.7%;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .gvf-logo-cont {
+        width: 16%;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .gvf-logo-cont {
+        width: 17%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .gvf-logo-cont {
+        width: 18%;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .gvf-logo-cont {
+        width: 19%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .gvf-logo-cont {
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .gvf-logo-cont {
+        width: 21%;
+    }
+}
+
+/* Smaller Tablet and Phones */
+@media only screen and (max-width: 700px) {
+    .main-gvf-lures-text {
+        font-size: 46px;
+    }
+
+    .gvf-lures-logo-image, .site-logo-link {
+        max-width: 95%;
+        max-height: 95%;
+    }
+
+    .gvf-lures-text-cont, .gvf-logo-cont {
+        margin-top: -1vh;
+        margin-bottom: -2vh;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .gvf-logo-cont {
+        width: 22%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main-gvf-lures-text {
+        font-size: 42px;
+    }
+
+    .gvf-lures-logo-image, .site-logo-link {
+        max-width: 90%;
+        max-height: 90%;
+    }
+
+    .gvf-logo-cont {
+        width: 23%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .main-gvf-lures-text {
+        font-size: 38px;
+    }
+
+    .gvf-lures-logo-image, .site-logo-link {
+        max-width: 85%;
+        max-height: 85%;
+    }
+
+    .gvf-logo-cont {
+        width: 24%;
+    }
+
+    .gvf-lures-text-cont, .gvf-logo-cont {
+        margin-bottom: -3vh;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .gvf-lures-logo-image, .site-logo-link {
+        max-width: 80%;
+        max-height: 80%;
+    }
+
+    .gvf-logo-cont {
+        width: 27%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .main-gvf-lures-text {
+        font-size: 34px;
+    }
+
+    .gvf-lures-logo-image, .site-logo-link {
+        max-width: 75%;
+        max-height: 75%;
+    }
+
+    .gvf-logo-cont {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .main-gvf-lures-text {
+        font-size: 32px;
+    }
+
+    .gvf-lures-logo-image, .site-logo-link {
+        max-width: 70%;
+        max-height: 70%;
+    }
+
+    .gvf-logo-cont {
+        width: 29%;
+        top: 6.1%;
+    }
+
+    .gvf-lures-text-cont, .gvf-logo-cont {
+        margin-bottom: -4vh;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .main-gvf-lures-text {
+        font-size: 30px;
+    }
+
+    .gvf-lures-logo-image, .site-logo-link {
+        max-width: 75%;
+        max-height: 75%;
+    }
+
+    .gvf-logo-cont {
+        top: 5.25%;
+        width: 28%;
+    }
+
+    .gvf-lures-text-cont, .gvf-logo-cont {
+        margin-bottom: -5vh;
+    }
+}
+
+/* Galaxy Fold */
+@media only screen and (max-width: 300px) {
+    .gvf-lures-logo-image,
+    .site-logo-link {
+        max-width: 78%;
+        max-height: 78%;
+        padding-right: 8px;
+    }
+
+    .gvf-logo-cont {
+        top: 5.75%;
+    }
+}
+
+/* Height */
+@media only screen and (max-height: 720px) {
+    .gvf-logo-cont {
+        top: 6.25%;
+    }
+}
+
+@media only screen and (max-height: 660px) {
+    .gvf-logo-cont {
+        top: 6.75%;
+    }
+}

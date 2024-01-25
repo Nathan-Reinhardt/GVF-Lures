@@ -1,0 +1,20 @@
+{
+  "name": "GVF-Lures",
+  "description": "A webpage designed for Rich GVF",
+  "image": "heroku/python",
+  "repository": "https://github.com/Nathan-Reinhardt/GVF-Lures",
+  "keywords": ["python", "django", "react", "web", "heroku"],
+  "env": {
+    "DJANGO_SECRET_KEY": {
+      "description": "The secret key for the Django application.",
+      "generator": "secret"
+    }
+  },
+  "environments": {
+    "test": {
+      "scripts": {
+        "test": "./manage.py test --debug-mode"
+      }
+    }
+  }
+}
