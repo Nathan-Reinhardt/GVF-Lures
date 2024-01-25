@@ -8,7 +8,7 @@ module.exports = (_, argv) => {
     entry: "./index.js",
     output: {
       filename: "bundle.js",
-      path: path.resolve(__dirname, "staticfiles"),
+      path: path.resolve(__dirname, "frontend/static"),
     },
     module: {
       rules: [
