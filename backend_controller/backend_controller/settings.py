@@ -77,7 +77,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # Custom Backend
-    'backend',
     'backend.apps.BackendConfig',
 
     # Third Party
@@ -86,7 +85,6 @@ INSTALLED_APPS = [
     'corsheaders',
 
     # Custom Frontend
-    'frontend',
     'frontend.apps.FrontendConfig',
 ]
 
