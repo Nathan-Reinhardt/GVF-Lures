@@ -16,7 +16,7 @@ const LakesInfo = (props) => {
                 // url = `https://api.openweathermap.org/data/2.5/weather?q=${props.cityLocation}&units=imperial&appid=${weatherApiKey}`;
             }
             else {
-                url = `https://api.openweathermap.org/data/2.5/weather?q=${props.cityLocation}&units=imperial&appid=${process.env.WEATHER_API_KEY}`;
+                url = `https://api.openweathermap.org/data/2.5/weather?q=${props.cityLocation}&units=imperial&appid=${process.env.REACT_APP_WEATHER_API_KEY}`;
             }
 
             try {
