@@ -8,8 +8,7 @@
     "analyze-view": "webpack-bundle-analyzer stats.json",
     "dev": "webpack --mode development --watch",
     "build": "webpack --mode production",
-    "heroku-postbuild": "npm run build",
-    "postinstall": "python manage.py collectstatic --noinput"
+    "heroku-postbuild": "npm run build && python manage.py collectstatic --noinput"
   },
   "engines": {
     "node": "10.23.0",
