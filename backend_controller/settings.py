@@ -65,12 +65,12 @@ else:
 
 INSTALLED_APPS = [
     # Use WhiteNoise's runserver implementation instead of the Django default, for dev-prod parity.
-    "whitenoise.runserver_nostatic",
+    'whitenoise.runserver_nostatic',
     # Uncomment this and the entry in `urls.py` if you wish to use the Django admin feature:
     # Django admin doesn't let you migrate the database.
     # https://docs.djangoproject.com/en/5.0/ref/contrib/admin/
 
-    # "django.contrib.admin",
+    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -115,6 +115,8 @@ CORS_ALLOW_ALL_ORIGINS = False
 # validation of the Host header in the incoming HTTP request. On other platforms you may need
 # to list the expected hostnames explicitly to prevent HTTP Host header attacks. See:
 # https://docs.djangoproject.com/en/5.0/ref/settings/#std-setting-ALLOWED_HOSTS
+# Don't use HTTP response headers before the links in ALLOWED_HOSTS
+# The * after the production ALLOWED_HOSTS is used to help identify any sub directories
 if IS_HEROKU_APP:
     ALLOWED_HOSTS = ["gvf-lures-41a1e6a943ff.herokuapp.com", "*"]
 else:

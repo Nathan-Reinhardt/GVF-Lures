@@ -23,8 +23,8 @@ from django.urls import path, include
 
 urlpatterns = [
     path('backend/', include('backend.urls')),
-    path('', include('frontend.urls'))
+    path('', include('frontend.urls')),
     # Uncomment this and the entry in `INSTALLED_APPS` if you wish to use the Django admin feature:
     # https://docs.djangoproject.com/en/5.0/ref/contrib/admin/
-    # path("admin/", admin.site.urls),
+    path("admin/", admin.site.urls),
 ]
