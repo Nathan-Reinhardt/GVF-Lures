@@ -1,5 +1,7 @@
-from backend.models import User
-from backend.serializer import MyTokenObtainPairSerializer, RegisterSerializer
+from django.shortcuts import render
+
+from backend.models import Profile, User
+from backend.serializer import UserSerializer, MyTokenObtainPairSerializer, RegisterSerializer
 
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework_simplejwt.views import TokenObtainPairView

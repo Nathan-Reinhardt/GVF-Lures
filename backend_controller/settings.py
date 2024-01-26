@@ -70,7 +70,7 @@ INSTALLED_APPS = [
     # Django admin doesn't let you migrate the database.
     # https://docs.djangoproject.com/en/5.0/ref/contrib/admin/
 
-    'django.contrib.admin',
+    #'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
