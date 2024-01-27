@@ -17,7 +17,7 @@ export const AuthProvider = ({ children }) => {
         // Production environment
         BASE_URL = "https://gvf-lures-41a1e6a943ff.herokuapp.com/";
     }
-
+    
     // setting the state in react
     const [authTokens, setAuthTokens] = useState(() => 
         localStorage.getItem("authTokens")

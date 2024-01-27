@@ -1,4 +1,4 @@
-from backend.models import User
+from backend.models import User, Profile
 
 from django.contrib.auth.password_validation import validate_password
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
@@ -14,8 +14,10 @@ class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
     def get_token(cls, user):
         token = super().get_token(user)
 
+        token['full_name'] = user.profile.full_name
         token['username'] = user.username
         token['email'] = user.email
+        token['verified'] = user.profile.verified
 
         return token
     
