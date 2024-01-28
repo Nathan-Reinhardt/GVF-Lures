@@ -20,11 +20,19 @@ the css won't have as much reptitive code.
         padding: 25px 25px 25px 25px;
         box-shadow: 15px 15px 13px rgba(183, 191, 196, 0.7);
     }
+
+    .contact-cont {
+        margin-bottom: 9vh;
+    }
 }
 
 @media only screen and (max-width: 500px) {
     .background-contact-info-cont, .background-profile-cont {
         padding: 20px 20px 20px 20px;
+    }
+
+    .contact-cont {
+        margin-bottom: 6vh;
     }
 }
 
@@ -133,5 +141,33 @@ the css won't have as much reptitive code.
     .background-contact-info-cont, .background-profile-cont {
         padding: 25px 25px 25px 25px;
         box-shadow: 15px 15px 13px rgba(183, 191, 196, 0.7);
+    }
+
+    .background-contact-info-cont {
+        max-width: 70%;
+    }
+}
+
+@media only screen and (max-height: 550px) {
+    /* Contact Page */
+    .background-contact-info-cont {
+        max-width: 45%;
+    }
+
+    .contact-phone-num, .contact-email {
+        font-size: 20px;
+    }
+
+    /* Profile Page*/
+    .background-profile-cont {
+        max-width: 70%;
+    }
+
+    .profile-welcome-text {
+        padding-bottom: 0px;
+    }
+
+    .white-profile-cont {
+        padding: 0px;
     }
 }

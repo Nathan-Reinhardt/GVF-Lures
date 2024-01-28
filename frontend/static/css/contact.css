@@ -11,6 +11,10 @@
     height: 100%;
 }
 
+.contact-cont {
+    margin-bottom: 12vh;
+}
+
 .background-contact-info-cont {
     max-width: 92%;
     max-height: 97%;
