@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import AuthContext from '../context/AuthContext';
 import InfoNavPanel from './InfoNavPanel/InfoNavPanel';
 import Footer from './InfoNavPanel/Footer';
+import { EssentialMedia } from '../utils/_essentialmedia';
 
 const SessionPage = (props) => {
 
@@ -11,6 +12,7 @@ const SessionPage = (props) => {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const [password2, setPassword2] = useState("");
+    const [passwordVisible, setPasswordVisible] = useState(false);
 
     // session functions
     const {loginUser} = useContext(AuthContext);
@@ -31,6 +33,22 @@ const SessionPage = (props) => {
         signUpUser(email, username, password, password2);
     };
 
+    // make password input field visible or hidden to the user
+    const togglePasswordVisibility = () => {
+        setPasswordVisible(!passwordVisible);
+
+        // Find the current image element
+        const currentImage = document.getElementById("pi");
+
+        // change the image based on what the current image is
+        if (currentImage && currentImage.src === EssentialMedia[5].url) {
+            currentImage.src = EssentialMedia[6].url;
+        } 
+        else if (currentImage) {
+            currentImage.src = EssentialMedia[5].url;
+        }
+    };
+
     return (
         <div>
             <InfoNavPanel />
@@ -48,9 +66,13 @@ const SessionPage = (props) => {
                         </div>
                         <div className="password-cont">
                             <input className="session-input"
-                                type="password"
+                                type={passwordVisible ? "text" : "password"}
                                 placeholder="Password"
                                 name="password"
+                            />
+                            <img id="pi" className="password-icon"
+                                src={EssentialMedia[5].url}
+                                onClick={togglePasswordVisibility}
                             />
                         </div>
                         <div className="submit-cont">
@@ -87,14 +109,18 @@ const SessionPage = (props) => {
                         </div>
                         <div className="password-cont">
                             <input className="session-input"
-                                type="password"
+                                type={passwordVisible ? "text" : "password"}
                                 placeholder="Password"
                                 onChange={e => setPassword(e.target.value)}
                             />
+                            <img id="pi" className="password-icon"
+                                src={EssentialMedia[5].url}
+                                onClick={togglePasswordVisibility}
+                            />    
                         </div>
                         <div className="password-check-cont">
                             <input className="session-input"
-                                type="password"
+                                type={passwordVisible ? "text" : "password"}
                                 placeholder="Comfirm Password"
                                 onChange={e => setPassword2(e.target.value)}
                             />
