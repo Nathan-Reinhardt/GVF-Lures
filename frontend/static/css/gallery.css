@@ -11,6 +11,7 @@
 .gallery-container {
     width: 70%;
     min-height: 100vh;
+    margin-left: -9px;
 }
 
 .gallery-container .media-container {
@@ -153,13 +154,13 @@
 
 @media only screen and (max-width: 405px) {
     .gallery-container .media-container {
-        grid-template-columns: repeat(auto-fill, minmax(78px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
     }
 }
 
-@media only screen and (max-width: 405px) {
+@media only screen and (max-width: 360px) {
     .gallery-container .media-container {
-        grid-template-columns: repeat(auto-fill, minmax(78px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
     }
 }
 
