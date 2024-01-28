@@ -11,7 +11,7 @@ const TopNavbar = () => {
     if (token) {    // when you need the user_id
         const decoded = jwt_decode(token);
         var user_id = decoded.user_id;
-    }
+    };
 
     return (
         <div className="master-header">
@@ -47,11 +47,9 @@ const TopNavbar = () => {
                     </>
                     }
                     {token !== null &&
-                    <>
                         <li className="logout-li">
                             <Link className="logout-link" onClick={logoutUser} to="/login">Log Out</Link>
                         </li>
-                    </>
                     }
                 </ul>
             </div>

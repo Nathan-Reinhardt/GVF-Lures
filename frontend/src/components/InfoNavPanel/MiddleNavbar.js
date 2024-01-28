@@ -11,25 +11,23 @@ const MiddleNavbar = () => {
 
     // when the user clicks the menu button it dropsdown or closes the menu dropdown
     const menuDropdown = () => {
-        if (isActive) {
-            setIsActive(false);
-        }
-        else {
-            setIsActive(true);
-        }
-    }
+        setIsActive((prevIsActive) => !prevIsActive);
+    };
 
     // if the screen is adjusted too much when the menu disappears hide the children of the menu
     const handleResize = () => {
         if (window.innerWidth > 850) {
             setIsActive(false);
         }
-    }
+    };
 
     // to check the current screen size
     useEffect(() => {
-        window.addEventListener("resize", handleResize)
-    })
+        window.addEventListener("resize", handleResize);
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
 
     return (
         <div>
@@ -47,13 +45,10 @@ const MiddleNavbar = () => {
                     <li className="gallery-middle-li">
                         <Link className="to-page" to="/gallery">Gallery</Link>
                     </li>
-                    {token === null && <></>}
                     {token !== null &&
-                    <>
                         <li className="profile-middle-li">
                             <Link className="to-page" to="/profile">Profile</Link>
                         </li>
-                    </>
                     }
                 </ul>
             </div>
@@ -77,13 +72,10 @@ const MiddleNavbar = () => {
                     <li className="gallery-menu-li">
                         <Link className="menu-gallery-to-page" to="/gallery"><strong>Gallery</strong></Link>
                     </li>
-                    {token === null && <></>}
                     {token !== null &&
-                    <>
                         <li className="profile-menu-li">
                             <Link className="menu-profile-to-page" to="/profile"><strong>Profile</strong></Link>
                         </li>
-                    </>
                     }
                 </ul>
             </div>

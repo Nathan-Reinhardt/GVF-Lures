@@ -29,7 +29,6 @@ export default class Footer extends Component {
                             <h3 className="f-slash-vertical-line">|</h3>
                         </div>
                         <Link className="f-to-page" to="/gallery">Gallery</Link>
-                        {token === null && <></>}
                         {token !== null &&
                         <>
                             <div className="f-slash-cont">
