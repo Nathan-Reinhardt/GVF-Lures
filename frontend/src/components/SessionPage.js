@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import AuthContext from '../context/AuthContext';
 import InfoNavPanel from './InfoNavPanel/InfoNavPanel';
@@ -32,6 +32,11 @@ const SessionPage = (props) => {
         e.preventDefault();
         signUpUser(email, username, password, password2);
     };
+
+    // making sure that the state changes between login and sign up pages
+    useEffect(() => {
+        setPasswordVisible(false);
+    }, [props.isLogin]);
 
     // make password input field visible or hidden to the user
     const togglePasswordVisibility = () => {
