@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-// Uncomment when working in dev mode
+// Uncomment when working in dev mode if you want to see updated weather data
 // import weatherApiKey from '../../utils/APIKeys/_weatherapikey';
 
 const LakesInfo = (props) => {
@@ -12,7 +12,7 @@ const LakesInfo = (props) => {
         const fetchData = async () => {
             let url;
             if (process.env.NODE_ENV === 'development') {
-                // Uncomment when working in dev mode
+                // Uncomment when working in dev mode if you want to see updated weather data
                 // url = `https://api.openweathermap.org/data/2.5/weather?q=${props.cityLocation}&units=imperial&appid=${weatherApiKey}`;
             }
             else {

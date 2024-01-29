@@ -125,7 +125,7 @@
 /* made to links based on their specific css needed for that page.      */
 
 .home-link, .contact-link, .login-link, .signup-link, .logout-link,
-.to-page, .f-to-page, .menu-home-to-page, .menu-contact-to-page,
+.to-page, .menu-home-to-page, .menu-contact-to-page,
 .menu-lakes-to-page, .menu-gallery-to-page, .menu-profile-to-page {
     text-decoration: none;
     font-size: 15px;
@@ -643,21 +643,5 @@ dropdown menu are clickable by the user and also highlight the text
 @media only screen and (max-width: 365px) {
     .home-li, .contact-li, .login-li, .signup-li {
         padding: 0 5px;
-    }
-
-    .f-to-page {
-        font-size: 12px;
-    }
-}
-
-@media only screen and (max-width: 320px) {
-    .f-to-page {
-        font-size: 11px;
-    }
-}
-
-@media only screen and (max-width: 290px) {
-    .f-to-page {
-        font-size: 10px;
     }
 }

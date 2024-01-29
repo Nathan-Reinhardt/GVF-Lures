@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import InfoNavPanel from './InfoNavPanel/InfoNavPanel';
 import Footer from './InfoNavPanel/Footer';
 import { GalleryMedia } from '../utils/_gallerymedia';
@@ -19,12 +19,7 @@ const GalleryPage = () => {
 
     // every image has an event listener to set the currentId to their index position when created
     const imageEventListener = (index) => {
-        useEffect(() => {
-            const currentImage = document.getElementById(index);
-            currentImage.addEventListener("mousedown", () => {
-                setPictureIndex(index);
-            })
-        })
+        setPictureIndex(index);
     }
 
     // checking for when the current Picture exists
@@ -65,11 +60,10 @@ const GalleryPage = () => {
                     <div className="media-container">
                         {
                             GalleryMedia.map((image, index) => (
-                                <div key={index} id={index} className="media">
+                                <div key={index} id={index} className="media" onClick={() => imageEventListener(index)}>
                                     {
                                         <img id={index} src={image.url} alt="" />
                                     }
-                                    {imageEventListener(index)}
                                 </div>
                             ))
                         }

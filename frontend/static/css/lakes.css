@@ -144,8 +144,37 @@
 }
 
 @media only screen and (max-height: 620px) {
+    .berryessa-pic, .bluemesa-pic, .flaming-gorge-pic,
+    .hell-hole-pic, .new-bullards-bar-pic, .new-melones-pic,
+    .pardee-pic, .pyramid-pic, .stampede-pic {
+        max-width: 52%;
+        max-height: 52%;
+    }
+    
     .lakes-page-title-cont {
         margin-top: 1vh;
+    }
+}
+
+@media only screen and (max-height: 560px) {
+    .berryessa-pic, .bluemesa-pic, .flaming-gorge-pic,
+    .hell-hole-pic, .new-bullards-bar-pic, .new-melones-pic,
+    .pardee-pic, .pyramid-pic, .stampede-pic {
+        max-width: 40%;
+        max-height: 40%;
+    }
+
+    .lakes-page-title-cont {
+        margin-top: 3vh;
+    }
+}
+
+@media only screen and (max-height: 420px) {
+    .berryessa-pic, .bluemesa-pic, .flaming-gorge-pic,
+    .hell-hole-pic, .new-bullards-bar-pic, .new-melones-pic,
+    .pardee-pic, .pyramid-pic, .stampede-pic {
+        max-width: 35%;
+        max-height: 35%;
     }
 }
 
@@ -257,5 +286,45 @@
 @media only screen and (max-width: 310px) {
     .lake-title {
         font-size: 24px;
+    }
+}
+
+/* Height Adjustments */
+/* Changes for Landscape to override some width properties */
+@media only screen and (max-height: 560px) {
+    .lakes-mobile-cont-1 {
+        margin-top: 11vh;
+    }
+
+    .lakes-mobile-cont-2 {
+        margin-top: 6vh;
+    }
+}
+
+@media only screen and (max-height: 440px) {
+    .lakes-mobile-cont-1 {
+        margin-top: 12vh;
+    }
+}
+
+@media only screen and (max-height: 380px) {
+    .lakes-mobile-cont-1 {
+        margin-top: 14vh;
+    }
+
+    .lakes-page-title-cont {
+        margin-top: 4vh;
+    }
+}
+
+@media only screen and (max-height: 340px) {
+    .lakes-mobile-cont-1 {
+        margin-top: 15vh;
+    }
+}
+
+@media only screen and (max-height: 290px) {
+    .lakes-mobile-cont-1 {
+        margin-top: 16vh;
     }
 }

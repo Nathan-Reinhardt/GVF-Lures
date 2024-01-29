@@ -29,7 +29,6 @@ export default class Footer extends Component {
                             <h3 className="f-slash-vertical-line">|</h3>
                         </div>
                         <Link className="f-to-page" to="/gallery">Gallery</Link>
-                        {token === null && <></>}
                         {token !== null &&
                         <>
                             <div className="f-slash-cont">
@@ -41,7 +40,7 @@ export default class Footer extends Component {
                     </div>
                 </div>
                 <div className="copyright-cont">
-                    <p className="copyright-2023-text">© 2023</p>
+                    <p className="copyright-2024-text">© 2024</p>
                     <Link className="f-to-page" target={"_blank"} to="/">GVF Lures</Link>
                 </div>
             </div>        
