@@ -332,9 +332,15 @@
     }
 }
 
+@media only screen and (max-height: 530px) {
+    .gvf-logo-cont {
+        top: 8%;
+    }
+}
+
 @media only screen and (max-height: 450px) {
     .gvf-logo-cont {
-        top: 9%;
+        top: 9.3%;
     }
 }
 
