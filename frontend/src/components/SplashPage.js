@@ -1,7 +1,8 @@
 // Important Imports
 import React from 'react';
-import IMAGES from '../utils/_images';  // NOTE: IMAGES Import is never used, but it is actually
-                                        // being used by webpack to make it readable to the browser
+import IMAGES from '../utils/_images';
+// NOTE: IMAGES Import is never directly being used, but it is actually being used by webpack to make it readable to the browser
+
 // Components
 import InfoNavPanel from './InfoNavPanel/InfoNavPanel';
 import Footer from './InfoNavPanel/Footer';
