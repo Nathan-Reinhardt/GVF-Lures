@@ -181,8 +181,14 @@ the one and only height adjustment check in the file.
 
     .overlay-text {
         font-size: 15px;
-        width: 60%;
+        width: 39.5%;
         padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .overlay-text {
+        width: 42%;
     }
 }
 
@@ -253,6 +259,16 @@ the one and only height adjustment check in the file.
         box-shadow: 10px 10px 10px rgba(183, 191, 196, 0.7);
         padding: 9px;
     }
+
+    .overlay-text {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 395px) {
+    .overlay-text {
+        width: 52%;
+    }
 }
 
 @media only screen and (max-width: 340px) {
@@ -262,6 +278,7 @@ the one and only height adjustment check in the file.
 
     .overlay-text {
         font-size: 12px;
+        width: 60%;
     }
 }
 
