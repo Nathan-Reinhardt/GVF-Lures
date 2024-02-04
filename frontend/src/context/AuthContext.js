@@ -15,7 +15,7 @@ export const AuthProvider = ({ children }) => {
         BASE_URL = "http://127.0.0.1:8000/";
     } else {
         // Production environment
-        BASE_URL = "https://gvf-lures-41a1e6a943ff.herokuapp.com/";
+        BASE_URL = "https://gvflures.com/";
     }
     
     // setting the state in react

@@ -118,12 +118,17 @@ CORS_ALLOW_ALL_ORIGINS = False
 # Don't use HTTP response headers before the links in ALLOWED_HOSTS
 # The * after the production ALLOWED_HOSTS is used to help identify any sub directories
 if IS_HEROKU_APP:
-    ALLOWED_HOSTS = ["gvf-lures-41a1e6a943ff.herokuapp.com", "*"]
+    ALLOWED_HOSTS = [
+        "gvf-lures-41a1e6a943ff.herokuapp.com",
+        "www.gvflures.com",
+        "gvflures.com",
+        "*"
+    ]
 else:
     ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
 CORS_ALLOWED_ORIGINS = [
-    "https://gvf-lures-41a1e6a943ff.herokuapp.com",   # For production
+    "https://gvflures.com",   # For production
     "http://127.0.0.1:8000",  # For local development
 ]
 
