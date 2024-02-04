@@ -128,7 +128,9 @@ else:
     ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
 CORS_ALLOWED_ORIGINS = [
-    "https://gvflures.com",   # For production
+    "https://www.gvflures.com",   # For production
+    "https://gvflures.com",
+    "https://gvf-lures-41a1e6a943ff.herokuapp.com",
     "http://127.0.0.1:8000",  # For local development
 ]
 

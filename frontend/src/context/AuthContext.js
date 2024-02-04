@@ -15,7 +15,7 @@ export const AuthProvider = ({ children }) => {
         BASE_URL = "http://127.0.0.1:8000/";
     } else {
         // Production environment
-        BASE_URL = "https://gvflures.com/";
+        BASE_URL = "https://www.gvflures.com/";
     }
     
     // setting the state in react
