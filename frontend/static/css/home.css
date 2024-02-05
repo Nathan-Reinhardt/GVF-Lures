@@ -237,12 +237,25 @@ the one and only height adjustment check in the file.
 
     .overlay-text {
         width: 50%;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-height: 400px) {
+    .overlay-text {
+        width: 55%;
+        font-size: 13px;
     }
 }
 
 @media only screen and (max-height: 300px) {
     .slideshow-container {
         max-width: 36%;
+    }
+
+    .overlay-text {
+        width: 60%;
+        font-size: 12px;
     }
 }
 /* Height End */
