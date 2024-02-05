@@ -204,6 +204,30 @@
     }
 }
 
+@media only screen and (max-height: 500px) {
+    .prev-arrow, .next-arrow {
+        top: 82%;
+    }
+}
+
+@media only screen and (max-height: 500px) {
+    .prev-arrow, .next-arrow {
+        top: 78%;
+    }
+}
+
+@media only screen and (max-height: 350px) {
+    .prev-arrow, .next-arrow {
+        top: 75%;
+    }
+}
+
+@media only screen and (max-height: 298px) {
+    .prev-arrow, .next-arrow {
+        top: 70%;
+    }
+}
+
 /* Width Adjustments */
 @media only screen and (max-width: 390px) {
     .prev-arrow, .next-arrow {

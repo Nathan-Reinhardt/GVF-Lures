@@ -25,9 +25,15 @@ const GalleryPage = () => {
     // checking for when the current Picture exists
     const grabSourceImage = () => {
         if (pictureIndex == -1) {
+            // return a picture by default to prevent crashes
             return GalleryMedia[0].url;
         }
         else {
+            // Hide scrollbar
+            document.body.style.overflow = 'hidden';
+            // Prevent scrolling
+            document.body.classList.add('no-scroll');
+            // return the current picture to be blown up
             return GalleryMedia[pictureIndex].url;
         }
     }
@@ -35,6 +41,10 @@ const GalleryPage = () => {
     // when the user presses on the X button it sets the pictureIndex to -1
     const xOut= () => {
         setPictureIndex(-1);
+        // Make the scroll bar appear
+        document.body.style.overflow = 'auto';
+        // Re enable scrolling
+        document.body.classList.remove('no-scroll');
     }
 
     // previous button

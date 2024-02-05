@@ -1,21 +1,12 @@
-import React, { useContext, useState, useEffect } from 'react';
-import AuthContext from '../../context/AuthContext';
+import React, { useState, useEffect } from 'react';
 import TextSlideshowOverlays from './TextSlideshowOverlays';
 
 const ImageSlideshow = ({ images }) => {
-    const {user} = useContext(AuthContext);     // grab the user and token
-    let username = "";
-    
-    // used to make sure React doesn't break when user doesn't exist
-    if (user === null) {
-        username = "none";
-    }
-    else {
-        username = user.username;
-    }
-
     // to keep track of current index
     const [currentIndex, setCurrentIndex] = useState(0);
+
+    // list of strings to use in the text overlays for each slide
+    const textOverlays = ["Welcome to GVF Lures!", "No Species Is Safe"];
 
     // change the number for how many miliseconds between images
     const intervalNum = 15000;
@@ -38,7 +29,7 @@ const ImageSlideshow = ({ images }) => {
                     className={`slide ${index === currentIndex ? 'active' : ''}`}
                 />
             ))}
-            <TextSlideshowOverlays username={username} />
+            <TextSlideshowOverlays textOverlays={textOverlays} intervalNum={intervalNum} />
         </div>
     );
 };

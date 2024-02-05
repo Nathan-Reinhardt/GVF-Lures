@@ -9,7 +9,7 @@
 .splash-container {
     width: 100%;
     height: 100%;
-    margin: 6vh 0px 14vh 0px;
+    margin: 6vh 0px 8vh 0px;
 }
 
 .slideshow-container {
@@ -28,20 +28,43 @@
 .overlay-text {
     display: none;
     position: absolute;
-    top: 20%;
+    top: 22%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: black;
-    font-size: 18px;
+    font-size: 26px;
     font-weight: bold;
     text-align: center;
     border-radius: 10px;
-    padding: 20px;
+    padding: 15px;
     background-image: linear-gradient(180deg, rgb(183, 191, 196), rgb(214, 223, 228), rgb(183, 191, 196));
+    opacity: 0;
+    animation: slide 9s ease-in-out;
+    animation-delay: 3s;
 }
 
 .overlay-text.active {
     display: block;
+}
+
+@keyframes overlay-text {
+    /* fade in */
+    0% {
+        opacity: 0;
+    }
+
+    0.5% {
+        opacity: 1;
+    }
+
+    /* fade out */
+    99.5% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 /* Text */
@@ -91,17 +114,31 @@ the one and only height adjustment check in the file.
 /* Mobile Adjustments */
 
 /* Width */
+@media only screen and (max-width: 920px) {
+    .overlay-text {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .overlay-text {
+        font-size: 22px;
+    }
+}
+
+/* Next 2 adjustments are for a white line bug on the images */
 @media only screen and (max-width: 849px) {
     .slideshow-container {
         max-width: 91.8%;
     }
 }
-/* First 2 adjustments are for a white line bug on the images */
+
 @media only screen and (max-width: 847px) {
     .slideshow-container {
         max-width: 92%;
     }
 }
+/* end */
 
 @media only screen and (max-width: 800px) {
     .slideshow-container {
@@ -113,11 +150,21 @@ the one and only height adjustment check in the file.
     .splash-container {
         margin-top: 5vh;
     }
+
+    .overlay-text {
+        font-size: 20px;
+    }
 }
 
 @media only screen and (max-width: 695px) {
     .slideshow-container {
         max-width: 88%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .overlay-text {
+        font-size: 18px;
     }
 }
 
@@ -131,16 +178,84 @@ the one and only height adjustment check in the file.
     .splash-container {
         margin-top: 4vh;
     }
+
+    .overlay-text {
+        font-size: 15px;
+        width: 39.5%;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .overlay-text {
+        width: 42%;
+    }
 }
 
 /* Height */
 @media only screen and (max-height: 700px) {
     .splash-container {
-        margin: 8vh 0px 20vh 0px;
+        margin: 8vh 0px 13vh 0px;
     }
-    /* Adjustment for bigger devices */
+
+    /* Adjustment for bigger devices or landscape mode */
     .slideshow-container {
-        max-width: 60%;
+        max-width: 58%;
+    }
+
+    .overlay-text {
+        top: 26%;
+        font-size: 15px;
+        width: 40%;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-height: 600px) {
+    .splash-container {
+        margin: 7vh 0px 12vh 0px;
+    }
+
+    .slideshow-container {
+        max-width: 48%;
+        padding: 14px;
+    }
+
+    .overlay-text {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-height: 500px) {
+    .splash-container {
+        margin: 6vh 0px 11vh 0px;
+    }
+
+    .slideshow-container {
+        max-width: 42%;
+    }
+
+    .overlay-text {
+        width: 50%;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-height: 400px) {
+    .overlay-text {
+        width: 55%;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-height: 300px) {
+    .slideshow-container {
+        max-width: 36%;
+    }
+
+    .overlay-text {
+        width: 60%;
+        font-size: 12px;
     }
 }
 /* Height End */
@@ -149,7 +264,7 @@ the one and only height adjustment check in the file.
 /* overwrite the height changes if the screen width gets too small */
 @media only screen and (max-width: 450px) {
     .splash-container {
-        margin: 4vh 0px 14vh 0px;
+        margin: 4vh 0px 8vh 0px;
     }
 
     .slideshow-container {
@@ -157,11 +272,26 @@ the one and only height adjustment check in the file.
         box-shadow: 10px 10px 10px rgba(183, 191, 196, 0.7);
         padding: 9px;
     }
+
+    .overlay-text {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 395px) {
+    .overlay-text {
+        width: 52%;
+    }
 }
 
 @media only screen and (max-width: 340px) {
     .slideshow-container {
         max-width: 85%;
+    }
+
+    .overlay-text {
+        font-size: 12px;
+        width: 60%;
     }
 }
 
