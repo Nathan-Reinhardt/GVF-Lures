@@ -48,9 +48,6 @@ export const AuthProvider = ({ children }) => {
         })
         const data = await response.json();
 
-        // log the data for testing purposes
-        //console.log(data);
-
         // history.push change it in the future if you want the user to be on a specific page when they log in
         if (response.status === 200) {
             console.log("Logged In");
@@ -58,17 +55,17 @@ export const AuthProvider = ({ children }) => {
             setUser(jwt_decode(data.access));
             localStorage.setItem("authTokens", JSON.stringify(data));
             history.push("/");
+            return "";
         }
         else {
             console.log(response.status);
             console.log("there was a server issue...");
-            alert("Email or Password is incorrect please try again.");
+            // error message for trying to login
+            const errorMessage = "Email or Password is incorrect.\nPlease try again."
+            console.log(errorMessage);
+            return errorMessage;
         }
     }
-
-    // *IMPORTANT* --> in the response variable fields for signup and login, make sure when deploying the application
-    // to a live server and not based on local host you change all fetch links to grab the server hosted links
-    // links are in this file and also in useAxios.js
 
     // sign up a user function
     const signUpUser = async (email, username, password, password2) => {
@@ -85,11 +82,15 @@ export const AuthProvider = ({ children }) => {
         if (response.status === 201) {
             // change this based on where you want the user to go after they signup
             history.push("/login");
+            return "";
         }
         else {
             console.log(response.status);
             console.log("there was a server issue");
-            alert("Something went wrong " + response.status);
+            // error message for trying to signup
+            const errorMessage = "This Account already exists.\nPlease try again."
+            console.log(errorMessage);
+            return errorMessage;
         }
     }
 

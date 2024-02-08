@@ -7,6 +7,13 @@ export default class Dashboard extends Component {
         super(props);
     }
 
+    handleLinkClick = () => {
+        // reloads admin page when link is clicked
+        setTimeout(() => {
+            window.location.reload();
+        }, 1);
+    };
+
     render() {
         return (
             <div>
@@ -15,7 +22,9 @@ export default class Dashboard extends Component {
                     <div className="dashboard-text-cont">
                         <h1 className="dash-title">DASHBOARD PAGE!</h1>
                         <div className="admin-link-cont">
-                            <Link className="to-admin" to="/admin">|___|Admin Panel|___|</Link>
+                            <Link className="to-admin" to="/admin" onClick={this.handleLinkClick}>
+                                |___|Admin Panel|___|
+                            </Link>
                         </div>
                         <div className="reload-cont">
                             <h1 className="reload-text">Reload|Reload|Reload</h1>

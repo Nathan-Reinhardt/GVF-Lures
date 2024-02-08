@@ -22,7 +22,7 @@
 }
 
 .submit-cont {
-    margin: 6px 0px 20px 0px;
+    margin: 12px 0px 20px 0px;
 }
 
 .password-cont, .password-check-cont {
@@ -39,12 +39,8 @@
     box-shadow: 15px 15px 13px rgba(183, 191, 196, 0.7);
 }
 
-.login-form {
-    height: 315px;
-}
-
-.signup-form {
-    height: 350px;
+.login-form, .signup-form {
+    max-height: 100%;
 }
 
 /* Form Inputs */
@@ -124,6 +120,13 @@
     font-size: 38px;
 }
 
+.error-message {
+    margin: 0px 0px 5px 0px;
+    text-align: center;
+    color: red;
+    font-size: 15px;
+}
+
 .forgot-password, .not-member, .member {
     font-size: 17px;
     margin: 0px;
@@ -138,6 +141,12 @@
 /* Mobile Adjustments */
 
 /* Width */
+@media only screen and (max-width: 420px) {
+    .error-message {
+        font-size: 14px;
+    }
+}
+
 @media only screen and (max-width: 400px) {
     .login-label, .signup-label {
         margin-top: 3px;
@@ -151,13 +160,17 @@
         margin-top: 3vh;
         padding-top: 20px;
     }
+}
 
-    .login-form {
-        height: 300px;
+@media only screen and (max-width: 390px) {
+    .error-message {
+        font-size: 13px;
     }
+}
 
-    .signup-form {
-        height: 325px;
+@media only screen and (max-width: 360px) {
+    .error-message {
+        font-size: 12px;
     }
 }
 
@@ -179,6 +192,12 @@
     }
 }
 
+@media only screen and (max-width: 335px) {
+    .error-message {
+        font-size: 10.9px;
+    }
+}
+
 @media only screen and (max-width: 325px) {
     .password-icon {
         right: 1%;
@@ -197,6 +216,10 @@
     .password-icon {
         right: 0.1%;
     }
+
+    .error-message {
+        font-size: 10.15px;
+    }
 }
 
 /* Height */
@@ -205,14 +228,13 @@
         margin-top: 3vh;
     }
 
-    .login-form {
-        height: 300px;
-        padding-top: 20px;
+    .login-label, .signup-label {
+        margin: 2vh 0vh 2vh 0vh;
+        font-size: 38px;
     }
 
-    .signup-form {
-        height: 325px;
-        padding-top: 15px;
+    .login-form, .signup-form {
+        padding-top: 4px;
     }
 
     .login-label, .signup-label {
