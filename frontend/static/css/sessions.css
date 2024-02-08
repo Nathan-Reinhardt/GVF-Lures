@@ -141,9 +141,15 @@
 /* Mobile Adjustments */
 
 /* Width */
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 435px) {
     .error-message {
         font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 405px) {
+    .error-message {
+        font-size: 13px;
     }
 }
 
@@ -162,13 +168,7 @@
     }
 }
 
-@media only screen and (max-width: 390px) {
-    .error-message {
-        font-size: 13px;
-    }
-}
-
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 380px) {
     .error-message {
         font-size: 12px;
     }
@@ -190,17 +190,19 @@
     .password-icon {
         right: 1.7%;
     }
-}
 
-@media only screen and (max-width: 335px) {
     .error-message {
-        font-size: 10.9px;
+        font-size: 11px;
     }
 }
 
 @media only screen and (max-width: 325px) {
     .password-icon {
         right: 1%;
+    }
+
+    .error-message {
+        font-size: 10px;
     }
 }
 
@@ -218,7 +220,7 @@
     }
 
     .error-message {
-        font-size: 10.15px;
+        font-size: 9.5px;
     }
 }
 
@@ -229,7 +231,7 @@
     }
 
     .login-label, .signup-label {
-        margin: 2vh 0vh 2vh 0vh;
+        margin: 2vh 0vh 4vh 0vh;
         font-size: 38px;
     }
 

@@ -39,7 +39,7 @@ const SessionPage = (props) => {
     const signUpHandleSubmit = async e => {
         e.preventDefault();
         // Define a regular expression pattern to match allowed characters
-        const usernameRegex = /^[a-zA-Z0-9_]+$/;
+        const usernameRegex = /^[a-zA-Z0-9_-]+$/;
         const passwordRegex = /^[a-zA-Z0-9~`!@#$%^&*()_\-+={[}\]|\\:;"'<,>.?/=:;*]+$/;
 
         // add email constrants when setting up email verification
@@ -61,11 +61,11 @@ const SessionPage = (props) => {
                     }
                 }
                 else {
-                    setErrorMessage("Passowrd needs to be 6 or more characters long.");
+                    setErrorMessage("Password needs to be 6 or more characters long.");
                 }
             }
             else {
-                setErrorMessage("Username contains invalid characters.\nOnly letters, numbers, and\nunderscores are allowed.");
+                setErrorMessage("Username contains invalid characters.");
             }
         }
         else {
