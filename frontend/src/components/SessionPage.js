@@ -1,4 +1,5 @@
 import React, { useState, useContext, useEffect } from 'react';
+import validator from 'validator';
 import { Link } from 'react-router-dom';
 import AuthContext from '../context/AuthContext';
 import InfoNavPanel from './InfoNavPanel/InfoNavPanel';
@@ -29,7 +30,6 @@ const SessionPage = (props) => {
         const email = e.target.email.value;  // request.POST.get("email") > name="email"
         const password = e.target.password.value;
 
-        // change logic here when email veriifcation has been added..
         // Call the loginUser function
         const error = await loginUser(email, password);
         setErrorMessage(error);
@@ -38,39 +38,41 @@ const SessionPage = (props) => {
     // sign up user
     const signUpHandleSubmit = async e => {
         e.preventDefault();
+
+        // Validate email using Validator.js
+        if (!validator.isEmail(email)) {
+            setErrorMessage("Email has invalid format.");
+            return;
+        }
+
         // Define a regular expression pattern to match allowed characters
         const usernameRegex = /^[a-zA-Z0-9_-]+$/;
         const passwordRegex = /^[a-zA-Z0-9~`!@#$%^&*()_\-+={[}\]|\\:;"'<,>.?/=:;*]+$/;
 
-        // add email constrants when setting up email verification
-        if (username.length >= 6 && username.length <= 20) {
-            if (usernameRegex.test(username)) {
-                if (password.length >= 6) {
-                    if (passwordRegex.test(password)) {
-                        if (password === password2) {
-                            // Call the signUpUser function
-                            const error = await signUpUser(email, username, password, password2);
-                            setErrorMessage(error);
-                        }
-                        else {
-                            setErrorMessage("Passwords don't match.\nPlease try again.");
-                        }
-                    }
-                    else {
-                        setErrorMessage("Password contains invalid characters.\nPlease try again.");
-                    }
-                }
-                else {
-                    setErrorMessage("Password needs to be 6 or more characters long.");
-                }
-            }
-            else {
-                setErrorMessage("Username contains invalid characters.");
-            }
-        }
-        else {
+        if (username.length < 6 || username.length > 20) {
             setErrorMessage("Username needs to be 6-20 characters in length.");
+            return;
         }
+        if (!usernameRegex.test(username)) {
+            setErrorMessage("Username contains invalid characters.");
+            return;
+        }
+        if (password.length < 6) {
+            setErrorMessage("Password needs to be 6 or more characters long.");
+            return;
+        }
+        if (!passwordRegex.test(password)) {
+            setErrorMessage("Password contains invalid characters.\nPlease try again.");
+            return;
+        }
+        if (password !== password2) {
+            setErrorMessage("Passwords don't match.\nPlease try again.");
+            return;
+        }
+
+        // If all validations pass, proceed with sign up
+        const error = await signUpUser(email, username, password, password2);
+        setErrorMessage(error);
     };
 
     // grabs errorDisplays on the page and sets the error message whenever the error message changes
@@ -150,7 +152,7 @@ const SessionPage = (props) => {
                         <h1 className="signup-label">Sign Up</h1>
                         <div className="email-cont">
                             <input className="session-input"
-                                type="email"
+                                type="text"
                                 placeholder="Email address"
                                 onChange={e => setEmail(e.target.value)}
                             />
