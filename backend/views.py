@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 
 from backend.models import Profile, User
 from backend.serializer import UserSerializer, MyTokenObtainPairSerializer, RegisterSerializer
@@ -29,6 +29,20 @@ def getRoutes(request):
         '/backend/register/'
     ]
     return Response(routes)
+
+# Function to update user verification status
+@api_view(['POST'])
+def update_verification(request):
+    # Extract data from request body
+    user_id = request.data.get('user_id')
+    verified_status = request.data.get('verified_status')
+
+    # Retrieve the user's profile instance
+    profile = get_object_or_404(Profile, id=user_id)
+    profile.verified = verified_status
+    profile.save()
+
+    return Response({'message': 'Verification status updated successfully'}, status=status.HTTP_200_OK)
 
 # Dashboard to test GET and POST in postman only
 

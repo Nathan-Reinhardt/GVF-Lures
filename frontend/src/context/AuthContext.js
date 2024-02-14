@@ -81,7 +81,6 @@ export const AuthProvider = ({ children }) => {
 
         if (response.status === 201) {
             // change this based on where you want the user to go after they signup
-            history.push("/login");
             return "";
         }
         else {
@@ -103,6 +102,29 @@ export const AuthProvider = ({ children }) => {
         history.push("/login");
     }
 
+    // verify users when they create their account
+    // users should not be logged in when verifying them!
+    // change code in 200 block depending on how the automated email works
+    const verifyUser = async (user_id, verified_status) => {
+        const response = await fetch(`${BASE_URL}backend/update_verification/`, {
+            method: "POST",
+            headers: {
+                "Content-Type":"application/json"
+            },
+            body: JSON.stringify({
+                user_id, verified_status
+            })
+        })
+
+        if (response.status === 200) {
+            console.log("success on verifiying user");
+        }
+        else {
+            console.log(response.status);
+            console.log("error in verification of user");
+        }
+    }
+
     // passing all the functions into the store to return for export
     const ContextData = {
         user,
@@ -111,7 +133,8 @@ export const AuthProvider = ({ children }) => {
         setAuthTokens,
         signUpUser,
         loginUser,
-        logoutUser
+        logoutUser,
+        verifyUser
     }
 
     // whenever authTokens is changed this runs to check for an auth token
