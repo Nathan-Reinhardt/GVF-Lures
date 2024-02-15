@@ -10,4 +10,5 @@ urlpatterns = [
     path('gallery', index) ,
     path('lakes', index),
     path('profile', index),
+    path('forgot-password', index),
 ]

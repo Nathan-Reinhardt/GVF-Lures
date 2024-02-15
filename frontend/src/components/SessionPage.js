@@ -108,9 +108,9 @@ const SessionPage = (props) => {
             <InfoNavPanel />
             {props.isLogin &&
             <>
-                <div className="login-page-container">
-                    <form className="login-form" onSubmit={loginHandleSubmit}>
-                        <h1 className="login-label">Log In</h1>
+                <div className="session-page-container">
+                    <form className="session-form" onSubmit={loginHandleSubmit}>
+                        <h1 className="session-label">Log In</h1>
                         <div className="email-cont">
                             <input className="session-input"
                                 type="email"
@@ -135,7 +135,9 @@ const SessionPage = (props) => {
                         <div className="submit-cont">
                             <button className="login-submit-btn" type="submit">Sign In</button>
                         </div>
-                        <h3 className="forgot-password">Forgot password?</h3>
+                        <div className="forgot-password-cont">
+                            <Link className="to-forgot-password" to="/forgot-password">Forgot password?</Link>
+                        </div>
                         <div className="form-line"></div>
                         <h3 className="not-member">Not a GVF Lure's member?</h3>
                         <div className="form-bottom-container">
@@ -147,9 +149,9 @@ const SessionPage = (props) => {
             }
             {props.isLogin == false &&
             <>
-                <div className="signup-page-container">
-                    <form className="signup-form" onSubmit={signUpHandleSubmit}>
-                        <h1 className="signup-label">Sign Up</h1>
+                <div className="session-page-container">
+                    <form className="session-form" onSubmit={signUpHandleSubmit}>
+                        <h1 className="session-label">Sign Up</h1>
                         <div className="email-cont">
                             <input className="session-input"
                                 type="text"

@@ -10,7 +10,6 @@ from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 
 # Create your views here.
-
 class MyTokenObtainPairView(TokenObtainPairView):
     serializer_class = MyTokenObtainPairSerializer
 
@@ -20,7 +19,6 @@ class RegisterView(generics.CreateAPIView):
     serializer_class = RegisterSerializer
 
 # Get All Routes
-
 @api_view(['GET'])
 def getRoutes(request):
     routes = [
@@ -31,6 +29,7 @@ def getRoutes(request):
     return Response(routes)
 
 # Function to update user verification status
+# use later for shop page for cart
 @api_view(['POST'])
 def update_verification(request):
     # Extract data from request body
@@ -45,7 +44,6 @@ def update_verification(request):
     return Response({'message': 'Verification status updated successfully'}, status=status.HTTP_200_OK)
 
 # Dashboard to test GET and POST in postman only
-
 @api_view(['GET', 'POST'])
 @permission_classes([IsAuthenticated])
 def dashboard(request):

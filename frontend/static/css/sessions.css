@@ -1,13 +1,13 @@
 /* Login & Signup Pages CSS */
 
 /* Containers */
-.login-page-container, .signup-page-container, .form-bottom-container,
-.submit-cont, .email-cont, .username-cont, .password-cont, .password-check-cont {
+.session-page-container, .form-bottom-container, .submit-cont, .email-cont,
+.username-cont, .password-cont, .password-check-cont, .forgot-password-cont {
     display: flex;
     justify-content: center;
 }
 
-.login-page-container, .signup-page-container {
+.session-page-container {
     height: 100%;
     width: 100%;
 }
@@ -22,25 +22,26 @@
 }
 
 .submit-cont {
-    margin: 12px 0px 20px 0px;
+    margin: 12px 0px 16px 0px;
 }
 
 .password-cont, .password-check-cont {
     position: relative;
 }
 
+.forgot-password-cont {
+    margin-bottom: 9px;
+}
+
 /* Forms */
-.login-form, .signup-form {
+.session-form {
     max-width: 70%;
+    max-height: 100%;
     background-color: rgb(201, 232, 255);
     margin: 5vh 0px 5vh 0px;
     padding: 24px 29px 24px 29px;
     border-radius: 7px;
     box-shadow: 15px 15px 13px rgba(183, 191, 196, 0.7);
-}
-
-.login-form, .signup-form {
-    max-height: 100%;
 }
 
 /* Form Inputs */
@@ -100,22 +101,22 @@
     color: black;
 }
 
-.forgot-password:hover, .to-sign-up:hover, .to-log-in:hover {
+.to-forgot-password:hover, .to-sign-up:hover, .to-log-in:hover {
     color: red;
 }
 
 /* Text, Links, and Decorations */
-.to-sign-up, .to-log-in {
+.to-sign-up, .to-log-in, .to-forgot-password {
     text-decoration: none;
     color: black;
     font-size: 17px;
 }
 
-.login-label, .signup-label, .forgot-password, .not-member, .member {
+.session-label, .forgot-password, .not-member, .member {
     text-align: center;
 }
 
-.login-label, .signup-label {
+.session-label {
     margin: 10px 0px 25px 0px;
     font-size: 38px;
 }
@@ -127,7 +128,7 @@
     font-size: 15px;
 }
 
-.forgot-password, .not-member, .member {
+.not-member, .member {
     font-size: 17px;
     margin: 0px;
     margin: 10px;
@@ -154,7 +155,7 @@
 }
 
 @media only screen and (max-width: 400px) {
-    .login-label, .signup-label {
+    .session-label {
         margin-top: 3px;
     }
 
@@ -162,7 +163,7 @@
         font-size: 15.4px;
     }
 
-    .login-form, .signup-form {
+    .session-form {
         margin-top: 3vh;
         padding-top: 20px;
     }
@@ -226,20 +227,13 @@
 
 /* Height */
 @media only screen and (max-height: 700px) {
-    .login-form, .signup-form {
+    .session-form {
         margin-top: 3vh;
-    }
-
-    .login-label, .signup-label {
-        margin: 2vh 0vh 4vh 0vh;
-        font-size: 38px;
-    }
-
-    .login-form, .signup-form {
         padding-top: 4px;
     }
 
-    .login-label, .signup-label {
-        margin-top: 5px;
+    .session-label {
+        margin: 5px 0vh 4vh 0vh;
+        font-size: 38px;
     }
 }
