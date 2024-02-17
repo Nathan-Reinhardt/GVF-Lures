@@ -22,7 +22,8 @@ const LakesInfo = (props) => {
             try {
                 const response = await axios.get(url);
                 setData(response.data);
-            } catch (error) {
+            }
+            catch (error) {
                 console.error('Error fetching weather data: ', error);
             }
         };

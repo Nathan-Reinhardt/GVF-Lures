@@ -102,6 +102,27 @@ export const AuthProvider = ({ children }) => {
         history.push("/login");
     }
 
+    // takes in inputs to check if the inputs given match an account within the database
+    // update method to include phone number in the future
+    const checkAccountStatus = async (email) => {
+        const response = await fetch(`${BASE_URL}backend/?email=${email}/`, {
+            method: "GET",
+            headers: {
+                "Content-Type":"application/json"
+            }
+        })
+
+        if (response.status === 200) {
+            console.log("success on finding account");
+            return true;
+        }
+        else {
+            console.log(response.status);
+            console.log("account with this email doesn't exist");
+            return false;
+        }
+    }
+
     // verify users when they create their account
     // users should not be logged in when verifying them!
     // change code in 200 block depending on how the automated email works
@@ -125,6 +146,28 @@ export const AuthProvider = ({ children }) => {
         }
     }
 
+    // send automated emails to users
+    // modify in the future to add input data to change the type of message you want
+    const sendMailToUser = async (recipient_email) => {
+        const response = await fetch(`${BASE_URL}backend/send_email/`, {
+            method: "POST",
+            headers: {
+                "Content-Type":"application/json"
+            },
+            body: JSON.stringify({
+                recipient_email
+            })
+        })
+
+        if (response.status === 200) {
+            console.log("success on email sent");
+        }
+        else {
+            console.log(response.status);
+            console.log("error in sending email to user");
+        }
+    }
+
     // passing all the functions into the store to return for export
     const ContextData = {
         user,
@@ -134,7 +177,9 @@ export const AuthProvider = ({ children }) => {
         signUpUser,
         loginUser,
         logoutUser,
-        verifyUser
+        checkAccountStatus,
+        verifyUser,
+        sendMailToUser
     }
 
     // whenever authTokens is changed this runs to check for an auth token

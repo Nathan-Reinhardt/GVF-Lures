@@ -81,8 +81,8 @@
 }
 
 /* Buttons and Hover Details */
-.login-submit-btn, .signin-submit-btn {
-    width: 272px;
+.session-submit-btn, .forgot-password-submit-btn {
+    width: 260px;
     height: 40px;
     background-color: rgb(49, 144, 220);
     font-size: 17px;
@@ -92,11 +92,11 @@
     border-radius: 3px;
 }
 
-.login-submit-btn:hover, .signin-submit-btn, .forgot-password {
+.session-submit-btn, .forgot-password, .forgot-password-submit-btn {
     cursor: pointer;
 }
 
-.login-submit-btn:hover, .signin-submit-btn:hover {
+.session-submit-btn:hover, .forgot-password-submit-btn:hover {
     background-color: rgb(80, 166, 237);
     color: black;
 }

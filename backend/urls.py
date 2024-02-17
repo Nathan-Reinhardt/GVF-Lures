@@ -9,6 +9,8 @@ urlpatterns = [
     path("token/refresh/", TokenRefreshView.as_view()),
     path("register/", views.RegisterView.as_view()),
     path("update_verification/", views.update_verification),
+    path("send_mail/", views.send_mail),
+    path('email-check/', views.email_check, name='email_check'),
     path("dashboard/", views.dashboard),
     path('', views.getRoutes)
 ]
