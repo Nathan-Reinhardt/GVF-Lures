@@ -105,7 +105,7 @@ export const AuthProvider = ({ children }) => {
     // takes in inputs to check if the inputs given match an account within the database
     // update method to include phone number in the future
     const checkAccountStatus = async (email) => {
-        const response = await fetch(`${BASE_URL}backend/?email=${email}/`, {
+        const response = await fetch(`${BASE_URL}backend/email_check/?email=${email}`, {
             method: "GET",
             headers: {
                 "Content-Type":"application/json"
@@ -159,12 +159,15 @@ export const AuthProvider = ({ children }) => {
             })
         })
 
+        // adjust responses later
         if (response.status === 200) {
             console.log("success on email sent");
+            return true;
         }
         else {
             console.log(response.status);
             console.log("error in sending email to user");
+            return false;
         }
     }
 

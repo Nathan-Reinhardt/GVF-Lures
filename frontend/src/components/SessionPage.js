@@ -135,12 +135,9 @@ const SessionPage = (props) => {
                         <div className="submit-cont">
                             <button className="session-submit-btn" type="submit">Sign In</button>
                         </div>
-                        {/*
-                        Comment back in after live push to live server
                         <div className="forgot-password-cont">
                             <Link className="to-forgot-password" to="/forgot-password">Forgot password?</Link>
                         </div>
-                        */}
                         <div className="form-line"></div>
                         <h3 className="not-member">Not a GVF Lure's member?</h3>
                         <div className="form-bottom-container">

@@ -11,6 +11,7 @@ const ForgotPasswordPage = () => {
 
     // authContext functions
     const {checkAccountStatus} = useContext(AuthContext);
+    const {sendMailToUser} = useContext(AuthContext);
 
     // error messages
     const [errorMessage, setErrorMessage] = useState("");
@@ -24,9 +25,22 @@ const ForgotPasswordPage = () => {
             return;
         }
 
-        const status = await checkAccountStatus(email);
-        if (!status) {
+        const email_status = await checkAccountStatus(email);
+
+        if (!email_status) {
             setErrorMessage("Account with this email doesn't exist.\nPlease try again.");
+        }
+        else {
+            setErrorMessage("");
+        }
+
+        const send_email_status = await sendMailToUser(email);
+
+        if (!send_email_status) {
+            setErrorMessage("Email not sent.");
+        }
+        else {
+            setErrorMessage("Email has been successfully sent.");
         }
     };
 
