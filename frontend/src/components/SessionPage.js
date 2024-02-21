@@ -1,4 +1,5 @@
 import React, { useState, useContext, useEffect } from 'react';
+import validator from 'validator';
 import { Link } from 'react-router-dom';
 import AuthContext from '../context/AuthContext';
 import InfoNavPanel from './InfoNavPanel/InfoNavPanel';
@@ -12,30 +13,78 @@ const SessionPage = (props) => {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const [password2, setPassword2] = useState("");
-    const [passwordVisible, setPasswordVisible] = useState(false);
 
     // session functions
     const {loginUser} = useContext(AuthContext);
     const {signUpUser} = useContext(AuthContext);
 
+    // password visible
+    const [passwordVisible, setPasswordVisible] = useState(false);
+
+    // error messages
+    const [errorMessage, setErrorMessage] = useState("");
+
     // login user
-    const loginHandleSubmit = (e) => {
+    const loginHandleSubmit = async (e) => {
         e.preventDefault();
         const email = e.target.email.value;  // request.POST.get("email") > name="email"
         const password = e.target.password.value;
 
-        email.length > 0 && loginUser(email, password);
+        // Call the loginUser function
+        const error = await loginUser(email, password);
+        setErrorMessage(error);
     };
 
     // sign up user
     const signUpHandleSubmit = async e => {
         e.preventDefault();
-        signUpUser(email, username, password, password2);
+
+        // Validate email using Validator.js
+        if (!validator.isEmail(email)) {
+            setErrorMessage("Email has invalid format.");
+            return;
+        }
+
+        // Define a regular expression pattern to match allowed characters
+        const usernameRegex = /^[a-zA-Z0-9_-]+$/;
+        const passwordRegex = /^[a-zA-Z0-9~`!@#$%^&*()_\-+={[}\]|\\:;"'<,>.?/=:;*]+$/;
+
+        if (username.length < 6 || username.length > 20) {
+            setErrorMessage("Username needs to be 6-20 characters in length.");
+            return;
+        }
+        if (!usernameRegex.test(username)) {
+            setErrorMessage("Username contains invalid characters.");
+            return;
+        }
+        if (password.length < 6) {
+            setErrorMessage("Password needs to be 6 or more characters long.");
+            return;
+        }
+        if (!passwordRegex.test(password)) {
+            setErrorMessage("Password contains invalid characters.\nPlease try again.");
+            return;
+        }
+        if (password !== password2) {
+            setErrorMessage("Passwords don't match.\nPlease try again.");
+            return;
+        }
+
+        // If all validations pass, proceed with sign up
+        const error = await signUpUser(email, username, password, password2);
+        setErrorMessage(error);
     };
+
+    // grabs errorDisplays on the page and sets the error message whenever the error message changes
+    useEffect(() => {
+        const errorDisplay = document.querySelectorAll(".error-message");
+        errorDisplay.textContent = errorMessage;
+    }, [errorMessage]);
 
     // making sure that the state changes between login and sign up pages
     useEffect(() => {
         setPasswordVisible(false);
+        setErrorMessage("");
     }, [props.isLogin]);
 
     // make password input field visible or hidden to the user
@@ -58,10 +107,9 @@ const SessionPage = (props) => {
         <div>
             <InfoNavPanel />
             {props.isLogin &&
-            <>
-                <div className="login-page-container">
-                    <form className="login-form" onSubmit={loginHandleSubmit}>
-                        <h1 className="login-label">Log In</h1>
+                <div className="session-page-container">
+                    <form className="session-form" onSubmit={loginHandleSubmit}>
+                        <h1 className="session-label">Log In</h1>
                         <div className="email-cont">
                             <input className="session-input"
                                 type="email"
@@ -80,10 +128,20 @@ const SessionPage = (props) => {
                                 onClick={togglePasswordVisibility}
                             />
                         </div>
+                        {errorMessage.split('\n').map((line, index) => (
+                            <p key={index} className="error-message">{line}</p>
+                        ))}
                         <div className="submit-cont">
-                            <button className="login-submit-btn" type="submit">Sign In</button>
+                            <button className="session-submit-btn" type="submit">Sign In</button>
                         </div>
-                        <h3 className="forgot-password">Forgot password?</h3>
+                        {/*
+
+                        uncomment out once forgot password and rest password is working flawlessly
+                        
+                        <div className="forgot-password-cont">
+                            <Link className="to-forgot-password" to="/forgot-password">Forgot password?</Link>
+                        </div>
+                        */}
                         <div className="form-line"></div>
                         <h3 className="not-member">Not a GVF Lure's member?</h3>
                         <div className="form-bottom-container">
@@ -91,16 +149,14 @@ const SessionPage = (props) => {
                         </div>
                     </form>
                 </div>
-            </>
             }
             {props.isLogin == false &&
-            <>
-                <div className="signup-page-container">
-                    <form className="signup-form" onSubmit={signUpHandleSubmit}>
-                        <h1 className="signup-label">Sign Up</h1>
+                <div className="session-page-container">
+                    <form className="session-form" onSubmit={signUpHandleSubmit}>
+                        <h1 className="session-label">Sign Up</h1>
                         <div className="email-cont">
                             <input className="session-input"
-                                type="email"
+                                type="text"
                                 placeholder="Email address"
                                 onChange={e => setEmail(e.target.value)}
                             />
@@ -130,8 +186,11 @@ const SessionPage = (props) => {
                                 onChange={e => setPassword2(e.target.value)}
                             />
                         </div>
+                        {errorMessage.split('\n').map((line, index) => (
+                            <p key={index} className="error-message">{line}</p>
+                        ))}
                         <div className="submit-cont">
-                            <button className="signin-submit-btn" type="submit">Register</button>
+                            <button className="session-submit-btn" type="submit">Register</button>
                         </div>
                         <div className="form-line"></div>
                         <h3 className="member">Already a GVF Lure's member?</h3>
@@ -140,7 +199,6 @@ const SessionPage = (props) => {
                         </div>
                     </form>
                 </div>
-            </>
             }
             <Footer />
         </div>

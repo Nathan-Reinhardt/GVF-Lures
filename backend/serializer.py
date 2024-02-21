@@ -22,9 +22,6 @@ class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
         return token
     
 class RegisterSerializer(serializers.ModelSerializer):
-    # For some reason validation built into the backend/register path already has a minimum password length of 8 characters long,
-    # remove the min_length 6 if needed later since you can just specificy password length in the frontend
-
     password = serializers.CharField(write_only=True, required=True, min_length=6, validators=[validate_password])
     password2 = serializers.CharField(write_only=True, required=True)
 

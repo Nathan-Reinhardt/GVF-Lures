@@ -4,8 +4,14 @@ import dayjs from "dayjs";
 import { useContext } from "react";
 import AuthContext from "../context/AuthContext";
 
-// if needed adjust the baseurl
-const baseURL = "http://127.0.0.1:8000/backend";
+let baseURL;
+if (process.env.NODE_ENV === 'development') {
+    // Development enviornment
+    baseURL = "http://127.0.0.1:8000/backend";
+} else {
+    // Production environment
+    baseURL = "https://www.gvflures.com/backend";
+}
 
 const useAxios = () => {
     const {authTokens, setUser, setAuthTokens} = useContext(AuthContext);
