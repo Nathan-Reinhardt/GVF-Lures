@@ -124,8 +124,10 @@ export const AuthProvider = ({ children }) => {
     }
 
     // verify users when they create their account
-    // users should not be logged in when verifying them!
-    // change code in 200 block depending on how the automated email works
+    // FUTURE implementation:
+    // When a user creates an account send a welcome message and ask them to verify their email address
+    // if they don't that is ok, they can always request a new email for verification in the future
+    // this is mainly there to make sure the user knows that they have the right email address tied.
     const verifyUser = async (user_id, verified_status) => {
         const response = await fetch(`${BASE_URL}backend/update_verification/`, {
             method: "POST",
@@ -148,14 +150,14 @@ export const AuthProvider = ({ children }) => {
 
     // send automated emails to users
     // modify in the future to add input data to change the type of message you want
-    const sendMailToUser = async (recipient_email) => {
+    const sendMailToUser = async (recipient_email, typeOfMessage) => {
         const response = await fetch(`${BASE_URL}backend/send_email/`, {
             method: "POST",
             headers: {
                 "Content-Type":"application/json"
             },
             body: JSON.stringify({
-                recipient_email
+                recipient_email, typeOfMessage
             })
         })
 

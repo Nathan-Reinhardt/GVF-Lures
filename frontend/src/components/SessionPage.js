@@ -107,7 +107,6 @@ const SessionPage = (props) => {
         <div>
             <InfoNavPanel />
             {props.isLogin &&
-            <>
                 <div className="session-page-container">
                     <form className="session-form" onSubmit={loginHandleSubmit}>
                         <h1 className="session-label">Log In</h1>
@@ -135,9 +134,14 @@ const SessionPage = (props) => {
                         <div className="submit-cont">
                             <button className="session-submit-btn" type="submit">Sign In</button>
                         </div>
+                        {/*
+
+                        uncomment out once forgot password and rest password is working flawlessly
+                        
                         <div className="forgot-password-cont">
                             <Link className="to-forgot-password" to="/forgot-password">Forgot password?</Link>
                         </div>
+                        */}
                         <div className="form-line"></div>
                         <h3 className="not-member">Not a GVF Lure's member?</h3>
                         <div className="form-bottom-container">
@@ -145,10 +149,8 @@ const SessionPage = (props) => {
                         </div>
                     </form>
                 </div>
-            </>
             }
             {props.isLogin == false &&
-            <>
                 <div className="session-page-container">
                     <form className="session-form" onSubmit={signUpHandleSubmit}>
                         <h1 className="session-label">Sign Up</h1>
@@ -197,7 +199,6 @@ const SessionPage = (props) => {
                         </div>
                     </form>
                 </div>
-            </>
             }
             <Footer />
         </div>

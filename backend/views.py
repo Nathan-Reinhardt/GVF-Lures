@@ -3,6 +3,8 @@ from django.shortcuts import render, get_object_or_404
 from django.core.mail import send_mail
 from django.conf import settings
 from django.core.exceptions import ObjectDoesNotExist
+from django.contrib.auth.tokens import default_token_generator
+from django.utils.http import urlsafe_base64_encode
 
 # Models and Serializers
 from backend.models import Profile, User
@@ -62,16 +64,46 @@ def update_verification(request):
     return Response({'message': 'Verification status updated successfully'}, status=status.HTTP_200_OK)
 
 # Function to send automated support emails to users
-# update later to choose what type of email depending on what type of information is passed
 @csrf_exempt
 @api_view(['POST'])
 def send_email_support(request):
     recipient_email = request.data.get('recipient_email')
+    typeOfMessage = request.data.get('typeOfMessage')
+
+    # Generate a reset token for the user
+    user = User.objects.get(email=recipient_email)
+    uid = urlsafe_base64_encode(bytes(str(user.id), 'utf-8'))
+    token = default_token_generator.make_token(user)
+
+    # Determine the base URL based on the environment
+    if settings.DEBUG:
+        base_url = "http://localhost:8000"
+    else:
+        # Update this with your production URL
+        base_url = "https://www.gvflures.com"
+
+    # Construct the password reset URL with the token
+    password_reset_url = f"{base_url}/reset-password/?uid={uid}&token={token}"
 
     try:
+        # for the message body: ( \n is new line, \t if you want to indent )
+        if typeOfMessage == 'forgot':
+            subject = 'Reset Password'
+            message = (
+                f"You are receiving this email because you requested a password reset for your user account.\n\n"
+                f"Please go to the following page to change your password:\n\n{password_reset_url}\n\n"
+                f"\n\nThe GVF Lure's Team\nhttps://www.gvflures.com"
+            )
+        elif typeOfMessage == 'welcome':
+            subject = 'Welcome to GVF Lures'
+            message = 'Thanks for creating your account at GVF Lures.'
+        else:
+            subject = 'Verify your account'
+            message = 'Follow below'
+
         send_mail(
-            'Reset Password',
-            'Hello world',
+            subject,
+            message,
             settings.EMAIL_HOST_USER,
             [recipient_email],
             fail_silently=False,

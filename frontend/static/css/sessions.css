@@ -33,8 +33,8 @@
     margin-bottom: 9px;
 }
 
-/* Forms */
-.session-form {
+/* Forms and Confirmation Containers */
+.session-form, .forgot-password-confirmation-cont {
     max-width: 70%;
     max-height: 100%;
     background-color: rgb(201, 232, 255);
