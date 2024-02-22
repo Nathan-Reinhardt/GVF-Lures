@@ -36,6 +36,9 @@ const MiddleNavbar = () => {
                     <li className="home-middle-li">
                         <Link className="to-page" to="/">Home</Link>
                     </li>
+                    <li className="shop-middle-li">
+                        <Link className="to-page" to="/shop">Shop</Link>
+                    </li>
                     <li className="contact-middle-li">
                         <Link className="to-page" to="/contact">Contact Us</Link>
                     </li>
@@ -62,6 +65,9 @@ const MiddleNavbar = () => {
                 <ul className="menu-nav-list">
                     <li className="home-menu-li">
                         <Link className="menu-home-to-page" to="/"><strong>Home</strong></Link>
+                    </li>
+                    <li className="shop-menu-li">
+                        <Link className="menu-shop-to-page" to="/shop"><strong>Shop</strong></Link>
                     </li>
                     <li className="contact-menu-li">
                         <Link className="menu-contact-to-page" to="/contact"><strong>Contact|Us</strong></Link>
