@@ -1,22 +1,22 @@
 # GVF-Lures
-## Project
-This repository is for the GVF-Lures Website. Purpose for this project is to bring awareness and spread important information about GVF-Lures which is a fishing tackle company. GVF-Lures creates lures and dodger fishing equipment used to help catch fish in a variety of places within the USA. This website built using Django (python3) backend and the ReactJS frontend framework. User Authentication does exist in the website and allows users to access certain pages that non users are not allowed to access without proper credentials. The website is a solo project all done by myself done from complete scratch.
+## Website
+This repository is for the [GVF-Lures Website](https://www.gvflures.com/). Purpose for this website is to bring awareness and spread important information about GVF-Lures which is a fishing tackle company. GVF-Lures creates lures and dodger fishing equipment used to help catch fish in a variety of places within the USA. This website was built by using Django (python3) backend and the ReactJS frontend framework. Webpack is used to bundle the files and the website is hosted on Heroku. The domain of the website is gvflures.com User Authentication does exist in the website and allows users to access certain pages that non users are not allowed to access without proper credentials. Every page has mobile css adjustments made for vertical and landscape mode while also being adjusted for bigger screens as well. The website is a solo project all done by myself done from complete scratch.
 ## WIP
-Currently this project is a WIP and still will be updating it and this READ.md with updates/additions to the project. Resoultion size with this project works with a width of 800px width and wider. I will be adding ways to check for different screen sizes once I have more pages updated to where I want them to be before fully going into checking resolution sizes. Final note is I am currently still working on getting this project up to a live link to be accessible on the web. This will take precident before the resolution size adjustments.
+Currently this project is a WIP and will be updating this READ.md with updates/additions to the project. Main tasks to be finished is Shop, Forgot Password, Reset Password, and Verification Pages. Updates to a current page that need to be made is the Profile Page while working on the Shop Page.
 
 <br/><br/>
 <br/><br/>
 
-![readme1](https://github.com/Nathan-Reinhardt/GVF-Lures/assets/19512110/c6b11d27-b8eb-4ed7-b145-ab7cad304cde)
+![readme1](https://github.com/Nathan-Reinhardt/GVF-Lures/assets/19512110/5019fe03-f9c4-46bd-9ab2-a77034698dc9)
 ## Home Page
-This page has a slideshow of pictures that transition from picture to picture every 10 seconds with a very short transtion time in bewteen pictures. When the user logs into the website, their username will be displayed in a welcome message above the slideshow showing that they are successfully signed in on their account. Updates I want to make to this page would include css and html to go over the slideshow and change depending on which image is currently being shown. After that maybe add some interactions with the shop and home page once I add a shop page in the future.
+This page has a slideshow of pictures that transition from picture to picture every 15 seconds with a nice transition between pictures. A message will appear and disappear for each picture that shows up with a nice welcome message and slogan message.
 
 <br/><br/>
 <br/><br/>
 
-![readme2](https://github.com/Nathan-Reinhardt/GVF-Lures/assets/19512110/69188f60-a207-4bd3-b43d-7c4f23e01277)
+![readme2](https://github.com/Nathan-Reinhardt/GVF-Lures/assets/19512110/1a5ef9c9-53c2-40b2-b639-679a944f5255)
 ## Contact Us Page
-This is currently used with template information and users will use the page to contact the buisness owner by phone or email regarding questions they have.
+This page lets users know how to contact the buisness owner by phone or email regarding questions they have.
 
 <br/><br/>
 <br/><br/>
@@ -45,16 +45,16 @@ This page takes all pictures that relate to fishing with GVF-Lures. This can be 
 <br/><br/>
 <br/><br/>
 
-![readme6](https://github.com/Nathan-Reinhardt/GVF-Lures/assets/19512110/fe30fbf4-f568-4d43-85ad-1c15c16f91ee)
+![readme6](https://github.com/Nathan-Reinhardt/GVF-Lures/assets/19512110/9d19cdb7-24bc-4f16-b91c-c6c8c72ef5b9)
 ### CSS Image Blow Ups
-When an image is clicked in the gallery page, it will blow up the size of the image and will be fully responsive based on screen size. An update I am currently working on for this feature is to allow users to click on a next and previous button to switch between photos instead of having to press the white X in the top right corner to switch between different photos. This will make it more efficent to easily look at photos while they are blown up saving the users time.
+When an image is clicked in the gallery page, it will blow up the size of the image and will be fully responsive based on screen size. When the image is blown up, the user can go between images with the arrow buttons on the left and right sides of the screen. To close out of the image blown up users can press the X button in the top right of the screen.
 
 <br/><br/>
 <br/><br/>
 
-![readme7](https://github.com/Nathan-Reinhardt/GVF-Lures/assets/19512110/49a01fff-cde2-49a2-8150-dd64f676c745)
+![readme7](https://github.com/Nathan-Reinhardt/GVF-Lures/assets/19512110/bd47038f-8393-4edf-94c6-bad5211092cf)
 ## Log In/Sign Up Pages
-When the user is either new and wants to create an account, they will use the Sign Up page to create their new account. The Log In page allows existing users to log back into their accounts to access their profile if needed or use the Store feature in the future. User Authentication is very important and also the security of the users is important. This is why passwords are fully encrypted to prevent unauthorized users from accessing information they shouldn't have access to. The only adjustments that would be made to these pages is possible css changes to color and adding possible infomration needed on the Sign Up page that would help the Store page function better.
+When the user is either new and wants to create an account, they will use the Sign Up page to create their new account. The Log In page allows existing users to log back into their accounts to access their profile if needed or use the Store feature in the future. User Authentication is very important and also the security of the users is important. This is why passwords are fully encrypted to prevent unauthorized users from accessing information they shouldn't have access to. Error handling is on the frontend for users to see what they can or can't submit to the webpage. Other checks also are there to make sure multiple emails don't exist and creation limit is limited in order to stop overflooding the database. The main adjustment coming for this would be the forgot password setup coming later.
 
 <br/><br/>
 
@@ -78,5 +78,6 @@ The Footer will always be on every page as well similar to the Info Navigation P
 <br/><br/>
 <br/><br/>
 
-## Future Installment Shop Page
-The shop page would be one of the last and hardest features to implement into the website. Reasoning is I will need to restructure and add information into the database based on what is needed in order to get the users information to help create orders and ship items to users.
+![readme10](https://github.com/Nathan-Reinhardt/GVF-Lures/assets/19512110/f2737d78-1f28-4ca2-8b9b-dd754d57ee0f)
+## Live Server hosted on Heroku
+Hosting on the live server was the most challeneging coding challenge I have ever done alone with no support. It took a long time to tie everything and seperate my development enviornment from the production enviornment. Any API keys or sensitive information for the server or website is stored within the heroku config vars. The domain used is from GoDaddy and the SSL is setup correctly and all forwarding/redirects go toward the working domain. This is the live link url: [https://www.gvflures.com/](https://www.gvflures.com/)
