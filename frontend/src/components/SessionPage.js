@@ -41,17 +41,6 @@ const SessionPage = (props) => {
     const signUpHandleSubmit = async e => {
         e.preventDefault();
 
-        // placed here for testing purposes remove after testing
-        // start
-        const ip = await getIpAddress();
-        const zzzStatus = await checkLSToken(ip);
-
-        if (zzzStatus != true) {
-            setErrorMessage('Account creation limit has been reached.\nPlease try again later.');
-            return;
-        }
-        // end
-
         // Validate email using Validator.js
         if (!validator.isEmail(email)) {
             setErrorMessage("Email has invalid format.");
@@ -84,13 +73,13 @@ const SessionPage = (props) => {
         }
 
         // Prevent Spam
-        // const ip = await getIpAddress();
-        // const zzzStatus = await checkLSToken(ip);
+        const ip = await getIpAddress();
+        const zzzStatus = await checkLSToken(ip);
 
-        // if (zzzStatus != true) {
-            // setErrorMessage('Account creation limit has been reached.\nPlease try again later.');
-            // return;
-        // }
+        if (zzzStatus != true) {
+            setErrorMessage('Account creation limit has been reached.\nPlease try again later.');
+            return;
+        }
 
         // after all validations have been checked
         const error = await signUpUser(email, username, password, password2);

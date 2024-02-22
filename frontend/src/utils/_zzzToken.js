@@ -60,7 +60,6 @@ function checkLSToken(ip) {
             else {
                 // Increment and save the A_C_Count
                 localStorage.setItem('A_C_Count', parseInt(Accs_Count) + 1);
-                console.log(localStorage.getItem('A_C_Count'));
                 return true;
             }
         } 

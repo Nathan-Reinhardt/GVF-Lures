@@ -50,7 +50,6 @@ export const AuthProvider = ({ children }) => {
 
         // history.push change it in the future if you want the user to be on a specific page when they log in
         if (response.status === 200) {
-            console.log("Logged In");
             setAuthTokens(data);
             setUser(jwt_decode(data.access));
             localStorage.setItem("authTokens", JSON.stringify(data));
@@ -81,6 +80,7 @@ export const AuthProvider = ({ children }) => {
 
         if (response.status === 201) {
             // change this based on where you want the user to go after they signup
+            history.push("/");
             return "";
         }
         else {
@@ -102,7 +102,7 @@ export const AuthProvider = ({ children }) => {
         history.push("/login");
     }
 
-    // getIpAddress
+    // helps with spam data
     const getIpAddress = async () => {
         try {
             const response = await fetch(`${BASE_URL}backend/ip_address_check`, {
@@ -116,15 +116,12 @@ export const AuthProvider = ({ children }) => {
                 console.error("Failed to fetch IP address:", response.statusText);
                 return false;
             }
-
             const data = await response.json();
-            console.log("Response Data:", data.client_ip); // Log the entire response
-            console.log("Is Routable?", data.is_routable);
 
             return data.client_ip;
         } 
         catch (error) {
-            console.log("Error fetching IP address:", error.message);
+            console.error("Error fetching IP address:", error.message);
         }
     }
 
