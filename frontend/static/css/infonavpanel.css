@@ -28,7 +28,13 @@
     justify-content: center;
 }
 
-.middle-nav-cont, .menu-nav-cont {
+.middle-nav-cont {
+    position: relative;
+    z-index: 3;
+    margin-top: 3vh;
+}
+
+.menu-nav-cont {
     margin-top: 3vh;
 }
 
@@ -85,9 +91,9 @@
 }
 
 .home-li, .contact-li, .login-li, .signup-li, .logout-li, .home-middle-li,
-.contact-middle-li, .lakes-middle-li, .gallery-middle-li, .profile-middle-li,
-.menu-text, .home-menu-li, .contact-menu-li, .lakes-menu-li,
-.gallery-menu-li, .profile-menu-li {
+.shop-middle-li, .contact-middle-li, .lakes-middle-li, .gallery-middle-li, 
+.profile-middle-li, .menu-text, .home-menu-li, .shop-menu-li, .contact-menu-li,
+.lakes-menu-li, .gallery-menu-li, .profile-menu-li {
     list-style-type: none;
 }
 
@@ -95,14 +101,15 @@
     padding: 0 8px;
 }
 
-.home-middle-li, .contact-middle-li, .lakes-middle-li,
+.home-middle-li, .shop-middle-li, .contact-middle-li, .lakes-middle-li,
 .gallery-middle-li, .profile-middle-li {    /* padding is top, right, bottom, and left */
     padding: 15px 0px 15px 0px;
     background-image: linear-gradient(180deg, rgb(200, 209, 214), rgb(255, 255, 255));
     border: 1px solid rgb(137, 137, 137);
 }
 
-.contact-middle-li, .lakes-middle-li, .gallery-middle-li, .profile-middle-li {
+.shop-middle-li, .contact-middle-li, .lakes-middle-li,
+.gallery-middle-li, .profile-middle-li {
     border-left: hidden;
 }
 
@@ -111,8 +118,8 @@
     font-size: 20px;
 }
 
-.home-menu-li, .contact-menu-li, .lakes-menu-li,
-.gallery-menu-li, .profile-menu-li {
+.home-menu-li, .shop-menu-li, .contact-menu-li,
+.lakes-menu-li, .gallery-menu-li, .profile-menu-li {
     padding: 20px 0px 20px 0px;
     text-align: left;
     width: 100%;
@@ -124,9 +131,9 @@
 /* these properties. On other css pages, slight adjustments might be    */
 /* made to links based on their specific css needed for that page.      */
 
-.home-link, .contact-link, .login-link, .signup-link, .logout-link,
-.to-page, .menu-home-to-page, .menu-contact-to-page,
-.menu-lakes-to-page, .menu-gallery-to-page, .menu-profile-to-page {
+.topnav-to-page, .to-page, .menu-home-to-page, .menu-shop-to-page, 
+.menu-contact-to-page, .menu-lakes-to-page, .menu-gallery-to-page,
+.menu-profile-to-page {
     text-decoration: none;
     font-size: 15px;
     color: black;
@@ -137,8 +144,8 @@
     padding: 17px 24px 16px 24px;
 }
 
-.menu-home-to-page, .menu-contact-to-page, .menu-lakes-to-page,
-.menu-gallery-to-page, .menu-profile-to-page {
+.menu-home-to-page, .menu-shop-to-page, .menu-contact-to-page,
+.menu-lakes-to-page, .menu-gallery-to-page, .menu-profile-to-page {
     padding: 21px 24px 21px 24px;
     height: 16px;
 }
@@ -146,27 +153,27 @@
 /* Hover Effects */
 /* Same thing as links, but for hover effects as stated above */
 
-.home-middle-li:hover, .contact-middle-li:hover, .lakes-middle-li:hover,
-.gallery-middle-li:hover, .profile-middle-li:hover, .menu-nav-closed:hover,
-.home-menu-li:hover, .contact-menu-li:hover, .lakes-menu-li:hover,
-.gallery-menu-li:hover, .profile-menu-li:hover {
+.home-middle-li:hover, .shop-middle-li:hover, .contact-middle-li:hover,
+.lakes-middle-li:hover, .gallery-middle-li:hover, .profile-middle-li:hover,
+.menu-nav-closed:hover, .home-menu-li:hover, .shop-menu-li:hover,
+.contact-menu-li:hover, .lakes-menu-li:hover, .gallery-menu-li:hover,
+.profile-menu-li:hover {
     background-image: linear-gradient(180deg, rgb(210, 220, 225), rgb(255, 255, 255));
 }
 
-.contact-menu-li:hover, .lakes-menu-li:hover, .gallery-menu-li:hover,
-.profile-menu-li:hover {
+.shop-menu-li:hover, .contact-menu-li:hover, .lakes-menu-li:hover,
+.gallery-menu-li:hover, .profile-menu-li:hover {
     border-top: 1px solid rgb(137, 137, 137);
 }
 
-.home-menu-li:hover, .contact-menu-li:hover, .lakes-menu-li:hover,
-.gallery-menu-li:hover, .profile-menu-li:hover {
+.home-menu-li:hover, .shop-menu-li:hover, .contact-menu-li:hover,
+.lakes-menu-li:hover, .gallery-menu-li:hover, .profile-menu-li:hover {
     border-bottom: 1px solid rgb(137, 137, 137);
 }
 
-.home-link:hover, .contact-link:hover, .login-link:hover, .signup-link:hover,
-.logout-link:hover, .to-page:hover, .f-to-page:hover, .menu-home-to-page:hover,
-.menu-contact-to-page:hover, .menu-lakes-to-page:hover, .menu-gallery-to-page:hover,
-.menu-profile-to-page:hover {
+.topnav-to-page:hover, .to-page:hover, .f-to-page:hover, .menu-home-to-page:hover,
+.menu-shop-to-page:hover, .menu-contact-to-page:hover, .menu-lakes-to-page:hover,
+.menu-gallery-to-page:hover, .menu-profile-to-page:hover {
     color: red;
 }
 
@@ -230,6 +237,10 @@ dropdown menu are clickable by the user and also highlight the text
         padding-right: 86.6%;
     }
 
+    .menu-shop-to-page {
+        padding-right: 88.1%;
+    }
+
     .menu-contact-to-page {
         padding-right: 79.6%;
     }
@@ -250,6 +261,10 @@ dropdown menu are clickable by the user and also highlight the text
 @media only screen and (max-width: 790px) {
     .menu-home-to-page {
         padding-right: 85.7%;
+    }
+
+    .menu-shop-to-page {
+        padding-right: 87.3%;
     }
 
     .menu-contact-to-page {
@@ -279,6 +294,10 @@ dropdown menu are clickable by the user and also highlight the text
         padding-right: 84.6%;
     }
 
+    .menu-shop-to-page {
+        padding-right: 86.3%;
+    }
+
     .menu-contact-to-page {
         padding-right: 76.5%;
     }
@@ -299,6 +318,10 @@ dropdown menu are clickable by the user and also highlight the text
 @media only screen and (max-width: 665px) {
     .menu-home-to-page {
         padding-right: 83%;
+    }
+
+    .menu-shop-to-page {
+        padding-right: 85.2%;
     }
 
     .menu-contact-to-page {
@@ -328,6 +351,10 @@ dropdown menu are clickable by the user and also highlight the text
         padding-right: 81.6%;
     }
 
+    .menu-shop-to-page {
+        padding-right: 83.8%;
+    }
+
     .menu-contact-to-page {
         padding-right: 72.2%;
     }
@@ -348,6 +375,10 @@ dropdown menu are clickable by the user and also highlight the text
 @media only screen and (max-width: 540px) {
     .menu-home-to-page {
         padding-right: 79.8%;
+    }
+
+    .menu-shop-to-page {
+        padding-right: 82.4%;
     }
 
     .menu-contact-to-page {
@@ -377,6 +408,10 @@ dropdown menu are clickable by the user and also highlight the text
         padding-right: 78.4%;
     }
 
+    .menu-shop-to-page {
+        padding-right: 81%;
+    }
+
     .menu-contact-to-page {
         padding-right: 66.8%;
     }
@@ -404,6 +439,10 @@ dropdown menu are clickable by the user and also highlight the text
         padding-right: 76.3%;
     }
 
+    .menu-shop-to-page {
+        padding-right: 79.4%;
+    }
+
     .menu-contact-to-page {
         padding-right: 64%;
     }
@@ -424,6 +463,10 @@ dropdown menu are clickable by the user and also highlight the text
 @media only screen and (max-width: 430px) {
     .menu-home-to-page {
         padding-right: 74.7%;
+    }
+
+    .menu-shop-to-page {
+        padding-right: 78.4%;
     }
 
     .menu-contact-to-page {
@@ -448,6 +491,10 @@ dropdown menu are clickable by the user and also highlight the text
         padding-right: 73.9%;
     }
 
+    .menu-shop-to-page {
+        padding-right: 77.6%;
+    }
+
     .menu-contact-to-page {
         padding-right: 60.2%;
     }
@@ -469,11 +516,19 @@ dropdown menu are clickable by the user and also highlight the text
     .menu-nav-list {
         max-width: 60.7%;
     }
+
+    .menu-nav-closed {
+        margin-top: 3vh;
+    }
 }
 
 @media only screen and (max-width: 393px) {
     .menu-home-to-page {
         padding-right: 73%;
+    }
+
+    .menu-shop-to-page {
+        padding-right: 76.7%;
     }
 
     .menu-contact-to-page {
@@ -503,6 +558,10 @@ dropdown menu are clickable by the user and also highlight the text
         padding-right: 72%;
     }
 
+    .menu-shop-to-page {
+        padding-right: 75.6%;
+    }
+
     .menu-contact-to-page {
         padding-right: 57%;
     }
@@ -521,8 +580,17 @@ dropdown menu are clickable by the user and also highlight the text
 }
 
 @media only screen and (max-width: 360px) {
+    .menu-nav-closed {
+        margin-top: 2vh;
+    }
+
+    /* Menu drop down links */
     .menu-home-to-page {
         padding-right: 70.5%;
+    }
+
+    .menu-shop-to-page {
+        padding-right: 74.1%;
     }
 
     .menu-contact-to-page {
@@ -545,6 +613,10 @@ dropdown menu are clickable by the user and also highlight the text
 @media only screen and (max-width: 353px) {
     .menu-home-to-page {
         padding-right: 70.2%;
+    }
+
+    .menu-shop-to-page {
+        padding-right: 73.9%;
     }
 
     .menu-contact-to-page {
@@ -578,6 +650,10 @@ dropdown menu are clickable by the user and also highlight the text
     /* Menu drop down links */
     .menu-home-to-page {
         padding-right: 69.3%;
+    }
+
+    .menu-shop-to-page {
+        padding-right: 72.9%;
     }
 
     .menu-contact-to-page {
@@ -621,6 +697,10 @@ dropdown menu are clickable by the user and also highlight the text
         padding-right: 64.8%;
     }
 
+    .menu-shop-to-page {
+        padding-right: 69.9%;
+    }
+
     .menu-contact-to-page {
         padding-right: 46.4%;
     }
@@ -643,5 +723,18 @@ dropdown menu are clickable by the user and also highlight the text
 @media only screen and (max-width: 365px) {
     .home-li, .contact-li, .login-li, .signup-li {
         padding: 0 5px;
+    }
+}
+
+/* Height */
+@media only screen and (max-height: 900px) {
+    .middle-nav-cont {
+        margin-top: 4vh;
+    }
+}
+
+@media only screen and (max-height: 700px) {
+    .middle-nav-cont {
+        margin-top: 5vh;
     }
 }

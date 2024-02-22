@@ -10,5 +10,6 @@ urlpatterns = [
     path('gallery', index) ,
     path('lakes', index),
     path('profile', index),
+    path('shop', index),
     path('forgot-password', index),
 ]

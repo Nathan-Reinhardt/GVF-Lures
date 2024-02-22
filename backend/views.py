@@ -6,6 +6,9 @@ from django.core.exceptions import ObjectDoesNotExist
 from django.contrib.auth.tokens import default_token_generator
 from django.utils.http import urlsafe_base64_encode
 
+# IP Address Helper
+from ipware import get_client_ip
+
 # Models and Serializers
 from backend.models import Profile, User
 from backend.serializer import UserSerializer, MyTokenObtainPairSerializer, RegisterSerializer
@@ -36,6 +39,17 @@ def getRoutes(request):
         '/backend/register/'
     ]
     return Response(routes)
+
+# Get Ip Address
+@api_view(['GET'])
+def getIpAddress(request):
+    client_ip, is_routable = get_client_ip(request, request_header_order=['X_FORWARDED_FOR', 'REMOTE_ADDR'])
+    
+    if client_ip is None:
+        # Unable to get the client's IP address
+        return Response({'error': 'Unable to retrieve IP address'}, status=status.HTTP_400_BAD_REQUEST)
+    
+    return Response({'client_ip': client_ip, 'is_routable': is_routable}, status=status.HTTP_200_OK)
 
 # Check if an account already exists
 @api_view(['GET'])

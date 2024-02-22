@@ -50,7 +50,6 @@ export const AuthProvider = ({ children }) => {
 
         // history.push change it in the future if you want the user to be on a specific page when they log in
         if (response.status === 200) {
-            console.log("Logged In");
             setAuthTokens(data);
             setUser(jwt_decode(data.access));
             localStorage.setItem("authTokens", JSON.stringify(data));
@@ -81,6 +80,7 @@ export const AuthProvider = ({ children }) => {
 
         if (response.status === 201) {
             // change this based on where you want the user to go after they signup
+            history.push("/");
             return "";
         }
         else {
@@ -100,6 +100,29 @@ export const AuthProvider = ({ children }) => {
         localStorage.removeItem("authTokens");
         // change depending on where you want the user to go after they are logged out
         history.push("/login");
+    }
+
+    // helps with spam data
+    const getIpAddress = async () => {
+        try {
+            const response = await fetch(`${BASE_URL}backend/ip_address_check`, {
+                method: "GET",
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            });
+            
+            if (!response.ok) {
+                console.error("Failed to fetch IP address:", response.statusText);
+                return false;
+            }
+            const data = await response.json();
+
+            return data.client_ip;
+        } 
+        catch (error) {
+            console.error("Error fetching IP address:", error.message);
+        }
     }
 
     // takes in inputs to check if the inputs given match an account within the database
@@ -149,7 +172,6 @@ export const AuthProvider = ({ children }) => {
     }
 
     // send automated emails to users
-    // modify in the future to add input data to change the type of message you want
     const sendMailToUser = async (recipient_email, typeOfMessage) => {
         const response = await fetch(`${BASE_URL}backend/send_email/`, {
             method: "POST",
@@ -161,7 +183,6 @@ export const AuthProvider = ({ children }) => {
             })
         })
 
-        // adjust responses later
         if (response.status === 200) {
             console.log("success on email sent");
             return true;
@@ -182,6 +203,7 @@ export const AuthProvider = ({ children }) => {
         signUpUser,
         loginUser,
         logoutUser,
+        getIpAddress,
         checkAccountStatus,
         verifyUser,
         sendMailToUser

@@ -6,13 +6,14 @@ import ProtectedRoute from '../utils/ProtectedRoute';   // protects routes from 
 import { AuthProvider } from '../context/AuthContext';
 
 // Pages
-import Dashboard from './Dashboard';    // this component is to test private routes
+import Dashboard from './Dashboard';    // this component is to access admin panel
 import SplashPage from './SplashPage';  // main home page
 import SessionPage from './SessionPage';    // login and sign up pages
 import ContactUsPage from './ContactUsPage';    // about us page
 import LakesPage from './LakesPage';    // lakes page
 import GalleryPage from './GalleryPage';    // gallery page
 import ProfilePage from './ProfilePage';    // profile page
+import ShopPage from './ShopPage';      // shop page
 import ForgotPasswordPage from './ForgotPasswordPage'   // forgot password page
 
 export default class HomeApp extends Component {
@@ -29,6 +30,7 @@ export default class HomeApp extends Component {
                         <Route exact={true} path="/contact" component={ContactUsPage} />
                         <Route exact={true} path="/lakes" component={LakesPage} />
                         <Route exact={true} path="/gallery" component={GalleryPage} />
+                        <Route exact={true} path="/shop" component={ShopPage} />
                         <PrivateRoute exact={true} path="/profile" component={ProfilePage} />
                         <ProtectedRoute path="/login"><SessionPage isLogin={true}/></ProtectedRoute>
                         <ProtectedRoute path="/signup"><SessionPage isLogin={false}/></ProtectedRoute>
