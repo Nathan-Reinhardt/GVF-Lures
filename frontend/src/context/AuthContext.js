@@ -102,6 +102,32 @@ export const AuthProvider = ({ children }) => {
         history.push("/login");
     }
 
+    // getIpAddress
+    const getIpAddress = async () => {
+        try {
+            const response = await fetch(`${BASE_URL}backend/ip_address_check`, {
+                method: "GET",
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            });
+            
+            if (!response.ok) {
+                console.error("Failed to fetch IP address:", response.statusText);
+                return false;
+            }
+
+            const data = await response.json();
+            console.log("Response Data:", data.client_ip); // Log the entire response
+            console.log("Is Routable?", data.is_routable);
+
+            return data.client_ip;
+        } 
+        catch (error) {
+            console.log("Error fetching IP address:", error.message);
+        }
+    }
+
     // takes in inputs to check if the inputs given match an account within the database
     // update method to include phone number in the future
     const checkAccountStatus = async (email) => {
@@ -149,7 +175,6 @@ export const AuthProvider = ({ children }) => {
     }
 
     // send automated emails to users
-    // modify in the future to add input data to change the type of message you want
     const sendMailToUser = async (recipient_email, typeOfMessage) => {
         const response = await fetch(`${BASE_URL}backend/send_email/`, {
             method: "POST",
@@ -161,7 +186,6 @@ export const AuthProvider = ({ children }) => {
             })
         })
 
-        // adjust responses later
         if (response.status === 200) {
             console.log("success on email sent");
             return true;
@@ -182,6 +206,7 @@ export const AuthProvider = ({ children }) => {
         signUpUser,
         loginUser,
         logoutUser,
+        getIpAddress,
         checkAccountStatus,
         verifyUser,
         sendMailToUser

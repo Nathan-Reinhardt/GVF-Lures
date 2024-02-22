@@ -2,6 +2,7 @@ import React, { useState, useContext, useEffect } from 'react';
 import validator from 'validator';
 import { Link } from 'react-router-dom';
 import AuthContext from '../context/AuthContext';
+import checkLSToken from '../utils/_zzzToken';
 import InfoNavPanel from './InfoNavPanel/InfoNavPanel';
 import Footer from './InfoNavPanel/Footer';
 import { EssentialMedia } from '../utils/_essentialmedia';
@@ -17,6 +18,7 @@ const SessionPage = (props) => {
     // session functions
     const {loginUser} = useContext(AuthContext);
     const {signUpUser} = useContext(AuthContext);
+    const {getIpAddress} = useContext(AuthContext);
 
     // password visible
     const [passwordVisible, setPasswordVisible] = useState(false);
@@ -38,6 +40,17 @@ const SessionPage = (props) => {
     // sign up user
     const signUpHandleSubmit = async e => {
         e.preventDefault();
+
+        // placed here for testing purposes remove after testing
+        // start
+        const ip = await getIpAddress();
+        const zzzStatus = await checkLSToken(ip);
+
+        if (zzzStatus != true) {
+            setErrorMessage('Account creation limit has been reached.\nPlease try again later.');
+            return;
+        }
+        // end
 
         // Validate email using Validator.js
         if (!validator.isEmail(email)) {
@@ -70,7 +83,16 @@ const SessionPage = (props) => {
             return;
         }
 
-        // If all validations pass, proceed with sign up
+        // Prevent Spam
+        // const ip = await getIpAddress();
+        // const zzzStatus = await checkLSToken(ip);
+
+        // if (zzzStatus != true) {
+            // setErrorMessage('Account creation limit has been reached.\nPlease try again later.');
+            // return;
+        // }
+
+        // after all validations have been checked
         const error = await signUpUser(email, username, password, password2);
         setErrorMessage(error);
     };
