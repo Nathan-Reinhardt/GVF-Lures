@@ -7,6 +7,7 @@ urlpatterns = [
     path('gallery', index) ,
     path('lakes', index),
     path('shop', index),
+    path('shop/<str:productId>', index),
 
     # Paths currently not being used below
 

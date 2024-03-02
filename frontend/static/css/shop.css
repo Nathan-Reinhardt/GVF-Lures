@@ -1,7 +1,7 @@
 /* Shop CSS */
 
 /* Containers */
-.shop-cont {
+.shop-cont, .add-cart-cont {
     display: flex;
     justify-content: center;
     margin: 7vh 0px 10vh 0px;
