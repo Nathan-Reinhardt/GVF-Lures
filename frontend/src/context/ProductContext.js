@@ -8,11 +8,14 @@ export const ProductProvider = ({ children }) => {
 
     // setting the state in react
     const [currentProduct, setCurrentProduct] = useState(0);
+    const [hasDodger, setHasDodger] = useState(false);
 
     // passing all the functions into the store to return for export
     const ContextData = {
         currentProduct,
-        setCurrentProduct
+        setCurrentProduct,
+        hasDodger,
+        setHasDodger
     }
 
     // returning the store

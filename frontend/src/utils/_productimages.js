@@ -4,12 +4,16 @@ export const ProductsMedia = [
 
     // Lures
     [
-        {type: 'image', url: require("./images/golddiggerblack.jpg")},
+        [
+            {type: 'image', url: require("./images/golddiggerblack.jpg")},
+        ]
     ],
     [
-        {type: 'image', url: require("./images/wonderbreadoriginal.jpg")},
+        [
+            {type: 'image', url: require("./images/wonderbreadoriginal.jpg")},
+        ],
+        [
+            {type: 'image', url: require("./images/wonderbreaddodgeroriginal.jpg")},
+        ]
     ],
-
-    // Dodgers
-
 ]

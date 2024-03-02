@@ -1,13 +1,48 @@
 /* Shop CSS */
 
 /* Containers */
-.shop-cont, .add-cart-cont {
+.shop-cont, .add-cart-lure-cont, .add-cart-dodger-cont, 
+.add-cart-row-cont, .add-cart-btn-cont, .add-cart-img-cont {
     display: flex;
     justify-content: center;
-    margin: 7vh 0px 10vh 0px;
+}
+
+.shop-cont {
+    margin: 6vh 0px 10vh 0px;
+}
+
+.add-cart-lure-cont {
+    margin: 6vh 0px 6vh 0px;
+}
+
+.add-cart-dodger-cont {
+    margin-bottom: 10vh;
+}
+
+.add-cart-row-cont {
+    margin-top: 3px;
+}
+
+.add-cart-btn-cont {
+    margin-top: 8px;
+}
+
+/* Table, Rows, Select, Options*/
+.add-cart-table {
+    width: 100%;
+}
+
+.select-product {
+    text-align: center;
 }
 
 /* Buttons and Hover Details */
 
 
 /* Text, Links, Decorations */
+.add-cart-product-name {
+    text-align: center;
+    color: black;
+    font-size: 32px;
+    margin: 0px 0px 10px 0px;
+}
