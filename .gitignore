@@ -2,7 +2,6 @@
 **node_modules
 **/__pycache__/
 undefined
-db.sqlite3
 APIKeys/
 bundle.js
 bundle.js.LICENSE.txt
@@ -11,3 +10,7 @@ frontend/static/images
 # Webpack Testing files
 stats.json
 statshowtouse.txt
+
+# Database
+# Uncomment later when you want to add a new database for production besides the default
+# db.sqlite3

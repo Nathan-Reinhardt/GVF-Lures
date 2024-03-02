@@ -1,7 +1,11 @@
 /* Shop CSS */
 
 /* Containers */
-
+.shop-cont {
+    display: flex;
+    justify-content: center;
+    margin: 7vh 0px 10vh 0px;
+}
 
 /* Buttons and Hover Details */
 

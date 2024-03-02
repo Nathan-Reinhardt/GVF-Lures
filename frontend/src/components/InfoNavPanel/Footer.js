@@ -7,7 +7,7 @@ export default class Footer extends Component {
     }
 
     render() {
-        const token = localStorage.getItem("authTokens");
+        // const token = localStorage.getItem("authTokens");
 
         return(
             <div className="whole-footer-cont">
@@ -20,6 +20,13 @@ export default class Footer extends Component {
                         <div className="f-slash-cont">
                             <h3 className="f-slash-vertical-line">|</h3>
                         </div>
+                        {/*
+                        Uncomment later when shop page is in better state
+                            <Link className="f-to-page" to="/shop">Shop</Link>
+                            <div className="f-slash-cont">
+                                <h3 className="f-slash-vertical-line">|</h3>
+                            </div>
+                        */}
                         <Link className="f-to-page" to="/contact">Contact Us</Link>
                         <div className="f-slash-cont">
                             <h3 className="f-slash-vertical-line">|</h3>
@@ -29,14 +36,17 @@ export default class Footer extends Component {
                             <h3 className="f-slash-vertical-line">|</h3>
                         </div>
                         <Link className="f-to-page" to="/gallery">Gallery</Link>
-                        {token !== null &&
-                        <>
-                            <div className="f-slash-cont">
-                                <h3 className="f-slash-vertical-line">|</h3>
-                            </div>
-                            <Link className="f-to-page" to="/profile">Profile</Link>
-                        </>
-                        }
+                        {/*
+                        For profile page for users
+                            {token !== null &&
+                            <>
+                                <div className="f-slash-cont">
+                                    <h3 className="f-slash-vertical-line">|</h3>
+                                </div>
+                                <Link className="f-to-page" to="/profile">Profile</Link>
+                            </>
+                            }
+                        */}
                     </div>
                 </div>
                 <div className="copyright-cont">

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const MiddleNavbar = () => {
 
     // to check if the user is logged in
-    const token = localStorage.getItem("authTokens");
+    // const token = localStorage.getItem("authTokens");
     
     // useState to keep track of state changes
     const [isActive, setIsActive] = useState(false);
@@ -36,9 +36,12 @@ const MiddleNavbar = () => {
                     <li className="home-middle-li">
                         <Link className="to-page" to="/">Home</Link>
                     </li>
-                    <li className="shop-middle-li">
-                        <Link className="to-page" to="/shop">Shop</Link>
-                    </li>
+                    {/*
+                    Uncomment when shop is in a better state
+                        <li className="shop-middle-li">
+                            <Link className="to-page" to="/shop">Shop</Link>
+                        </li> 
+                    */}
                     <li className="contact-middle-li">
                         <Link className="to-page" to="/contact">Contact Us</Link>
                     </li>
@@ -48,11 +51,14 @@ const MiddleNavbar = () => {
                     <li className="gallery-middle-li">
                         <Link className="to-page" to="/gallery">Gallery</Link>
                     </li>
-                    {token !== null &&
-                        <li className="profile-middle-li">
-                            <Link className="to-page" to="/profile">Profile</Link>
-                        </li>
-                    }
+                    {/*
+                    For profile page for users
+                        {token !== null &&
+                            <li className="profile-middle-li">
+                                <Link className="to-page" to="/profile">Profile</Link>
+                            </li>
+                        }
+                    */}
                 </ul>
             </div>
             <div className="menu-nav-cont">
@@ -66,9 +72,12 @@ const MiddleNavbar = () => {
                     <li className="home-menu-li">
                         <Link className="menu-home-to-page" to="/"><strong>Home</strong></Link>
                     </li>
-                    <li className="shop-menu-li">
-                        <Link className="menu-shop-to-page" to="/shop"><strong>Shop</strong></Link>
-                    </li>
+                    {/*
+                    Uncomment when shop is in a better state
+                        <li className="shop-menu-li">
+                            <Link className="menu-shop-to-page" to="/shop"><strong>Shop</strong></Link>
+                        </li>
+                    */}
                     <li className="contact-menu-li">
                         <Link className="menu-contact-to-page" to="/contact"><strong>Contact|Us</strong></Link>
                     </li>
@@ -78,11 +87,14 @@ const MiddleNavbar = () => {
                     <li className="gallery-menu-li">
                         <Link className="menu-gallery-to-page" to="/gallery"><strong>Gallery</strong></Link>
                     </li>
-                    {token !== null &&
-                        <li className="profile-menu-li">
-                            <Link className="menu-profile-to-page" to="/profile"><strong>Profile</strong></Link>
-                        </li>
-                    }
+                    {/*
+                    For profile page for users
+                        {token !== null &&
+                            <li className="profile-menu-li">
+                                <Link className="menu-profile-to-page" to="/profile"><strong>Profile</strong></Link>
+                            </li>
+                        }
+                    */}
                 </ul>
             </div>
         </div>
