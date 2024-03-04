@@ -737,6 +737,18 @@ dropdown menu are clickable by the user and also highlight the text
     }
 }
 
+@media only screen and (max-width: 300px) {
+    .topnav-to-page{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 290px) {
+    .topnav-to-page {
+        font-size: 13px;
+    }
+}
+
 /* Height */
 @media only screen and (max-height: 900px) {
     .middle-nav-cont {

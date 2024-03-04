@@ -25,5 +25,22 @@ export const PRODUCTS = [
             options: ["Original glow", "Bling", "Golden"],
             productImage: ProductsMedia[1][1][0].url,
         }
+    },
+    // Do a test later to see what happens when the order of the options is changed from the ones
+    // defined within the paypal interface to check if the correct honey dripper is actually bought
+    {
+        id: 3,
+        hosted_button_id: "EFWCFJWPU9QYC",
+        productName: "Honey Drippers",
+        price: 4.49,
+        options: ["Pink", "Orange", "Green", "Purple", "Chartruese"],
+        productImage: ProductsMedia[2][0][0].url,
+        dodger: {
+            hosted_button_id: "JSK5UU2SZT63S",
+            productName: "Honey Dripper Dodgers",
+            price: 7.49,
+            options: ["Pink", "Orange", "Green", "Purple", "Chartruese"],
+            productImage: ProductsMedia[2][1][0].url,
+        }
     }
 ]

@@ -14,11 +14,9 @@ const AddToCartPanel = ({ currentProduct, isDodger }) => {
                     isDodger ? PRODUCTS[currentProduct].dodger.productName : PRODUCTS[currentProduct].productName
                 }</h1>
                 <div className="add-cart-img-main-cont">
-                    <div className="add-cart-img-backdrop-cont">
-                        <img className="shop-list-product-image" src={
-                            isDodger ? PRODUCTS[currentProduct].dodger.productImage : PRODUCTS[currentProduct].productImage
-                        }/>
-                    </div>
+                    <img className="shop-list-product-image" src={
+                        isDodger ? PRODUCTS[currentProduct].dodger.productImage : PRODUCTS[currentProduct].productImage
+                    }/>
                 </div>
                 <table className="add-cart-table">
                     <tbody>

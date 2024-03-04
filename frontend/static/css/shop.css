@@ -1,16 +1,54 @@
 /* Shop CSS */
 
-/* Containers */
-.shop-cont, .add-cart-product-cont, .add-cart-row-cont,
-.add-cart-btn-cont, .add-cart-img-main-cont, .add-cart-img-backdrop-cont {
+/* All Containers */
+.shop-wrapper, .add-cart-product-cont, .product-link-cont,
+.product-item, .add-cart-row-cont, .add-cart-btn-cont,
+.add-cart-img-main-cont {
     display: flex;
     justify-content: center;
 }
 
+/* Grid */
+/* Change min-height to change height of page */
+/* Change height related things once you have consistant image resolutions */
 .shop-cont {
-    margin: 6vh 0px 10vh 0px;
+    width: 60%;
+    min-height: 70vh;
+    margin-left: -9px;
 }
 
+.products-cont {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(235, 235, 235);
+    border-radius: 10px;
+}
+
+/* height for one product listed */
+.product-item {
+    flex-direction: column;
+    align-items: center;
+    height: 220px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(115, 115, 115);
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.product-link-cont {
+    margin-top: 16px;
+}
+
+.shop-list-product-img {
+    position: relative;
+    z-index: 1;
+}
+
+/* Add Cart Containers */
 .add-cart-main-cont {
     margin-bottom: 12vh;
 }
@@ -27,18 +65,11 @@
     margin-top: 8px;
 }
 
-.add-cart-img-backdrop-cont {
-    max-width: 100%;
-    background-image: linear-gradient(180deg, rgb(170, 177, 181), rgb(195, 182, 182));
-    padding: 14px;
-    border-radius: 10px;
-}
-
 /* Forms and Confirmation Containers */
 .add-cart-form {
     max-width: 70%;
     max-height: 100%;
-    background-color: rgb(201, 232, 255);
+    background-color: rgb(255, 255, 255);
     padding: 24px 29px 24px 29px;
     border-radius: 7px;
     box-shadow: 15px 15px 13px rgba(183, 191, 196, 0.7);
@@ -73,17 +104,38 @@
     font-size: 15px;
 }
 
-/* Buttons and Hover Details */
-.add-cart-form:hover {
-    background-color: rgb(185, 225, 255);
+/* Buttons, Links, and Hover Details */
+.shop-product-link {
+    text-decoration: none;
 }
 
 /* Text, Links, Decorations */
-.add-cart-product-name {
+.shop-title, .shop-list-product-name, .add-cart-product-name,
+.shop-list-price {
     text-align: center;
     color: black;
+}
+
+.shop-title {
+    padding: 0;
+    font-size: 56px;
+    margin: 4vh 0px 4vh 0px;
+}
+
+.shop-list-product-name {
+    font-size: 26px;
+    margin: 5px 0px 0px 0px;
+}
+
+.add-cart-product-name {
     font-size: 34px;
     margin: 0px 0px 12px 0px;
+}
+
+.shop-list-price {
+    font-size: 20px;
+    margin: 5px 0px 0px 0px;
+    color: red;
 }
 
 /* Other */
