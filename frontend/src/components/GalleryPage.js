@@ -3,16 +3,11 @@ import InfoNavPanel from './InfoNavPanel/InfoNavPanel';
 import Footer from './InfoNavPanel/Footer';
 import { GalleryMedia } from '../utils/_gallerymedia';
 
-// component class constructor breaks code when useState from react is
-// being used, therfore I used this function method to create
-// the page similar to how top navbar was created. Since this
-// page doesn't use props, this method is usuable.
-
 const GalleryPage = () => {
 
     // constant variables to secure values used for functions
     const firstPosition = 0;
-    const lastPosition = 23;
+    const lastPosition = GalleryMedia.length - 1;
     
     // useState to keep track of current picture
     const [pictureIndex, setPictureIndex] = useState(-1);

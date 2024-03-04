@@ -1,8 +1,8 @@
 /* Shop CSS */
 
 /* Containers */
-.shop-cont, .add-cart-lure-cont, .add-cart-dodger-cont, 
-.add-cart-row-cont, .add-cart-btn-cont, .add-cart-img-cont {
+.shop-cont, .add-cart-product-cont, .add-cart-row-cont,
+.add-cart-btn-cont, .add-cart-img-main-cont, .add-cart-img-backdrop-cont {
     display: flex;
     justify-content: center;
 }
@@ -11,20 +11,45 @@
     margin: 6vh 0px 10vh 0px;
 }
 
-.add-cart-lure-cont {
-    margin: 6vh 0px 6vh 0px;
+.add-cart-main-cont {
+    margin-bottom: 12vh;
 }
 
-.add-cart-dodger-cont {
-    margin-bottom: 10vh;
+.add-cart-product-cont {
+    margin: 3vh 0px 6vh 0px;
 }
 
 .add-cart-row-cont {
-    margin-top: 3px;
+    margin: 8px 0px 4px 0px;
 }
 
 .add-cart-btn-cont {
     margin-top: 8px;
+}
+
+.add-cart-img-backdrop-cont {
+    max-width: 100%;
+    background-image: linear-gradient(180deg, rgb(170, 177, 181), rgb(195, 182, 182));
+    padding: 14px;
+    border-radius: 10px;
+}
+
+/* Forms and Confirmation Containers */
+.add-cart-form {
+    max-width: 70%;
+    max-height: 100%;
+    background-color: rgb(201, 232, 255);
+    padding: 24px 29px 24px 29px;
+    border-radius: 7px;
+    box-shadow: 15px 15px 13px rgba(183, 191, 196, 0.7);
+    border: 5px double rgb(115, 115, 115);
+}
+
+/* Images */
+.shop-list-product-image {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
 }
 
 /* Table, Rows, Select, Options*/
@@ -33,16 +58,36 @@
 }
 
 .select-product {
-    text-align: center;
+    width: 200px;
+    height: 45px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid rgb(160, 160, 160);
+    border-radius: 5px;
+    background-color: rgb(250, 250, 250);
+    outline: none;
+}
+
+.product-options {
+    width: 200px;
+    font-size: 15px;
 }
 
 /* Buttons and Hover Details */
-
+.add-cart-form:hover {
+    background-color: rgb(185, 225, 255);
+}
 
 /* Text, Links, Decorations */
 .add-cart-product-name {
     text-align: center;
     color: black;
-    font-size: 32px;
-    margin: 0px 0px 10px 0px;
+    font-size: 34px;
+    margin: 0px 0px 12px 0px;
+}
+
+/* Other */
+.product-loading {
+    font-size: 30px;
+    font-weight: 600;
 }

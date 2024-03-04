@@ -37,7 +37,10 @@ const TopNavbar = () => {
                 <h3 className="middle-slash-vertical-line">|</h3>
             </div>
             <div className="right-nav">
-                <ViewCart />
+                <div className="view-cart-cont">
+                    <div className="shopping-cart-img"></div>
+                    <ViewCart />
+                </div>
                 {/*
                 disabled for now. Used for user login/signup
                     <ul className="right-nav-menu-list">

@@ -7,7 +7,7 @@ export default ProductContext;
 export const ProductProvider = ({ children }) => {
 
     // setting the state in react
-    const [currentProduct, setCurrentProduct] = useState(0);
+    const [currentProduct, setCurrentProduct] = useState(null);
     const [hasDodger, setHasDodger] = useState(false);
 
     // passing all the functions into the store to return for export

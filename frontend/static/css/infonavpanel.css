@@ -2,7 +2,7 @@
 
 /* Containers */
 .master-header, .left-nav-menu-list, .right-nav-menu-list, .slash-cont,
-.middle-nav-cont, .middle-nav-list, .menu-nav-closed {
+.middle-nav-cont, .middle-nav-list, .menu-nav-closed, .view-cart-cont {
     display: flex;
 }
 
@@ -32,6 +32,10 @@
     position: relative;
     z-index: 3;
     margin-top: 3vh;
+}
+
+.view-cart-cont {
+    margin: 1vh 0px 0px 12px;
 }
 
 .menu-nav-cont {
@@ -79,6 +83,13 @@
     width: 32px;
     height: 32px;
     background: url('../images/menuicon.png') no-repeat;
+}
+
+.shopping-cart-img {
+    width: 32px;
+    height: 32px;
+    background: url('../images/shoppingcart.png') no-repeat;
+    margin: -5px 10px 0px 0px;
 }
 
 /* List and List Items */
