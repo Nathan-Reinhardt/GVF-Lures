@@ -2,42 +2,31 @@ import React from 'react';
 import { PRODUCTS } from './Products';
 
 const AddToCartPanel = ({ currentProduct, isDodger }) => {
+
+    const product = isDodger ? PRODUCTS[currentProduct].dodger : PRODUCTS[currentProduct];
     
     return (
         <div className="add-cart-product-cont">
             <form className="add-cart-form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-                <input type="hidden" name="cmd" value="_s-xclick" />
-                <input type="hidden" name="hosted_button_id" value={
-                    isDodger ? PRODUCTS[currentProduct].dodger.hosted_button_id : PRODUCTS[currentProduct].hosted_button_id
-                }/>
-                <h1 className="add-cart-product-name">{
-                    isDodger ? PRODUCTS[currentProduct].dodger.productName : PRODUCTS[currentProduct].productName
-                }</h1>
+                <input type="hidden" name="cmd" value="_xclick" />
+                <input type="hidden" name="hosted_button_id" value={product.hosted_button_id} />
+                <h1 className="add-cart-product-name">{product.productName}</h1>
                 <div className="add-cart-img-main-cont">
-                    <img className="shop-list-product-image" src={
-                        isDodger ? PRODUCTS[currentProduct].dodger.productImage : PRODUCTS[currentProduct].productImage
-                    }/>
+                    <img className="add-product-image" src={product.productImage} />
                 </div>
                 <table className="add-cart-table">
                     <tbody>
                         <tr>
                             <td>
-                                <input type="hidden" name="on0" value={
-                                    isDodger ? PRODUCTS[currentProduct].dodger.productName : PRODUCTS[currentProduct].productName
-                                }/>
+                                <input type="hidden" name="on0" value={product.productName} />
                             </td>
                         </tr>
                         <tr className="add-cart-row-cont">
                             <td>
                                 <select className="select-product" name="os0">
-                                    {isDodger ? PRODUCTS[currentProduct].dodger.options.map((type, index) => (
-                                        <option className="product-options" key={index} value={`${type} ${PRODUCTS[currentProduct].dodger.price} USD`}>
-                                            {`${type} $${PRODUCTS[currentProduct].dodger.price} USD`}
-                                        </option>
-                                    ))
-                                    : PRODUCTS[currentProduct].options.map((type, index) => (
-                                        <option className="product-options" key={index} value={`${type} ${PRODUCTS[currentProduct].price} USD`}>
-                                            {`${type} $${PRODUCTS[currentProduct].price} USD`}
+                                    {product.options.map((type, index) => (
+                                        <option className="product-options" key={index} value={`${type} ${product.price} USD`}>
+                                            {`${type} $${product.price} USD`}
                                         </option>
                                     ))}
                                 </select>
