@@ -731,6 +731,18 @@ dropdown menu are clickable by the user and also highlight the text
 
 /* Other */
 /* Width */
+@media only screen and (max-width: 700px) {
+    .menu-nav-cont {
+        margin-top: 5vh;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .menu-nav-cont {
+        margin-top: 4vh;
+    }
+}
+
 @media only screen and (max-width: 365px) {
     .home-li, .contact-li, .login-li, .signup-li {
         padding: 0 5px;
@@ -740,6 +752,10 @@ dropdown menu are clickable by the user and also highlight the text
 @media only screen and (max-width: 300px) {
     .topnav-to-page{
         font-size: 14px;
+    }
+
+    .menu-nav-cont {
+        margin-top: 3vh;
     }
 }
 
@@ -759,5 +775,23 @@ dropdown menu are clickable by the user and also highlight the text
 @media only screen and (max-height: 700px) {
     .middle-nav-cont {
         margin-top: 5vh;
+    }
+}
+
+@media only screen and (max-height: 600px) {
+    .menu-nav-cont {
+        margin-top: 6vh;
+    }
+}
+
+@media only screen and (max-height: 500px) {
+    .menu-nav-cont {
+        margin-top: 8vh;
+    }
+}
+
+@media only screen and (max-height: 400px) {
+    .menu-nav-cont {
+        margin-top: 10vh;
     }
 }
