@@ -6,6 +6,7 @@ const IMAGES = {
     // Dropdown Menu Icon
     MenuIcon: require("./images/menuicon.png").default,
     ShoppingCartIcon: require("./images/shoppingcart.png").default,
+    BackToShop: require("./images/backtoshop.png").default
 }
 
 export default IMAGES;

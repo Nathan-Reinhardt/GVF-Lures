@@ -23,7 +23,7 @@ const AddToCartPanel = ({ currentProduct, isSpinBug, isDodger, isFlorescent, isM
     }
 
     // used to help keep the UI clean for text wrapping
-    const ProductTypes = ["Florescent", "Spinbugs", "Dodgers", "More"];
+    const ProductTypes = ["Florescent", "More", "Spinbugs", "Dodgers"];
     
     return (
         <div className="add-cart-product-cont">
@@ -33,14 +33,14 @@ const AddToCartPanel = ({ currentProduct, isSpinBug, isDodger, isFlorescent, isM
                 {isFlorescent &&
                     <h1 className="add-cart-product-name-top-type">{ProductTypes[0]}</h1>
                 }
+                {isMoreLures &&
+                    <h1 className="add-cart-product-name-top-type">{ProductTypes[1]}</h1>
+                }
                 <h1 className="add-cart-product-name">{product.productName}</h1>
                 {isSpinBug &&
-                    <h1 className="add-cart-product-name-bottom-type">{ProductTypes[1]}</h1>
-                }
-                {isDodger &&
                     <h1 className="add-cart-product-name-bottom-type">{ProductTypes[2]}</h1>
                 }
-                {isMoreLures &&
+                {isDodger &&
                     <h1 className="add-cart-product-name-bottom-type">{ProductTypes[3]}</h1>
                 }
                 <div className="add-cart-img-main-cont">

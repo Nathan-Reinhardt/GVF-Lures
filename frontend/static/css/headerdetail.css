@@ -274,7 +274,7 @@
     }
 
     .main-gvf-lures-text {
-        margin-right: -20vw;
+        margin-right: -14vw;
         margin-left: 0px;
     }
 }
@@ -286,14 +286,20 @@
     }
 
     .main-gvf-lures-text {
-        margin-right: -26vw;
+        margin-right: -17.5vw;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .main-gvf-lures-text {
+        margin-right: -24vw;
     }
 }
 
 @media only screen and (max-width: 330px) {
     .main-gvf-lures-text {
         font-size: 45.5px;
-        margin-right: -28vw;
+        margin-right: -26vw;
     }
     
     .gvf-logo-cont {

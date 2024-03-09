@@ -1,18 +1,35 @@
 /* Shop CSS */
 
 /* All Containers */
-.shop-wrapper, .add-cart-product-cont, .product-link-cont,
-.product-item, .add-cart-row-cont, .add-cart-btn-cont,
-.add-cart-img-main-cont, .product-loading, .shop-deal-main-cont,
-.shop-deal-sub-cont {
+.shop-wrapper, .add-cart-product-cont, .product-link-cont, .product-item,
+.add-cart-row-cont, .add-cart-btn-cont, .add-cart-img-main-cont, 
+.product-loading, .shop-deal-main-cont, .shop-deal-sub-cont, 
+.back-to-shop-page-cont, .back-to-shop-page-sub-cont,
+.back-to-shop-img-cont {
     display: flex;
     justify-content: center;
 }
 
-.shop-deal-sub-cont {
+.shop-deal-sub-cont, .back-to-shop-page-sub-cont {
     background-color: rgb(235, 235, 235);
-    width: 95%;
     border-radius: 10px;
+}
+
+.shop-deal-sub-cont {
+    width: 55%;
+}
+
+.back-to-shop-page-cont {
+    margin: 30px 0px -20px 0px;
+}
+
+.back-to-shop-page-sub-cont {
+    width: 170px;
+    padding: 10px;
+}
+
+.back-to-shop-img-cont {
+    align-items: center;
 }
 
 /* Grid */
@@ -90,6 +107,13 @@
     border-radius: 5px;
 }
 
+.back-to-shop-img {
+    width: 32px;
+    height: 32px;
+    background: url('../images/backtoshop.png') no-repeat;
+    margin: 0px 5px 0px -12px;
+}
+
 /* Table, Rows, Select, Options*/
 .add-cart-table {
     width: 100%;
@@ -112,15 +136,17 @@
 }
 
 /* Buttons, Links, and Hover Details */
-.shop-product-link {
+.shop-product-link, .back-to-shop-page {
     text-decoration: none;
+    font-size: 15px;
+    color: black;
 }
 
 /* Text, Links, Decorations */
 .shop-title, .shop-list-product-name, .shop-list-price,
 .add-cart-product-name, .add-cart-product-name-top-type,
 .add-cart-product-name-bottom-type, .shop-deal-text,
-.shop-deal-shipping {
+.shop-deal-shipping, .back-to-shop-text {
     text-align: center;
     color: black;
 }
@@ -147,6 +173,11 @@
 .shop-list-product-name {
     font-size: 26px;
     margin: 5px 0px 0px 0px;
+}
+
+.back-to-shop-text {
+    font-size: 20px;
+    margin: 10px 0px 10px 0px;
 }
 
 .add-cart-product-name, .add-cart-product-name-top-type,
@@ -177,13 +208,13 @@
 
 /* Width */
 @media only screen and (max-width: 1500px) {
-    .shop-cont {
+    .shop-cont, .shop-deal-sub-cont {
         width: 65%;
     }
 }
 
 @media only screen and (max-width: 1340px) {
-    .shop-cont {
+    .shop-cont, .shop-deal-sub-cont {
         width: 95%;
     }
 }

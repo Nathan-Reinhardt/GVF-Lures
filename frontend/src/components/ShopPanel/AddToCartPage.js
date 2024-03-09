@@ -1,4 +1,5 @@
 import React, { useContext, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import InfoNavPanel from '../InfoNavPanel/InfoNavPanel';
 import Footer from '../InfoNavPanel/Footer';
 import ProductContext from '../../context/ProductContext';
@@ -44,6 +45,16 @@ const AddToCartPage = () => {
         <div>
             <InfoNavPanel />
             <div className="add-cart-main-cont">
+                <div className="back-to-shop-page-cont">
+                    <Link className="back-to-shop-page" to="/shop">
+                        <div className="back-to-shop-page-sub-cont">
+                            <div className="back-to-shop-img-cont">
+                                <div className="back-to-shop-img"></div>
+                            </div>
+                            <h3 className="back-to-shop-text">Back To Shop</h3>
+                        </div>
+                    </Link>
+                </div>
                 {!hasSpinBug &&
                     <AddToCartPanel
                         currentProduct={currentProduct} isSpinBug={false} isDodger={false}

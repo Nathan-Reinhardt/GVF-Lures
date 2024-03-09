@@ -31,5 +31,21 @@ export const ProductsMedia = [
         [
             {type: 'image', url: require("./images/honeydripperdodgerpink.jpg")},
         ]
+    ],
+    [
+        [
+            {type: 'image', url: require("./images/tequiliasunrize.jpg")},
+        ],
+        [
+            {type: 'image', url: require("./images/pinacoloda.jpg")},
+        ]
+    ],
+    [
+        [
+            {type: 'image', url: require("./images/purplenurple.jpg")},
+        ],
+        [
+            {type: 'image', url: require("./images/purplenurpledodger.jpg")},
+        ]
     ]
 ]

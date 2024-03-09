@@ -5,10 +5,6 @@ import Footer from './InfoNavPanel/Footer';
 import { PRODUCTS } from './ShopPanel/Products';
 
 const ShopPage = () => {
-
-    // things to change:
-    // add cart page needs to have a backspace button to go back to /shop
-
     // For the future implement multiple pages using 1, 2, 3, etc. if enough
     // product is showing to keep the page smaller in size with a lot of product
     // To do this you are probably going to have to keep track of the screen size using
@@ -22,7 +18,7 @@ const ShopPage = () => {
             <div className="shop-deal-main-cont">
                 <div className="shop-deal-sub-cont">
                     <div>
-                        <h3 className="shop-deal-text">On checkout $75 or more</h3>
+                        <h3 className="shop-deal-text">If you purchase $75 or more</h3>
                         <h3 className="shop-deal-shipping">Free Shipping!!!</h3>
                     </div>
                 </div>

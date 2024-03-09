@@ -20,13 +20,10 @@ export default class Footer extends Component {
                         <div className="f-slash-cont">
                             <h3 className="f-slash-vertical-line">|</h3>
                         </div>
-                        {/*
-                        Uncomment later when shop page is in better state
-                            <Link className="f-to-page" to="/shop">Shop</Link>
-                            <div className="f-slash-cont">
-                                <h3 className="f-slash-vertical-line">|</h3>
-                            </div>
-                        */}
+                        <Link className="f-to-page" to="/shop">Shop</Link>
+                        <div className="f-slash-cont">
+                            <h3 className="f-slash-vertical-line">|</h3>
+                        </div>
                         <Link className="f-to-page" to="/contact">Contact Us</Link>
                         <div className="f-slash-cont">
                             <h3 className="f-slash-vertical-line">|</h3>

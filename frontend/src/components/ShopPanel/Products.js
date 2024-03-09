@@ -40,9 +40,8 @@ export const PRODUCTS = [
         florescent: null,
         moreLures: null
     },
-    // Do a test later to see what happens when the order of the options is changed from the ones
-    // defined within the paypal interface to check if the correct honey dripper is actually bought
-    // Paypal went down for payments. Please comeback to this later and try to do paypal payments
+    // Test seemed to have work make sure it actually works overtime
+    // comeback to ID 3 if you run into problems processing payments
     {
         id: 3,
         hosted_button_id: "EFWCFJWPU9QYC",
@@ -61,5 +60,43 @@ export const PRODUCTS = [
         },
         florescent: null,
         moreLures: null
-    }
+    },
+    {
+        id: 4,
+        hosted_button_id: "WCR5225LD92SG",
+        shopName: "Cocktails",
+        productName: "Cocktails",
+        price: 4.49,
+        options: ["Tequillia sunrize", "Mojito", "Singapore Sling", "Kaluaha N Cream", "Deep Purple"],
+        productImage: ProductsMedia[3][0][0].url,
+        spinBug: false,
+        dodger: null,
+        florescent: null,
+        moreLures: {
+            hosted_button_id: "BF75TMRUASCPG",
+            productName: "Cocktails",
+            price: 4.49,
+            options: ["Pina Colada", "Cosmo", "Mai Tai", "Bloody Mary", "Daquiri"],
+            productImage: ProductsMedia[3][1][0].url,
+        }
+    },
+    {
+        id: 5,
+        hosted_button_id: "6TFUWQMY9GH5Y",
+        shopName: "Plum Crazy",
+        productName: "Plum Crazy",
+        price: 4.49,
+        options: ["Purple Nurple", "Razzle Dazzle", "Gold N Plum"],
+        productImage: ProductsMedia[4][0][0].url,
+        spinBug: false,
+        dodger: {
+            hosted_button_id: "UU9TH8P32ZESE",
+            productName: "Plum Crazy",
+            price: 7.49,
+            options: ["Purple Nurple", "Razzle Dazzle", "Gold N Plum"],
+            productImage: ProductsMedia[4][1][0].url,
+        },
+        florescent: null,
+        moreLures: null,
+    },
 ]
