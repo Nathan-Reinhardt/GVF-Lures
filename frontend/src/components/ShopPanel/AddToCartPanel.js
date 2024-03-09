@@ -1,16 +1,48 @@
 import React from 'react';
 import { PRODUCTS } from './Products';
 
-const AddToCartPanel = ({ currentProduct, isDodger }) => {
+const AddToCartPanel = ({ currentProduct, isSpinBug, isDodger, isFlorescent, isMoreLures }) => {
 
-    const product = isDodger ? PRODUCTS[currentProduct].dodger : PRODUCTS[currentProduct];
+    // later when implementing the changing of images based on selection
+    // make sure to use these conditionals below to put the useState
+    // functionality to be used based on what type of product it will be for
+
+    // which type of product to create panel for
+    let product;
+    if (isDodger) {
+        product = PRODUCTS[currentProduct].dodger;
+    }
+    else if (isFlorescent) {
+        product = PRODUCTS[currentProduct].florescent;
+    }
+    else if (isMoreLures) {
+        product = PRODUCTS[currentProduct].moreLures;
+    }
+    else {
+        product = PRODUCTS[currentProduct];
+    }
+
+    // used to help keep the UI clean for text wrapping
+    const ProductTypes = ["Florescent", "Spinbugs", "Dodgers", "More"];
     
     return (
         <div className="add-cart-product-cont">
             <form className="add-cart-form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-                <input type="hidden" name="cmd" value="_xclick" />
+                <input type="hidden" name="cmd" value="_s-xclick" />
                 <input type="hidden" name="hosted_button_id" value={product.hosted_button_id} />
+                {isFlorescent &&
+                    <h1 className="add-cart-product-name-top-type">{ProductTypes[0]}</h1>
+                }
                 <h1 className="add-cart-product-name">{product.productName}</h1>
+                {isSpinBug &&
+                    <h1 className="add-cart-product-name-bottom-type">{ProductTypes[1]}</h1>
+                }
+                {isDodger &&
+                    <h1 className="add-cart-product-name-bottom-type">{ProductTypes[2]}</h1>
+                }
+                {isMoreLures &&
+                    <h1 className="add-cart-product-name-bottom-type">{ProductTypes[3]}</h1>
+                }
                 <div className="add-cart-img-main-cont">
                     <img className="add-product-image" src={product.productImage} />
                 </div>

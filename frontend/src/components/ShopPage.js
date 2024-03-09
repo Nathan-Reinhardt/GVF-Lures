@@ -19,13 +19,21 @@ const ShopPage = () => {
         <div>
             <InfoNavPanel />
             <h1 className="shop-title">Lures & Dodgers</h1>
+            <div className="shop-deal-main-cont">
+                <div className="shop-deal-sub-cont">
+                    <div>
+                        <h3 className="shop-deal-text">On checkout $75 or more</h3>
+                        <h3 className="shop-deal-shipping">Free Shipping!!!</h3>
+                    </div>
+                </div>
+            </div>
             <div className="shop-wrapper">
                 <div className="shop-cont">
                     <div className="products-cont">
                         {
                             PRODUCTS.map((product, index) => (
-                                <Link className="shop-product-link" to={`/shop/${product.id}`}>
-                                    <div key={index} id={index} className="product-item">
+                                <Link key={index} id={index} className="shop-product-link" to={`/shop/${product.id}`}>
+                                    <div className="product-item">
                                         <div>
                                             <div className="product-link-cont">
                                                 <img className="shop-list-product-img" src={product.productImage}/>
