@@ -2,7 +2,7 @@
 
 /* Containers */
 .master-header, .left-nav-menu-list, .right-nav-menu-list, .slash-cont,
-.middle-nav-cont, .middle-nav-list, .menu-nav-closed {
+.middle-nav-cont, .middle-nav-list, .menu-nav-closed, .view-cart-cont {
     display: flex;
 }
 
@@ -32,6 +32,10 @@
     position: relative;
     z-index: 3;
     margin-top: 3vh;
+}
+
+.view-cart-cont {
+    margin: 15px 0px 0px 12px;
 }
 
 .menu-nav-cont {
@@ -79,6 +83,13 @@
     width: 32px;
     height: 32px;
     background: url('../images/menuicon.png') no-repeat;
+}
+
+.shopping-cart-img {
+    width: 32px;
+    height: 32px;
+    background: url('../images/shoppingcart.png') no-repeat;
+    margin: -5px 10px 0px 0px;
 }
 
 /* List and List Items */
@@ -720,9 +731,37 @@ dropdown menu are clickable by the user and also highlight the text
 
 /* Other */
 /* Width */
+@media only screen and (max-width: 700px) {
+    .menu-nav-cont {
+        margin-top: 5vh;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .menu-nav-cont {
+        margin-top: 4vh;
+    }
+}
+
 @media only screen and (max-width: 365px) {
     .home-li, .contact-li, .login-li, .signup-li {
         padding: 0 5px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .topnav-to-page{
+        font-size: 14px;
+    }
+
+    .menu-nav-cont {
+        margin-top: 3vh;
+    }
+}
+
+@media only screen and (max-width: 290px) {
+    .topnav-to-page {
+        font-size: 13px;
     }
 }
 
@@ -736,5 +775,23 @@ dropdown menu are clickable by the user and also highlight the text
 @media only screen and (max-height: 700px) {
     .middle-nav-cont {
         margin-top: 5vh;
+    }
+}
+
+@media only screen and (max-height: 600px) {
+    .menu-nav-cont {
+        margin-top: 6vh;
+    }
+}
+
+@media only screen and (max-height: 500px) {
+    .menu-nav-cont {
+        margin-top: 8vh;
+    }
+}
+
+@media only screen and (max-height: 400px) {
+    .menu-nav-cont {
+        margin-top: 10vh;
     }
 }

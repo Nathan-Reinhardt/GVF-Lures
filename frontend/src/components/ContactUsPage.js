@@ -19,7 +19,7 @@ export default class ContactUsPage extends Component {
                     <div className="background-contact-info-cont">
                         <div className="contact-info-cont">
                             <h1 className="contact-phone-num">Phone Number: 916-531-6011</h1>
-                            <h1 className="contact-email">Email: rbernoudy1@juno.com</h1>
+                            <h1 className="contact-email">Email: gvf@gvflures.com</h1>
                             <div className="contact-pic-cont">
                                 <img className="rich-n-me-pic" src={EssentialMedia[1].url} />
                             </div>

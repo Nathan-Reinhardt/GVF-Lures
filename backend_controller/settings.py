@@ -74,7 +74,8 @@ INSTALLED_APPS = [
     # Django admin doesn't let you migrate the database.
     # https://docs.djangoproject.com/en/5.0/ref/contrib/admin/
 
-    'django.contrib.admin',
+    # Uncomment if you want user management
+    # 'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -170,16 +171,27 @@ if IS_HEROKU_APP:
     # automatically by Heroku when a database addon is attached to your Heroku app. See:
     # https://devcenter.heroku.com/articles/provisioning-heroku-postgres
     # https://github.com/jazzband/dj-database-url
+
+    # Old Database if you decide to add a new one change your settings in order to make it work
+    # Heroku Configs need to be adjusted for a new database
+    
+    # DATABASES = {
+        # "default": dj_database_url.config(
+            # conn_max_age=600,
+            # conn_health_checks=True,
+            # ssl_require=True,
+        # ),
+    # }
+
+    # Placeholder dummy database
     DATABASES = {
-        "default": dj_database_url.config(
-            conn_max_age=600,
-            conn_health_checks=True,
-            ssl_require=True,
-        ),
+        "default": {
+            "ENGINE": "django.db.backends.sqlite3",
+            "NAME": BASE_DIR / "db.sqlite3",
+        }
     }
 else:
     # When running locally in development or in CI, a sqlite database file will be used instead
-    # to simplify initial setup. Longer term it's recommended to use Postgres locally too.
     DATABASES = {
         "default": {
             "ENGINE": "django.db.backends.sqlite3",

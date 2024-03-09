@@ -3,13 +3,17 @@ from .views import index
 
 urlpatterns = [
     path('', index),
-    path('dashboard', index),
-    path('login', index),
-    path('signup', index),
     path('contact', index),
     path('gallery', index) ,
     path('lakes', index),
-    path('profile', index),
     path('shop', index),
-    path('forgot-password', index),
+    path('shop/<str:productId>', index),
+
+    # Paths currently not being used below
+
+    #path('dashboard', index),
+    #path('login', index),
+    #path('signup', index),
+    #path('profile', index),
+    #path('forgot-password', index),
 ]

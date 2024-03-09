@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const MiddleNavbar = () => {
 
     // to check if the user is logged in
-    const token = localStorage.getItem("authTokens");
+    // const token = localStorage.getItem("authTokens");
     
     // useState to keep track of state changes
     const [isActive, setIsActive] = useState(false);
@@ -48,11 +48,14 @@ const MiddleNavbar = () => {
                     <li className="gallery-middle-li">
                         <Link className="to-page" to="/gallery">Gallery</Link>
                     </li>
-                    {token !== null &&
-                        <li className="profile-middle-li">
-                            <Link className="to-page" to="/profile">Profile</Link>
-                        </li>
-                    }
+                    {/*
+                    For profile page for users
+                        {token !== null &&
+                            <li className="profile-middle-li">
+                                <Link className="to-page" to="/profile">Profile</Link>
+                            </li>
+                        }
+                    */}
                 </ul>
             </div>
             <div className="menu-nav-cont">
@@ -78,11 +81,14 @@ const MiddleNavbar = () => {
                     <li className="gallery-menu-li">
                         <Link className="menu-gallery-to-page" to="/gallery"><strong>Gallery</strong></Link>
                     </li>
-                    {token !== null &&
-                        <li className="profile-menu-li">
-                            <Link className="menu-profile-to-page" to="/profile"><strong>Profile</strong></Link>
-                        </li>
-                    }
+                    {/*
+                    For profile page for users
+                        {token !== null &&
+                            <li className="profile-menu-li">
+                                <Link className="menu-profile-to-page" to="/profile"><strong>Profile</strong></Link>
+                            </li>
+                        }
+                    */}
                 </ul>
             </div>
         </div>

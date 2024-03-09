@@ -146,6 +146,13 @@
     }
 }
 
+@media only screen and (max-width: 600px) {
+    .gallery-title {
+        font-size: 52px;
+        margin: 3vh 0px 4vh 0px;
+    }
+}
+
 @media only screen and (max-width: 538px) {
     .gallery-container .media-container {
         grid-template-columns: repeat(auto-fill, minmax(109px, 1fr));
@@ -155,6 +162,11 @@
 @media only screen and (max-width: 405px) {
     .gallery-container .media-container {
         grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    }
+
+    .gallery-title {
+        font-size: 48px;
+        margin: 2vh 0px 3vh 0px;
     }
 }
 
