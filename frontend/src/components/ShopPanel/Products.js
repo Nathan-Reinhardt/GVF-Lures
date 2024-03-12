@@ -72,7 +72,7 @@ export const PRODUCTS = [
         spinBug: false,
         dodger: {
             hosted_button_id: "89GCLMVHLYRES",
-            productName: "Cocktails",
+            productName: "Cocktail",
             price: 7.49,
             options: ["Pina Colada", "Cosmo", "Kaluha N Cream", "Daquiri", "Appletini", "Mojito", "Singapore Sling"],
             productImage: ProductsMedia[3][1][0].url,
