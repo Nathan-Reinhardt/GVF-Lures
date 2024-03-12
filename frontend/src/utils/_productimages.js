@@ -10,18 +10,23 @@
 export const ProductsMedia = [
     [
         [
-            {type: 'image', url: require("./images/golddiggerblack.jpg")},
+            {type: 'image', url: require("./images/pinacoloda.jpg")},
         ],
         [
-            {type: 'image', url: require("./images/flogolddiggerpink.jpg")},
+            {type: 'image', url: require("./images/pinacolodadodger.jpg")},
         ]
     ],
     [
         [
-            {type: 'image', url: require("./images/wonderbreadoriginal.jpg")},
+            {type: 'image', url: require("./images/DSwatermelondodger.jpg")},
+        ]
+    ],
+    [
+        [
+            {type: 'image', url: require("./images/golddiggerblack.jpg")},
         ],
         [
-            {type: 'image', url: require("./images/wonderbreaddodgeroriginal.jpg")},
+            {type: 'image', url: require("./images/flogolddiggerpink.jpg")},
         ]
     ],
     [
@@ -34,10 +39,18 @@ export const ProductsMedia = [
     ],
     [
         [
-            {type: 'image', url: require("./images/pinacoloda.jpg")},
+            {type: 'image', url: require("./images/hollysrubyslipper.jpg")},
         ],
         [
-            {type: 'image', url: require("./images/pinacolodadodger.jpg")},
+            {type: 'image', url: require("./images/hollysrubyslipperdodger.jpg")},
+        ]
+    ],
+    [
+        [
+            {type: 'image', url: require("./images/watermelon.jpg")},
+        ],
+        [
+            {type: 'image', url: require("./images/watermelondodger.jpg")},
         ]
     ],
     [
@@ -46,6 +59,14 @@ export const ProductsMedia = [
         ],
         [
             {type: 'image', url: require("./images/purplenurpledodger.jpg")},
+        ]
+    ],
+    [
+        [
+            {type: 'image', url: require("./images/wonderbreadoriginal.jpg")},
+        ],
+        [
+            {type: 'image', url: require("./images/wonderbreaddodgeroriginal.jpg")},
         ]
     ]
 ]
