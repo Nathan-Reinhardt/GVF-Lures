@@ -63,22 +63,22 @@ export const PRODUCTS = [
     },
     {
         id: 4,
-        hosted_button_id: "WCR5225LD92SG",
+        hosted_button_id: "BF75TMRUASCPG",
         shopName: "Cocktails",
         productName: "Cocktails",
         price: 4.49,
-        options: ["Tequillia sunrize", "Mojito", "Singapore Sling", "Kaluaha N Cream", "Deep Purple"],
+        options: ["Pina Colada", "Cosmo", "Mai Tai", "Kaluaha N Cream", "Daquiri", "Appletini", "Mojito", "Tequilla Sunrize", "Deep Purple", "Sinapore Sling"],
         productImage: ProductsMedia[3][0][0].url,
         spinBug: false,
-        dodger: null,
-        florescent: null,
-        moreLures: {
-            hosted_button_id: "BF75TMRUASCPG",
+        dodger: {
+            hosted_button_id: "89GCLMVHLYRES",
             productName: "Cocktails",
-            price: 4.49,
-            options: ["Pina Colada", "Cosmo", "Mai Tai", "Bloody Mary", "Daquiri"],
+            price: 7.49,
+            options: ["Pina Colada", "Cosmo", "Kaluha N Cream", "Daquiri", "Appletini", "Mojito", "Singapore Sling"],
             productImage: ProductsMedia[3][1][0].url,
-        }
+        },
+        florescent: null,
+        moreLures: null
     },
     {
         id: 5,
