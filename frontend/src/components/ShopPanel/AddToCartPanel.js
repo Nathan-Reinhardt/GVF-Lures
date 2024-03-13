@@ -57,7 +57,7 @@ const AddToCartPanel = ({ currentProduct, isSpinBug, isDodger, isFlorescent, isM
                             <td>
                                 <select className="select-product" name="os0">
                                     {product.options.map((type, index) => (
-                                        <option className="product-options" key={index} value={`${type} ${product.price} USD`}>
+                                        <option className="product-options" key={index} value={type}>
                                             {`${type} $${product.price} USD`}
                                         </option>
                                     ))}
