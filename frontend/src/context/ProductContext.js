@@ -10,7 +10,7 @@ export const ProductProvider = ({ children }) => {
     const [currentProduct, setCurrentProduct] = useState(null);
     const [hasSpinBug, setHasSpinBug] = useState(false);
     const [hasDodger, setHasDodger] = useState(false);
-    const [hasFlorescent, setHasFlorescent] = useState(false);
+    const [hasFlourescent, setHasFlourescent] = useState(false);
     const [hasMoreLures, setHasMoreLures] = useState(false);
 
     // passing all the functions into the store to return for export
@@ -21,8 +21,8 @@ export const ProductProvider = ({ children }) => {
         setHasSpinBug,
         hasDodger,
         setHasDodger,
-        hasFlorescent,
-        setHasFlorescent,
+        hasFlourescent,
+        setHasFlourescent,
         hasMoreLures,
         setHasMoreLures
     }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { PRODUCTS } from './Products';
 
-const AddToCartPanel = ({ currentProduct, isSpinBug, isDodger, isFlorescent, isMoreLures }) => {
+const AddToCartPanel = ({ currentProduct, isSpinBug, isDodger, isFlourescent, isMoreLures }) => {
 
     // later when implementing the changing of images based on selection
     // make sure to use these conditionals below to put the useState
@@ -12,8 +12,8 @@ const AddToCartPanel = ({ currentProduct, isSpinBug, isDodger, isFlorescent, isM
     if (isDodger) {
         product = PRODUCTS[currentProduct].dodger;
     }
-    else if (isFlorescent) {
-        product = PRODUCTS[currentProduct].florescent;
+    else if (isFlourescent) {
+        product = PRODUCTS[currentProduct].flourescent;
     }
     else if (isMoreLures) {
         product = PRODUCTS[currentProduct].moreLures;
@@ -23,14 +23,14 @@ const AddToCartPanel = ({ currentProduct, isSpinBug, isDodger, isFlorescent, isM
     }
 
     // used to help keep the UI clean for text wrapping
-    const ProductTypes = ["Florescent", "More", "Spinbugs", "Dodgers"];
+    const ProductTypes = ["Flourescent", "More", "Spinbugs", "Dodgers"];
     
     return (
         <div className="add-cart-product-cont">
             <form className="add-cart-form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
                 <input type="hidden" name="cmd" value="_s-xclick" />
                 <input type="hidden" name="hosted_button_id" value={product.hosted_button_id} />
-                {isFlorescent &&
+                {isFlourescent &&
                     <h1 className="add-cart-product-name-top-type">{ProductTypes[0]}</h1>
                 }
                 {isMoreLures &&

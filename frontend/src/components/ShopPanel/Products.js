@@ -20,7 +20,7 @@ export const PRODUCTS = [
             options: ["Pina Colada", "Cosmo", "Kaluha N Cream", "Daquiri", "Appletini", "Mojito", "Singapore Sling"],
             productImage: ProductsMedia[0][1][0].url,
         },
-        florescent: null,
+        flourescent: null,
         moreLures: null
     },
     {   // DS Dodgers might need adjustments later for more inclusion of DS variant types
@@ -33,7 +33,7 @@ export const PRODUCTS = [
         productImage: ProductsMedia[1][0][0].url,
         spinBug: false,
         dodger: null,
-        florescent: null,
+        flourescent: null,
         moreLures: null
     },
     {
@@ -46,7 +46,7 @@ export const PRODUCTS = [
         productImage: ProductsMedia[2][0][0].url,
         spinBug: false,
         dodger: null,
-        florescent: {
+        flourescent: {
             hosted_button_id: "BGUVQTGRH7ANU",
             productName: "Gold Diggers",
             price: 4.99,
@@ -55,8 +55,6 @@ export const PRODUCTS = [
         },
         moreLures: null
     },
-    // Test seemed to have work make sure it actually works overtime
-    // comeback to ID 4 if you run into problems processing payments
     {
         id: 4,
         hosted_button_id: "EFWCFJWPU9QYC",
@@ -73,7 +71,7 @@ export const PRODUCTS = [
             options: ["Pink", "Green", "Orange", "Chartruese", "Purple"],
             productImage: ProductsMedia[3][1][0].url,
         },
-        florescent: null,
+        flourescent: null,
         moreLures: null
     },
     {
@@ -92,7 +90,7 @@ export const PRODUCTS = [
             options: ["Holly's Ruby Slipper", "A Clockwork Orange", "The Green Hornet", "Kermit", "The Flash", "Sour Grapes", "Watermelon Sugar", "Blue Lagoon", "The Pinkanator"],
             productImage: ProductsMedia[4][1][0].url,
         },
-        florescent: null,
+        flourescent: null,
         moreLures: null
     },
     {
@@ -111,7 +109,7 @@ export const PRODUCTS = [
             options: ["Watermelon", "Honey Don't", "The Green Hornet"],
             productImage: ProductsMedia[5][1][0].url,
         },
-        florescent: null,
+        flourescent: null,
         moreLures: null
     },
     {
@@ -130,7 +128,7 @@ export const PRODUCTS = [
             options: ["Purple Nurple", "Razzle Dazzle", "Gold N Plum"],
             productImage: ProductsMedia[6][1][0].url,
         },
-        florescent: null,
+        flourescent: null,
         moreLures: null,
     },
     {
@@ -149,7 +147,7 @@ export const PRODUCTS = [
             options: ["Original glow", "Bling", "Golden"],
             productImage: ProductsMedia[7][1][0].url,
         },
-        florescent: null,
+        flourescent: null,
         moreLures: null
     },
 ]
