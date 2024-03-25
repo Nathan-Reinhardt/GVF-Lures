@@ -11,7 +11,6 @@ export const ProductProvider = ({ children }) => {
     const [hasSpinBug, setHasSpinBug] = useState(false);
     const [hasDodger, setHasDodger] = useState(false);
     const [hasFlourescent, setHasFlourescent] = useState(false);
-    const [hasMoreLures, setHasMoreLures] = useState(false);
 
     // passing all the functions into the store to return for export
     const ContextData = {
@@ -22,9 +21,7 @@ export const ProductProvider = ({ children }) => {
         hasDodger,
         setHasDodger,
         hasFlourescent,
-        setHasFlourescent,
-        hasMoreLures,
-        setHasMoreLures
+        setHasFlourescent
     }
 
     // returning the store

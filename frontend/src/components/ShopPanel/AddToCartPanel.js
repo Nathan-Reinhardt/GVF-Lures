@@ -1,7 +1,7 @@
 import React from 'react';
-import { PRODUCTS } from './Products';
+import PRODUCTS from './Products';
 
-const AddToCartPanel = ({ currentProduct, isSpinBug, isDodger, isFlourescent, isMoreLures }) => {
+const AddToCartPanel = ({ currentProduct, isSpinBug, isDodger, isFlourescent }) => {
 
     // later when implementing the changing of images based on selection
     // make sure to use these conditionals below to put the useState
@@ -15,15 +15,12 @@ const AddToCartPanel = ({ currentProduct, isSpinBug, isDodger, isFlourescent, is
     else if (isFlourescent) {
         product = PRODUCTS[currentProduct].flourescent;
     }
-    else if (isMoreLures) {
-        product = PRODUCTS[currentProduct].moreLures;
-    }
     else {
         product = PRODUCTS[currentProduct];
     }
 
     // used to help keep the UI clean for text wrapping
-    const ProductTypes = ["Flourescent", "More", "Spinbugs", "Dodgers"];
+    const ProductTypes = ["Flourescent", "Spinbugs", "Dodgers"];
     
     return (
         <div className="add-cart-product-cont">
@@ -33,15 +30,12 @@ const AddToCartPanel = ({ currentProduct, isSpinBug, isDodger, isFlourescent, is
                 {isFlourescent &&
                     <h1 className="add-cart-product-name-top-type">{ProductTypes[0]}</h1>
                 }
-                {isMoreLures &&
-                    <h1 className="add-cart-product-name-top-type">{ProductTypes[1]}</h1>
-                }
                 <h1 className="add-cart-product-name">{product.productName}</h1>
                 {isSpinBug &&
-                    <h1 className="add-cart-product-name-bottom-type">{ProductTypes[2]}</h1>
+                    <h1 className="add-cart-product-name-bottom-type">{ProductTypes[1]}</h1>
                 }
                 {isDodger &&
-                    <h1 className="add-cart-product-name-bottom-type">{ProductTypes[3]}</h1>
+                    <h1 className="add-cart-product-name-bottom-type">{ProductTypes[2]}</h1>
                 }
                 <div className="add-cart-img-main-cont">
                     <img className="add-product-image" src={product.productImage} />

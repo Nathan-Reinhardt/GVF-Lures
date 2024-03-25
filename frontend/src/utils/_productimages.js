@@ -9,26 +9,34 @@
 
 // list of all the main images of a product
 const mainImages = [
-    {type: 'image', url: require("./images/pinacoloda.jpg")},
-    {type: 'image', url: require("./images/DSwatermelondodger.jpg")},
-    {type: 'image', url: require("./images/golddiggerblack.jpg")},
-    {type: 'image', url: require("./images/honeydripperpink.jpg")},
-    {type: 'image', url: require("./images/hollysrubyslipper.jpg")},
-    {type: 'image', url: require("./images/watermelon.jpg")},
-    {type: 'image', url: require("./images/purplenurpledodger.jpg")},
-    {type: 'image', url: require("./images/wonderbreadoriginal.jpg")},
+    {type: 'image', url: require("./images/blingblingblackrussian.jpg")},   // Bling Bling
+    {type: 'image', url: require("./images/pinacoloda.jpg")},               // Cocktails
+    {type: 'image', url: require("./images/DSwatermelondodger.jpg")},       // DS Dodgers
+    {type: 'image', url: require("./images/firetigeruv.jpg")},              // Firetiger
+    {type: 'image', url: require("./images/golddiggerblack.jpg")},          // Gold Diggers
+    {type: 'image', url: require("./images/honeydripperpink.jpg")},         // Honey Drippers
+    {type: 'image', url: require("./images/hollysrubyslipper.jpg")},        // Lil Comets
+    {type: 'image', url: require("./images/watermelon.jpg")},               // Melons
+    {type: 'image', url: require("./images/purplenurple.jpg")},             // Plum Crazy
+    {type: 'image', url: require("./images/premiumuvpink.jpg")},            // Premium UV
+    {type: 'image', url: require("./images/tigerpink.jpg")},                // Tiger
+    {type: 'image', url: require("./images/wonderbreadoriginal.jpg")},      // Wonderbread
 ];
 
 // list of all type variants of a product
 const typeImages = [
-    {type: 'image', url: require("./images/pinacolodadodger.jpg")},
-    null,
-    {type: 'image', url: require("./images/flogolddiggerpink.jpg")},
-    {type: 'image', url: require("./images/honeydripperdodgerpink.jpg")},
-    {type: 'image', url: require("./images/hollysrubyslipperdodger.jpg")},
-    {type: 'image', url: require("./images/watermelondodger.jpg")},
-    {type: 'image', url: require("./images/purplenurpledodger.jpg")},
-    {type: 'image', url: require("./images/wonderbreaddodgeroriginal.jpg")},
+    {type: 'image', url: require("./images/blingblingcherryfizz.jpg")},         // Bling Bling
+    {type: 'image', url: require("./images/pinacolodadodger.jpg")},             // Cocktails
+    null,                                                                       // DS Dodgers
+    null,                                                                       // Firetiger
+    {type: 'image', url: require("./images/flogolddiggerpink.jpg")},            // Gold Diggers
+    {type: 'image', url: require("./images/honeydripperdodgerpink.jpg")},       // Honey Drippers
+    {type: 'image', url: require("./images/hollysrubyslipperdodger.jpg")},      // Lil Comets
+    {type: 'image', url: require("./images/watermelondodger.jpg")},             // Melons
+    {type: 'image', url: require("./images/purplenurpledodger.jpg")},           // Plum Crazy
+    null,                                                                       // Premium UV
+    null,                                                                       // Tiger
+    {type: 'image', url: require("./images/wonderbreaddodgeroriginal.jpg")},    // Wonderbread
 ]
 
 // Initialize ProductsMedia as an empty array
@@ -36,7 +44,7 @@ const typeImages = [
 export const ProductsMedia = [];
 
 // Loop through both mainImages and typeImages
-for (let i = 0; i < mainImages.length || i < typeImages.length; i++) {
+for (let i = 0; i < mainImages.length; i++) {
     const mainImage = mainImages[i];
     const typeImage = typeImages[i];
 

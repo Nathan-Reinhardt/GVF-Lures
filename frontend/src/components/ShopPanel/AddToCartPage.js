@@ -3,15 +3,16 @@ import InfoNavPanel from '../InfoNavPanel/InfoNavPanel';
 import Footer from '../InfoNavPanel/Footer';
 import BackToShop from './BackToShop';
 import ProductContext from '../../context/ProductContext';
-import { PRODUCTS } from './Products';
+import PRODUCTS from './Products';
 import AddToCartPanel from './AddToCartPanel';
 
 const AddToCartPage = () => {
 
     // Product Context
-    const { currentProduct, setCurrentProduct, hasSpinBug, setHasSpinBug,
-        hasDodger, setHasDodger, hasFlourescent, setHasFlourescent,
-        hasMoreLures, setHasMoreLures } = useContext(ProductContext);
+    const { 
+        currentProduct, setCurrentProduct, hasSpinBug, setHasSpinBug,
+        hasDodger, setHasDodger, hasFlourescent, setHasFlourescent
+    } = useContext(ProductContext);
 
     // Ensure currentProduct is set when component mounts
     useEffect(() => {
@@ -26,9 +27,8 @@ const AddToCartPage = () => {
             setHasSpinBug(!!product.spinBug);
             setHasDodger(!!product.dodger);
             setHasFlourescent(!!product.flourescent);
-            setHasMoreLures(!!product.moreLures);
         }
-    }, [setCurrentProduct, setHasSpinBug, setHasDodger, setHasFlourescent, setHasMoreLures]);
+    }, [setCurrentProduct, setHasSpinBug, setHasDodger, setHasFlourescent]);
 
     // Handle cases where currentProduct is not set yet
     if (currentProduct === null) {
@@ -50,31 +50,25 @@ const AddToCartPage = () => {
                 {!hasSpinBug &&
                     <AddToCartPanel
                         currentProduct={currentProduct} isSpinBug={false} isDodger={false}
-                        isFlourescent={false} isSmallDodger={false} isMoreLures={false}
+                        isFlourescent={false} isSmallDodger={false}
                     />
                 }
                 {hasSpinBug &&
                     <AddToCartPanel
                         currentProduct={currentProduct} isSpinBug={true} isDodger={false}
-                        isFlourescent={false} isSmallDodger={false} isMoreLures={false}
-                    />
-                }
-                {hasMoreLures &&
-                    <AddToCartPanel
-                        currentProduct={currentProduct} isSpinBug={false} isDodger={false}
-                        isFlourescent={false} isSmallDodger={false} isMoreLures={true}
-                    />
-                }
-                {hasFlourescent &&
-                    <AddToCartPanel
-                        currentProduct={currentProduct} isSpinBug={false} isDodger={false}
-                        isFlourescent={true} isSmallDodger={false} isMoreLures={false}
+                        isFlourescent={false} isSmallDodger={false}
                     />
                 }
                 {hasDodger &&
                     <AddToCartPanel
                         currentProduct={currentProduct} isSpinBug={false} isDodger={true}
-                        isFlourescent={false} isSmallDodger={false} isMoreLures={false}
+                        isFlourescent={false} isSmallDodger={false}
+                    />
+                }
+                {hasFlourescent &&
+                    <AddToCartPanel
+                        currentProduct={currentProduct} isSpinBug={false} isDodger={false}
+                        isFlourescent={true} isSmallDodger={false}
                     />
                 }
             </div>
