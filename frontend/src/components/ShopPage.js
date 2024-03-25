@@ -32,7 +32,7 @@ const ShopPage = () => {
                                     <div className="product-item">
                                         <div>
                                             <div className="product-link-cont">
-                                                <img className="shop-list-product-img" src={product.productImage}/>
+                                                <img className="shop-list-product-img" src={product.productImageList[0].url}/>
                                             </div>
                                             <h3 className="shop-list-product-name">{product.productName}</h3>
                                         </div>

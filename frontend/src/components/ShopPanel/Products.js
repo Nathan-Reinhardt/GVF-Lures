@@ -156,7 +156,8 @@ const product_flourescents = [
 ];
 
 // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- //
-// Code Below is used to dynamically create the PRODUCTS list, do not change unless you want to modify the logic
+// Code Below is used to dynamically create the PRODUCTS list,
+// do not change unless you want to modify the logic
 // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- //
 // Saftey check for debugging purposes to double check that every list above is the same length for data consistency
 // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- //
@@ -169,7 +170,7 @@ if (
     product_dodgers.length !== product_flourescents.length ||
     product_flourescents.length !== product_hosted_button_ids.length
 ) {
-    throw new Error("Arrays have different lengths. Check data consistency.");
+    throw new Error("One of the Product Arrays have different lengths. Check data consistency.");
 }
 // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- //
 // Initialize PRODCUTS as an empty array
@@ -193,20 +194,20 @@ for (let i = 0; i < masterLength; i++) {
     // Grab the product's options
     productItem.options = product_options[i];
     // Set the default product image --- this is subject to change when implementing all photos for the product options
-    productItem.productImage = ProductsMedia[i][0][0].url;
+    productItem.productImageList = ProductsMedia[i][0][0];
     // Grab the product's spin bug attr
     productItem.spinBug = product_sping_bug_attributes[i];
     // Grab the product's dodger info
     productItem.dodger = product_dodgers[i];
     // if a product has a dodger then add a default image for the dodger --- also subject to change when adding more options
     if (productItem.dodger) {
-        productItem.dodger.productImage = ProductsMedia[i][1][0].url
+        productItem.dodger.productImageList = ProductsMedia[i][1][0];
     }
     // Grab the product's flourescent type info
     productItem.flourescent = product_flourescents[i];
     // if a product has a flourescent type then add a default image for the flourescent --- also subject to change when adding more options
     if (productItem.flourescent) {
-        productItem.flourescent.productImage = ProductsMedia[i][1][0].url
+        productItem.flourescent.productImageList = ProductsMedia[i][1][0];
     }
     // Push the productItem to PRODUCTS
     PRODUCTS.push(productItem);
