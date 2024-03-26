@@ -1,17 +1,18 @@
 import React, { useContext, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import InfoNavPanel from '../InfoNavPanel/InfoNavPanel';
 import Footer from '../InfoNavPanel/Footer';
+import BackToShop from './BackToShop';
 import ProductContext from '../../context/ProductContext';
-import { PRODUCTS } from './Products';
+import PRODUCTS from './Products';
 import AddToCartPanel from './AddToCartPanel';
 
 const AddToCartPage = () => {
 
     // Product Context
-    const { currentProduct, setCurrentProduct, hasSpinBug, setHasSpinBug,
-        hasDodger, setHasDodger, hasFlorescent, setHasFlorescent,
-        hasMoreLures, setHasMoreLures } = useContext(ProductContext);
+    const { 
+        currentProduct, setCurrentProduct, hasSpinBug, setHasSpinBug,
+        hasDodger, setHasDodger, hasFlourescent, setHasFlourescent
+    } = useContext(ProductContext);
 
     // Ensure currentProduct is set when component mounts
     useEffect(() => {
@@ -25,17 +26,17 @@ const AddToCartPage = () => {
             const product = PRODUCTS[productIndex];
             setHasSpinBug(!!product.spinBug);
             setHasDodger(!!product.dodger);
-            setHasFlorescent(!!product.florescent);
-            setHasMoreLures(!!product.moreLures);
+            setHasFlourescent(!!product.flourescent);
         }
-    }, [setCurrentProduct, setHasSpinBug, setHasDodger, setHasFlorescent, setHasMoreLures]);
+    }, [setCurrentProduct, setHasSpinBug, setHasDodger, setHasFlourescent]);
 
     // Handle cases where currentProduct is not set yet
     if (currentProduct === null) {
         return  <div>
                     <InfoNavPanel />
-                    <div className="add-cart-main-cont">
+                    <div className="product-non-exist-cont">
                         <div className="product-loading">This Product doesn't exist</div>
+                        <BackToShop />
                     </div>
                     <Footer />
                 </div>;
@@ -45,44 +46,29 @@ const AddToCartPage = () => {
         <div>
             <InfoNavPanel />
             <div className="add-cart-main-cont">
-                <div className="back-to-shop-page-cont">
-                    <Link className="back-to-shop-page" to="/shop">
-                        <div className="back-to-shop-page-sub-cont">
-                            <div className="back-to-shop-img-cont">
-                                <div className="back-to-shop-img"></div>
-                            </div>
-                            <h3 className="back-to-shop-text">Back To Shop</h3>
-                        </div>
-                    </Link>
-                </div>
+                <BackToShop />
                 {!hasSpinBug &&
                     <AddToCartPanel
                         currentProduct={currentProduct} isSpinBug={false} isDodger={false}
-                        isFlorescent={false} isSmallDodger={false} isMoreLures={false}
+                        isFlourescent={false} isSmallDodger={false}
                     />
                 }
                 {hasSpinBug &&
                     <AddToCartPanel
                         currentProduct={currentProduct} isSpinBug={true} isDodger={false}
-                        isFlorescent={false} isSmallDodger={false} isMoreLures={false}
-                    />
-                }
-                {hasMoreLures &&
-                    <AddToCartPanel
-                        currentProduct={currentProduct} isSpinBug={false} isDodger={false}
-                        isFlorescent={false} isSmallDodger={false} isMoreLures={true}
-                    />
-                }
-                {hasFlorescent &&
-                    <AddToCartPanel
-                        currentProduct={currentProduct} isSpinBug={false} isDodger={false}
-                        isFlorescent={true} isSmallDodger={false} isMoreLures={false}
+                        isFlourescent={false} isSmallDodger={false}
                     />
                 }
                 {hasDodger &&
                     <AddToCartPanel
                         currentProduct={currentProduct} isSpinBug={false} isDodger={true}
-                        isFlorescent={false} isSmallDodger={false} isMoreLures={false}
+                        isFlourescent={false} isSmallDodger={false}
+                    />
+                }
+                {hasFlourescent &&
+                    <AddToCartPanel
+                        currentProduct={currentProduct} isSpinBug={false} isDodger={false}
+                        isFlourescent={true} isSmallDodger={false}
                     />
                 }
             </div>

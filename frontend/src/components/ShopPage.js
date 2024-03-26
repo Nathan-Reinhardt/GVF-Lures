@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import InfoNavPanel from './InfoNavPanel/InfoNavPanel';
 import Footer from './InfoNavPanel/Footer';
-import { PRODUCTS } from './ShopPanel/Products';
+import PRODUCTS from './ShopPanel/Products';
 
 const ShopPage = () => {
     // For the future implement multiple pages using 1, 2, 3, etc. if enough
@@ -32,9 +32,9 @@ const ShopPage = () => {
                                     <div className="product-item">
                                         <div>
                                             <div className="product-link-cont">
-                                                <img className="shop-list-product-img" src={product.productImage}/>
+                                                <img className="shop-list-product-img" src={product.productImageList[0].url}/>
                                             </div>
-                                            <h3 className="shop-list-product-name">{product.shopName}</h3>
+                                            <h3 className="shop-list-product-name">{product.productName}</h3>
                                         </div>
                                     </div>
                                 </Link>

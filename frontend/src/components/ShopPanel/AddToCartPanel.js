@@ -1,50 +1,82 @@
-import React from 'react';
-import { PRODUCTS } from './Products';
+import React, { useState, useEffect } from 'react';
+import PRODUCTS from './Products';
 
-const AddToCartPanel = ({ currentProduct, isSpinBug, isDodger, isFlorescent, isMoreLures }) => {
+const AddToCartPanel = ({ currentProduct, isSpinBug, isDodger, isFlourescent }) => {
+    // The idea of having multiple different useStates is to make sure each panel has control over its own state.
+    // There is a possiblity where two of these panels can be on the same page at the same time.
+    // Having the same state usage for both panels will cause major bugs of state management.
 
-    // later when implementing the changing of images based on selection
-    // make sure to use these conditionals below to put the useState
-    // functionality to be used based on what type of product it will be for
+    // Initilize State for Panels
+    const [currentDodgerProductImg, setCurrentDodgerProductImg] = useState('');
+    const [currentFlourescentProductImg, setCurrentFlourescentProductImg] = useState('');
+    const [currentProductImg, setCurrentProductImg] = useState('');
+
+    useEffect(() => {
+        if (isDodger) {
+            setCurrentDodgerProductImg(product.productImageList[0].url);
+        }
+        else if (isFlourescent) {
+            setCurrentFlourescentProductImg(product.productImageList[0].url);
+        }
+        else {
+            setCurrentProductImg(product.productImageList[0].url);
+        }
+    }, [setCurrentDodgerProductImg, setCurrentFlourescentProductImg, setCurrentProductImg, currentProduct]);
+
+    // Handler for changing the image when selecting a different option
+    const handleOptionChange = (event) => {
+        const selectedIndex = event.target.selectedIndex;
+        if (isDodger) {
+            setCurrentDodgerProductImg(product.productImageList[selectedIndex].url)
+        }
+        else if (isFlourescent) {
+            setCurrentFlourescentProductImg(product.productImageList[selectedIndex].url);
+        }
+        else {
+            setCurrentProductImg(product.productImageList[selectedIndex].url);
+        }
+    };
 
     // which type of product to create panel for
     let product;
     if (isDodger) {
         product = PRODUCTS[currentProduct].dodger;
-    }
-    else if (isFlorescent) {
-        product = PRODUCTS[currentProduct].florescent;
-    }
-    else if (isMoreLures) {
-        product = PRODUCTS[currentProduct].moreLures;
+    } 
+    else if (isFlourescent) {
+        product = PRODUCTS[currentProduct].flourescent;
     }
     else {
         product = PRODUCTS[currentProduct];
     }
 
     // used to help keep the UI clean for text wrapping
-    const ProductTypes = ["Florescent", "More", "Spinbugs", "Dodgers"];
+    const ProductTypes = ["Flourescent", "Spinbugs", "Dodgers"];
     
     return (
         <div className="add-cart-product-cont">
             <form className="add-cart-form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
                 <input type="hidden" name="cmd" value="_s-xclick" />
                 <input type="hidden" name="hosted_button_id" value={product.hosted_button_id} />
-                {isFlorescent &&
+                {isFlourescent &&
                     <h1 className="add-cart-product-name-top-type">{ProductTypes[0]}</h1>
-                }
-                {isMoreLures &&
-                    <h1 className="add-cart-product-name-top-type">{ProductTypes[1]}</h1>
                 }
                 <h1 className="add-cart-product-name">{product.productName}</h1>
                 {isSpinBug &&
-                    <h1 className="add-cart-product-name-bottom-type">{ProductTypes[2]}</h1>
+                    <h1 className="add-cart-product-name-bottom-type">{ProductTypes[1]}</h1>
                 }
                 {isDodger &&
-                    <h1 className="add-cart-product-name-bottom-type">{ProductTypes[3]}</h1>
+                    <h1 className="add-cart-product-name-bottom-type">{ProductTypes[2]}</h1>
                 }
                 <div className="add-cart-img-main-cont">
-                    <img className="add-product-image" src={product.productImage} />
+                    {isFlourescent &&
+                        <img className="add-product-image" src={currentFlourescentProductImg} />
+                    }
+                    {isDodger &&
+                        <img className="add-product-image" src={currentDodgerProductImg} />
+                    }
+                    {!isFlourescent && !isDodger &&
+                        <img className="add-product-image" src={currentProductImg} />
+                    }
                 </div>
                 <table className="add-cart-table">
                     <tbody>
@@ -55,9 +87,9 @@ const AddToCartPanel = ({ currentProduct, isSpinBug, isDodger, isFlorescent, isM
                         </tr>
                         <tr className="add-cart-row-cont">
                             <td>
-                                <select className="select-product" name="os0">
+                                <select className="select-product" name="os0" onChange={handleOptionChange}>
                                     {product.options.map((type, index) => (
-                                        <option className="product-options" key={index} value={`${type} ${product.price} USD`}>
+                                        <option className="product-options" key={index} value={type}>
                                             {`${type} $${product.price} USD`}
                                         </option>
                                     ))}
