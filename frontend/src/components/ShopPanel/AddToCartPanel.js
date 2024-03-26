@@ -11,7 +11,6 @@ const AddToCartPanel = ({ currentProduct, isSpinBug, isDodger, isFlourescent }) 
     const [currentFlourescentProductImg, setCurrentFlourescentProductImg] = useState('');
     const [currentProductImg, setCurrentProductImg] = useState('');
 
-    // which type of product to create panel for
     useEffect(() => {
         if (isDodger) {
             setCurrentDodgerProductImg(product.productImageList[0].url);
@@ -38,6 +37,7 @@ const AddToCartPanel = ({ currentProduct, isSpinBug, isDodger, isFlourescent }) 
         }
     };
 
+    // which type of product to create panel for
     let product;
     if (isDodger) {
         product = PRODUCTS[currentProduct].dodger;

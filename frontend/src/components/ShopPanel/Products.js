@@ -56,11 +56,11 @@ const product_prices = [
 // all product options
 const product_options = [
     ["Black Russian", "Sangria", "Green Goblin", "Electric Kamikazi", "Purple Rain", "Watermelon"], // Bling Bling
-    ["Pina Colada", "Cosmo", "Mai Tai", "Kaluaha N Cream", "Daquiri", "Appletini", "Mojito", "Tequilla Sunrize", "Deep Purple", "Sinapore Sling"],  // Cocktails
+    ["Pina Colada", "Cosmo", "Mai Tai", "Kaluha N Cream", "Daquiri", "Appletini", "Mojito", "Tequilla Sunrize", "Deep Purple", "Sinapore Sling"],  // Cocktails
     ["Watermelon", "Honey Don't", "Cantaloupe"],    // DS Dodgers
     ["UV Firetiger", "Glowing Firetiger", "Bling Firetiger"],   // Firetiger
     ["Black", "Purple", "Red", "Green", "Blue", "Orange"],   // Gold Diggers
-    ["Pink", "Green", "Orange", "Chartruese", "Purple"],    // Honey Drippers
+    ["Pink", "Green", "Orange", "Chartreuse", "Purple"],    // Honey Drippers
     ["Holly's Ruby Slipper", "A Clockwork Orange", "The Green Hornet", "Kermit", "The Flash", "Sour Grapes", "Watermelon Sugar", "Blue Lagoon", "The Pinkanator"],  // Lil Comets
     ["Watermelon", "All Glow Watermelon", "Bling Melon", "Honey Don't", "Cantaloupe"],   // Melons
     ["Purple Nurple", "Razzle Dazzle", "Gold N Plum"],   // Plum Crazy
@@ -100,7 +100,7 @@ const product_dodgers = [
         hosted_button_id: "JSK5UU2SZT63S",
         productName: "Honey Dripper",
         price: 7.49,
-        options: ["Pink", "Green", "Orange", "Chartruese", "Purple"],
+        options: ["Pink", "Green", "Orange", "Chartreuse", "Purple"],
     },  // Honey Drippers
     {
         hosted_button_id: "LRHUVNNZD9LRN",
@@ -112,7 +112,7 @@ const product_dodgers = [
         hosted_button_id: "NJXCEJKUBRKH2",
         productName: "Melon",
         price: 6.99,
-        options: ["Watermelon", "Honey Don't", "The Green Hornet"],
+        options: ["Watermelon", "Honey Don't", "Cantaloupe"],
     },  // Melons
     {
         hosted_button_id: "UU9TH8P32ZESE",

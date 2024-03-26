@@ -10,74 +10,154 @@
 // list of all the main images of a product
 const mainImages = [
     [   // Bling Bling
-        {type: 'image', url: require("./images/blingblingblackrussian.jpg")},   // when you come back, make sure to add all photos needed and run tests
-        {type: 'image', url: require("./images/pinacoloda.jpg")},
+        "blingblingblackrussian.jpg",
+        "blingblingsangria.jpg",
+        "blingblinggreengoblin.jpg",
+        "blingblingelectrickamikazi.jpg",
+        "blingblingpurplerain.jpg",
+        "blingblingwatermelon.jpg",
     ],
     [   // Cocktails
-        {type: 'image', url: require("./images/pinacoloda.jpg")},
+        "cocktailpinacolada.jpg",
+        "cocktailcosmo.jpg",
+        "cocktailmaitai.jpg",
+        "cocktailkaluhancream.jpg",
+        "cocktaildaquiri.jpg",
+        "cocktailappletini.jpg",
+        "cocktailmojito.jpg",
+        "cocktailtequilasunrize.jpg",
+        "cocktaildeeppurple.jpg",
+        "cocktailsingaporesling.jpg",
     ],
     [   // DS Dodgers
-        {type: 'image', url: require("./images/DSwatermelondodger.jpg")},
+        "DSwatermelondodger.jpg",
+        "DShoneydontdodger.jpg",
+        "DScantaloupedodger.jpg",
     ],
     [   // Firetiger
-        {type: 'image', url: require("./images/firetigeruv.jpg")},
+        "firetigeruv.jpg",
+        "firetigerglow.jpg",
+        "firetigerbling.jpg",
     ],
     [   // Gold Diggers
-        {type: 'image', url: require("./images/golddiggerblack.jpg")}, 
+        "golddiggerblack.jpg",
+        "golddiggerpurple.jpg",
+        "golddiggerred.jpg",
+        "golddiggergreen.jpg",
+        "golddiggerblue.jpg",
+        "golddiggerorange.jpg",
     ],
     [   // Honey Drippers
-        {type: 'image', url: require("./images/honeydripperpink.jpg")},
+        "honeydripperpink.jpg",
+        "honeydrippergreen.jpg",
+        "honeydripperorange.jpg",
+        "honeydripperchartreuse.jpg",
+        "honeydripperpurple.jpg",
     ],
     [   // Lil Comets
-        {type: 'image', url: require("./images/hollysrubyslipper.jpg")},
+        "lilcometshollysrubyslipper.jpg",
+        "lilcometsaclockworkorange.jpg",
+        "lilcometsthegreenhornet.jpg",
+        "lilcometskermit.jpg",
+        "lilcometstheflash.jpg",
+        "lilcometssourgrapes.jpg",
+        "lilcometswatermelonsugar.jpg",
+        "lilcometsbluelagoon.jpg",
+        "lilcometsthepinkanator.jpg",
     ],
     [   // Melons
-        {type: 'image', url: require("./images/watermelon.jpg")},
+        "melonswatermelon.jpg",
+        "melonsallglowwatermelon.jpg",
+        "blingblingwatermelon.jpg",
+        "melonshoneydont.jpg",
+        "melonscantaloupe.jpg",
     ],
     [   // Plum Crazy
-        {type: 'image', url: require("./images/purplenurple.jpg")},
+        "plumcrazypurplenurple.jpg",
+        "plumcrazyrazzledazzle.jpg",
+        "plumcrazygoldnplum.jpg",
     ],
     [   // Premium UV
-        {type: 'image', url: require("./images/premiumuvpink.jpg")},
+        "premiumuvpink.jpg",
+        "premiumuvgreen.jpg",
+        "premiumuvorange.jpg",
+        "premiumuvchartreuse.jpg",
     ],
     [   // Tiger
-        {type: 'image', url: require("./images/tigerpink.jpg")},
+        "tigerpink.jpg",
+        "tigergreen.jpg",
+        "tigerorange.jpg",
+        "tigerchartreuse.jpg",
+        "tigerblue.jpg",
+        "tigerglowpurple.jpg",
+        "tigerglow.jpg",
     ],
     [   // Wonderbread
-        {type: 'image', url: require("./images/wonderbreadoriginal.jpg")},
+        "wonderbreadoriginal.jpg",
+        "wonderbreadbling.jpg",
+        "wonderbreadgolden.jpg",
     ]
 ];
 
 // list of all type variants of a product
 const typeImages = [
     [   // Bling Bling
-        {type: 'image', url: require("./images/blingblingcherryfizz.jpg")},     // only test bling bling for image switching
-        {type: 'image', url: require("./images/blingblingcherryfizz.jpg")},
+        "blingblingcherryfizz.jpg",
+        "blingblingirishmist.jpg",
+        "blingblingmimosa.jpg",
+        "blingblingshamrock.jpg",
     ],
     [   // Cocktails
-        {type: 'image', url: require("./images/pinacolodadodger.jpg")},
+        "cocktailpinacoladadodger.jpg",
+        "cocktailcosmododger.jpg",
+        "cocktailkaluhancreamdodger.jpg",
+        "cocktaildaquiridodger.jpg",
+        "cocktailappletinidodger.jpg",
+        "cocktailmojitododger.jpg",
+        "cocktailsingaporeslingdodger.jpg",
     ],
     null,   // DS Dodgers
     null,   // Firetiger
     [   // Gold Diggers
-       {type: 'image', url: require("./images/flogolddiggerpink.jpg")}, 
+       "flogolddiggerpink.jpg",
+       "flogolddiggergreen.jpg",
+       "flogolddiggerorange.jpg",
+       "flogolddiggerchartreuse.jpg",
     ],
     [   // Honey Drippers
-        {type: 'image', url: require("./images/honeydripperdodgerpink.jpg")},
+        "honeydripperpinkdodger.jpg",
+        "honeydrippergreendodger.jpg",
+        "honeydripperorangedodger.jpg",
+        "honeydripperchartreusedodger.jpg",
+        "honeydripperpurpledodger.jpg",
     ],
     [   // Lil Comets
-        {type: 'image', url: require("./images/hollysrubyslipperdodger.jpg")},
+        "lilcometshollysrubyslipperdodger.jpg",
+        "lilcometsaclockworkorangedodger.jpg",
+        "lilcometsthegreenhornetdodger.jpg",
+        "lilcometskermitdodger.jpg",
+        "lilcometstheflashdodger.jpg",
+        "lilcometssourgrapesdodger.jpg",
+        "lilcometswatermelonsugardodger.jpg",
+        "lilcometsbluelagoondodger.jpg",
+        "lilcometsthepinkanatordodger.jpg",
     ],
     [   // Melons
-        {type: 'image', url: require("./images/watermelondodger.jpg")},
+        "melonswatermelondodger.jpg",
+        "melonshoneydontdodger.jpg",
+        "melonscantaloupedodger.jpg",
     ],
     [   // Plum Crazy
-        {type: 'image', url: require("./images/purplenurpledodger.jpg")},
+        "plumcrazypurplenurpledodger.jpg",
+        "plumcrazyrazzledazzledodger.jpg",
+        "plumcrazygoldnplumdodger.jpg",
     ],
     null,   // Premium UV
     null,   // Tiger
     [   // Wonderbread
-        {type: 'image', url: require("./images/wonderbreaddodgeroriginal.jpg")},
+        "wonderbreadoriginaldodger.jpg",
+        "wonderbreadblingdodger.jpg",
+        "wonderbreadgoldendodger.jpg",
     ]
 ];
 
@@ -100,16 +180,32 @@ for (let i = 0; i < mainImages.length; i++) {
     const mainImageList = mainImages[i];
     const typeImageList = typeImages[i];
 
+    const newMainImageList = [];
+    const newTypeImageList = [];
+
+    for (let j = 0; j < mainImageList.length; j++) {
+        newMainImageList.push({type: 'image', url: require("./images/" + mainImageList[j])});
+    }
+
+    if (typeImageList) {     // checks if the list is null or not
+        for (let k = 0; k < typeImageList.length; k++) {
+            newTypeImageList.push({type: 'image', url: require("./images/" + typeImageList[k])});
+        }        
+    }
+    else {
+        newTypeImageList.push(null);
+    }
+
     // Create the structure for this iteration
-    const mediaItem = [
+    const productImgs = [
         [
-            mainImageList
+            newMainImageList
         ],
         [
-            typeImageList   // if null it will put null inside this list
+            newTypeImageList
         ]
     ];
 
     // Push the mediaItem to ProductsMedia
-    ProductsMedia.push(mediaItem);
+    ProductsMedia.push(productImgs);
 };
