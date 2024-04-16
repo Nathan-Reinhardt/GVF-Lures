@@ -45,7 +45,6 @@ const mainImages = [
         "golddiggerred.jpg",
         "golddiggergreen.jpg",
         "golddiggerblue.jpg",
-        "golddiggerorange.jpg",
     ],
     [   // Honey Drippers
         "honeydripperpink.jpg",
@@ -76,6 +75,7 @@ const mainImages = [
         "plumcrazypurplenurple.jpg",
         "plumcrazyrazzledazzle.jpg",
         "plumcrazygoldnplum.jpg",
+        "plumcrazynuclearplum.jpg",
     ],
     [   // Premium UV
         "premiumuvpink.jpg",
