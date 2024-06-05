@@ -33,9 +33,14 @@ const TopNavbar = () => {
                     </li>
                 </ul>
             </div>
+            {/* 
+            When Rich gets back, go into css and adjust visiblity and uncomment line below
+            */}
+            {/* 
             <div className="slash-cont">
                 <h3 className="middle-slash-vertical-line">|</h3>
             </div>
+            */}
             <div className="right-nav">
                 <div className="view-cart-cont">
                     <div className="shopping-cart-img"></div>
