@@ -1,8 +1,8 @@
 # GVF-Lures
 ## Website
-This repository is for the [GVF-Lures Website](https://www.gvflures.com/). Purpose for this website is to bring awareness and spread important information about GVF-Lures which is a fishing tackle company. GVF-Lures creates lures and dodger fishing equipment used to help catch fish in a variety of places within the USA. This website was built by using Django (python3) backend and the ReactJS frontend framework. Webpack is used to bundle the files and the website is hosted on Heroku. The domain of the website is gvflures.com User Authentication does exist in the website and allows users to access certain pages that non users are not allowed to access without proper credentials. Every page has mobile css adjustments made for vertical and landscape mode while also being adjusted for bigger screens as well. The website is a solo project all done by myself done from complete scratch.
+This repository is for the GVF-Lures Website (currently down for maintenance). Purpose for this website is to bring awareness and spread important information about GVF-Lures which is a fishing tackle company. GVF-Lures creates lures and dodger fishing equipment used to help catch fish in a variety of places within the USA. This website was built by using Django (python3) backend and the ReactJS frontend framework. Webpack is used to bundle the files and the website is hosted on Heroku. The domain of the website is gvflures.com User Authentication does exist in the website and allows users to access certain pages that non users are not allowed to access without proper credentials. Every page has mobile css adjustments made for vertical and landscape mode while also being adjusted for bigger screens as well. The website is a solo project all done by myself done from complete scratch.
 ## WIP
-Currently this project is a WIP and will be updating this READ.md with updates/additions to the project. Main tasks to be finished is Shop, Forgot Password, Reset Password, and Verification Pages. Updates to a current page that need to be made is the Profile Page while working on the Shop Page.
+Currently this project is a WIP and will be updating this READ.md with updates/additions to the project.
 
 <br/><br/>
 <br/><br/>
@@ -64,6 +64,10 @@ This page is currently still a WIP and currently is only accessible for logged i
 <br/><br/>
 <br/><br/>
 
+## Shop Page
+Shope page displays assortment of lures to choose from and each lure has a page to where you can choose what type of color or specific design for the lure.
+( screenshot will uploaded at a later date )
+
 ![readme9](https://github.com/Nathan-Reinhardt/GVF-Lures/assets/19512110/a7d24074-8005-41db-aa11-4be64e6ea720)
 ## Info Navigation Panel
 This is a custom React Component I created that is used on every page at the very top of the page. The component uses sub custom components created to help reduce lines of code. This main component includes: top navbar links, header detail for the logo picture with a main title of the website, and finally some middle navigation tabs used to go from page to page. Some of the components do check for when the user is logged in or not to display certain information. For example, changing Log In and Sign Up to Log Out based on when the user is logged in or not. The update to this setup would be changing the logo and main title to have better image quality and to change the main title to be an image logo instead of text. Also will always be updated when new 
@@ -80,4 +84,4 @@ The Footer will always be on every page as well similar to the Info Navigation P
 
 ![readme10](https://github.com/Nathan-Reinhardt/GVF-Lures/assets/19512110/f2737d78-1f28-4ca2-8b9b-dd754d57ee0f)
 ## Live Server hosted on Heroku
-Hosting on the live server was the most challeneging coding challenge I have ever done alone with no support. It took a long time to tie everything and seperate my development enviornment from the production enviornment. Any API keys or sensitive information for the server or website is stored within the heroku config vars. The domain used is from GoDaddy and the SSL is setup correctly and all forwarding/redirects go toward the working domain. This is the live link url: [https://www.gvflures.com/](https://www.gvflures.com/)
+Hosting on the live server was the most challeneging coding challenge I have ever done alone with no support. It took a long time to tie everything and seperate my development enviornment from the production enviornment. Any API keys or sensitive information for the server or website is stored within the heroku config vars. The domain used is from GoDaddy and the SSL is setup correctly and all forwarding/redirects go toward the working domain.
