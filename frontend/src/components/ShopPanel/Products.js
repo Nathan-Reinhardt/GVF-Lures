@@ -59,11 +59,11 @@ const product_options = [
     ["Pina Colada", "Cosmo", "Mai Tai", "Kaluha N Cream", "Daquiri", "Appletini", "Mojito", "Tequilla Sunrize", "Deep Purple", "Sinapore Sling"],  // Cocktails
     ["Watermelon", "Honey Don't", "Cantaloupe"],    // DS Dodgers
     ["UV Firetiger", "Glowing Firetiger", "Bling Firetiger"],   // Firetiger
-    ["Black", "Purple", "Red", "Green", "Blue", "Orange"],   // Gold Diggers
+    ["Black", "Purple", "Red", "Green", "Blue"],   // Gold Diggers
     ["Pink", "Green", "Orange", "Chartreuse", "Purple"],    // Honey Drippers
     ["Holly's Ruby Slipper", "A Clockwork Orange", "The Green Hornet", "Kermit", "The Flash", "Sour Grapes", "Watermelon Sugar", "Blue Lagoon", "The Pinkanator"],  // Lil Comets
     ["Watermelon", "All Glow Watermelon", "Bling Melon", "Honey Don't", "Cantaloupe"],   // Melons
-    ["Purple Nurple", "Razzle Dazzle", "Gold N Plum"],   // Plum Crazy
+    ["Purple Nurple", "Razzle Dazzle", "Gold N Plum", "Nuclear Plum"],   // Plum Crazy
     ["Pink", "Green", "Orange", "Chartreuse"],  // Premium UV
     ["Pink", "Green", "Orange", "Chartreuse", "Blue", "Glow Purple", "Glow"],   // Tiger
     ["Original glow", "Bling", "Golden"],   // Wonderbread
@@ -111,7 +111,7 @@ const product_dodgers = [
     {
         hosted_button_id: "NJXCEJKUBRKH2",
         productName: "Melon",
-        price: 6.99,
+        price: 7.49,
         options: ["Watermelon", "Honey Don't", "Cantaloupe"],
     },  // Melons
     {

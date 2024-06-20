@@ -36,6 +36,7 @@
 
 .view-cart-cont {
     margin: 15px 0px 0px 12px;
+    display: none;  /* Remove line when Rich gets back */
 }
 
 .menu-nav-cont {
