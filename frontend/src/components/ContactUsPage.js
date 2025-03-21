@@ -8,8 +8,6 @@ export default class ContactUsPage extends Component {
         super(props);
     }
 
-    // email and phone number are placeholders until further notice
-
     render() {
         return(
             <div>

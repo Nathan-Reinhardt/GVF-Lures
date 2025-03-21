@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import InfoNavPanel from './InfoNavPanel/InfoNavPanel';
 import Footer from './InfoNavPanel/Footer';
-import { EssentialMedia } from '../utils/_essentialmedia';
 
 export default class Dashboard extends Component {
     constructor(props) {

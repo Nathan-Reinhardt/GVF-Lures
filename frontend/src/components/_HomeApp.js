@@ -29,8 +29,6 @@ import AddToCartPage from './ShopPanel/AddToCartPage';  // add to cart page
     import ForgotPasswordPage from './ForgotPasswordPage'   // forgot password page
 */}
 
-import FishingTripBrbPage from './FishingTripBrbPage'; // fill in for shop page
-
 export default class HomeApp extends Component {
     constructor(props) {
         super(props);
@@ -46,10 +44,8 @@ export default class HomeApp extends Component {
                             <Route exact={true} path="/contact" component={ContactUsPage} />
                             <Route exact={true} path="/lakes" component={LakesPage} />
                             <Route exact={true} path="/gallery" component={GalleryPage} />
-                            <Route exact={true} path="/shop" component={FishingTripBrbPage} />
-                            {/* Uncomment when Rich is back and change the component above to go back to the true shop page
-                                <Route exact={true} path="/shop/:productId" component={AddToCartPage} />
-                            /*}
+                            <Route exact={true} path="/shop" component={ShopPage} />
+                            <Route exact={true} path="/shop/:productId" component={AddToCartPage} />
                             {/*
                                 Routes that are disabled for now
                                 
